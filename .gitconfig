@@ -1,0 +1,46 @@
+[github]
+  user = mrmicahcooper
+[user]
+  email = micah+github@mrmicahcooper.com
+  name = "Micah Cooper"
+[alias]
+  aliases=!git config -l | grep '^alias' | cut -c 7- | sort
+  b  = branch
+  cheddar = commit --amend -CHEAD
+  co = checkout
+  fixup = commit --fixup
+  doff = reset HEAD^
+  ri = rebase --interactive
+  br = branch
+  pruneremote = remote prune origin
+  tree = log --graph --oneline --decorate --color --all
+  tr = log --graph --oneline --decorate --color
+  add-untracked = !"git status --porcelain | awk '/\\?\\?/{ print $2 }' | xargs git add"
+[branch]
+  autosetuprebase = always
+[color]
+  ui = auto
+[core]
+  excludesfile = ~/.cvsignore
+  editor = vim
+  whitespace = warn
+[help]
+  autocorrect = 10
+[interactive]
+  singlekey = true
+[merge]
+  summary = true
+[merge "bundlelock"]
+  name = lock Gemfile
+  driver = bundle install
+[merge "bundle"]
+  name = bundle
+  driver = bundle
+[push]
+  default = tracking
+[rebase]
+  autosquash = true
+[diff]
+  algorithm = patience
+[fetch]
+  prune = true
