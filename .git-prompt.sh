@@ -1,0 +1,1 @@
+/Users/micah.cooper/dev/dotfiles/.git-prompt.sh
