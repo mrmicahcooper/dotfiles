@@ -164,6 +164,7 @@ alias reset-authors='git commit --amend --reset-author -C HEAD'
 alias vi='vim'
 alias longtest="./node_modules/.bin/lab --lint"
 alias longtest="./node_modules/.bin/lab --lint"
+alias dot="yadm"
 
 function grm () {
   echo "git rebase master"
