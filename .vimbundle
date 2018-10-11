@@ -50,3 +50,4 @@ vim-scripts/bufexplorer.zip
 vim-scripts/bufkill.vim
 wgibbs/vim-irblack
 altercation/vim-colors-solarized
+ekalinin/Dockerfile.vim

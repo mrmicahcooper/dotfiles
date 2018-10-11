@@ -5,7 +5,7 @@ exec --no-start-id xrandr --dpi 192
 exec --no-startup-id xset r rate 300 65
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
-set $mod Mod1
+set $mod Mod4
 
 # set default desktop layout (default is tiling)
 # workspace_layout tabbed <stacking|tabbed>

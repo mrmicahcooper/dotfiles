@@ -15,8 +15,8 @@ filetype plugin indent on
 
 colorscheme solarized
 
-set background=light
-" set background=dark
+" set background=light
+set background=dark
 set colorcolumn=80
 set cursorline
 set directory^=$HOME/.vim/tmp//
