@@ -51,10 +51,6 @@ retab
 
 iabbrev epry require IEx; IEx.pry
 iabbrev epau this.timeout(0); return pauseTest();
-iabbrev epry require IEx; IEx.pry
-
-let g:two_firewatch_italics=1
-let g:airline_theme='twofirewatch'
 
 nnoremap <leader>e :call Send_to_Tmux("mix test ".expand("%")."\n")<CR>
 nnoremap <leader>E :call Send_to_Tmux("mix test ".expand("%").":".line(".")."\n")<CR>
