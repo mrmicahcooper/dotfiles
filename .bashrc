@@ -116,6 +116,11 @@ alias longtest="./node_modules/.bin/lab --lint"
 alias longtest="./node_modules/.bin/lab --lint"
 alias dot="yadm"
 
+function pacmanclean () {
+  echo "sudo pacman -Rns $(pacman -Qtdq)"
+  command sudo pacman -Rns $(pacman -Qtdq)
+}
+
 function grm () {
   echo "git rebase master"
   command git rebase master
