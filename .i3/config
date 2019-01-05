@@ -59,7 +59,7 @@ bindsym XF86MonBrightnessDown exec "xbacklight -dec 2; notify-send 'brightness d
 
 # Start Applications
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
-bindsym $mod+F2 exec palemoon
+bindsym $mod+F2 exec google-chrome-stable
 bindsym $mod+F3 exec pcmanfm
 # bindsym $mod+F3 exec ranger
 bindsym $mod+Shift+F3 exec gksu pcmanfm
