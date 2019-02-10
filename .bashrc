@@ -1,12 +1,8 @@
 #
 # ~/.bashrc
 #
-
-if [ -f '/usr/local/etc/bash_completion.d/git-completion.bash' ]; then
-  source '/usr/local/etc/bash_completion.d/git-completion.bash'
-fi
-
 source ~/.git-prompt.sh
+source ~/.git-completion.bash
 
 [[ $- != *i* ]] && return
 
