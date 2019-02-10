@@ -158,41 +158,6 @@ tember() {
 }
 
 
-function grm () {
-  echo "git rebase master"
-  command git rebase master
-}
-
-function gwip () {
-  echo "git commit -a -m wip"
-  command git commit -a -m wip
-}
-
-function gush () {
-  echo "git push origin $(git rev-parse --abbrev-ref HEAD) --force-with-lease"
-  git push origin $(git rev-parse --abbrev-ref HEAD) --force-with-lease
-}
-
-gri() {
-  echo "git rebase -i HEAD~$1"
-  command git rebase -i HEAD~$1
-}
-
-function gmpr () {
-  echo "git checkout master && git pull --rebase origin master"
-  git checkout master && git pull --rebase origin master
-}
-
-flint() {
-  echo "./node_modules/.bin/eslint --fix $1"
-  command ./node_modules/.bin/eslint --fix $1
-}
-
-tember() {
-  echo "ember test --server --filter=\"$1\""
-  command ember test --server --filter="$1"
-}
-
 # # ex - archive extractor; usage: ex <file>
 ex ()
 {

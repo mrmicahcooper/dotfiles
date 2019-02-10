@@ -6,12 +6,12 @@
 [alias]
   aliases=!git config -l | grep '^alias' | cut -c 7- | sort
   b  = branch
+  br = branch
   cheddar = commit --amend -CHEAD
   co = checkout
   fixup = commit --fixup
   doff = reset HEAD^
   ri = rebase --interactive
-  br = branch
   pruneremote = remote prune origin
   tree = log --graph --oneline --decorate --color --all
   tr = log --graph --oneline --decorate --color
