@@ -13,7 +13,8 @@ syntax enable
 
 filetype plugin indent on
 
-colorscheme solarized
+colorscheme default
+" colorscheme solarized
 
 " set background=light
 set background=dark
@@ -52,10 +53,10 @@ retab
 iabbrev epry require IEx; IEx.pry
 iabbrev epau this.timeout(0); return pauseTest();
 
-nnoremap <leader>e :call Send_to_Tmux("mix test ".expand("%")."\n")<CR>
-nnoremap <leader>E :call Send_to_Tmux("mix test ".expand("%").":".line(".")."\n")<CR>
-nnoremap <leader>s :call Send_to_Tmux("iex -S mix test ".expand("%")."\n")<CR>
-nnoremap <leader>S :call Send_to_Tmux("iex -S mix test ".expand("%").":".line(".")."\n")<CR>
+nnoremap <leader>e :call Send_to_Tmux("clear\nmix test ".expand("%")."\n")<CR>
+nnoremap <leader>E :call Send_to_Tmux("clear\nmix test ".expand("%").":".line(".")."\n")<CR>
+nnoremap <leader>s :call Send_to_Tmux("clear\niex -S mix test ".expand("%")."\n")<CR>
+nnoremap <leader>S :call Send_to_Tmux("clear\niex -S mix test ".expand("%").":".line(".")."\n")<CR>
 nnoremap <silent> <Leader>= :exe "resize +4" <CR>
 nnoremap <silent> <Leader>- :exe "resize -4" <CR>
 nnoremap <silent> <Leader>[ :exe "vertical resize -4" <CR>
