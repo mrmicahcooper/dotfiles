@@ -184,6 +184,7 @@ ex ()
 
 
 if [[ -s "$HOME/.rvm/scripts/rvm" ]] ; then source "$HOME/.rvm/scripts/rvm" ; fi
+if [[ -s "$HOME/.gcloudrc" ]] ; then source "$HOME/.gcloudrc" ; fi
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
