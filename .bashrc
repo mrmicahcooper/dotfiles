@@ -193,5 +193,4 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 . $HOME/.asdf/asdf.sh
-
 . $HOME/.asdf/completions/asdf.bash
