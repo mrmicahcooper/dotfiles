@@ -1,6 +1,7 @@
 AndrewRadev/ember_tools.vim
 AndrewRadev/splitjoin.vim
 altercation/vim-colors-solarized
+dracula/vim
 cespare/vim-toml
 dsawardekar/ember.vim
 elixir-editors/vim-elixir
