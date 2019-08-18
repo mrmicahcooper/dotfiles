@@ -13,11 +13,24 @@ syntax enable
 
 filetype plugin indent on
 
-colorscheme default
-" colorscheme solarized
+" Dracula
+" colorscheme dracula
 
+
+"Molokai
+" colorscheme molokai
+" let g:molokai_original = 1
+" let g:rehash256 = 1
+
+" Solarized
+" colorscheme solarized
 " set background=light
-set background=dark
+" set background=dark
+
+"Zenburn
+colorscheme zenburn
+let g:rehash256 = 1
+
 set colorcolumn=80
 set cursorline
 set directory^=$HOME/.vim/tmp//
