@@ -1,42 +1,58 @@
 " Vim plugins
 call plug#begin("~/.vim/plugged")
 
-Plug 'AndrewRadev/ember_tools.vim'
-Plug 'AndrewRadev/splitjoin.vim'
-Plug 'altercation/vim-colors-solarized'
-Plug 'cespare/vim-toml'
-Plug 'dracula/vim'
-Plug 'dsawardekar/ember.vim'
-Plug 'ekalinin/Dockerfile.vim'
-Plug 'elixir-editors/vim-elixir'
+"" status bar
+Plug 'itchyny/lightline.vim'
+let g:lightline = {
+      \ 'colorscheme': 'solarized',
+      \ 'separator': { 'left': '', 'right': '' },
+      \ 'subseparator': { 'left': '', 'right': '' },
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'cocstatus', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'cocstatus': 'coc#status'
+      \ },
+      \ }
+
+
+" Languages
+Plug 'sheerun/vim-polyglot'
+Plug 'joukevandermaas/vim-ember-hbs'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'cespare/vim-toml'
+" Plug 'dsawardekar/ember.vim'
+" Plug 'elixir-editors/vim-elixir'
+" Plug 'jelera/vim-javascript-syntax'
+" Plug 'leshill/vim-json'
+" Plug 'nelstrom/vim-textobj-rubyblock'
+" Plug 'rust-lang/rust'
+" Plug 'AndrewRadev/ember_tools.vim'
+" Plug 'AndrewRadev/splitjoin.vim'
+" Plug 'slim-template/vim-slim'
+" Plug 'vim-ruby/vim-ruby'
+
+" Colors
 Plug 'flazz/vim-colorschemes'
+
+" Extras
+Plug 'ekalinin/Dockerfile.vim'
 Plug 'godlygeek/tabular'
 Plug 'gregsexton/gitv'
-Plug 'jelera/vim-javascript-syntax'
 Plug 'jgdavey/tslime.vim'
 Plug 'jgdavey/vim-blockle'
 Plug 'jgdavey/vim-turbux'
-Plug 'joukevandermaas/vim-ember-hbs'
 Plug 'jremmen/vim-ripgrep'
 Plug 'kana/vim-textobj-user'
-Plug 'leshill/vim-json'
-Plug 'nelstrom/vim-textobj-rubyblock'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'rondale-sc/vim-spacejam'
-Plug 'rust-lang/rust'
-Plug 'slim-template/vim-slim'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-git'
-Plug 'tpope/vim-haml'
-Plug 'tpope/vim-markdown'
 Plug 'tpope/vim-projectionist'
 Plug 'tpope/vim-ragtag'
-Plug 'tpope/vim-rails'
-Plug 'tpope/vim-rake'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-rsi'
 Plug 'tpope/vim-sensible'
@@ -44,37 +60,46 @@ Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-speeddating'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
-Plug 'tpope/vim-vividchalk'
-Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/BufOnly.vim'
 Plug 'vim-scripts/bufexplorer.zip'
 Plug 'vim-scripts/bufkill.vim'
-Plug 'wgibbs/vim-irblack'
+
+" full featured LSP client for vim
+Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
+
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-y>" :
+      \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+let g:coc_snippet_next = '<Tab>'
+let g:coc_snippet_prev = '<S-Tab>'
 
 call plug#end()
 
-highlight Normal ctermbg=none
+" COC extensions
+ let g:coc_global_extensions = [
+  \ 'coc-css',
+  \ 'coc-ember',
+  \ 'coc-eslint',
+  \ 'coc-elixir',
+  \ 'coc-highlight',
+  \ 'coc-html',
+  \ 'coc-json',
+  \ 'coc-prettier',
+  \ 'coc-snippets',
+  \ 'coc-solargraph',
+  \ 'coc-tslint-plugin',
+  \ 'coc-tsserver',
+  \ 'coc-vimlsp'
+\ ]
 
-syntax on
-syntax enable
-
-filetype plugin indent on
-
-" Dracula
-" colorscheme dracula
-
-"Molokai
-" colorscheme molokai
-" let g:molokai_original = 1
-" let g:rehash256 = 1
-
-" Solarized colorscheme solarized set background=light
-" set background=dark
-
-"Zenburn
-colorscheme zenburn
-
-let g:rehash256 = 1
 set cursorline
 set directory^=$HOME/.vim/tmp//
 set expandtab
@@ -105,33 +130,28 @@ set wildmenu
 set wildmode=list:longest,full
 set wrap linebreak nolist
 
+syntax on
+syntax enable
+filetype plugin indent on
+colorscheme zenburn
+let g:rehash256 = 1
 retab
 
 iabbrev epry require IEx; IEx.pry
 iabbrev epau this.timeout(0); return pauseTest();
 
-nnoremap <leader>e :call Send_to_Tmux("clear\nmix test ".expand("%")."\n")<CR>
-nnoremap <leader>E :call Send_to_Tmux("clear\nmix test ".expand("%").":".line(".")."\n")<CR>
-nnoremap <leader>s :call Send_to_Tmux("clear\niex -S mix test ".expand("%")."\n")<CR>
-nnoremap <leader>S :call Send_to_Tmux("clear\niex -S mix test ".expand("%").":".line(".")."\n")<CR>
+" nnoremap <leader>e :call Send_to_Tmux("clear\nmix test ".expand("%")."\n")<CR>
+" nnoremap <leader>E :call Send_to_Tmux("clear\nmix test ".expand("%").":".line(".")."\n")<CR>
+" nnoremap <leader>s :call Send_to_Tmux("clear\niex -S mix test ".expand("%")."\n")<CR>
+" nnoremap <leader>S :call Send_to_Tmux("clear\niex -S mix test ".expand("%").":".line(".")."\n")<CR>
 nnoremap <silent> <Leader>= :exe "resize +4" <CR>
 nnoremap <silent> <Leader>- :exe "resize -4" <CR>
 nnoremap <silent> <Leader>[ :exe "vertical resize -4" <CR>
 nnoremap <silent> <Leader>] :exe "vertical resize +4" <CR>
 
-augroup vimrc
-  autocmd!
-  autocmd GuiEnter * set columns=120 lines=70 number
-augroup END
-
-" Run mix format on save
-autocmd BufWritePost *.exs silent :!mix format %
-autocmd BufWritePost *.ex silent :!mix format %
-
 " Change the max lenth for text and markdown files
 autocmd FileType markdown setlocal tw=50 colorcolumn=50
 autocmd FileType text setlocal tw=50 colorcolumn=50
-
 autocmd FileType json syntax match Comment +\/\/.\+$+
 
 " Pipe cursor in insert mode
@@ -146,17 +166,10 @@ augroup END
 
 
 "COC COMMANDS from https://github.com/neoclide/coc.nvim
-" Better display for messages
-set cmdheight=2
-
-" You will have bad experience for diagnostic messages when it's default 4000.
-set updatetime=300
-
-" don't give |ins-completion-menu| messages.
-set shortmess+=c
-
-" always show signcolumns
-set signcolumn=yes
+set cmdheight=2 " Better display for messages
+set updatetime=300 " You will have bad experience for diagnostic messages when it's default 4000.
+set shortmess+=c " don't give |ins-completion-menu| messages.
+set signcolumn=yes " always show signcolumns
 
 " Use tab for trigger completion with characters ahead and navigate.
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
@@ -176,7 +189,7 @@ inoremap <silent><expr> <c-space> coc#refresh()
 
 " Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
 " Coc only does snippet and additional edit on confirm.
-inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+" inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 " Use `[c` and `]c` to navigate diagnostics
 nmap <silent> [c <Plug>(coc-diagnostic-prev)
