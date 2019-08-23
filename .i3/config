@@ -1,7 +1,7 @@
 # i3 config file (v4)
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 # dpi change
-exec --no-start-id xrandr --dpi 192
+exec --no-start-id xrandr --dpi  220
 exec --no-startup-id xset r rate 220 48
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
