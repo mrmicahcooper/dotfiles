@@ -31,7 +31,6 @@ filetype plugin indent on
 colorscheme zenburn
 let g:rehash256 = 1
 
-set colorcolumn=80
 set cursorline
 set directory^=$HOME/.vim/tmp//
 set expandtab
@@ -54,7 +53,8 @@ set statusline+=%#warningmsg#
 set statusline+=%*
 set statusline=\ %f\ %h%w%m%r%*%=%-5.(%l\|%c%)\ %-5.(%Y\ %)
 set ts=2 shiftwidth=2 expandtab
-set tw=79
+set colorcolumn=80
+set tw=80
 set undodir=$HOME/.VIM_UNDO_FILES
 set visualbell
 set wildmenu
@@ -83,6 +83,10 @@ augroup END
 " Run mix format on save
 autocmd BufWritePost *.exs silent :!mix format %
 autocmd BufWritePost *.ex silent :!mix format %
+
+" Change the max lenth for text and markdown files
+autocmd FileType markdown setlocal tw=50 colorcolumn=50
+autocmd FileType text setlocal tw=50 colorcolumn=50
 
 " Pipe cursor in insert mode
 let &t_SI = "\e[6 q"
