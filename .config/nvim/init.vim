@@ -35,12 +35,26 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Colors
 Plug 'flazz/vim-colorschemes'
+Plug 'felixhummel/setcolors.vim'
+
+"Async Runners
+" Vim Testing
+Plug 'skywind3000/asyncrun.vim'
+let g:asyncrun_open = 9
+let test#strategy = "asyncrun"
+
+Plug 'janko-m/vim-test'
+nmap <silent> <leader>t :TestFile<CR>
+nmap <silent> <leader>T :TestNearest<CR>
+nmap <silent> <leader>ts :TestSuite<CR>
+nmap <silent> <leader>l :TestLast<CR>
+nmap <silent> <leader>g :TestVisit<CR>
 
 " Extras
-Plug 'ekalinin/Dockerfile.vim'
+" Plug 'ekalinin/Dockerfile.vim'
 Plug 'godlygeek/tabular'
 Plug 'gregsexton/gitv'
-Plug 'jgdavey/tslime.vim'
+" Plug 'jgdavey/tslime.vim'
 Plug 'jgdavey/vim-blockle'
 Plug 'jgdavey/vim-turbux'
 Plug 'jremmen/vim-ripgrep'
@@ -62,7 +76,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'vim-scripts/BufOnly.vim'
 Plug 'vim-scripts/bufexplorer.zip'
-Plug 'vim-scripts/bufkill.vim'
+" Plug 'vim-scripts/bufkill.vim'
 
 " full featured LSP client for vim
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
@@ -101,6 +115,8 @@ call plug#end()
 \ ]
 
 set cursorline
+set encoding=utf-8  " The encoding displayed.
+set fileencoding=utf-8  " The encoding written to file.
 set directory^=$HOME/.vim/tmp//
 set expandtab
 set guifont=Fira\ Mono:h13
@@ -129,11 +145,12 @@ set visualbell
 set wildmenu
 set wildmode=list:longest,full
 set wrap linebreak nolist
+set nohlsearch
 
 syntax on
 syntax enable
 filetype plugin indent on
-colorscheme zenburn
+colorscheme monokai-phoenix
 let g:rehash256 = 1
 retab
 
@@ -166,7 +183,7 @@ augroup END
 
 
 "COC COMMANDS from https://github.com/neoclide/coc.nvim
-set cmdheight=2 " Better display for messages
+" set cmdheight=2 " Better display for messages
 set updatetime=300 " You will have bad experience for diagnostic messages when it's default 4000.
 set shortmess+=c " don't give |ins-completion-menu| messages.
 set signcolumn=yes " always show signcolumns
