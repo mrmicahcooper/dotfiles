@@ -76,6 +76,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'vim-scripts/BufOnly.vim'
 Plug 'vim-scripts/bufexplorer.zip'
+Plug 'rondale-sc/vim-spacejam'
 " Plug 'vim-scripts/bufkill.vim'
 
 " full featured LSP client for vim
@@ -115,8 +116,8 @@ call plug#end()
 \ ]
 
 set cursorline
-set encoding=utf-8  " The encoding displayed.
-set fileencoding=utf-8  " The encoding written to file.
+set encoding=utf-8
+set fileencoding=utf-8
 set directory^=$HOME/.vim/tmp//
 set expandtab
 set guifont=Fira\ Mono:h13
@@ -150,7 +151,8 @@ set nohlsearch
 syntax on
 syntax enable
 filetype plugin indent on
-colorscheme monokai-phoenix
+" colorscheme monokai-phoenix
+colorscheme seoul256
 let g:rehash256 = 1
 retab
 
