@@ -126,6 +126,12 @@ function pacmanclean () {
   command sudo pacman -Rns $(pacman -Qtdq)
 }
 
+function nfig () {
+  echo "nvim ~/.config/nvin/init.vim"
+  command nvim ~/.config/nvim/init.vim
+}
+
+
 function grm () {
   echo "git rebase master"
   command git rebase master
