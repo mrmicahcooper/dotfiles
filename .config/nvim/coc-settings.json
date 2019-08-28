@@ -1,0 +1,7 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": ["elixir", "eelixir"],
+  "suggest.noselect": false,
+  "eslint.autoFixOnSave": true,
+  "tslint.autoFixOnSave": true,
+  "elixir.pathToElixirLS": "~/code/elixir-ls/language_server.sh"
+}
