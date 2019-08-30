@@ -39,9 +39,9 @@ Plug 'felixhummel/setcolors.vim'
 
 "Async Runners
 " Vim Testing
-Plug 'skywind3000/asyncrun.vim'
-let g:asyncrun_open = 9
-let test#strategy = "asyncrun"
+" Plug 'skywind3000/asyncrun.vim'
+" let g:asyncrun_open = 9
+let test#strategy = "tslime"
 
 Plug 'janko-m/vim-test'
 nmap <silent> <leader>t :TestFile<CR>
@@ -54,7 +54,7 @@ nmap <silent> <leader>g :TestVisit<CR>
 " Plug 'ekalinin/Dockerfile.vim'
 Plug 'godlygeek/tabular'
 Plug 'gregsexton/gitv'
-" Plug 'jgdavey/tslime.vim'
+Plug 'jgdavey/tslime.vim'
 Plug 'jgdavey/vim-blockle'
 Plug 'jgdavey/vim-turbux'
 Plug 'jremmen/vim-ripgrep'
