@@ -1,3 +1,7 @@
+#
+# ~/.bash_profile
+#
+
 . "$HOME/.bashrc"
 
 export PATH="$HOME/.asdf/installs/rust/stable/bin:$PATH"
