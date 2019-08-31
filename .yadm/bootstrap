@@ -5,8 +5,8 @@ system_type=$(uname -s)
 if [ "$system_type" = "Linux" ]; then
   if command -v pacman >/dev/null 2>&1; then
     # install base dev packages for developing on manjaro linux
-    echo("sudo pacman -S neovim tmux yarn postresql")
-    sudo pacman -S neovim tmux yarn postresql 
+    echo "sudo pacman -S neovim tmux yarn postresql"
+    sudo pacman -S neovim tmux yarn postgresql 
   fi
 fi
 
@@ -25,35 +25,37 @@ if [ "$system_type" = "Darwin" ]; then
 fi
 
 # install asdf
-echo("git clone https://github.com/asdf-vm/asdf.git ~/.asdf")
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf
+if [ ! -d ~/.asdf ]; then
+  echo "git clone https://github.com/asdf-vm/asdf.git ~/.asdf"
+  git clone https://github.com/asdf-vm/asdf.git ~/.asdf
+fi
 
-echo("cd ~/.asdf")
+echo "cd ~/.asdf"
 cd ~/.asdf
 
-echo("git checkout \"$(git describe --abbrev=0 --tags)\"")
+echo "git checkout \"$(git describe --abbrev=0 --tags)\""
 git checkout "$(git describe --abbrev=0 --tags)"
 
 # install all the languages in ~/.tool-versions
-echo("asdf plugin-add elixir")
+echo "asdf plugin-add elixir" 
 asdf plugin-add elixir
 
-echo("asdf plugin-add erlang")
+echo "asdf plugin-add erlang" 
 asdf plugin-add erlang
 
-echo("asdf plugin-add node")
+echo "asdf plugin-add node" 
 asdf plugin-add node
 
-echo("asdf plugin-add rust")
+echo "asdf plugin-add rust" 
 asdf plugin-add rust
 
-echo("asdf install")
+echo "asdf install" 
 asdf install
 
 # install ember
-echo("yarn global add ember-cli")
+echo "yarn global add ember-cli" 
 yarn global add ember-cli
 
 #install phx.new for elixir
-echo("mix archive.install hex phx_new")
+echo "mix archive.install hex phx_new" 
 mix archive.install hex phx_new
