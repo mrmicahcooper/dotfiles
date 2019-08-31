@@ -92,7 +92,6 @@ alias gd='git diff'
 alias gdc='git diff --cached'
 alias gdh='git diff HEAD'
 alias glg='git log --graph --oneline --decorate --color --all'
-alias dlg='yadm log --graph --oneline --decorate --color --all'
 alias glod='git log --oneline --decorate'
 alias glod='git log --oneline --decorate'
 alias glp='git log -p'
@@ -118,7 +117,11 @@ alias reset-authors='git commit --amend --reset-author -C HEAD'
 alias vi='vim'
 alias longtest="./node_modules/.bin/lab --lint"
 alias longtest="./node_modules/.bin/lab --lint"
+
 alias dot="yadm"
+alias dit="yadm"
+alias dst="yadm status"
+alias dlg='yadm log --graph --oneline --decorate --color --all'
 
 function pacmanclean () {
   echo "sudo pacman -Rns $(pacman -Qtdq)"
