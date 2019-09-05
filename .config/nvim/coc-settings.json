@@ -2,5 +2,11 @@
   "coc.preferences.formatOnSaveFiletypes": ["elixir", "eelixir"],
   "eslint.autoFixOnSave": true,
   "tslint.autoFixOnSave": true,
-  "elixir.pathToElixirLS": "~/.language-servers/elixir-ls/language_server.sh"
+  "elixir.pathToElixirLS": "~/.language-servers/elixir-ls/language_server.sh",
+  "languageserver": {
+    "rust": {
+      "filetypes": ["rust"],
+      "rootPatterns": ["Cargo.toml"]
+    }
+  }
 }

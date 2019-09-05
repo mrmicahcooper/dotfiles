@@ -106,6 +106,7 @@ call plug#end()
   \ 'coc-elixir',
   \ 'coc-highlight',
   \ 'coc-html',
+  \ 'coc-rls',
   \ 'coc-json',
   \ 'coc-prettier',
   \ 'coc-snippets',
