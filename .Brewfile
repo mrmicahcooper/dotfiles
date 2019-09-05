@@ -7,3 +7,4 @@ tmux
 tree
 watchman
 yarn
+jq

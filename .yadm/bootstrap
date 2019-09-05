@@ -5,8 +5,8 @@ system_type=$(uname -s)
 if [ "$system_type" = "Linux" ]; then
   if command -v pacman >/dev/null 2>&1; then
     # install base dev packages for developing on manjaro linux
-    echo "sudo pacman -S neovim tmux yarn postresql"
-    sudo pacman -S neovim tmux yarn postgresql 
+    echo "sudo pacman -S neovim tmux yarn postresql jq"
+    sudo pacman -S neovim tmux yarn postgresql jq
   fi
 fi
 
