@@ -61,7 +61,8 @@ export YAOURT_COLORS="nb=1:pkg=1:ver=1;32:lver=1;45:installed=1;42:grp=1;34:od=1
 # export PS1="\[\033[01;36m\]\W\[\033[95m\]\$(__git_ps1 ' ⥈ %s')\[\033[01;94m\] -> \[\033[01;00m\]"
 export PS1="\[\033[01;36m\]\W\[\033[95m\]\$(__git_ps1 ':%s')\[\033[01;94m\]-> \[\033[01;00m\]"
 export CLICOLOR=1
-export EDITOR="$VISUAL"
+# export EDITOR="$VISUAL"
+export EDITOR="nvim"
 export ERL_AFLAGS="-kernel shell_history enabled"
 export HISTCONTROL=erasedups
 export HISTIGNORE="%*"
