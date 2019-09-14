@@ -125,9 +125,11 @@ alias dit="yadm"
 alias dst="yadm status"
 alias dlg='yadm log --graph --oneline --decorate --color --all'
 
+alias uuid='uuidgen | xclip -selection clipboard'
+
 function pacmanclean () {
   echo "sudo pacman -Rns $(pacman -Qtdq)"
-  command sudo pacman -Rns $(pacman -Qtdq)
+  Command sudo pacman -Rns $(pacman -Qtdq)
 }
 
 function nfig () {
