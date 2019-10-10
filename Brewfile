@@ -1,88 +1,86 @@
-autoconf
-automake
-coreutils
-docker
-fontconfig
-freetype
-fribidi
-gcc
-gd
-gdbm
-gdk-pixbuf
-gettext
-git
-git-secrets
-glib
-gmp
-gnupg
-gnutls
-heroku
-heroku-node
-hub
-icu4c
-imagemagick
-isl
-jemalloc
-jpeg
-jq
-libassuan
-libcroco
-libevent
-libffi
-libgcrypt
-libgpg-error
-libksba
-libmpc
-libpng
-librsvg
-libssh
-libtasn1
-libtermkey
-libtiff
-libtool
-libunistring
-libusb
-libuv
-libvterm
-libxml2
-libxslt
-libyaml
-little-cms2
-llvm
-luajit
-macvim
-mpfr
-msgpack
-ncurses
-neovim
-nettle
-oniguruma
-openjpeg
-openssl
-openssl@1.1
-p11-kit
-pango
-pcre
-pcre2
-perl
-pinentry
-pixman
-pkg-config
-pwgen
-readline
-redis
-ripgrep
-sqlite
-swig
-tmate
-tmux
-tree
-unbound
-unibilium
-unixodbc
-watchman
-webp
-wxmac
-xz
-yadm
-yarn
+brew "automake"
+brew "coreutils"
+brew "docker"
+brew "fontconfig"
+brew "freetype"
+brew "fribidi"
+brew "gcc"
+brew "gd"
+brew "gdbm"
+brew "gdk-pixbuf"
+brew "gettext"
+brew "git"
+brew "git-secrets"
+brew "glib"
+brew "gmp"
+brew "gnupg"
+brew "gnutls"
+brew "heroku"
+brew "heroku-node"
+brew "hub"
+brew "icu4c"
+brew "imagemagick"
+brew "isl"
+brew "jemalloc"
+brew "jpeg"
+brew "jq"
+brew "libassuan"
+brew "libcroco"
+brew "libevent"
+brew "libffi"
+brew "libgcrypt"
+brew "libgpg-error"
+brew "libksba"
+brew "libmpc"
+brew "libpng"
+brew "librsvg"
+brew "libssh"
+brew "libtasn1"
+brew "libtermkey"
+brew "libtiff"
+brew "libtool"
+brew "libunistring"
+brew "libusb"
+brew "libuv"
+brew "libvterm"
+brew "libxml2"
+brew "libxslt"
+brew "libyaml"
+brew "little-cms2"
+brew "llvm"
+brew "luajit"
+brew "macvim"
+brew "mpfr"
+brew "msgpack"
+brew "ncurses"
+brew "neovim"
+brew "nettle"
+brew "oniguruma"
+brew "openjpeg"
+brew "openssl"
+brew "p11-kit"
+brew "pango"
+brew "pcre"
+brew "pcre2"
+brew "perl"
+brew "pinentry"
+brew "pixman"
+brew "pkg-config"
+brew "pwgen"
+brew "readline"
+brew "redis"
+brew "ripgrep"
+brew "sqlite"
+brew "swig"
+brew "tmate"
+brew "tmux"
+brew "tree"
+brew "unbound"
+brew "unibilium"
+brew "unixodbc"
+brew "watchman"
+brew "webp"
+brew "wxmac"
+brew "xz"
+brew "yadm"
+brew "yarn"
