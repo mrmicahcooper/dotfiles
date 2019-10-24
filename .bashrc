@@ -125,6 +125,12 @@ alias dit="yadm"
 alias dst="yadm status"
 alias dlg='yadm log --graph --oneline --decorate --color --all'
 
+alias d="docker"
+alias di="docker images"
+alias dii="docker images -q"
+alias dps="docker ps -a"
+alias dpsi="docker ps -aq"
+
 alias uuid='uuidgen | xclip -selection clipboard'
 
 function pacmanclean () {
