@@ -76,6 +76,9 @@ export VISUAL=vim
 export QT_AUTO_SCREEN_SCALE_FACTOR=1
 export GDK_SCALE=2
 export TERM=xterm-256color
+# save pwd to a temp file so i3 can use it to open another terminal in the same
+# directory
+export PROMPT_COMMAND="pwd > /tmp/whereami"
 
 alias cp="cp -i"                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes

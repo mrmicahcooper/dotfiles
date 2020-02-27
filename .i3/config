@@ -31,7 +31,8 @@ font xft:URWGothic-Book 11
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec qterminal
+# bindsym $mod+Return exec qterminal
+bindsym $mod+Return exec $HOME/.i3/i3_shell.sh
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -106,7 +107,7 @@ bindsym $mod+b workspace back_and_forth
 bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
 
 # split orientation
-bindsym $mod+- split h;exec notify-send 'tile horizontally'
+bindsym $mod+o split h;exec notify-send 'tile horizontally'
 bindsym $mod+v split v;exec notify-send 'tile vertically'
 bindsym $mod+q split toggle
 
