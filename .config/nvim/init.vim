@@ -16,6 +16,7 @@ let g:lightline = {
 
 Plug 'sheerun/vim-polyglot'
 Plug 'joukevandermaas/vim-ember-hbs'
+Plug 'jparise/vim-graphql'
 
 " Colors
 Plug 'flazz/vim-colorschemes'
@@ -29,6 +30,14 @@ nmap <silent> <leader>T :TestNearest<CR>
 nmap <silent> <leader>ts :TestSuite<CR>
 nmap <silent> <leader>l :TestLast<CR>
 nmap <silent> <leader>g :TestVisit<CR>
+
+"Fuzzy finding
+Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+map <C-p> :Files<CR>
+map <C-b> :Buffers<CR>
+map <C-s> :Rg<CR>
+map <C-h> :Colors<CR>
 
 " Extras
 Plug 'godlygeek/tabular'
@@ -95,8 +104,9 @@ syntax on
 syntax enable
 filetype plugin indent on
 " colorscheme monokai-phoenix
-colorscheme seoul256
+" colorscheme seoul256
 " colorscheme solarized8_light
+colorscheme dracula
 
 let g:rehash256 = 1
 retab
