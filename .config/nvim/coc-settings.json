@@ -1,6 +1,8 @@
 {
   "coc.preferences.formatOnSaveFiletypes": ["elixir", "eelixir"],
   "eslint.autoFixOnSave": true,
+  "suggest.noselect": false,
+  "suggest.disableMenu": true,
   "tslint.autoFixOnSave": true,
   "elixir.pathToElixirLS": "~/.language-servers/elixir-ls/language_server.sh",
   "languageserver": {
