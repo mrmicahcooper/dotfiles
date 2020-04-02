@@ -38,3 +38,4 @@ filetype plugin indent on
 let g:rehash256 = 1
 retab
 
+set redrawtime=10000

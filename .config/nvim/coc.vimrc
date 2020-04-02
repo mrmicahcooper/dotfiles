@@ -4,7 +4,6 @@ inoremap <silent><expr> <TAB>
       \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
       \ <SID>check_back_space() ? "\<TAB>" :
       \ coc#refresh()
-
 function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
@@ -79,11 +78,11 @@ let g:coc_global_extensions = [
   \ 'coc-elixir',
   \ 'coc-ember',
   \ 'coc-eslint',
-  \ 'coc-git',
   \ 'coc-highlight',
   \ 'coc-html',
   \ 'coc-json',
-  \ 'coc-tslint-plugin',
-  \ 'coc-tsserver',
   \ 'coc-vimlsp'
 \ ]
+  " \ 'coc-tslint-plugin',
+  " \ 'coc-tsserver',
+  " \ 'coc-git',

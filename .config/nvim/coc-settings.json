@@ -3,7 +3,8 @@
   "eslint.autoFixOnSave": true,
   "suggest.noselect": false,
   "suggest.disableMenu": true,
-  "tslint.autoFixOnSave": true,
+  //"tslint.autoFixOnSave": true,
+  "tslint.autoFixOnSave": false,
   "elixir.pathToElixirLS": "~/.language-servers/elixir-ls/language_server.sh",
   "languageserver": {
     "rust": {
