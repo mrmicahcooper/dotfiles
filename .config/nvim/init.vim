@@ -76,8 +76,11 @@ call plug#end()
 "Colors
 " colorscheme monokai-phoenix
 " colorscheme seoul256
-" colorscheme solarized8_light
-colorscheme dracula
+colorscheme solarized8_light
+" colorscheme dracula
+
+"Global projections
+source $HOME/.config/nvim/projections.vimrc
 
 "Vim shortcuts
 iabbrev epry require IEx; IEx.pry
