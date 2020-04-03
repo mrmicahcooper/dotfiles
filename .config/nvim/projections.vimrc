@@ -2,14 +2,27 @@ let g:projectionist_heuristics = {
     \ "ember-cli-build.js": {
     \   "app/router.js": {"type": "router"},
     \   "app/routes/": {"type": "route"},
-    \   "app/routes/*.js": {"type": "route"},
+    \   "app/routes/*.js": {
+    \    "type": "route",
+    \    "alternate": "app/controllers/{}.js",
+    \    "template": [
+    \      "import Route from '@ember/routing/route';",
+    \      "",
+    \      "export default class {basename|capitalize}Route extends Route {open}{close}",
+    \    ]
+    \   },
     \   "README.md": {"type": "readme"},
     \   "ember-cli-build.js": {"type": "build"},
     \   "config/environment.js": {"type": "env"},
     \   "app/controllers/": {"type": "controller"},
     \   "app/controllers/*.js": {
     \     "type": "controller",
-    \     "alternate": "app/templates/{}.hbs"
+    \     "alternate": "app/templates/{}.hbs",
+    \     "template": [
+    \      "import Controller from '@ember/controller';",
+    \      "",
+    \      "export default class {basename|capitalize}Controller extends Controller {open}{close}",
+    \    ]
     \   },
     \   "app/templates/*.hbs": {
     \    "type":"template",
@@ -28,7 +41,24 @@ let g:projectionist_heuristics = {
     \   "app/components": {"type":"component"},
     \   "app/components/*.js": {
     \     "type":"component",
-    \     "alternate": ["app/templates/components/{}.hbs", "app/components/{}.hbs"]
+    \     "alternate": [
+    \       "app/templates/components/{}.hbs",
+    \       "app/components/{}.hbs"
+    \     ],
+    \     "template": [
+    \      "import Component from '@glimmer/component';",
+    \      "",
+    \      "export default class {basename|capitalize}Component extends Component {open}{close}",
+    \    ]
+    \   },
+    \   "app/models": {"type":"model"},
+    \   "app/models/*.js": {
+    \     "type":"model",
+    \     "template": [
+    \      "import Model, {open} attr {close}  from '@ember-data/model';",
+    \      "",
+    \      "export default class {basename|capitalize} extends Model {open}{close}",
+    \    ]
     \   },
     \  },
     \ "mix.exs": {
@@ -46,5 +76,16 @@ let g:projectionist_heuristics = {
     \   "config/*.exs": {"type": "config"},
     \   "priv/repo/migrations/": {"type": "migration"},
     \   "priv/repo/migrations/*.exs": {"type": "migration"},
+    \  },
+    \ "mirage/&ember-cli-build.js": {
+    \   "mirage/factories/*.js": {
+    \     "type":"factory",
+    \     "template": [
+    \       "import {open} Factory {close} from 'ember-cli-mirage';",
+    \       "",
+    \       "export default Factory.extend({open}{close});"
+    \     ]
+    \   },
+    \   "mirage/*.js": {"type":"mirage"}
     \  }
     \ }
