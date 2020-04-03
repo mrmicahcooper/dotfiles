@@ -51,6 +51,26 @@ let g:projectionist_heuristics = {
     \      "export default class {basename|capitalize}Component extends Component {open}{close}",
     \    ]
     \   },
+    \   "app/modifiers": {"type":"modifiers"},
+    \   "app/modifiers/*.js": {
+    \     "type":"modifiers",
+    \     "template": [
+    \      "import Modifier, {open} attr {close}  from 'ember-modifier';",
+    \      "",
+    \      "export default class {basename|capitalize} extends Modifier {open}{close}",
+    \    ]
+    \   },
+    \   "app/services": {"type":"services"},
+    \   "app/services/*.js": {
+    \     "type":"services",
+    \     "template": [
+    \      "import Service, {open} attr {close}  from '@ember/service';",
+    \      "",
+    \      "export default class {basename|capitalize} extends Service {open}{close}",
+    \    ]
+    \   },
+    \  },
+    \ "app/models": {
     \   "app/models": {"type":"model"},
     \   "app/models/*.js": {
     \     "type":"model",
@@ -60,7 +80,7 @@ let g:projectionist_heuristics = {
     \      "export default class {basename|capitalize} extends Model {open}{close}",
     \    ]
     \   },
-    \  },
+    \ },
     \ "mix.exs": {
     \   "README.md": {"type": "readme"},
     \   "mix.exs": {"type": "mix"},
