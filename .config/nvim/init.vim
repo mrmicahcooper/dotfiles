@@ -71,6 +71,12 @@ Plug 'vim-scripts/bufexplorer.zip'
 Plug 'rondale-sc/vim-spacejam'
 Plug 'flazz/vim-colorschemes'
 
+"Ctags
+"Be sure to install universal ctags
+"https://github.com/universal-ctags/ctags
+"brew install --HEAD universal-ctags/universal-ctags/universal-ctags
+Plug 'ludovicchabant/vim-gutentags'
+
 call plug#end()
 
 "Colors
