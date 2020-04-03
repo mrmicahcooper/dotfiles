@@ -14,7 +14,7 @@ let g:projectionist_heuristics = {
     \   "README.md": {"type": "readme"},
     \   "ember-cli-build.js": {"type": "build"},
     \   "config/environment.js": {"type": "env"},
-    \   "app/controllers/": {"type": "controller"},
+    \   "app/controllers/": {"type": "controllers"},
     \   "app/controllers/*.js": {
     \     "type": "controller",
     \     "alternate": "app/templates/{}.hbs",
@@ -24,12 +24,12 @@ let g:projectionist_heuristics = {
     \      "export default class {basename|capitalize}Controller extends Controller {open}{close}",
     \    ]
     \   },
+    \   "app/templates/": {"type":"templates"},
     \   "app/templates/*.hbs": {
     \    "type":"template",
     \    "alternate":"app/controllers/{}.js"
     \   },
-    \   "app/templates/": {"type":"template"},
-    \   "app/templates/components/": {"type":"ctemplate"},
+    \   "app/templates/components/": {"type":"ctemplates"},
     \   "app/templates/components/*.hbs": {
     \     "type": "ctemplate",
     \     "alternate": "app/components/{}.js"
@@ -38,7 +38,7 @@ let g:projectionist_heuristics = {
     \     "type": "ctemplate",
     \     "alternate": "app/components/{}.js"
     \   },
-    \   "app/components": {"type":"component"},
+    \   "app/components": {"type":"pods"},
     \   "app/components/*.js": {
     \     "type":"component",
     \     "alternate": [

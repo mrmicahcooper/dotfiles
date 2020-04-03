@@ -9,13 +9,23 @@ Plug 'itchyny/lightline.vim'
 
 let g:lightline = {
       \ 'colorscheme': 'solarized',
-      \ 'separator': { 'left': '', 'right': '' },
-      \ 'subseparator': { 'left': '', 'right': '' },
+      \ 'separator': { 'left': '|', 'right': '|' },
+      \ 'subseparator': { 'left': '|', 'right': '|' },
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'readonly', 'filename', 'modified' ] ]
       \ },
       \ }
+
+" let g:lightline = {
+"       \ 'colorscheme': 'solarized',
+"       \ 'separator': { 'left': '', 'right': '' },
+"       \ 'subseparator': { 'left': '', 'right': '' },
+"       \ 'active': {
+"       \   'left': [ [ 'mode', 'paste' ],
+"       \             [ 'readonly', 'filename', 'modified' ] ]
+"       \ },
+"       \ }
 
 " Vim Testing
 let test#strategy = "tslime"
@@ -75,7 +85,7 @@ Plug 'flazz/vim-colorschemes'
 "Be sure to install universal ctags
 "https://github.com/universal-ctags/ctags
 "brew install --HEAD universal-ctags/universal-ctags/universal-ctags
-Plug 'ludovicchabant/vim-gutentags'
+" Plug 'ludovicchabant/vim-gutentags'
 
 call plug#end()
 
