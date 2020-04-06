@@ -4,6 +4,7 @@ let g:projectionist_heuristics = {
     \   "app/routes/": {"type": "route"},
     \   "app/routes/*.js": {
     \    "type": "route",
+    \    "related": "app/controllers/{}.js",
     \    "alternate": "app/controllers/{}.js",
     \    "template": [
     \      "import Route from '@ember/routing/route';",
