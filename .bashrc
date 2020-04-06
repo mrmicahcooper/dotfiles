@@ -136,6 +136,8 @@ alias dpsi="docker ps -aq"
 
 alias uuid='uuidgen | xclip -selection clipboard'
 alias h='heroku'
+alias copy='xclip -selection clipboard'
+alias monitor='xrandr --auto'
 
 function pacmanclean () {
   echo "sudo pacman -Rns $(pacman -Qtdq)"
