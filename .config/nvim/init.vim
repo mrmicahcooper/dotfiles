@@ -46,8 +46,8 @@ map <C-h> :Colors<CR>
 " map <C-s> :Rg<CR>
 
 "Full featured LSP client for vim
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-source $HOME/.config/nvim/coc.vimrc
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" source $HOME/.config/nvim/coc.vimrc
 
 "Language support
 Plug 'sheerun/vim-polyglot'
