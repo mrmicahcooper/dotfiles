@@ -207,5 +207,7 @@ ex ()
   fi
 }
 
+RIPGREP_CONFIG_PATH="~/.ripgreprc"
+
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
