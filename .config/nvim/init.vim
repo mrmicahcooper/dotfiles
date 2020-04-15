@@ -9,8 +9,8 @@ Plug 'itchyny/lightline.vim'
 
 let g:lightline = {
       \ 'colorscheme': 'solarized',
-      \ 'separator': { 'left': '|', 'right': '|' },
-      \ 'subseparator': { 'left': '|', 'right': '|' },
+      \ 'separator': { 'left': '►', 'right': '►' },
+      \ 'subseparator': { 'left': '►', 'right': '►' },
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'readonly', 'filename', 'modified' ] ]
@@ -43,11 +43,11 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 map <C-p> :Files<CR>
 map <C-b> :Buffers<CR>
 map <C-h> :Colors<CR>
-" map <C-s> :Rg<CR>
+map <C-s> :Rg<CR>
 
 "Full featured LSP client for vim
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" source $HOME/.config/nvim/coc.vimrc
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+source $HOME/.config/nvim/coc.vimrc
 
 "Language support
 Plug 'sheerun/vim-polyglot'
@@ -85,7 +85,7 @@ Plug 'flazz/vim-colorschemes'
 "Be sure to install universal ctags
 "https://github.com/universal-ctags/ctags
 "brew install --HEAD universal-ctags/universal-ctags/universal-ctags
-" Plug 'ludovicchabant/vim-gutentags'
+"Plug 'ludovicchabant/vim-gutentags'
 
 call plug#end()
 
@@ -94,11 +94,12 @@ call plug#end()
 " colorscheme seoul256
 colorscheme solarized8_light
 " colorscheme dracula
+" colorscheme 1989
 
 "Global projections
 source $HOME/.config/nvim/projections.vimrc
 
-"Vim shortcuts
+"Vim insert shortcuts
 iabbrev epry require IEx; IEx.pry
 iabbrev epau this.timeout(0); return pauseTest();
 

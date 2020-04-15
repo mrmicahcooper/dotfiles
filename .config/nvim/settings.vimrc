@@ -14,12 +14,12 @@ set noundofile
 set nowritebackup
 set nu
 set path+=app
-set re=1
+" set re=1 "Using this makes the typescript highlighting reaaaallly slow
 set shell=bash
 set splitbelow
 set splitright
 set statusline+=%#warningmsg#
-set statusline+=%*
+set statusline+=%V
 set statusline=\ %f\ %h%w%m%r%*%=%-5.(%l\|%c%)\ %-5.(%Y\ %)
 set ts=2 shiftwidth=2 expandtab
 set colorcolumn=80
@@ -37,5 +37,3 @@ filetype plugin indent on
 
 let g:rehash256 = 1
 retab
-
-set redrawtime=10000

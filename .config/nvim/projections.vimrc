@@ -71,7 +71,7 @@ let g:projectionist_heuristics = {
     \    ]
     \   },
     \  },
-    \ "app/models": {
+    \ "app/models/": {
     \   "app/models": {"type":"model"},
     \   "app/models/*.js": {
     \     "type":"model",
@@ -79,7 +79,8 @@ let g:projectionist_heuristics = {
     \      "import Model, {open} attr {close}  from '@ember-data/model';",
     \      "",
     \      "export default class {basename|capitalize} extends Model {open}{close}",
-    \    ]
+    \     ],
+    \     "alternate": "mirage/factories/{}.js"
     \   },
     \ },
     \ "mix.exs": {
@@ -105,8 +106,17 @@ let g:projectionist_heuristics = {
     \       "import {open} Factory {close} from 'ember-cli-mirage';",
     \       "",
     \       "export default Factory.extend({open}{close});"
-    \     ]
+    \     ],
+    \     "related": "app/models/{}.js"
     \   },
     \   "mirage/*.js": {"type":"mirage"}
-    \  }
+    \ },
+    \ "app/gql/": {
+    \  "app/gql/queries/*.qraphql": {"type": "query"},
+    \  "app/gql/mutations/*.qraphql": {"type": "mutation"}
+    \ },
+    \ "src/commands/": {
+    \  "src/commands/": {"type": "command"},
+    \  "src/commands/*.ts": {"type": "command"}
     \ }
+    \}
