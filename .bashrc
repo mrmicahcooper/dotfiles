@@ -211,3 +211,5 @@ RIPGREP_CONFIG_PATH="~/.ripgreprc"
 
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
