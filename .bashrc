@@ -80,6 +80,11 @@ export TERM=xterm-256color
 # directory
 export PROMPT_COMMAND="pwd > /tmp/whereami"
 
+#salesforcedocs
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/ruby/lib"
+export CPPFLAGS="-I/usr/local/opt/ruby/include"
+
 alias cp="cp -i"                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
@@ -151,7 +156,7 @@ function nfig () {
 
 function grm () {
   echo "git rebase master"
-  command git rebase master
+  command git rebase master --autostash
 }
 
 function gwip () {
@@ -170,8 +175,8 @@ gri() {
 }
 
 function gmpr () {
-  echo "git checkout master && git pull --rebase origin master"
-  git checkout master && git pull --rebase origin master
+  echo "git checkout master && git pull --rebase origin master --autostash"
+  git checkout master && git pull --rebase origin master --autostash
 }
 
 flint() {
