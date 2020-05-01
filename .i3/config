@@ -4,7 +4,8 @@
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
 
-exec --no-start-id xrandr --dpi  220
+# exec --no-start-id xrandr --dpi  220
+exec --no-start-id xrandr --dpi  200
 exec --no-startup-id xset r rate 220 48
 
 # set default desktop layout (default is tiling)
