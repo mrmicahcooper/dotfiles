@@ -118,5 +118,15 @@ let g:projectionist_heuristics = {
     \ "src/commands/": {
     \  "src/commands/": {"type": "command"},
     \  "src/commands/*.ts": {"type": "command"}
+    \ },
+    \ "jest.config.js": {
+    \   "src/*.ts": {
+    \     "type":"lib",
+    \     "alternate": "src/__tests__/{}.test.ts"
+    \   },
+    \   "src/__tests__/*.test.ts": {
+    \     "type":"test",
+    \     "alternate": "src/{}.ts"
+    \   }
     \ }
     \}

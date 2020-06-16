@@ -1,103 +1,57 @@
-"Settings
-source $HOME/.config/nvim/settings.vimrc
-
 "Vim plugins
 call plug#begin("~/.vim/plugged")
-
-"Status bar
-Plug 'itchyny/lightline.vim'
-
-let g:lightline = {
-      \ 'colorscheme': 'solarized',
-      \ 'separator': { 'left': '►', 'right': '►' },
-      \ 'subseparator': { 'left': '►', 'right': '►' },
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'readonly', 'filename', 'modified' ] ]
-      \ },
-      \ }
-
-" let g:lightline = {
-"       \ 'colorscheme': 'solarized',
-"       \ 'separator': { 'left': '', 'right': '' },
-"       \ 'subseparator': { 'left': '', 'right': '' },
-"       \ 'active': {
-"       \   'left': [ [ 'mode', 'paste' ],
-"       \             [ 'readonly', 'filename', 'modified' ] ]
-"       \ },
-"       \ }
-
-" Vim Testing
-let test#strategy = "tslime"
-Plug 'janko-m/vim-test'
-
-nmap <silent> <leader>t :TestFile<CR>
-nmap <silent> <leader>T :TestNearest<CR>
-nmap <silent> <leader>ts :TestSuite<CR>
-nmap <silent> <leader>l :TestLast<CR>
-nmap <silent> <leader>g :TestVisit<CR>
-
-"Fuzzy finding
-Plug 'junegunn/fzf.vim'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-map <C-p> :Files<CR>
-map <C-b> :Buffers<CR>
-map <C-h> :Colors<CR>
-map <C-s> :Rg<CR>
-
-"Full featured LSP client for vim
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-source $HOME/.config/nvim/coc.vimrc
-
-"Language support
 Plug 'sheerun/vim-polyglot'
 Plug 'joukevandermaas/vim-ember-hbs'
-Plug 'jparise/vim-graphql'
-
-"Extra plugins
 Plug 'godlygeek/tabular'
-Plug 'gregsexton/gitv'
+Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'janko-m/vim-test'
 Plug 'jgdavey/tslime.vim'
 Plug 'jgdavey/vim-blockle'
 Plug 'jgdavey/vim-turbux'
 Plug 'jremmen/vim-ripgrep'
-Plug 'kana/vim-textobj-user'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-endwise'
-Plug 'tpope/vim-eunuch'
+" Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-git'
 Plug 'tpope/vim-projectionist'
-Plug 'tpope/vim-ragtag'
+" Plug 'tpope/vim-ragtag'
 Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-rsi'
+" Plug 'tpope/vim-rsi'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'vim-scripts/BufOnly.vim'
-Plug 'vim-scripts/bufexplorer.zip'
+" Plug 'vim-scripts/bufexplorer.zip'
 Plug 'rondale-sc/vim-spacejam'
 Plug 'flazz/vim-colorschemes'
-
-"Ctags
-"Be sure to install universal ctags
-"https://github.com/universal-ctags/ctags
-"brew install --HEAD universal-ctags/universal-ctags/universal-ctags
-"Plug 'ludovicchabant/vim-gutentags'
-
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
-"Colors
-" colorscheme monokai-phoenix
-" colorscheme seoul256
-colorscheme solarized8_light
-" colorscheme dracula
-" colorscheme 1989
+"vim-test shortcuts
+nmap <silent> <Leader>t :TestFile<CR>
+nmap <silent> <Leader>T :TestNearest<CR>
+nmap <silent> <Leader>ts :TestSuite<CR>
+nmap <silent> <Leader>l :TestLast<CR>
+nmap <silent> <Leader>g :TestVisit<CR>
 
-"Global projections
-source $HOME/.config/nvim/projections.vimrc
+" Vim Testing
+let test#strategy = "tslime"
+let g:tslime_always_current_session = 1
+let g:tslime_always_current_window = 1
+
+"Fuzzy finding
+map <C-p> :Files<CR>
+map <C-b> :Buffers<CR>
+map <C-h> :Colors<CR>
+map <C-s> :Rg<CR>
+
+"Colors
+set termguicolors
+colorscheme monokai-phoenix
 
 "Vim insert shortcuts
 iabbrev epry require IEx; IEx.pry
@@ -123,3 +77,10 @@ augroup myCmds
 au!
 autocmd VimEnter * silent !echo -ne "\e[2 q"
 augroup END
+
+command Nfig edit ~/.config/nvim/init.vim
+
+source $HOME/.config/nvim/settings.vimrc
+source $HOME/.config/nvim/coc.vimrc
+source $HOME/.config/nvim/projections.vimrc
+
