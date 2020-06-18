@@ -1,6 +1,6 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["elixir", "eelixir"],
-  "eslint.autoFixOnSave": true,
+  //"coc.preferences.formatOnSaveFiletypes": ["elixir", "eelixir"],
+  //"eslint.autoFixOnSave": true,
   "suggest.autoTrigger": "none",
   "suggest.noselect": false,
   "suggest.snippetIndicator": "->",

@@ -6,42 +6,42 @@ Plug 'godlygeek/tabular'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'janko-m/vim-test'
-Plug 'jgdavey/tslime.vim'
 Plug 'jgdavey/vim-blockle'
-Plug 'jgdavey/vim-turbux'
 Plug 'jremmen/vim-ripgrep'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-endwise'
-" Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-git'
 Plug 'tpope/vim-projectionist'
-" Plug 'tpope/vim-ragtag'
 Plug 'tpope/vim-repeat'
-" Plug 'tpope/vim-rsi'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'vim-scripts/BufOnly.vim'
-" Plug 'vim-scripts/bufexplorer.zip'
 Plug 'rondale-sc/vim-spacejam'
 Plug 'flazz/vim-colorschemes'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
-"vim-test shortcuts
-nmap <silent> <Leader>t :TestFile<CR>
-nmap <silent> <Leader>T :TestNearest<CR>
+source $HOME/.config/nvim/settings.vimrc
+source $HOME/.config/nvim/coc.vimrc
+source $HOME/.config/nvim/projections.vimrc
+
+" Vim Testing
+nmap <silent> <Leader>t :w \| TestFile<CR>
+nmap <silent> <Leader>T :w \| TestNearest<CR>
 nmap <silent> <Leader>ts :TestSuite<CR>
 nmap <silent> <Leader>l :TestLast<CR>
 nmap <silent> <Leader>g :TestVisit<CR>
 
-" Vim Testing
-let test#strategy = "tslime"
-let g:tslime_always_current_session = 1
-let g:tslime_always_current_window = 1
+if has('nvim')
+  tnoremap <Enter> <C-\><C-n>
+endif
+
+" let test#strategy = "neovim"
+" let test#neovim#term_position = "vertical topleft 80"
 
 "Fuzzy finding
 map <C-p> :Files<CR>
@@ -51,7 +51,7 @@ map <C-s> :Rg<CR>
 
 "Colors
 set termguicolors
-colorscheme monokai-phoenix
+colorscheme solarized
 
 "Vim insert shortcuts
 iabbrev epry require IEx; IEx.pry
@@ -78,7 +78,7 @@ au!
 autocmd VimEnter * silent !echo -ne "\e[2 q"
 augroup END
 
-command Nfig edit ~/.config/nvim/init.vim
+command! Nfig edit ~/.config/nvim/init.vim
 
 source $HOME/.config/nvim/settings.vimrc
 source $HOME/.config/nvim/coc.vimrc
