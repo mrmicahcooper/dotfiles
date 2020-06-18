@@ -169,6 +169,11 @@ function gush () {
   git push origin $(git rev-parse --abbrev-ref HEAD) --force-with-lease
 }
 
+function gull () {
+  echo "git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)"
+  git pull --rebase origin $(git rev-parse --abbrev-ref HEAD) --force-with-lease
+}
+
 function gri() {
   echo "git rebase -i HEAD~$1"
   command git rebase -i HEAD~$1
