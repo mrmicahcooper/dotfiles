@@ -25,23 +25,20 @@ Plug 'flazz/vim-colorschemes'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
-source $HOME/.config/nvim/settings.vimrc
-source $HOME/.config/nvim/coc.vimrc
-source $HOME/.config/nvim/projections.vimrc
-
 " Vim Testing
+let test#strategy = "neovim"
+let test#neovim#term_position = "vertical topleft"
+
+if has('nvim')
+  tmap <C-o> <C-\><C-n>
+  tmap <Esc> <C-\><C-n>
+endif
+
 nmap <silent> <Leader>t :w \| TestFile<CR>
 nmap <silent> <Leader>T :w \| TestNearest<CR>
 nmap <silent> <Leader>ts :TestSuite<CR>
 nmap <silent> <Leader>l :TestLast<CR>
 nmap <silent> <Leader>g :TestVisit<CR>
-
-if has('nvim')
-  tnoremap <Enter> <C-\><C-n>
-endif
-
-" let test#strategy = "neovim"
-" let test#neovim#term_position = "vertical topleft 80"
 
 "Fuzzy finding
 map <C-p> :Files<CR>
@@ -79,8 +76,8 @@ autocmd VimEnter * silent !echo -ne "\e[2 q"
 augroup END
 
 command! Nfig edit ~/.config/nvim/init.vim
+command! W write
 
 source $HOME/.config/nvim/settings.vimrc
 source $HOME/.config/nvim/coc.vimrc
 source $HOME/.config/nvim/projections.vimrc
-
