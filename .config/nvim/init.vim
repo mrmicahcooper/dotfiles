@@ -31,8 +31,28 @@ let test#neovim#term_position = "vertical topleft"
 
 if has('nvim')
   tmap <C-o> <C-\><C-n>
-  tmap <Esc> <C-\><C-n>
 endif
+
+function! NvimTest(command) abort
+  let jobid = get(g:, 'nvimtest_job_id', 0)
+  if jobid
+    call chansend(jobid, ['clear', a:command, ''])
+  else
+    let term_position = get(g:, 'test#neovim#term_position', 'botright')
+    execute term_position . ' new'
+    terminal
+    setlocal nonumber
+    startinsert
+    let g:nvimtest_job_id = b:terminal_job_id
+    call chansend(b:terminal_job_id, [a:command, ''])
+    au BufDelete <buffer> let g:nvimtest_job_id = 0
+    stopinsert
+    wincmd p
+  endif
+endfunction
+
+let g:test#custom_strategies = {'nvimtest': function('NvimTest')}
+let g:test#strategy = 'nvimtest'
 
 nmap <silent> <Leader>t :w \| TestFile<CR>
 nmap <silent> <Leader>T :w \| TestNearest<CR>
