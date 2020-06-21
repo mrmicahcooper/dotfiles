@@ -1,57 +1,51 @@
 "Vim plugins
 call plug#begin("~/.vim/plugged")
-Plug 'sheerun/vim-polyglot'
-Plug 'joukevandermaas/vim-ember-hbs'
-Plug 'godlygeek/tabular'
-Plug 'junegunn/fzf.vim'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'janko-m/vim-test'
-Plug 'jgdavey/vim-blockle'
-Plug 'jremmen/vim-ripgrep'
-Plug 'tpope/vim-abolish'
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-endwise'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-git'
-Plug 'tpope/vim-projectionist'
-Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-sensible'
-Plug 'tpope/vim-sleuth'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-unimpaired'
-Plug 'vim-scripts/BufOnly.vim'
-Plug 'rondale-sc/vim-spacejam'
-Plug 'flazz/vim-colorschemes'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'sheerun/vim-polyglot'
+  Plug 'joukevandermaas/vim-ember-hbs'
+  Plug 'godlygeek/tabular'
+  Plug 'junegunn/fzf.vim'
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+  Plug 'janko-m/vim-test'
+  Plug 'jgdavey/vim-blockle'
+  Plug 'jremmen/vim-ripgrep'
+  Plug 'tpope/vim-abolish'
+  Plug 'tpope/vim-commentary'
+  Plug 'tpope/vim-endwise'
+  Plug 'tpope/vim-fugitive'
+  Plug 'tpope/vim-git'
+  Plug 'tpope/vim-projectionist'
+  Plug 'tpope/vim-repeat'
+  Plug 'tpope/vim-sensible'
+  Plug 'tpope/vim-sleuth'
+  Plug 'tpope/vim-surround'
+  Plug 'tpope/vim-unimpaired'
+  Plug 'vim-scripts/BufOnly.vim'
+  Plug 'rondale-sc/vim-spacejam'
+  Plug 'flazz/vim-colorschemes'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 " Vim Testing
-let test#strategy = "neovim"
-let test#neovim#term_position = "vertical topleft"
-
-if has('nvim')
-  tmap <C-o> <C-\><C-n>
-endif
-
 function! NvimTest(command) abort
-  let jobid = get(g:, 'nvimtest_job_id', 0)
+  let jobid = get(t:, 'nvimtest_job_id', 0)
   if jobid
     call chansend(jobid, ['clear', a:command, ''])
   else
     let term_position = get(g:, 'test#neovim#term_position', 'botright')
     execute term_position . ' new'
     terminal
-    setlocal nonumber
-    startinsert
-    let g:nvimtest_job_id = b:terminal_job_id
+    file nvim-test
+    setlocal nonumber nohidden
     call chansend(b:terminal_job_id, [a:command, ''])
-    au BufDelete <buffer> let g:nvimtest_job_id = 0
-    stopinsert
+    let t:nvimtest_job_id = b:terminal_job_id
+    autocmd BufDelete <buffer> let t:nvimtest_job_id = 0
+    autocmd BufHidden <buffer> bd! nvimtest
     wincmd p
   endif
 endfunction
 
 let g:test#custom_strategies = {'nvimtest': function('NvimTest')}
+let test#neovim#term_position = "vertical topleft"
 let g:test#strategy = 'nvimtest'
 
 nmap <silent> <Leader>t :w \| TestFile<CR>
@@ -75,10 +69,10 @@ iabbrev epry require IEx; IEx.pry
 iabbrev epau this.timeout(0); return pauseTest();
 
 "Resizing panes
-nnoremap <silent> <Leader>= :exe "resize +4" <CR>
-nnoremap <silent> <Leader>- :exe "resize -4" <CR>
-nnoremap <silent> <Leader>[ :exe "vertical resize -4" <CR>
-nnoremap <silent> <Leader>] :exe "vertical resize +4" <CR>
+nnoremap <silent> <Leader>= :exe "resize +10" <CR>
+nnoremap <silent> <Leader>- :exe "resize -10" <CR>
+nnoremap <silent> <Leader>[ :exe "vertical resize -10" <CR>
+nnoremap <silent> <Leader>] :exe "vertical resize +10" <CR>
 
 "Change the max lenth for text and markdown files
 autocmd FileType markdown setlocal tw=50 colorcolumn=50
@@ -95,9 +89,11 @@ au!
 autocmd VimEnter * silent !echo -ne "\e[2 q"
 augroup END
 
+"Shortcuts
 command! Nfig edit ~/.config/nvim/init.vim
 command! W write
 
+"Load other settings
 source $HOME/.config/nvim/settings.vimrc
 source $HOME/.config/nvim/coc.vimrc
 source $HOME/.config/nvim/projections.vimrc
