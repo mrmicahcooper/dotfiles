@@ -103,7 +103,6 @@ alias gdc='git diff --cached'
 alias gdh='git diff HEAD'
 alias glg='git log --graph --oneline --decorate --color --all'
 alias glod='git log --oneline --decorate'
-alias glod='git log --oneline --decorate'
 alias glp='git log -p'
 alias gnap='git add -N --ignore-removal . && gap && gref'
 alias gp='git push'
@@ -112,6 +111,11 @@ alias gr='git rebase'
 alias gra='git rebase --abort'
 alias grc='git rebase --continue'
 alias gst='git status'
+alias grm='echo "git rebase master"; command git rebase master --autostash'
+alias gwip='echo "git commit -a -m wip"; command git commit -a -m wip'
+alias gush='echo "git push origin $(git rev-parse --abbrev-ref HEAD) --force-with-lease"; git push origin $(git rev-parse --abbrev-ref HEAD) --force-with-lease'
+alias gull='echo "git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)"; git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)'
+alias gmpr='echo "git checkout master && git pull --rebase origin master --autostash"; git checkout master && git pull --rebase origin master --autostash'
 alias ll='ls -l'
 alias neorestart='~/neo4j-community-3.2.2/bin/neo4j restart'
 alias neostart='~/neo4j-community-3.2.2/bin/neo4j start'
@@ -144,54 +148,12 @@ alias h='heroku'
 alias copy='xclip -selection clipboard'
 alias monitor='xrandr --auto'
 
-function pacmanclean () {
-  echo "sudo pacman -Rns $(pacman -Qtdq)"
-  Command sudo pacman -Rns $(pacman -Qtdq)
-}
-
-function nfig () {
-  echo "nvim ~/.config/nvin/init.vim"
-  command nvim ~/.config/nvim/init.vim
-}
-
-function grm () {
-  echo "git rebase master"
-  command git rebase master --autostash
-}
-
-function gwip () {
-  echo "git commit -a -m wip"
-  command git commit -a -m wip
-}
-
-function gush () {
-  echo "git push origin $(git rev-parse --abbrev-ref HEAD) --force-with-lease"
-  git push origin $(git rev-parse --abbrev-ref HEAD) --force-with-lease
-}
-
-function gull () {
-  echo "git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)"
-  git pull --rebase origin $(git rev-parse --abbrev-ref HEAD) --force-with-lease
-}
+alias pacmanclean='echo "sudo pacman -Rns $(pacman -Qtdq)"; Command sudo pacman -Rns $(pacman -Qtdq)'
+alias nfig='echo "nvim ~/.config/nvin/init.vim"; command nvim ~/.config/nvim/init.vim'
 
 function gri() {
   echo "git rebase -i HEAD~$1"
   command git rebase -i HEAD~$1
-}
-
-function gmpr () {
-  echo "git checkout master && git pull --rebase origin master --autostash"
-  git checkout master && git pull --rebase origin master --autostash
-}
-
-flint() {
-  echo "./node_modules/.bin/eslint --fix $1"
-  command ./node_modules/.bin/eslint --fix $1
-}
-
-tember() {
-  echo "ember test --server --filter=\"$1\""
-  command ember test --server --filter="$1"
 }
 
 # # ex - archive extractor; usage: ex <file>
