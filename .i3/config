@@ -12,8 +12,8 @@ exec --no-startup-id xset r rate 220 48
 # workspace_layout tabbed <stacking|tabbed>
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-default_border none
-# default_border pixel 1
+# default_border none
+default_border pixel 1
 default_floating_border normal
 
 # Hide borders
