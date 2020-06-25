@@ -31,6 +31,7 @@ let test#neovim#term_position = "vertical topleft"
 
 if has('nvim')
   tmap <C-o> <C-\><C-n>
+  tmap <C-w> <C-\><C-n><C-w>
 endif
 
 function! NvimTest(command) abort
