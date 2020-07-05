@@ -23,16 +23,12 @@ Plug 'vim-scripts/BufOnly.vim'
 Plug 'rondale-sc/vim-spacejam'
 Plug 'flazz/vim-colorschemes'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'dracula/vim', { 'as': 'dracula' }
 call plug#end()
 
 " Vim Testing
 let test#strategy = "neovim"
 let test#neovim#term_position = "vertical topleft"
-
-if has('nvim')
-  tmap <C-o> <C-\><C-n>
-  tmap <C-w> <C-\><C-n><C-w>
-endif
 
 function! NvimTest(command) abort
   let jobid = get(g:, 'nvimtest_job_id', 0)
@@ -47,6 +43,9 @@ function! NvimTest(command) abort
     let g:nvimtest_job_id = b:terminal_job_id
     call chansend(b:terminal_job_id, [a:command, ''])
     au BufDelete <buffer> let g:nvimtest_job_id = 0
+    tmap <buffer> <Esc> <C-\><C-n>
+    tmap <buffer> <C-o> <C-\><C-n>
+    tmap <buffer> <C-w> <C-\><C-n><C-w>
     stopinsert
     wincmd p
   endif
@@ -69,7 +68,8 @@ map <C-s> :Rg<CR>
 
 "Colors
 set termguicolors
-colorscheme gruvbox
+" colorscheme gruvbox
+colorscheme solarized8_light
 
 "Vim insert shortcuts
 iabbrev epry require IEx; IEx.pry
