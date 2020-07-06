@@ -60,7 +60,7 @@ export YAOURT_COLORS="nb=1:pkg=1:ver=1;32:lver=1;45:installed=1;42:grp=1;34:od=1
 # export PS1="\h:\[\033[01;36m\]\W\[\033[95m\]\$(__git_ps1 '[%s]')\[\033[01;94m\]> \[\033[01;00m\]"
 # export PS1="\[\033[01;36m\]\W\[\033[95m\]\$(__git_ps1 ' ⥈ %s')\[\033[01;94m\] -> \[\033[01;00m\]"
 # export PS1="\[\033[01;36m\]\w\[\033[95m\]\$(__git_ps1 ' ⥸ %s')\n• \[\033[01;94m\]\[\033[01;00m\]"
-export PS1="\[\033[01;36m\]\W\[\033[95m\]\$(__git_ps1 ' ⥸ %s')\[\033[01;36m\]->\[\033[95m\]\\[\033[01;94m\]\[\033[01;00m\]"
+export PS1="\[\033[01;36m\]\W\$(__git_ps1 '\[\033[01;33m\] ⥸ \[\033[01;30m\]%s')\[\033[01;32m\] -> \[\033[95m\]\\[\033[01;94m\]\[\033[01;00m\]"
 export CLICOLOR=1
 export EDITOR="$VISUAL"
 # export EDITOR="nvim"
@@ -82,9 +82,9 @@ export TERM=xterm-256color
 export PROMPT_COMMAND="pwd > /tmp/whereami"
 
 #salesforcedocs
-export PATH="/usr/local/opt/ruby/bin:$PATH"
-export LDFLAGS="-L/usr/local/opt/ruby/lib"
-export CPPFLAGS="-I/usr/local/opt/ruby/include"
+# export PATH="/usr/local/opt/ruby/bin:$PATH"
+# export LDFLAGS="-L/usr/local/opt/ruby/lib"
+# export CPPFLAGS="-I/usr/local/opt/ruby/include"
 
 alias cp="cp -i"                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes
