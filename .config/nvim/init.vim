@@ -69,7 +69,8 @@ map <C-s> :Rg<CR>
 "Colors
 set termguicolors
 " colorscheme gruvbox
-colorscheme solarized8_light
+" colorscheme solarized8_light
+colorscheme dracula
 
 "Vim insert shortcuts
 iabbrev epry require IEx; IEx.pry

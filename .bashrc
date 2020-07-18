@@ -79,7 +79,7 @@ export GDK_SCALE=2
 export TERM=xterm-256color
 # save pwd to a temp file so i3 can use it to open another terminal in the same
 # directory
-export PROMPT_COMMAND="pwd > /tmp/whereami"
+export PROMPT_COMMAND="pwd > /tmp/whereami; history -a"
 
 #salesforcedocs
 # export PATH="/usr/local/opt/ruby/bin:$PATH"
@@ -89,30 +89,24 @@ export PROMPT_COMMAND="pwd > /tmp/whereami"
 alias cp="cp -i"                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
-alias np='nano -w PKGBUILD'
 alias more=less
-alias gap='git add -p'
+
+alias gap='echo "git add --patch";git add --patch'
 alias gb='git branch'
 alias gc='git commit -v'
-alias gc='git commit -v'
-alias gca='git commit -a -v'
 alias gca='git commit -a -v'
 alias gcl='git clean -f -d'
 alias gco='git checkout'
 alias gd='git diff'
 alias gdc='git diff --cached'
-alias gdh='git diff HEAD'
 alias glg='git log --graph --oneline --decorate --color --all'
 alias glod='git log --oneline --decorate'
-alias glp='git log -p'
 alias gnap='git add -N --ignore-removal . && gap && gref'
-alias gp='git push'
 alias gpr='git pull --rebase'
-alias gr='git rebase'
-alias gra='git rebase --abort'
-alias grc='git rebase --continue'
-alias gst='git status'
-alias grm='echo "git rebase master"; command git rebase master --autostash'
+alias gra='echo "git rebase --abort";git rebase --abort'
+alias grc='echo "git rebase --continue";git rebase --continue'
+alias gst='echo "git status";git status'
+alias grm='echo "git rebase master";command git rebase master --autostash'
 alias gwip='echo "git commit -a -m wip"; command git commit -a -m wip'
 alias gush='echo "git push origin $(git rev-parse --abbrev-ref HEAD) --force-with-lease"; git push origin $(git rev-parse --abbrev-ref HEAD) --force-with-lease'
 alias gull='echo "git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)"; git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)'
@@ -128,10 +122,6 @@ alias pgenable='systemctl enable postgresql.service'
 alias pgdisable='systemctl disable postgresql.service'
 alias redisstart='sudo /etc/init.d/redis_6379 start'
 alias redisstop='sudo /etc/init.d/redis_6379 stop'
-alias reset-authors='git commit --amend --reset-author -C HEAD'
-alias vi='vim'
-alias longtest="./node_modules/.bin/lab --lint"
-alias longtest="./node_modules/.bin/lab --lint"
 
 alias dot="yadm"
 alias dit="yadm"
@@ -147,9 +137,11 @@ alias dpsi="docker ps -aq"
 alias uuid='uuidgen | xclip -selection clipboard'
 alias h='heroku'
 alias copy='xclip -selection clipboard'
-alias monitor='xrandr --auto'
+# alias monitor='xrandr --auto'
+alias monitor='autorandr --change --default'
+alias dualscreen='autorandr --load dual-screen'
 
-alias pacmanclean='echo "sudo pacman -Rns $(pacman -Qtdq)"; Command sudo pacman -Rns $(pacman -Qtdq)'
+alias pacmanclean='echo "sudo pacman -Rns $(pacman -Qtdq)"; sudo pacman -Rns $(pacman -Qtdq)'
 alias nfig='echo "nvim ~/.config/nvin/init.vim"; command nvim ~/.config/nvim/init.vim'
 
 alias ?="whoami && hostname && pwd"
