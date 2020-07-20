@@ -68,8 +68,9 @@ map <C-s> :Rg<CR>
 
 "Colors
 set termguicolors
-" colorscheme gruvbox
 " colorscheme solarized8_light
+set bg=dark
+" colorscheme gruvbox
 colorscheme dracula
 
 "Vim insert shortcuts
@@ -98,6 +99,7 @@ autocmd VimEnter * silent !echo -ne "\e[2 q"
 augroup END
 
 command! Nfig edit ~/.config/nvim/init.vim
+command! Jections edit ~/.config/nvim/projections.vimrc
 command! W write
 
 source $HOME/.config/nvim/settings.vimrc

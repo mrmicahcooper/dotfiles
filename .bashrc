@@ -60,7 +60,7 @@ export YAOURT_COLORS="nb=1:pkg=1:ver=1;32:lver=1;45:installed=1;42:grp=1;34:od=1
 # export PS1="\h:\[\033[01;36m\]\W\[\033[95m\]\$(__git_ps1 '[%s]')\[\033[01;94m\]> \[\033[01;00m\]"
 # export PS1="\[\033[01;36m\]\W\[\033[95m\]\$(__git_ps1 ' ⥈ %s')\[\033[01;94m\] -> \[\033[01;00m\]"
 # export PS1="\[\033[01;36m\]\w\[\033[95m\]\$(__git_ps1 ' ⥸ %s')\n• \[\033[01;94m\]\[\033[01;00m\]"
-export PS1="\[\033[01;36m\]\W\$(__git_ps1 '\[\033[01;33m\] ⥸ \[\033[01;30m\]%s')\[\033[01;32m\] -> \[\033[95m\]\\[\033[01;94m\]\[\033[01;00m\]"
+export PS1="\[\033[01;36m\]\W\$(__git_ps1 '\[\033[01;33m\] ⥸ \[\033[01;34m\]%s')\[\033[01;32m\] -> \[\033[95m\]\\[\033[01;94m\]\[\033[01;00m\]"
 export CLICOLOR=1
 export EDITOR="$VISUAL"
 # export EDITOR="nvim"
@@ -103,10 +103,12 @@ alias glg='git log --graph --oneline --decorate --color --all'
 alias glod='git log --oneline --decorate'
 alias gnap='git add -N --ignore-removal . && gap && gref'
 alias gpr='git pull --rebase'
+alias gr='git rebase'
 alias gra='echo "git rebase --abort";git rebase --abort'
 alias grc='echo "git rebase --continue";git rebase --continue'
 alias gst='echo "git status";git status'
 alias grm='echo "git rebase master";command git rebase master --autostash'
+alias grom='echo "git rebase origin/master"; command git rebase origin/master --autostash'
 alias gwip='echo "git commit -a -m wip"; command git commit -a -m wip'
 alias gush='echo "git push origin $(git rev-parse --abbrev-ref HEAD) --force-with-lease"; git push origin $(git rev-parse --abbrev-ref HEAD) --force-with-lease'
 alias gull='echo "git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)"; git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)'
@@ -146,10 +148,16 @@ alias nfig='echo "nvim ~/.config/nvin/init.vim"; command nvim ~/.config/nvim/ini
 
 alias ?="whoami && hostname && pwd"
 
+alias vpn="/opt/cisco/anyconnect/bin/vpn -s connect AmerEast-1"
+alias vpoff="/opt/cisco/anyconnect/bin/vpn -s disconnect"
+
 function gri() {
   echo "git rebase -i HEAD~$1"
   command git rebase -i HEAD~$1
 }
+
+#herokudata specific alias. Must be run from ./heorkudata
+alias reset='dropdb herokudata_test && createdb herokudata_test && dotenv -f .env.test yarn migrate'
 
 # # ex - archive extractor; usage: ex <file>
 ex ()

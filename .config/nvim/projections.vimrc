@@ -83,6 +83,18 @@ let g:projectionist_heuristics = {
     \     "alternate": "mirage/factories/{}.js"
     \   },
     \ },
+    \ "app/adapters/": {
+    \   "app/adapters": {"type":"adapter"},
+    \   "app/adapters/*.js": {
+    \     "type":"adapter"
+    \   }
+    \ },
+    \ "app/serializers/": {
+    \   "app/serializers": {"type":"serializer"},
+    \   "app/serializers/*.js": {
+    \     "type":"serializer"
+    \   }
+    \ },
     \ "mix.exs": {
     \   "README.md": {"type": "readme"},
     \   "mix.exs": {"type": "mix"},
