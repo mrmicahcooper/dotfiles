@@ -5,7 +5,7 @@
 set $mod Mod4
 
 # exec --no-start-id xrandr --dpi  220
-exec --no-start-id xrandr --dpi  210
+exec --no-start-id xrandr --dpi  180
 exec --no-startup-id xset r rate 220 48
 
 # set default desktop layout (default is tiling)
