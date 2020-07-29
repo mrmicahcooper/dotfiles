@@ -149,6 +149,7 @@ alias nfig='echo "nvim ~/.config/nvin/init.vim"; command nvim ~/.config/nvim/ini
 alias ?="whoami && hostname && pwd"
 
 alias vpn="/opt/cisco/anyconnect/bin/vpn -s connect AmerEast-1"
+alias vpn-status="/opt/cisco/anyconnect/bin/vpn -s status"
 alias vpoff="/opt/cisco/anyconnect/bin/vpn -s disconnect"
 
 function gri() {
