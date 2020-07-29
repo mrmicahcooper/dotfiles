@@ -15,7 +15,7 @@ let g:projectionist_heuristics = {
     \   "README.md": {"type": "readme"},
     \   "ember-cli-build.js": {"type": "build"},
     \   "config/environment.js": {"type": "env"},
-    \   "app/controllers/": {"type": "controllers"},
+    \   "app/controllers/": {"type": "controller"},
     \   "app/controllers/*.js": {
     \     "type": "controller",
     \     "alternate": "app/templates/{}.hbs",
@@ -50,15 +50,6 @@ let g:projectionist_heuristics = {
     \      "import Component from '@glimmer/component';",
     \      "",
     \      "export default class {basename|capitalize}Component extends Component {open}{close}",
-    \    ]
-    \   },
-    \   "app/modifiers": {"type":"modifiers"},
-    \   "app/modifiers/*.js": {
-    \     "type":"modifiers",
-    \     "template": [
-    \      "import Modifier, {open} attr {close}  from 'ember-modifier';",
-    \      "",
-    \      "export default class {basename|capitalize} extends Modifier {open}{close}",
     \    ]
     \   },
     \   "app/services": {"type":"services"},
