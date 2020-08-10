@@ -1,17 +1,15 @@
 {
-  //"coc.preferences.formatOnSaveFiletypes": ["elixir", "eelixir"],
-  //"eslint.autoFixOnSave": true,
   "suggest.autoTrigger": "none",
   "suggest.noselect": false,
   "suggest.snippetIndicator": "->",
   "suggest.disableMenu": true,
-  //"tslint.autoFixOnSave": true,
-  "tslint.autoFixOnSave": false,
+  "tslint.autoFixOnSave": true,
   "elixir.pathToElixirLS": "~/.language-servers/elixir-ls/language_server.sh",
   "languageserver": {
     "rust": {
       "filetypes": ["rust"],
       "rootPatterns": ["Cargo.toml"]
     }
-  }
+  },
+  "coc.preferences.extensionUpdateCheck": "daily"
 }

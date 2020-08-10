@@ -12,8 +12,6 @@ set linebreak
 set nobackup
 set noerrorbells visualbell t_vb=
 set nohlsearch
-set nolist
-set nolist
 set noswapfile
 set noundofile
 set nowritebackup

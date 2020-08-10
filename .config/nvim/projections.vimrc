@@ -131,5 +131,15 @@ let g:projectionist_heuristics = {
     \     "type":"test",
     \     "alternate": "src/{}.ts"
     \   }
+    \ },
+    \ "src/extension.ts": {
+    \   "src/*.ts": {
+    \     "type":"lib",
+    \     "alternate": "src/test/{}.test.ts"
+    \   },
+    \   "src/test/*.test.ts": {
+    \     "type":"test",
+    \     "alternate": "src/{}.ts"
+    \   }
     \ }
     \}
