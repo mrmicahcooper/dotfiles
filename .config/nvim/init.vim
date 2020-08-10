@@ -40,12 +40,15 @@ function! NvimTest(command) abort
     terminal
     setlocal nonumber
     startinsert
+    execute "file! vim-test-window"
+    vertical-resize 80
     let g:nvimtest_job_id = b:terminal_job_id
     call chansend(b:terminal_job_id, [a:command, ''])
     au BufDelete <buffer> let g:nvimtest_job_id = 0
     tmap <buffer> <Esc> <C-\><C-n>
     tmap <buffer> <C-o> <C-\><C-n>
     tmap <buffer> <C-w> <C-\><C-n><C-w>
+    let b:neoterm_autoscroll = 1
     stopinsert
     wincmd p
   endif

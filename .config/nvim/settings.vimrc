@@ -31,6 +31,7 @@ set visualbell
 set wildmenu
 set wildmode=list:longest,full
 set wrap
+set list lcs=trail:·,tab:»·
 
 syntax on
 syntax enable
