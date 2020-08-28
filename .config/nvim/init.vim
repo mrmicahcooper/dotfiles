@@ -102,6 +102,7 @@ autocmd VimEnter * silent !echo -ne "\e[2 q"
 augroup END
 
 command! Nfig edit ~/.config/nvim/init.vim
+command! DD call delete(expand('%')) | bdelete!
 command! Jections edit ~/.config/nvim/projections.vimrc
 command! W write
 

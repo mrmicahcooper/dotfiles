@@ -23,7 +23,7 @@ set splitbelow
 set splitright
 set statusline+=%#warningmsg#
 set statusline+=%V
-set statusline=\ %f\ %h%w%m%r%*%=%-5.(%l\|%c%)\ offset:%o\ %-5.(%Y\ %)
+set statusline+=\ %f\ %h%w%m%r%*%=%-5.(%l\|%c%)\ offset:%o\ %-5.(%Y\ %)
 set ts=2
 set tw=80
 set undodir=$HOME/.VIM_UNDO_FILES
