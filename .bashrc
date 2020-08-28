@@ -80,6 +80,7 @@ export TERM=xterm-256color
 # save pwd to a temp file so i3 can use it to open another terminal in the same
 # directory
 export PROMPT_COMMAND="pwd > /tmp/whereami; history -a"
+export RIPGREP_CONFIG_PATH=$HOME/.ripgreprc
 
 #salesforcedocs
 # export PATH="/usr/local/opt/ruby/bin:$PATH"
@@ -186,7 +187,6 @@ ex ()
   fi
 }
 
-RIPGREP_CONFIG_PATH="~/.ripgreprc"
 
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
