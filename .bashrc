@@ -151,7 +151,7 @@ alias vpn="/opt/cisco/anyconnect/bin/vpn -s connect AmerEast-1"
 alias vpn-status="/opt/cisco/anyconnect/bin/vpn -s status"
 alias vpoff="/opt/cisco/anyconnect/bin/vpn -s disconnect"
 
-alias record='sudo modprobe v4l2loopback exclusive_caps=1 max_buffers=2; gphoto2 --stdout --capture-movie | ffmpeg -i - -vcodec rawvideo -pix_fmt yuv420p -threads 0 -f v4l2 /dev/video2'
+alias record='sudo modprobe v4l2loopback exclusive_caps=1 max_buffers=2 && gphoto2 --stdout --capture-movie | ffmpeg -i - -vcodec rawvideo -pix_fmt yuv420p -threads 0 -f v4l2 /dev/video4'
 
 function gri() {
   echo "git rebase -i HEAD~$1"
