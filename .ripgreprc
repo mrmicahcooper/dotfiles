@@ -25,7 +25,7 @@ web:*.{html,css,js}*
 --ignore
 
 # Show context by default
---context=3
+# --context=1
 
 # Always show line numbers for matches
 --line-number
