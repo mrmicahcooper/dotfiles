@@ -153,6 +153,8 @@ alias vpoff="/opt/cisco/anyconnect/bin/vpn -s disconnect"
 
 alias record='sudo modprobe v4l2loopback exclusive_caps=1 max_buffers=2 && gphoto2 --stdout --capture-movie | ffmpeg -i - -vcodec rawvideo -pix_fmt yuv420p -threads 0 -f v4l2 /dev/video4'
 
+alias keyboard='xmodmap ~/.Xmodmap; xset r rate 220 48'
+
 function gri() {
   echo "git rebase -i HEAD~$1"
   command git rebase -i HEAD~$1
