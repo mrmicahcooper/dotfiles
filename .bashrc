@@ -112,6 +112,7 @@ alias gwip='echo "git commit -a -m wip"; command git commit -a -m wip'
 alias gush='echo "git push origin $(git rev-parse --abbrev-ref HEAD) --force-with-lease"; git push origin $(git rev-parse --abbrev-ref HEAD) --force-with-lease'
 alias gull='echo "git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)"; git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)'
 alias gmpr='echo "git checkout master && git pull --rebase origin master --autostash"; git checkout master && git pull --rebase origin master --autostash'
+alias gamend='echo "git commit --amend -C HEAD"; git commit --amend -C HEAD'
 
 alias ll='ls -l'
 alias neorestart='~/neo4j-community-3.2.2/bin/neo4j restart'
@@ -192,3 +193,5 @@ ex ()
 . $HOME/.asdf/completions/asdf.bash
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

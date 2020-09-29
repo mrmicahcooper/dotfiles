@@ -29,7 +29,10 @@ call plug#end()
 " Vim Testing
 let test#strategy = "neovim"
 let test#neovim#term_position = "vertical topleft"
+" Change the filepatter for Typescript/Mocha files
+let g:test#javascript#mocha#file_pattern = '\v.*\.spec\.(ts)$'
 
+let $NVIM_TUI_ENABLE_TRUE_COLOR=0
 function! NvimTest(command) abort
   let jobid = get(g:, 'nvimtest_job_id', 0)
   if jobid

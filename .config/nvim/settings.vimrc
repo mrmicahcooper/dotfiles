@@ -8,10 +8,12 @@ set expandtab
 set fileencoding=utf-8
 set guioptions-=T guioptions-=e guioptions-=L guioptions-=r
 set hidden
+set hlsearch
+set ignorecase
 set linebreak
+set list lcs=trail:·,tab:»·
 set nobackup
 set noerrorbells visualbell t_vb=
-set nohlsearch
 set noswapfile
 set noundofile
 set nowritebackup
