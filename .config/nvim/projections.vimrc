@@ -44,7 +44,8 @@ let g:projectionist_heuristics = {
     \     "type":"component",
     \     "alternate": [
     \       "app/templates/components/{}.hbs",
-    \       "app/components/{}.hbs"
+    \       "app/components/{}.hbs",
+    \       "app/components/{}/template.hbs"
     \     ],
     \     "template": [
     \      "import Component from '@glimmer/component';",

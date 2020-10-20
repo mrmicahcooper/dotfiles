@@ -1,4 +1,4 @@
-"Vim plugins
+" Vim plugins
 call plug#begin("~/.vim/plugged")
 Plug 'sheerun/vim-polyglot'
 Plug 'joukevandermaas/vim-ember-hbs'
@@ -31,6 +31,8 @@ let test#strategy = "neovim"
 let test#neovim#term_position = "vertical topleft"
 " Change the filepatter for Typescript/Mocha files
 let g:test#javascript#mocha#file_pattern = '\v.*\.spec\.(ts)$'
+
+let g:python3_host_prog= '/Users/micah.cooper/.asdf/shims/python3'
 
 let $NVIM_TUI_ENABLE_TRUE_COLOR=0
 function! NvimTest(command) abort
@@ -74,10 +76,11 @@ map <C-s> :Rg<CR>
 
 "Colors
 set termguicolors
-" colorscheme solarized8_light
-set bg=dark
+" set bg=light
+" colorscheme solarized8_light_high
 " colorscheme gruvbox
 colorscheme dracula
+" colorscheme zenburn
 
 "Vim insert shortcuts
 iabbrev epry require IEx; IEx.pry
@@ -108,6 +111,7 @@ command! Nfig edit ~/.config/nvim/init.vim
 command! DD call delete(expand('%')) | bdelete!
 command! Jections edit ~/.config/nvim/projections.vimrc
 command! W write
+command! Json %!jq '.'
 
 source $HOME/.config/nvim/settings.vimrc
 source $HOME/.config/nvim/coc.vimrc

@@ -11,9 +11,9 @@ set hidden
 set hlsearch
 set ignorecase
 set linebreak
-set list lcs=trail:·,tab:»·
+" set list lcs=trail:·,tab:»·
 set nobackup
-set noerrorbells visualbell t_vb=
+" set noerrorbells visualbell t_vb=
 set noswapfile
 set noundofile
 set nowritebackup
