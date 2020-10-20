@@ -1,40 +1,35 @@
 " Vim plugins
 call plug#begin("~/.vim/plugged")
-Plug 'sheerun/vim-polyglot'
-Plug 'joukevandermaas/vim-ember-hbs'
-Plug 'godlygeek/tabular'
-Plug 'junegunn/fzf.vim'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'janko-m/vim-test'
-Plug 'jgdavey/vim-blockle'
-Plug 'jremmen/vim-ripgrep'
-Plug 'tpope/vim-abolish'
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-endwise'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-git'
-Plug 'tpope/vim-projectionist'
-Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-sensible'
-Plug 'tpope/vim-sleuth'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-unimpaired'
-Plug 'vim-scripts/BufOnly.vim'
-Plug 'rondale-sc/vim-spacejam'
-Plug 'flazz/vim-colorschemes'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'dracula/vim', { 'as': 'dracula' }
+  Plug 'sheerun/vim-polyglot'
+  Plug 'joukevandermaas/vim-ember-hbs'
+  Plug 'godlygeek/tabular'
+  Plug 'junegunn/fzf.vim'
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+  Plug 'janko-m/vim-test'
+  Plug 'jgdavey/vim-blockle'
+  Plug 'jremmen/vim-ripgrep'
+  Plug 'tpope/vim-abolish'
+  Plug 'tpope/vim-commentary'
+  Plug 'tpope/vim-endwise'
+  Plug 'tpope/vim-fugitive'
+  Plug 'tpope/vim-git'
+  Plug 'tpope/vim-projectionist'
+  Plug 'tpope/vim-repeat'
+  Plug 'tpope/vim-sensible'
+  Plug 'tpope/vim-sleuth'
+  Plug 'tpope/vim-surround'
+  Plug 'tpope/vim-unimpaired'
+  Plug 'vim-scripts/BufOnly.vim'
+  Plug 'rondale-sc/vim-spacejam'
+  Plug 'flazz/vim-colorschemes'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'dracula/vim', { 'as': 'dracula' }
 call plug#end()
 
-" Vim Testing
-let test#strategy = "neovim"
-let test#neovim#term_position = "vertical topleft"
-" Change the filepatter for Typescript/Mocha files
-let g:test#javascript#mocha#file_pattern = '\v.*\.spec\.(ts)$'
-
 let g:python3_host_prog= '/Users/micah.cooper/.asdf/shims/python3'
-
 let $NVIM_TUI_ENABLE_TRUE_COLOR=0
+
+" Vim Testing
 function! NvimTest(command) abort
   let jobid = get(g:, 'nvimtest_job_id', 0)
   if jobid
@@ -76,11 +71,7 @@ map <C-s> :Rg<CR>
 
 "Colors
 set termguicolors
-" set bg=light
-" colorscheme solarized8_light_high
-" colorscheme gruvbox
-colorscheme dracula
-" colorscheme zenburn
+colorscheme Monokai
 
 "Vim insert shortcuts
 iabbrev epry require IEx; IEx.pry
@@ -92,9 +83,6 @@ nnoremap <silent> <Leader>- :exe "resize -4" <CR>
 nnoremap <silent> <Leader>[ :exe "vertical resize -4" <CR>
 nnoremap <silent> <Leader>] :exe "vertical resize +4" <CR>
 
-"Change the max lenth for text and markdown files
-autocmd FileType markdown setlocal tw=50 colorcolumn=50
-autocmd FileType text setlocal tw=50 colorcolumn=50
 autocmd FileType json syntax match Comment +\/\/.\+$+
 
 "Pipe cursor in insert mode
