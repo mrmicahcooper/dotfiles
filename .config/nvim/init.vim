@@ -71,7 +71,7 @@ map <C-s> :Rg<CR>
 
 "Colors
 set termguicolors
-colorscheme Monokai
+colorscheme solarized8_light
 
 "Vim insert shortcuts
 iabbrev epry require IEx; IEx.pry

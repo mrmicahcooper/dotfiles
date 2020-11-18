@@ -4,7 +4,7 @@
   "suggest.snippetIndicator": "->",
   "suggest.disableMenu": true,
   "tslint.autoFixOnSave": true,
-  "elixir.pathToElixirLS": "~/.language-servers/elixir-ls/language_server.sh",
+  "elixirLS.dialyzerEnabled": false,
   "languageserver": {
     "rust": {
       "filetypes": ["rust"],
