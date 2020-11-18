@@ -16,6 +16,7 @@
   tree = log --graph --oneline --decorate --color --all
   tr = log --graph --oneline --decorate --color
   add-untracked = !"git status --porcelain | awk '/\\?\\?/{ print $2 }' | xargs git add"
+	mush = push -o merge_request.create -o merge_request.target=master -o merge_request.merge_when_pipeline_succeeds
 [branch]
   autosetuprebase = always
 [color]
