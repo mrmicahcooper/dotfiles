@@ -24,6 +24,8 @@ call plug#begin("~/.vim/plugged")
   Plug 'flazz/vim-colorschemes'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'dracula/vim', { 'as': 'dracula' }
+  Plug 'xavierchow/vim-sequence-diagram'
+  Plug 'liuchengxu/graphviz.vim'
 call plug#end()
 
 let g:python3_host_prog= '/Users/micah.cooper/.asdf/shims/python3'
@@ -63,6 +65,14 @@ nmap <silent> <Leader>ts :TestSuite<CR>
 nmap <silent> <Leader>l :TestLast<CR>
 nmap <silent> <Leader>g :TestVisit<CR>
 
+"Vim Sequence Diagram
+nmap <silent> <leader>D <Plug>GenerateDiagram
+" au BufwritePost *.sequence <Plug>GenerateDiagram
+
+"Vim Graphviz
+nmap <silent> <Leader>G :Graphviz svg<CR>
+au BufwritePost *.dot :GraphvizCompile svg
+
 "Fuzzy finding
 map <C-p> :Files<CR>
 map <C-b> :Buffers<CR>
@@ -71,8 +81,8 @@ map <C-s> :Rg<CR>
 
 "Colors
 set termguicolors
-" colorscheme solarized8_light
-colorscheme dracula
+set bg=dark
+colorscheme gruvbox
 
 "Vim insert shortcuts
 iabbrev epry require IEx; IEx.pry
