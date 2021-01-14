@@ -114,6 +114,8 @@ let g:projectionist_heuristics = {
     \     ]
     \   },
     \   "lib/**/plugs/*.ex": {"type": "plug"},
+    \   "lib/**_web/*.ex": {"type": "web"},
+    \   "lib/**/endpoint.ex": {"type": "endpoint"},
     \   "config/config.exs": {"type": "config"},
     \   "config/*.exs": {"type": "config"},
     \   "priv/repo/migrations/": {"type": "migration"},

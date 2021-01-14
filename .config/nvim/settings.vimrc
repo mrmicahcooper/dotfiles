@@ -8,7 +8,7 @@ set expandtab
 set fileencoding=utf-8
 set guioptions-=T guioptions-=e guioptions-=L guioptions-=r
 set hidden
-set hlsearch
+set nohlsearch
 set ignorecase
 set linebreak
 " set list lcs=trail:·,tab:»·
