@@ -121,3 +121,6 @@ ex ()
 . $HOME/.asdf/completions/asdf.bash
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 eval "$(starship init bash)"
+
+source ~/.sendgrid
+
