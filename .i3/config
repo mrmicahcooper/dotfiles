@@ -368,8 +368,8 @@ bindsym $mod+m bar mode toggle
 #############################
 
 # Set inner/outer gaps
-gaps inner 4 
-gaps outer -2
+gaps inner 0 
+gaps outer 0
 # gaps inner 14
 # gaps outer -2
 

@@ -15,7 +15,6 @@ general {
 }
 
 # order += "ipv6"
-order += "tztime local"
 order += "disk /"
 order += "cpu_usage"
 # order += "battery all"
@@ -23,6 +22,7 @@ order += "cpu_usage"
 order += "memory"
 order += "wireless _first_"
 order += "ethernet _first_"
+order += "tztime local"
 
 cpu_usage {
         format = " cpu  %usage "
