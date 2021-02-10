@@ -6,3 +6,4 @@ rust stable
 python 3.8.2
 java adopt-openjdk-11.0.1+13
 ruby 2.7.1
+golang 1.15.4

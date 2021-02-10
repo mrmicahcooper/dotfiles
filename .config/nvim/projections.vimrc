@@ -93,10 +93,26 @@ let g:projectionist_heuristics = {
     \   "lib/*.ex": {"type": "lib", "alternate": "test/{}_test.exs"},
     \   "test/": {"type": "test"},
     \   "test/*_test.exs": {"type": "test", "alternate": "lib/{}.ex"},
-    \   "lib/**/controllers/*_controller.ex": {"type": "controller" },
+    \   "lib/**/controllers/*_controller.ex": {
+    \     "type": "controller",
+    \     "template": [
+    \       "defmodule {camelcase|capitalize|dot}Controller do",
+    \       "  use {dirname|camelcase|capitalize}, :controller",
+    \       "",
+    \       "end"
+    \     ]
+    \   },
     \   "lib/**/channels/*_channel.ex": {"type": "channel"},
     \   "lib/**/templates/*.html.eex": {"type": "template"},
-    \   "lib/**/views/*_view.ex": {"type": "view"},
+    \   "lib/**/views/*_view.ex": {
+    \     "type": "view",
+    \     "template": [
+    \       "defmodule {camelcase|capitalize|dot}View do",
+    \       "  use {dirname|camelcase|capitalize}, :view",
+    \       "",
+    \       "end"
+    \     ]
+    \   },
     \   "lib/**/plugs/*.ex": {"type": "plug"},
     \   "config/config.exs": {"type": "config"},
     \   "config/*.exs": {"type": "config"},

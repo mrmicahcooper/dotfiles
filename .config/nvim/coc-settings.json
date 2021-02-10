@@ -4,12 +4,16 @@
   "suggest.snippetIndicator": "->",
   "suggest.disableMenu": true,
   "tslint.autoFixOnSave": true,
-  "elixirLS.dialyzerEnabled": false,
+  "elixirLS.dialyzerEnabled": true,
   "languageserver": {
     "rust": {
       "filetypes": ["rust"],
       "rootPatterns": ["Cargo.toml"]
     }
   },
+   "coc.preferences.formatOnSaveFiletypes": [
+    "elixir",
+    "eelixir"
+  ],
   "coc.preferences.extensionUpdateCheck": "daily"
 }

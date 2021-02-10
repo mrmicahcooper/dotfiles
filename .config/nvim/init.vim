@@ -26,6 +26,7 @@ call plug#begin("~/.vim/plugged")
   Plug 'dracula/vim', { 'as': 'dracula' }
   Plug 'xavierchow/vim-sequence-diagram'
   Plug 'liuchengxu/graphviz.vim'
+  Plug 'elixir-lsp/coc-elixir', {'do': 'yarn instazll && yarn prepack'}
 call plug#end()
 
 let g:python3_host_prog= '/Users/micah.cooper/.asdf/shims/python3'
@@ -67,11 +68,13 @@ nmap <silent> <Leader>g :TestVisit<CR>
 
 "Vim Sequence Diagram
 nmap <silent> <leader>D <Plug>GenerateDiagram
+" let g:generate_diagram_theme_hand = 1
+
 " au BufwritePost *.sequence <Plug>GenerateDiagram
 
 "Vim Graphviz
-nmap <silent> <Leader>G :Graphviz svg<CR>
-au BufwritePost *.dot :GraphvizCompile svg
+nmap <silent> <Leader>G :Graphviz!! svg<CR>
+au BufwritePost *.dot :GraphvizCompile svg | GraphvizCompile png
 
 "Fuzzy finding
 map <C-p> :Files<CR>
@@ -82,7 +85,8 @@ map <C-s> :Rg<CR>
 "Colors
 set termguicolors
 set bg=dark
-colorscheme gruvbox
+" colorscheme gruvbox
+colorscheme vim-material
 
 "Vim insert shortcuts
 iabbrev epry require IEx; IEx.pry

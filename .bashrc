@@ -1,5 +1,13 @@
 # ~/.bashrc
 
+source ~/.git-completion.bash
+
+#source kubectl-completion and alias it.
+#https://kubernetes.io/docs/reference/kubectl/cheatsheet/#kubectl-autocomplete
+source ~/.kubectl-completion.bash
+alias k=kubectl
+complete -F __start_kubectl k
+
 [[ $- != *i* ]] && return
 
 use_color=true
@@ -34,7 +42,7 @@ alias copy='xclip -selection clipboard'
 alias d="docker"
 alias df='df -h'                          # human-readable sizes
 alias di="docker images"
-alias dii="docker images -q"
+alias dii="docker images -a -q"
 alias dit="yadm"
 alias dlg='yadm log --graph --oneline --decorate --color --all'
 alias dot="yadm"
@@ -87,11 +95,24 @@ alias uuid='uuidgen | xclip -selection clipboard'
 alias vpn-status="/opt/cisco/anyconnect/bin/vpn -s status"
 alias vpn="/opt/cisco/anyconnect/bin/vpn -s connect AmerEast-1"
 alias vpoff="/opt/cisco/anyconnect/bin/vpn -s disconnect"
+alias k="kubectl"
+alias kns="kubens"
+alias kx="kubectx"
+alias kace="kubespace"
+alias mk="minikube"
 
 gri()
 {
   echo "git rebase -i HEAD~$1"
   command git rebase -i HEAD~$1
+}
+
+function dbomb()
+{
+  echo "destroying all containers and images"
+  command docker rm $(docker ps -a -f status=exited -q) 
+  command docker rmi -f $(dii) 
+  command docker image prune --force
 }
 
 # # ex - archive extractor; usage: ex <file>
