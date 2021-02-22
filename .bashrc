@@ -39,10 +39,6 @@ export RIPGREP_CONFIG_PATH=$HOME/.ripgreprc
 
 alias ?="whoami && hostname && pwd"
 alias copy='xclip -selection clipboard'
-alias d="docker"
-alias df='df -h'                          # human-readable sizes
-alias di="docker images"
-alias dii="docker images -a -q"
 alias dit="yadm"
 alias dlg='yadm log --graph --oneline --decorate --color --all'
 alias dot="yadm"
@@ -63,6 +59,7 @@ alias gdc='echo git diff --cached;git diff --cached'
 alias glg='echo git log --graph --oneline --decorate --color --all;git log --graph --oneline --decorate --color --all'
 alias glod='echo git log --oneline --decorate;git log --oneline --decorate'
 alias gmpr='echo "git checkout master && git pull --rebase origin master --autostash"; git checkout master && git pull --rebase origin master --autostash'
+alias gnpr='echo "git checkout main && git pull --rebase origin main --autostash"; git checkout main && git pull --rebase origin main --autostash'
 alias gnap='echo git add -N --ignore-removal . && gap && gref;git add -N --ignore-removal . && gap && gref'
 alias gpr='echo git pull --rebase;git pull --rebase'
 alias gr='ectho git rebasse;git rebase'
@@ -95,11 +92,17 @@ alias uuid='uuidgen | xclip -selection clipboard'
 alias vpn-status="/opt/cisco/anyconnect/bin/vpn -s status"
 alias vpn="/opt/cisco/anyconnect/bin/vpn -s connect AmerEast-1"
 alias vpoff="/opt/cisco/anyconnect/bin/vpn -s disconnect"
+
 alias k="kubectl"
 alias kns="kubens"
 alias kx="kubectx"
 alias kace="kubespace"
 alias mk="minikube"
+alias c="circleci"
+alias d="docker"
+alias df='df -h'                          # human-readable sizes
+alias di="docker images"
+alias dii="docker images -a -q"
 
 gri()
 {
@@ -141,7 +144,7 @@ ex ()
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+[ -f ~/.sendgrid ] && source ~/.sendgrid
 eval "$(starship init bash)"
 
-source ~/.sendgrid
 
