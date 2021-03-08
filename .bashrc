@@ -147,4 +147,4 @@ ex ()
 [ -f ~/.sendgrid ] && source ~/.sendgrid
 eval "$(starship init bash)"
 
-
+[ -f ~/.alexa-api-key] && source ~/.alexa-api-key

@@ -13,7 +13,9 @@
   },
    "coc.preferences.formatOnSaveFiletypes": [
     "elixir",
-    "eelixir"
+    "eelixir",
+    "javascript"
+
   ],
   "coc.preferences.extensionUpdateCheck": "daily"
 }

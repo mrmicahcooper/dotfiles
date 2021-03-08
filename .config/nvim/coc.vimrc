@@ -11,10 +11,7 @@ endfunction
 
 let g:coc_snippet_next = '<Tab>'
 let g:coc_snippet_prev = '<S-Tab>'
-
-"Smaller updatetime for CursorHold & CursorHoldI
-set updatetime=300
-
+"Smaller updatetime for CursorHold & CursorHoldI set updatetime=300
 "Don't give |ins-completion-menu| messages.
 set shortmess+=c
 
