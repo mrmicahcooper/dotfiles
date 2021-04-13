@@ -1,14 +1,11 @@
 # ~/.bashrc
-
-source ~/.git-completion.bash
+[[ $- != *i* ]] && return
 
 #source kubectl-completion and alias it.
 #https://kubernetes.io/docs/reference/kubectl/cheatsheet/#kubectl-autocomplete
-source ~/.kubectl-completion.bash
+source <(kubectl completion bash)
 alias k=kubectl
 complete -F __start_kubectl k
-
-[[ $- != *i* ]] && return
 
 use_color=true
 
@@ -73,7 +70,6 @@ alias gush='echo "git push origin $(git rev-parse --abbrev-ref HEAD) --force-wit
 alias gwip='echo "git commit -a -m wip"; command git commit -a -m wip'
 alias h='heroku'
 alias keyboard='setxkbmap -option ctrl:nocaps && xset r rate 220 48'
-alias ll='ls -l'
 alias more=less
 alias neorestart='~/neo4j-community-3.2.2/bin/neo4j restart'
 alias neostart='~/neo4j-community-3.2.2/bin/neo4j start'
@@ -103,6 +99,12 @@ alias d="docker"
 alias df='df -h'                          # human-readable sizes
 alias di="docker images"
 alias dii="docker images -a -q"
+
+alias l1='exa --oneline'
+alias la='exa --all --long --header --classify --git'
+alias lg='exa --long --header --classify --git -s modified --grid'
+alias ls='exa --long --header --classify --git'
+alias lsd='exa --only-dirs --long --header --git'
 
 gri()
 {
@@ -145,6 +147,8 @@ ex ()
 . $HOME/.asdf/completions/asdf.bash
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 [ -f ~/.sendgrid ] && source ~/.sendgrid
+[ -f ~/.emmet-codebuilder ] && source ~/.emmet-codebuilder
 eval "$(starship init bash)"
 
 [ -f ~/.alexa-api-key] && source ~/.alexa-api-key
+source ~/.git-completion.bash
