@@ -41,3 +41,5 @@ filetype plugin indent on
 
 let g:rehash256 = 1
 retab
+
+autocmd FileType make setlocal noexpandtab

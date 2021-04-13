@@ -27,6 +27,7 @@ call plug#begin("~/.vim/plugged")
   Plug 'xavierchow/vim-sequence-diagram'
   Plug 'liuchengxu/graphviz.vim'
   Plug 'elixir-lsp/coc-elixir', {'do': 'yarn instazll && yarn prepack'}
+  Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 call plug#end()
 
 let g:python3_host_prog= '/Users/micah.cooper/.asdf/shims/python3'
@@ -115,7 +116,10 @@ command! DD call delete(expand('%')) | bdelete!
 command! Jections edit ~/.config/nvim/projections.vimrc
 command! W write
 command! Json %!jq '.'
+command -nargs=0 Swagger :CocCommand swagger.render
 
 source $HOME/.config/nvim/settings.vimrc
 source $HOME/.config/nvim/coc.vimrc
 source $HOME/.config/nvim/projections.vimrc
+source $HOME/.config/nvim/projections.vimrc
+source $HOME/.config/nvim/markdown_preview.vimrc

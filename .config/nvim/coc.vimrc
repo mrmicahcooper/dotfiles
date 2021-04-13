@@ -84,6 +84,8 @@ let g:coc_global_extensions = [
   \ 'coc-json',
   \ 'coc-vimlsp',
   \ 'coc-tsserver',
-  \ 'coc-tslint-plugin'
+  \ 'coc-swagger',
+  \ 'coc-tslint-plugin',
+  \ 'coc-yaml'
 \ ]
   " \ 'coc-git',
