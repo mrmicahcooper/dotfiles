@@ -36,10 +36,11 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=0
 " Vim Testing
 function! NvimTest(command) abort
   let jobid = get(g:, 'nvimtest_job_id', 0)
+  " let test#neovim#term_position = "vertical topleft"
   if jobid
     call chansend(jobid, ['clear', a:command, ''])
   else
-    let term_position = get(g:, 'test#neovim#term_position', 'botright')
+    let term_position = get(g:, 'test#neovim#term_position', 'vertical topleft')
     execute term_position . ' new'
     terminal
     setlocal nonumber
