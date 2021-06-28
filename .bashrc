@@ -17,7 +17,6 @@ shopt -s histappend
 export YAOURT_COLORS="nb=1:pkg=1:ver=1;32:lver=1;45:installed=1;42:grp=1;34:od=1;41;5:votes=1;44:dsc=0:other=1;35"
 export CLICOLOR=1
 export EDITOR="$VISUAL"
-export ERL_AFLAGS="-kernel shell_history enabled"
 export HISTCONTROL=erasedups
 export HISTIGNORE="%*"
 export HISTSIZE=10000
@@ -33,6 +32,13 @@ export TERM=xterm-256color
 # save pwd to a temp file so i3 can use it to open another terminal in the same directory
 export PROMPT_COMMAND="pwd > /tmp/whereami; history -a"
 export RIPGREP_CONFIG_PATH=$HOME/.ripgreprc
+
+# erlang/elixir Env Vars
+export KERL_CONFIGURE_OPTIONS="--disable-debug --without-javac"
+export ERL_AFLAGS="-kernel shell_history enabled"
+export KERL_BUILD_DOCS=no
+export KERL_INSTALL_HTMLDOCS=no
+export KERL_INSTALL_MANPAGES=no
 
 alias ?="whoami && hostname && pwd"
 alias copy='xclip -selection clipboard'
