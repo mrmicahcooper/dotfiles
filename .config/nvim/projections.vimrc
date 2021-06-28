@@ -92,6 +92,8 @@ let g:projectionist_heuristics = {
     \   "mix.exs": {"type": "mix"},
     \   "lib/*.ex": {"type": "lib", "alternate": "test/{}_test.exs"},
     \   "test/": {"type": "test"},
+    \   "test/support/*.ex": {"type": "support"},
+    \   "test/support/fixtures/*": {"type": "fixture"},
     \   "test/*_test.exs": {"type": "test", "alternate": "lib/{}.ex"},
     \   "lib/**/controllers/*_controller.ex": {
     \     "type": "controller",

@@ -147,8 +147,7 @@ ex ()
 . $HOME/.asdf/completions/asdf.bash
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 [ -f ~/.sendgrid ] && source ~/.sendgrid
-[ -f ~/.emmet-codebuilder ] && source ~/.emmet-codebuilder
+[ -f ~/.alexa-api-key ] && source ~/.alexa-api-key
+[ -f ~/.alexa_http_cookie ] && source ~/.alexa_http_cookie
+[ -f ~/.semrush-api-key ] && source ~/.semrush-api-key
 eval "$(starship init bash)"
-
-[ -f ~/.alexa-api-key] && source ~/.alexa-api-key
-source ~/.git-completion.bash

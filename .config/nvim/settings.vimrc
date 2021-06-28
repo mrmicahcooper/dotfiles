@@ -1,6 +1,6 @@
 "Settings
 
-set colorcolumn=80
+set colorcolumn=100
 set cursorline
 set directory^=$HOME/.vim/tmp//
 set encoding=utf-8
