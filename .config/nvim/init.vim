@@ -31,7 +31,6 @@ call plug#begin("~/.vim/plugged")
 call plug#end()
 
 let g:python3_host_prog= '/Users/micah.cooper/.asdf/shims/python3'
-let $NVIM_TUI_ENABLE_TRUE_COLOR=0
 
 " Vim Testing
 function! NvimTest(command) abort
@@ -86,9 +85,14 @@ map <C-s> :Rg<CR>
 
 "Colors
 set termguicolors
-set bg=dark
+" set bg=dark
 " colorscheme gruvbox
-colorscheme vim-material
+" colorscheme vim-material
+" colorscheme oceanicNext
+colorscheme ayu
+" let ayucolor="light"
+let ayucolor="mirage"
+" let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 "Vim insert shortcuts
 iabbrev epry require IEx; IEx.pry
@@ -117,7 +121,7 @@ command! DD call delete(expand('%')) | bdelete!
 command! Jections edit ~/.config/nvim/projections.vimrc
 command! W write
 command! Json %!jq '.'
-command -nargs=0 Swagger :CocCommand swagger.render
+command! -nargs=0 Swagger :CocCommand swagger.render
 
 source $HOME/.config/nvim/settings.vimrc
 source $HOME/.config/nvim/coc.vimrc

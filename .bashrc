@@ -156,4 +156,5 @@ ex ()
 [ -f ~/.alexa-api-key ] && source ~/.alexa-api-key
 [ -f ~/.alexa_http_cookie ] && source ~/.alexa_http_cookie
 [ -f ~/.semrush-api-key ] && source ~/.semrush-api-key
+[ -f ~/.git-completion.bash ] && source ~/.git-completion.bash
 eval "$(starship init bash)"
