@@ -101,8 +101,8 @@ iabbrev epau this.timeout(0); return pauseTest();
 "Resizing panes
 nnoremap <silent> <Leader>= :exe "resize +4" <CR>
 nnoremap <silent> <Leader>- :exe "resize -4" <CR>
-nnoremap <silent> <Leader>[ :exe "vertical resize -4" <CR>
-nnoremap <silent> <Leader>] :exe "vertical resize +4" <CR>
+nnoremap <silent> <Leader>[ :exe "vertical resize -30" <CR>
+nnoremap <silent> <Leader>] :exe "vertical resize +30" <CR>
 
 autocmd FileType json syntax match Comment +\/\/.\+$+
 

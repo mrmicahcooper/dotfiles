@@ -89,12 +89,10 @@ let g:projectionist_heuristics = {
     \ },
     \ "mix.exs": {
     \   "README.md": {"type": "readme"},
-    \   "mix.exs": {"type": "mix"},
     \   "lib/*.ex": {"type": "lib", "alternate": "test/{}_test.exs"},
     \   "test/": {"type": "test"},
     \   "test/support/*.ex": {"type": "support"},
     \   "test/support": {"type": "support"},
-    \   "test/support/fixtures/*": {"type": "fixture"},
     \   "test/*_test.exs": {"type": "test", "alternate": "lib/{}.ex"},
     \   "lib/**/controllers/*_controller.ex": {
     \     "type": "controller",
@@ -119,8 +117,8 @@ let g:projectionist_heuristics = {
     \   "lib/**/plugs/*.ex": {"type": "plug"},
     \   "lib/**_web/*.ex": {"type": "web"},
     \   "lib/**/endpoint.ex": {"type": "endpoint"},
-    \   "config/config.exs": {"type": "config"},
-    \   "config/*.exs": {"type": "config"},
+    \   "config/config.exs": {"type": "fig"},
+    \   "config/*.exs": {"type": "fig"},
     \   "priv/repo/migrations/": {"type": "migration"},
     \   "priv/repo/migrations/*.exs": {"type": "migration"},
     \  },

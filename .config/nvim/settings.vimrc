@@ -19,7 +19,7 @@ set noundofile
 set nowritebackup
 set number
 set path+=app
-set shell=bash
+set shell=fish
 set shiftwidth=2
 set smartcase
 set splitbelow
