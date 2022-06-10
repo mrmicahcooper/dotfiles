@@ -80,6 +80,7 @@ let g:coc_global_extensions = [
   \ 'coc-ember',
   \ 'coc-eslint',
   \ 'coc-highlight',
+  \ 'coc-rust-analyzer',
   \ 'coc-go',
   \ 'coc-html',
   \ 'coc-json',

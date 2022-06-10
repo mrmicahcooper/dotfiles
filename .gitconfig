@@ -47,3 +47,7 @@
   prune = true
 [credential]
 	helper = osxkeychain
+[init]
+	defaultBranch = main
+[hub]
+	protocol = https

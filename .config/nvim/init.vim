@@ -26,8 +26,12 @@ call plug#begin("~/.vim/plugged")
   Plug 'dracula/vim', { 'as': 'dracula' }
   Plug 'xavierchow/vim-sequence-diagram'
   Plug 'liuchengxu/graphviz.vim'
+  Plug 'ollykel/v-vim'
   Plug 'elixir-lsp/coc-elixir', {'do': 'yarn instazll && yarn prepack'}
   Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+  Plug 'nvim-lualine/lualine.nvim'
+  Plug 'kyazdani42/nvim-web-devicons'
 call plug#end()
 
 let g:python3_host_prog= '/Users/micah.cooper/.asdf/shims/python3'
@@ -84,15 +88,19 @@ map <C-h> :Colors<CR>
 map <C-s> :Rg<CR>
 
 "Colors
-set termguicolors
-" set bg=dark
-" colorscheme gruvbox
-" colorscheme vim-material
-" colorscheme oceanicNext
-colorscheme ayu
-" let ayucolor="light"
-let ayucolor="mirage"
+" set termguicolors
 " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+"=======
+" set bg=dark
+" colorscheme vim-material
+" colorscheme gruvbox
+" colorscheme nord
+" colorscheme oceanicNext
+" set bg=light
+" colorscheme ayu
+" let ayucolor="light"
+" let ayucolor="mirage"
+colorscheme birds-of-paradise
 
 "Vim insert shortcuts
 iabbrev epry require IEx; IEx.pry
@@ -125,6 +133,5 @@ command! -nargs=0 Swagger :CocCommand swagger.render
 
 source $HOME/.config/nvim/settings.vimrc
 source $HOME/.config/nvim/coc.vimrc
-source $HOME/.config/nvim/projections.vimrc
 source $HOME/.config/nvim/projections.vimrc
 source $HOME/.config/nvim/markdown_preview.vimrc

@@ -74,6 +74,7 @@ alias gst='echo "git status";git status'
 alias gull='echo "git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)"; git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)'
 alias gush='echo "git push origin $(git rev-parse --abbrev-ref HEAD) --force-with-lease"; git push origin $(git rev-parse --abbrev-ref HEAD) --force-with-lease'
 alias gwip='echo "git commit -a -m wip"; command git commit -a -m wip'
+alias gelete="echo \"git branch --merged | rg -v 'main' -N | xargs git branch -d\"; git branch --merged | rg -v 'main' -N | xargs git branch -d"
 alias h='heroku'
 alias keyboard='setxkbmap -option ctrl:nocaps && xset r rate 220 48'
 alias more=less
@@ -157,4 +158,7 @@ ex ()
 [ -f ~/.alexa_http_cookie ] && source ~/.alexa_http_cookie
 [ -f ~/.semrush-api-key ] && source ~/.semrush-api-key
 [ -f ~/.git-completion.bash ] && source ~/.git-completion.bash
+[ -f ~/.aws/env.local.sh ] && source ~/.aws/env.local.sh
+
 eval "$(starship init bash)"
+. "$HOME/.cargo/env"

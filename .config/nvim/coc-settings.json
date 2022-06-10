@@ -4,14 +4,33 @@
   "suggest.snippetIndicator": "->",
   "suggest.disableMenu": true,
   "tslint.autoFixOnSave": true,
-  "elixirLS.dialyzerEnabled": true,
+  "elixirLS.dialyzerEnabled": false,
+  "elixirLS.pathToElixirLS": "~/code/.elixir-ls/release/language_server.sh",
+  "elixirLS.fetchDeps": false,
   "languageserver": {
-    "rust": {
-      "filetypes": ["rust"],
-      "rootPatterns": ["Cargo.toml"]
+    /* "rust": { */
+    /*   "filetypes": ["rust"], */
+    /*   "rootPatterns": ["Cargo.toml"] */
+
+    /* }, */
+    "vls": {
+      "command": "/Users/micah.cooper/code/vls/bin/vls",
+      "filetypes": [
+	"vlang"
+      ]
+    },
+    "terraform": {
+      "command": "terraform-ls",
+      "args": ["serve"],
+      "filetypes": [
+	"terraform",
+	"tf"
+      ],
+      "initializationOptions": {},
+      "settings": {}
     }
   },
-   "coc.preferences.formatOnSaveFiletypes": [
+  "coc.preferences.formatOnSaveFiletypes": [
     "elixir",
     "eelixir",
     "javascript"

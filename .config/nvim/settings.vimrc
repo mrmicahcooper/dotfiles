@@ -43,3 +43,6 @@ let g:rehash256 = 1
 retab
 
 autocmd FileType make setlocal noexpandtab
+
+" warp settings for vim
+hi Normal guibg=NONE gui=NONE
