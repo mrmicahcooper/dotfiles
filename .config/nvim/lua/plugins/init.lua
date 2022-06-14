@@ -32,6 +32,10 @@ return require('packer').startup(function()
   use 'vim-scripts/BufOnly.vim'
   use 'wbthomason/packer.nvim'
   use 'williamboman/nvim-lsp-installer'
+  use 'khaveesh/vim-fish-syntax'
+  use 'tpope/vim-unimpaired'
+  use 'rcarriga/nvim-notify'
+
 
   use { 'ibhagwan/fzf-lua', 
     requires = { 'kyazdani42/nvim-web-devicons' } 
@@ -82,13 +86,5 @@ return require('packer').startup(function()
   use { 'mhanberg/elixir.nvim',
     requires = { 'neovim/nvim-lspconfig', 'nvim-lua/plenary.nvim', }
   }
-
-  use {
-    'ray-x/lsp_signature.nvim',
-  }
-
-  use {"akinsho/toggleterm.nvim", tag = 'v1.*', config = function()
-    require("toggleterm").setup()
-  end}
 
 end)

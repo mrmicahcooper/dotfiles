@@ -2,15 +2,15 @@ require('plugins')
 require('options')
 
 vim.api.nvim_set_keymap('n', '<c-P>',
-    "<cmd>lua require('fzf-lua').files()<CR>",
-    { noremap = true, silent = true })
+  "<cmd>lua require('fzf-lua').files()<CR>",
+  { noremap = true, silent = true })
 
 vim.api.nvim_set_keymap('n', '<c-B>',
-    "<cmd>lua require('fzf-lua').buffers()<CR>",
-    { noremap = true, silent = true })
+  "<cmd>lua require('fzf-lua').buffers()<CR>",
+  { noremap = true, silent = true })
 
 -- treesitter configuration
-require'nvim-treesitter.configs'.setup {
+require 'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all"
   ensure_installed = { "lua", "rust", "elixir", "html", "javascript", "css" },
   sync_install = false,
@@ -28,6 +28,38 @@ require('lualine').setup {
 }
 
 -- LSP settings
+require('nvim-lsp-installer').setup({})
+local lspconfig = require 'lspconfig'
+local LspFormattingGroup = vim.api.nvim_create_augroup("LspFormatting", {})
+
+local FormatOnSave = function(bufnr)
+  vim.api.nvim_clear_autocmds({ group = LspFormattingGroup, buffer = bufnr })
+  vim.api.nvim_create_autocmd("BufWritePre", {
+    group = LspFormattingGroup,
+    buffer = bufnr,
+    -- on 0.8, you should use vim.lsp.buf.format instead
+    callback = vim.lsp.buf.formatting_sync,
+  })
+end
+
+-- initialize to false because format on save is manually added
+local toggle_format_state = true
+
+-- Toggle format on save for the current buffer
+local ToggleFormatOnSave = function(bufnr)
+  bufnr = vim.api.nvim_get_current_buf()
+
+  if toggle_format_state then
+    toggle_format_state = not toggle_format_state
+    FormatOnSave(bufnr)
+    vim.notify("FormatOnSave toggled on")
+  else
+    toggle_format_state = not toggle_format_state
+    vim.api.nvim_clear_autocmds({ group = LspFormattingGroup, buffer = bufnr })
+    vim.notify("FormatOnSave toggled off")
+  end
+end
+
 local on_attach = function(client, bufnr)
   local opts = { buffer = bufnr }
   vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, opts)
@@ -36,25 +68,28 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
   vim.keymap.set('n', '<leader>wa', vim.lsp.buf.add_workspace_folder, opts)
   vim.keymap.set('n', '<leader>wr', vim.lsp.buf.remove_workspace_folder, opts)
-  vim.keymap.set('n', '<leader>wl', function()
-    vim.inspect(vim.lsp.buf.list_workspace_folders())
-  end, opts)
+  --   vim.keymap.set('n', '<leader>wl', function()
+  --     vim.inspect(vim.lsp.buf.list_workspace_folders())
+  --   end, opts)
   vim.keymap.set('n', '<leader>D', vim.lsp.buf.type_definition, opts)
   vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, opts)
   vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
   vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, opts)
-  vim.keymap.set('n', '<leader>so', require('telescope.builtin').lsp_document_symbols, opts)
+
+  if client.supports_method("textDocument/formatting") then
+    vim.api.nvim_create_user_command("Format", vim.lsp.buf.formatting_sync, {})
+    vim.api.nvim_create_user_command("ToggleFormatOnSave", ToggleFormatOnSave, {})
+  end
 end
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 
 -- Enable the following language servers
-local lspconfig = require 'lspconfig'
-local servers = { 
+local servers = {
   'rust_analyzer',
   'tsserver',
   'cssls',
---  'elixirls'
+  'sumneko_lua'
 }
 
 for _, lsp in ipairs(servers) do
@@ -64,7 +99,7 @@ for _, lsp in ipairs(servers) do
   }
 end
 
-lspconfig.elixir.setup {
+lspconfig.elixirls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
   cmd = { '/Users/micah.cooper/code/elixir_ls/language_server.sh' }
@@ -128,3 +163,6 @@ null_ls.setup({
     diagnostics.credo,
   },
 })
+
+vim.cmd('source /Users/micah.cooper/.config/nvim/vim-test-config.vim')
+vim.cmd('source /Users/micah.cooper/.config/nvim/projections.vimrc')
