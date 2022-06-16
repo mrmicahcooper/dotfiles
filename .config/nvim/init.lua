@@ -1,14 +1,6 @@
 require('plugins')
 require('options')
 
-vim.api.nvim_set_keymap('n', '<c-P>',
-  "<cmd>lua require('fzf-lua').files()<CR>",
-  { noremap = true, silent = true })
-
-vim.api.nvim_set_keymap('n', '<c-B>',
-  "<cmd>lua require('fzf-lua').buffers()<CR>",
-  { noremap = true, silent = true })
-
 -- treesitter configuration
 require 'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all"
@@ -102,7 +94,7 @@ end
 lspconfig.elixirls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
-  cmd = { '/Users/micah.cooper/code/elixir_ls/language_server.sh' }
+  cmd = { '/home/micah/code/elixir_ls/language_server.sh' }
 }
 
 -- Example custom server
@@ -164,5 +156,5 @@ null_ls.setup({
   },
 })
 
-vim.cmd('source /Users/micah.cooper/.config/nvim/vim-test-config.vim')
-vim.cmd('source /Users/micah.cooper/.config/nvim/projections.vimrc')
+vim.cmd('source /home/micah/.config/nvim/vim-test-config.vim')
+vim.cmd('source /home/micah/.config/nvim/projections.vimrc')

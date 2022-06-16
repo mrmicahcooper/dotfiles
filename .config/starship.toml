@@ -18,7 +18,8 @@ $rust\
 [](fg:#86BBD8 bg:#06969A)\
 [](fg:#06969A bg:#33658A)\
 [ ](fg:#33658A)\n\
-$character"""
+$character\
+$jobs"""
 
 # Disable the blank line at the start of the prompt
 add_newline = true

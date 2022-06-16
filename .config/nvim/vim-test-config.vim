@@ -11,7 +11,7 @@ function! NvimTest(command) abort
     setlocal nonumber
     startinsert
     execute "file! vim-test-window"
-    vertical-resize 80
+    vertical-resize 90
     let g:nvimtest_job_id = b:terminal_job_id
     call chansend(b:terminal_job_id, [a:command, ''])
     au BufDelete <buffer> let g:nvimtest_job_id = 0
@@ -32,3 +32,8 @@ nmap <silent> <Leader>T :w \| TestNearest<CR>
 nmap <silent> <Leader>ts :TestSuite<CR>
 nmap <silent> <Leader>l :TestLast<CR>
 nmap <silent> <Leader>g :TestVisit<CR>
+
+"Vim insert shortcuts
+iabbrev epry require IEx; IEx.pry
+iabbrev epau this.timeout(0); return pauseTest();
+
