@@ -3,3 +3,4 @@ erlang 24.1.4
 nodejs lts-gallium
 python 2.7.18 3.10.0
 rust 1.61.0
+lua 5.4.3
