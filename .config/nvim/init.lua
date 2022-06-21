@@ -4,7 +4,7 @@ require('options')
 -- treesitter configuration
 require 'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all"
-  ensure_installed = { "lua", "rust", "elixir", "html", "javascript", "css" },
+  ensure_installed = { "lua", "rust", "elixir", "html", "javascript", "css", "heex", "yaml" },
   sync_install = false,
   highlight = {
     enable = true,
@@ -81,7 +81,10 @@ local servers = {
   'rust_analyzer',
   'tsserver',
   'cssls',
-  'sumneko_lua'
+  'sumneko_lua',
+  'tailwindcss',
+  'elixirls',
+  'yamlls'
 }
 
 for _, lsp in ipairs(servers) do

@@ -31,6 +31,7 @@ vim.bo.shiftwidth = 2
 vim.o.autoindent = true
 vim.bo.autoindent = true
 vim.o.expandtab = true
+vim.o.timeoutlen = 1000
 vim.bo.expandtab = true
 
 vim.api.nvim_set_keymap('n', '<c-P>',

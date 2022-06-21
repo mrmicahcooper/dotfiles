@@ -26,7 +26,6 @@ return require('packer').startup(function()
   use 'marko-cerovac/material.nvim'
   use 'nvim-lua/plenary.nvim'
   use 'nvim-treesitter/nvim-treesitter-textobjects'
-  use 'tpope/vim-commentary'
   use 'tpope/vim-projectionist'
   use 'tpope/vim-surround'
   use 'vim-scripts/BufOnly.vim'
@@ -34,7 +33,17 @@ return require('packer').startup(function()
   use 'williamboman/nvim-lsp-installer'
   use 'khaveesh/vim-fish-syntax'
   use 'tpope/vim-unimpaired'
+  use 'tpope/vim-fugitive'
   use 'rcarriga/nvim-notify'
+  use 'tpope/vim-endwise'
+  use 'godlygeek/tabular'
+
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+      require('Comment').setup()
+    end
+  }
 
 
   use { 'ibhagwan/fzf-lua', 

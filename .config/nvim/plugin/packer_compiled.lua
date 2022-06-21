@@ -74,6 +74,12 @@ _G.packer_plugins = {
     path = "/home/micah/.local/share/nvim/site/pack/packer/start/BufOnly.vim",
     url = "https://github.com/vim-scripts/BufOnly.vim"
   },
+  ["Comment.nvim"] = {
+    config = { "\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0" },
+    loaded = true,
+    path = "/home/micah/.local/share/nvim/site/pack/packer/start/Comment.nvim",
+    url = "https://github.com/numToStr/Comment.nvim"
+  },
   ["elixir.nvim"] = {
     loaded = true,
     path = "/home/micah/.local/share/nvim/site/pack/packer/start/elixir.nvim",
@@ -153,15 +159,25 @@ _G.packer_plugins = {
     path = "/home/micah/.local/share/nvim/site/pack/packer/opt/tabby.nvim",
     url = "https://github.com/nanozuki/tabby.nvim"
   },
-  ["vim-commentary"] = {
+  tabular = {
     loaded = true,
-    path = "/home/micah/.local/share/nvim/site/pack/packer/start/vim-commentary",
-    url = "https://github.com/tpope/vim-commentary"
+    path = "/home/micah/.local/share/nvim/site/pack/packer/start/tabular",
+    url = "https://github.com/godlygeek/tabular"
+  },
+  ["vim-endwise"] = {
+    loaded = true,
+    path = "/home/micah/.local/share/nvim/site/pack/packer/start/vim-endwise",
+    url = "https://github.com/tpope/vim-endwise"
   },
   ["vim-fish-syntax"] = {
     loaded = true,
     path = "/home/micah/.local/share/nvim/site/pack/packer/start/vim-fish-syntax",
     url = "https://github.com/khaveesh/vim-fish-syntax"
+  },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/home/micah/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
   },
   ["vim-projectionist"] = {
     loaded = true,
@@ -195,6 +211,10 @@ time([[Defining packer_plugins]], false)
 time([[Config for gitsigns.nvim]], true)
 try_loadstring("\27LJ\2\ni\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\tyadm\1\0\1\venable\2\1\0\1\23current_line_blame\1\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
 time([[Config for gitsigns.nvim]], false)
+-- Config for: Comment.nvim
+time([[Config for Comment.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
+time([[Config for Comment.nvim]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)
 vim.cmd [[ packadd material.nvim ]]
