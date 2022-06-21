@@ -1,5 +1,11 @@
 vim.cmd('filetype plugin indent on')
+
+-- colorscheme
+vim.g.material_style = 'lighter'
 vim.cmd 'colorscheme material'
+-- 'oceanic', 'deep ocean', 'palenight', 'ligher',  darker
+-- vim.g.material_style = 'darker'
+
 vim.o.shortmess = vim.o.shortmess .. 'c'
 vim.o.hidden = true
 vim.o.whichwrap = 'b,s,<,>,[,],h,l'
@@ -48,3 +54,10 @@ vim.api.nvim_set_keymap('n', '<Leader>=', ':exe "resize +4" <CR>', { noremap = t
 vim.api.nvim_set_keymap('n', '<Leader>-', ':exe "resize -4" <CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<Leader>[', ':exe "vertical resize -30" <CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<Leader>]', ':exe "vertical resize +30" <CR>', { noremap = true, silent = true })
+
+--Toggle colorschemes
+vim.api.nvim_set_keymap('n', '<leader>ml', [[<Cmd>lua require('material.functions').change_style('lighter')<CR>]], { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>md', [[<Cmd>lua require('material.functions').change_style('darker')<CR>]], { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>mo', [[<Cmd>lua require('material.functions').change_style('oceanic')<CR>]], { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>mdo', [[<Cmd>lua require('material.functions').change_style('deep ocean')<CR>]], { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>mp', [[<Cmd>lua require('material.functions').change_style('palenight')<CR>]], { noremap = true, silent = true })
