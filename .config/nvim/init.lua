@@ -19,9 +19,14 @@ require('lualine').setup {
   }
 }
 
+require("tabby").setup({
+  tabline = require("tabby.presets").tab_with_top_win,
+})
+
+
 -- LSP settings
 require('nvim-lsp-installer').setup({})
-local lspconfig = require 'lspconfig'
+local lspconfig = require('lspconfig')
 local LspFormattingGroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
 local FormatOnSave = function(bufnr)

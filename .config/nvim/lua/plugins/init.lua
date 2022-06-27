@@ -45,6 +45,10 @@ return require('packer').startup(function()
     end
   }
 
+  use {
+    "nanozuki/tabby.nvim",
+    config = function() require("tabby").setup() end,
+  }
 
   use { 'ibhagwan/fzf-lua', 
     requires = { 'kyazdani42/nvim-web-devicons' } 
@@ -59,14 +63,6 @@ return require('packer').startup(function()
   run = ':TSUpdate',
   requires = { 'nvim-treesitter/nvim-treesitter-textobjects' }
 }
-
-  -- Fancy tabs at top
-  use { 'nanozuki/tabby.nvim',
-    requires = 'kyazdani42/nvim-web-devicons',
-    after = 'material.nvim',
-    config = function()
-      require('tabby').setup({})
-    end }
 
   -- Add git related info in the signs columns and popups
   use { 'lewis6991/gitsigns.nvim',
