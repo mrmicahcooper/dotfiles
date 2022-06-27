@@ -1,12 +1,13 @@
+# [╭─](fg:#DA627D)\
 format = """
-[╭─](fg:#DA627D)\
+[╭─](fg:#DA627D)\
 $directory\
 [](fg:#DA627D bg:#FCA17D)\
 $git_branch\
 $git_status\
 [](fg:#FCA17D bg:#86BBD8)\
 $c\
-$elixir\
+${custom.elixir}\
 $elm\
 $golang\
 $haskell\
@@ -25,6 +26,8 @@ right_format = """
   $cmd_duration
 """
 
+command_timeout = 500
+
 # Disable the blank line at the start of the prompt
 add_newline = true
 
@@ -34,7 +37,6 @@ error_symbol = "[╰─!](fg:#DA627D)"
 
 [cmd_duration]
 min_time = 0
-
 
 # You can also replace your username with a neat symbol like  to save some space
 [username]
@@ -78,6 +80,13 @@ format = '[[ $symbol $context ](bg:#06969A)]($style) $path'
 symbol = " "
 style = "bg:#86BBD8"
 format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
+
+[custom.elixir]
+shell = ["rg", "elixir", ".tool-versions"]
+symbol = " "
+style = "bg:#86BBD8"
+format = '[[ $symbol ($output) ](bg:#86BBD8)]($style)'
+detect_files = ["mix.exs", ".tool-versions"]
 
 [elm]
 symbol = " "
