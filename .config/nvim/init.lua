@@ -102,7 +102,7 @@ end
 lspconfig.elixirls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
-  cmd = { '/Users/micah.cooper/code/elixir_ls/language_server.sh' }
+  cmd = { '~/code/elixir_ls/language_server.sh' }
 }
 
 -- Example custom server
@@ -164,5 +164,5 @@ null_ls.setup({
   },
 })
 
-vim.cmd('source /Users/micah.cooper/.config/nvim/vim-test-config.vim')
-vim.cmd('source /Users/micah.cooper/.config/nvim/projections.vimrc')
+vim.cmd('source ~/.config/nvim/vim-test-config.vim')
+vim.cmd('source ~/.config/nvim/projections.vimrc')
