@@ -1,7 +1,8 @@
 local fn = vim.fn
 
 -- Automatically install packer
-local install_path = fn.stdpath 'data' .. '/site/pack/packer/start/packer.nvim' if fn.empty(fn.glob(install_path)) > 0 then PACKER_BOOTSTRAP = fn.system { 'git',
+local install_path = fn.stdpath 'data' .. '/site/pack/packer/start/packer.nvim'
+if fn.empty(fn.glob(install_path)) > 0 then PACKER_BOOTSTRAP = fn.system { 'git',
     'clone',
     '--depth',
     '1',
@@ -38,6 +39,11 @@ return require('packer').startup(function()
   use 'tpope/vim-endwise'
   use 'godlygeek/tabular'
 
+  use({
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+  })
+
   use {
     'numToStr/Comment.nvim',
     config = function()
@@ -45,24 +51,24 @@ return require('packer').startup(function()
     end
   }
 
-  use {
-    "nanozuki/tabby.nvim",
-    config = function() require("tabby").setup() end,
+  -- use {
+  --   "nanozuki/tabby.nvim",
+  --   config = function() require("tabby").setup() end,
+  -- }
+  --
+  use { 'ibhagwan/fzf-lua',
+    requires = { 'kyazdani42/nvim-web-devicons' }
   }
 
-  use { 'ibhagwan/fzf-lua', 
-    requires = { 'kyazdani42/nvim-web-devicons' } 
-  }
-
-  use { 'nvim-lualine/lualine.nvim', 
+  use { 'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
 
   -- Highlight, edit, and navigate code using a fast incremental parsing library
   use { 'nvim-treesitter/nvim-treesitter',
-  run = ':TSUpdate',
-  requires = { 'nvim-treesitter/nvim-treesitter-textobjects' }
-}
+    run = ':TSUpdate',
+    requires = { 'nvim-treesitter/nvim-treesitter-textobjects' }
+  }
 
   -- Add git related info in the signs columns and popups
   use { 'lewis6991/gitsigns.nvim',

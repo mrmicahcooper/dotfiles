@@ -4,7 +4,7 @@ require('options')
 -- treesitter configuration
 require 'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all"
-  ensure_installed = { "lua", "rust", "elixir", "html", "javascript", "css", "heex", "yaml" },
+  ensure_installed = { "lua", "rust", "elixir", "html", "javascript", "css", "heex", "yaml", "markdown" },
   sync_install = false,
   highlight = {
     enable = true,
@@ -19,11 +19,11 @@ require('lualine').setup {
   }
 }
 
-require("tabby").setup({
-  tabline = require("tabby.presets").tab_with_top_win,
-})
-
-
+-- require("tabby").setup({
+--   tabline = require("tabby.presets").tab_with_top_win,
+-- })
+--
+--
 -- LSP settings
 require('nvim-lsp-installer').setup({})
 local lspconfig = require('lspconfig')
