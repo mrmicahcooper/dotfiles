@@ -22,10 +22,10 @@ $rust\
 $character\
 $jobs"""
 
-right_format = """
-  $cmd_duration
-"""
-
+# right_format = """
+#   $cmd_duration
+# """
+#
 command_timeout = 500
 
 # Disable the blank line at the start of the prompt
@@ -82,7 +82,7 @@ style = "bg:#86BBD8"
 format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
 
 [custom.elixir]
-shell = ["rg", "elixir", ".tool-versions"]
+shell = ["rg", "elixir ", ".tool-versions"]
 symbol = " "
 style = "bg:#86BBD8"
 format = '[[ $symbol ($output) ](bg:#86BBD8)]($style)'
