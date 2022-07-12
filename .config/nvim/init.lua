@@ -11,7 +11,6 @@ require 'nvim-treesitter.configs'.setup {
     additional_vim_regex_highlighting = false,
   },
 }
-
 -- lualine configuration
 require('lualine').setup {
   options = {
@@ -19,11 +18,10 @@ require('lualine').setup {
   }
 }
 
--- require("tabby").setup({
---   tabline = require("tabby.presets").tab_with_top_win,
--- })
---
---
+require("tabby").setup({
+  tabline = require("tabby.presets").tab_with_top_win,
+})
+
 -- LSP settings
 require('nvim-lsp-installer').setup({})
 local lspconfig = require('lspconfig')
@@ -163,6 +161,23 @@ null_ls.setup({
     diagnostics.credo,
   },
 })
+
+-- config set at ./init.lua
+require("indent_blankline").setup {
+  -- space_char_blankline = " ",
+  space_char_blankline = " ",
+  indent_blankline_filetype_exclude = { 'help', 'packer' },
+  indent_blankline_buftype_exclude = { 'terminal', 'nofile' },
+  indent_blankline_show_trailing_blankline_indent = false,
+  char_highlight_list = {
+    "IndentBlanklineIndent1",
+    "IndentBlanklineIndent2",
+    "IndentBlanklineIndent3",
+    "IndentBlanklineIndent4",
+    "IndentBlanklineIndent5",
+    "IndentBlanklineIndent6",
+  },
+}
 
 vim.cmd('source ~/.config/nvim/vim-test-config.vim')
 vim.cmd('source ~/.config/nvim/projections.vimrc')

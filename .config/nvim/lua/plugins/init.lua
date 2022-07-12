@@ -38,6 +38,7 @@ return require('packer').startup(function()
   use 'rcarriga/nvim-notify'
   use 'tpope/vim-endwise'
   use 'godlygeek/tabular'
+  use 'lukas-reineke/indent-blankline.nvim'
 
   use({
     "iamcco/markdown-preview.nvim",
@@ -69,6 +70,8 @@ return require('packer').startup(function()
     run = ':TSUpdate',
     requires = { 'nvim-treesitter/nvim-treesitter-textobjects' }
   }
+
+-- Add indentation guides even on blank lines
 
   -- Add git related info in the signs columns and popups
   use { 'lewis6991/gitsigns.nvim',

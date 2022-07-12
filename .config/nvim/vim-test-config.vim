@@ -36,4 +36,3 @@ nmap <silent> <Leader>g :TestVisit<CR>
 "Vim insert shortcuts
 iabbrev epry require IEx; IEx.pry
 iabbrev epau this.timeout(0); return pauseTest();
-
