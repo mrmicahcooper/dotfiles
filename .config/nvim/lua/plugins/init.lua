@@ -100,5 +100,27 @@ return require('packer').startup(function()
   use { 'mhanberg/elixir.nvim',
     requires = { 'neovim/nvim-lspconfig', 'nvim-lua/plenary.nvim', }
   }
+  
+  --vim-cmp (autocomplete)
+  --Plug 'neovim/nvim-lspconfig'
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-cmdline'
+  use 'hrsh7th/nvim-cmp'
+  
+  -- Snippets
+  use { 'L3MON4D3/LuaSnip',
+    requires = {
+      "rafamadriz/friendly-snippets" -- Community snippets
+    }
+  }
+
+  -- Automatically set up your configuration after cloning packer.nvim
+  -- Put this at the end after all plugins
+  if PACKER_BOOTSTRAP then
+    require('packer').sync()
+  end
+
 
 end)

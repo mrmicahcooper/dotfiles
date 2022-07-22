@@ -1,5 +1,6 @@
 require('plugins')
 require('options')
+require('cmp')
 
 -- treesitter configuration
 require 'nvim-treesitter.configs'.setup {
@@ -17,10 +18,6 @@ require('lualine').setup {
     theme = 'material'
   }
 }
-
-require("tabby").setup({
-  tabline = require("tabby.presets").tab_with_top_win,
-})
 
 -- LSP settings
 require('nvim-lsp-installer').setup({})
@@ -78,6 +75,7 @@ local on_attach = function(client, bufnr)
 end
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 
 -- Enable the following language servers
 local servers = {
@@ -178,6 +176,7 @@ require("indent_blankline").setup {
     "IndentBlanklineIndent6",
   },
 }
+
 
 vim.cmd('source ~/.config/nvim/vim-test-config.vim')
 vim.cmd('source ~/.config/nvim/projections.vimrc')
