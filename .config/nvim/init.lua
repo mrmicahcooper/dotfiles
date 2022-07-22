@@ -1,6 +1,6 @@
 require('plugins')
 require('options')
-require('cmp')
+require('cmp-config')
 
 -- treesitter configuration
 require 'nvim-treesitter.configs'.setup {
