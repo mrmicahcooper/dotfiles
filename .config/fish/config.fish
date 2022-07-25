@@ -60,7 +60,7 @@ alias lsd='exa --only-dirs --long --header --git'
 alias tf=terraform
 
 starship init fish | source
-# source ~/.asdf/asdf.fish
-# source ~/.git_aliases.fish
+source ~/.asdf/asdf.fish
+source ~/.git_aliases.fish
 
 source /opt/homebrew/opt/asdf/libexec/asdf.fish
