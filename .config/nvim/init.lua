@@ -1,5 +1,5 @@
-require('plugins')
 require('options')
+require('plugins')
 require('cmp-config')
 
 -- treesitter configuration

@@ -1,10 +1,5 @@
 vim.cmd('filetype plugin indent on')
 
--- colorscheme
-vim.g.material_style = 'deep ocean'
-vim.cmd 'colorscheme material'
--- 'oceanic', 'deep ocean', 'palenight', 'ligher',  darker
--- vim.g.material_style = 'darker'
 
 vim.opt.termguicolors = true
 vim.o.shortmess = vim.o.shortmess .. 'c'
@@ -52,9 +47,19 @@ vim.api.nvim_set_keymap('n', '<c-B>',
   "<cmd>lua require('fzf-lua').buffers()<CR>",
   { noremap = true, silent = true })
 
+-- neovim material (add before the color columns)
+require('material').setup({
+  italics = {
+    comments = true, -- Enable italic comments
+  }
+})
+
+-- colorscheme
+vim.g.material_style = 'deep ocean'
+-- 'oceanic', 'deep ocean', 'palenight', 'ligher',  darker
+vim.cmd 'colorscheme material'
+
 -- indent-blankline config
--- vim.opt.listchars:append("space:⋅")
--- vim.opt.listchars:append("eol:↴")
 -- ¦, ┆, │, ⎸, or ▏
 vim.g.indent_blankline_char = '┊'
 vim.cmd [[highlight IndentBlanklineIndent1 guifg=#E06C75 gui=nocombine]]
