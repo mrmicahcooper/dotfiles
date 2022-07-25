@@ -8,6 +8,7 @@ set -x PATH $HOME/.yarn/bin $HOME/.config/yarn/global/node_modules/.bin $PATH
 set -x PATH $PATH /Applications/Visual Studio Code.app/Contents/Resources/app/bin
 set -x PATH $PATH $GOPATH/bin
 set -x PATH /usr/local/opt/qt@5/bin $PATH
+set -x PATH $PATH /opt/homebrew/bin
 # set -x PATH $HOME/.cargo/env:$PATH
 set -Up fish_user_paths ~/.cargo/bin
 
@@ -59,5 +60,7 @@ alias lsd='exa --only-dirs --long --header --git'
 alias tf=terraform
 
 starship init fish | source
-source ~/.asdf/asdf.fish
-source ~/.git_aliases.fish
+# source ~/.asdf/asdf.fish
+# source ~/.git_aliases.fish
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
