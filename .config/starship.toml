@@ -22,10 +22,11 @@ $rust\
 $character\
 $jobs"""
 
-# right_format = """
-#   $cmd_duration
-# """
-#
+right_format = """
+  $cmd_duration\
+  $username
+"""
+
 command_timeout = 500
 
 # Disable the blank line at the start of the prompt
@@ -41,10 +42,10 @@ min_time = 0
 # You can also replace your username with a neat symbol like  to save some space
 [username]
 show_always = true
-style_user = "bg:#9A348E"
+style_user = "fg:#9A348E"
 style_root = "bg:#9A348E"
 format = '[$user ]($style)'
-disabled = true
+disabled = false
 
 [directory]
 style = "bg:#DA627D"
@@ -83,10 +84,10 @@ format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
 
 [custom.elixir]
 shell = ["rg", "elixir ", ".tool-versions"]
-symbol = " "
+symbol = ""
 style = "bg:#86BBD8"
 format = '[[ $symbol ($output) ](bg:#86BBD8)]($style)'
-detect_files = ["mix.exs", ".tool-versions"]
+detect_files = ["mix.exs"]
 
 [elm]
 symbol = " "
