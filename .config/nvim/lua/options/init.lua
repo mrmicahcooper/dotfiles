@@ -55,9 +55,13 @@ require('material').setup({
 })
 
 -- colorscheme
-vim.g.material_style = 'deep ocean'
--- 'oceanic', 'deep ocean', 'palenight', 'ligher',  darker
+-- vim.g.material_style = 'deep ocean'
+-- vim.g.material_style = 'lighter'
+-- vim.g.material_style = 'oceanic'
+vim.g.material_style = 'palenight'
+-- 'oceanic', 'deep ocean', 'palenight', 'lighter',  darker
 vim.cmd 'colorscheme material'
+
 
 -- indent-blankline config
 -- ¦, ┆, │, ⎸, or ▏
