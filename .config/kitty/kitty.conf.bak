@@ -1510,6 +1510,6 @@ editor .
 
 
 # BEGIN_KITTY_THEME
-# Gruvbox Light
+# Gruvbox Material Light Medium
 include current-theme.conf
 # END_KITTY_THEME
