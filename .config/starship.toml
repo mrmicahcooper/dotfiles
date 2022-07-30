@@ -30,7 +30,8 @@ right_format = """
 command_timeout = 500
 
 # Disable the blank line at the start of the prompt
-add_newline = true
+# add_newline = true
+add_newline = false
 
 [character]
 success_symbol = "[╰─](fg:#DA627D)"
