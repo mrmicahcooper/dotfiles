@@ -104,7 +104,11 @@ let g:projectionist_heuristics = {
     \     ]
     \   },
     \   "lib/**/channels/*_channel.ex": {"type": "channel"},
-    \   "lib/**/templates/*.html.eex": {"type": "template"},
+    \   "lib/**/templates/": {"type": "template"},
+    \   "lib/**/templates/layout/": {"type": "layout"},
+    \   "lib/**/templates/*.html.heex": {"type": "template"},
+    \   "lib/**/templates/layout/*.html.heex": {"type": "layout"},
+    \   "lib/**/views/": { "type":"view" },
     \   "lib/**/views/*_view.ex": {
     \     "type": "view",
     \     "template": [
@@ -115,6 +119,7 @@ let g:projectionist_heuristics = {
     \     ]
     \   },
     \   "lib/**/plugs/*.ex": {"type": "plug"},
+    \   "lib/**/plugs/": {"type": "plug"},
     \   "lib/**_web/*.ex": {"type": "web"},
     \   "lib/**/endpoint.ex": {"type": "endpoint"},
     \   "config/config.exs": {"type": "fig"},
