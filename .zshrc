@@ -15,3 +15,8 @@ autoload -Uz compinit && compinit
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 eval "$(starship init zsh)"
+if [[ ! -e ~/.zsh/zsh-autosuggestions/.git/ ]]; then
+  echo "Zsh autosuggesttions not found. Installing"
+  git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+fi
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
