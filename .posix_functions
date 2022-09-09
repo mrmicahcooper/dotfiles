@@ -34,3 +34,31 @@ ex ()
     echo "'$1' is not a valid file"
   fi
 }
+
+alias aws-profile='export AWS_PROFILE=$(aws configure list-profiles --output text | fzf)'
+
+a()
+{
+  aws $@ | jq
+}
+
+#to use. Export your pcsk credentisl. Then call `init-aws <profile-name>`
+init-aws()
+{
+  echo "Configuring AWS CLI for $1"
+  echo "Exporting PCSK env vars from clipboard"
+  source <(pbpaste) 
+
+  echo "Setting AWS_PROFILE to $1"
+  export AWS_PROFILE=$1
+
+  echo "Configuring aws_access_key_id for \"$1\""
+  aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID --profile $1
+  echo "Configuring aws_secret_access_key for \"$1\""
+  aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY --profile $1
+  echo "Configuring aws_session_tokenws_access_key_id for \"$1\""
+  aws configure set aws_session_token $AWS_SESSION_TOKEN  --profile $1
+
+  unset AWS_ACCESS_KEY_ID AWS_SESSION_TOKEN AWS_SECRET_ACCESS_KEY
+}
+

@@ -68,5 +68,3 @@ alias la='exa --all --long --header --classify --git'
 alias lg='exa --long --header --classify --git -s modified --grid'
 alias ls='exa --long --header --classify --git'
 alias lsd='exa --only-dirs --long --header --git'
-
-alias aws-profile='export AWS_PROFILE=$(aws configure list-profiles --output text | fzf)'
