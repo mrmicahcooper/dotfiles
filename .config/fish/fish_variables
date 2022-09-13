@@ -33,4 +33,4 @@ SETUVAR fish_pager_color_description:B3A06D
 SETUVAR fish_pager_color_prefix:cyan\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
-SETUVAR fish_user_paths:/Users/micahcooper/\x2ecargo/bin\x1e/Users/micah\x2ecooper/\x2ecargo/bin
+SETUVAR fish_user_paths:/home/micah/\x2ecargo/bin\x1e/Users/micahcooper/\x2ecargo/bin\x1e/Users/micah\x2ecooper/\x2ecargo/bin
