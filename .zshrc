@@ -26,8 +26,9 @@ source ~/.posix_functions
 [ -f ~/.asdf/asdf.sh ] && . ~/.asdf/asdf.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 #
-# eval "$(starship init zsh)"
+eval "$(starship init zsh)"
 if [[ ! -e ~/.zsh/zsh-autosuggestions/.git/ ]]; then
   echo "Zsh autosuggestions not found. Installing"
   git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 fi
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
