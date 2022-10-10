@@ -24,6 +24,7 @@ source ~/.posix_functions
 
 [ -f /opt/asdf-vm/asdf.sh ] && . /opt/asdf-vm/asdf.sh
 [ -f ~/.asdf/asdf.sh ] && . ~/.asdf/asdf.sh
+[ -f /opt/homebrew/opt/asdf/libexec/asdf.sh ] && . /opt/homebrew/opt/asdf/libexec/asdf.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 #
 eval "$(starship init zsh)"
@@ -32,3 +33,4 @@ if [[ ! -e ~/.zsh/zsh-autosuggestions/.git/ ]]; then
   git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 fi
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+

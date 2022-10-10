@@ -95,12 +95,12 @@ for _, lsp in ipairs(servers) do
   }
 end
 
-lspconfig.elixirls.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-  cmd = { '~/code/elixir_ls/language_server.sh' }
-}
-
+-- lspconfig.elixirls.setup {
+--   on_attach = on_attach,
+--   capabilities = capabilities,
+--   cmd = { '~/code/elixir_ls/language_server.sh' }
+-- }
+--
 -- Example custom server
 -- Make runtime files discoverable to the server
 local runtime_path = vim.split(package.path, ';')
@@ -160,23 +160,23 @@ null_ls.setup({
   },
 })
 
--- config set at ./init.lua
-require("indent_blankline").setup {
-  -- space_char_blankline = " ",
-  space_char_blankline = " ",
-  indent_blankline_filetype_exclude = { 'help', 'packer' },
-  indent_blankline_buftype_exclude = { 'terminal', 'nofile' },
-  indent_blankline_show_trailing_blankline_indent = false,
-  char_highlight_list = {
-    "IndentBlanklineIndent1",
-    "IndentBlanklineIndent2",
-    "IndentBlanklineIndent3",
-    "IndentBlanklineIndent4",
-    "IndentBlanklineIndent5",
-    "IndentBlanklineIndent6",
-  },
-}
-
+-- -- config set at ./init.lua
+-- require("indent_blankline").setup {
+--   -- space_char_blankline = " ",
+--   space_char_blankline = " ",
+--   indent_blankline_filetype_exclude = { 'help', 'packer' },
+--   indent_blankline_buftype_exclude = { 'terminal', 'nofile' },
+--   indent_blankline_show_trailing_blankline_indent = false,
+--   char_highlight_list = {
+--     "IndentBlanklineIndent1",
+--     "IndentBlanklineIndent2",
+--     "IndentBlanklineIndent3",
+--     "IndentBlanklineIndent4",
+--     "IndentBlanklineIndent5",
+--     "IndentBlanklineIndent6",
+--   },
+-- }
+--
 
 vim.cmd('source ~/.config/nvim/vim-test-config.vim')
 vim.cmd('source ~/.config/nvim/projections.vimrc')

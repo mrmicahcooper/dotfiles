@@ -6,4 +6,4 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 export PATH=$PATH:$GOPATH/bin
 export PATH="/usr/local/opt/qt@5/bin:$PATH"
 export PATH="$HOME/code/v:$PATH"
-. "$HOME/.cargo/env"
+# . "$HOME/.cargo/env"
