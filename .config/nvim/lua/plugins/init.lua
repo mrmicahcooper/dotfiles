@@ -38,6 +38,7 @@ return require('packer').startup(function()
   use 'rcarriga/nvim-notify'
   use 'tpope/vim-endwise'
   use 'godlygeek/tabular'
+  use 'evanleck/vim-svelte'
   -- use 'lukas-reineke/indent-blankline.nvim'
 
   use({

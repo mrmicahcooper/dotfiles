@@ -5,7 +5,7 @@ require('cmp-config')
 -- treesitter configuration
 require 'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all"
-  ensure_installed = { "lua", "rust", "elixir", "html", "javascript", "css", "heex", "yaml", "markdown" },
+  ensure_installed = { "lua", "rust", "elixir", "html", "javascript", "css", "heex", "yaml", "markdown", "svelte" },
   sync_install = false,
   highlight = {
     enable = true,
@@ -75,7 +75,7 @@ local on_attach = function(client, bufnr)
 end
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
 -- Enable the following language servers
 local servers = {
@@ -85,7 +85,8 @@ local servers = {
   'sumneko_lua',
   'tailwindcss',
   'elixirls',
-  'yamlls'
+  'yamlls',
+  'svelte'
 }
 
 for _, lsp in ipairs(servers) do

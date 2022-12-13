@@ -1,6 +1,6 @@
-elixir 1.12.3-otp-24
-erlang 24.1.4
-nodejs lts-gallium
+elixir 1.14.2-otp-25
+erlang 25.1.2
+nodejs lts-hydrogen
 python 2.7.18 3.10.0
 rust 1.61.0
 lua 5.4.3
