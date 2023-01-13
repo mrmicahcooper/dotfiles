@@ -5,7 +5,7 @@ require('cmp-config')
 -- treesitter configuration
 require 'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all"
-  ensure_installed = { "lua", "rust", "elixir", "html", "javascript", "css", "heex", "yaml", "markdown", "svelte" },
+  ensure_installed = { "lua", "rust", "elixir", "html", "javascript", "css", "heex", "yaml", "markdown", "svelte", "hcl", "terraform" },
   sync_install = false,
   highlight = {
     enable = true,
@@ -86,7 +86,8 @@ local servers = {
   'tailwindcss',
   'elixirls',
   'yamlls',
-  'svelte'
+  'svelte',
+  'terraformls'
 }
 
 for _, lsp in ipairs(servers) do
