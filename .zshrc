@@ -34,3 +34,6 @@ if [[ ! -e ~/.zsh/zsh-autosuggestions/.git/ ]]; then
 fi
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+export GPG_TTY=$(tty)

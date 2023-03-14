@@ -24,7 +24,8 @@ $jobs"""
 
 right_format = """
   $cmd_duration\
-  $username
+  $username\
+  $aws
 """
 
 command_timeout = 500
@@ -48,6 +49,13 @@ style_root = "bg:#9A348E"
 format = '[$user ]($style)'
 disabled = false
 
+[aws]
+format="[$symbol($profile in $region)]($style)"
+
+# [aws.region_aliases]
+# us-east-1= "iad"
+# us-west-2= "pdx"
+#
 [directory]
 style = "bg:#DA627D"
 format = "[ $path ]($style)"

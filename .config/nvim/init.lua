@@ -96,11 +96,10 @@ for _, lsp in ipairs(servers) do
   }
 end
 
--- lspconfig.elixirls.setup {
---   on_attach = on_attach,
---   capabilities = capabilities,
---   cmd = { '~/code/elixir_ls/language_server.sh' }
--- }
+lspconfig.elixirls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
 --
 -- Example custom server
 -- Make runtime files discoverable to the server
