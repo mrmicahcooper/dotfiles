@@ -1,18 +1,16 @@
-if status is-interactive
-    # Commands to run in interactive sessions can go here
-end
-
 fish_add_path $HOME/go \
-    $HOME/.asdf/installs/rust/stable/bin \
-    $HOME/.cargo/env \
-    $HOME/.yarn/bin \
-    $HOME/.cargo/bin \
-    $HOME/.config/yarn/global/node_modules/.bin \
     $GOPATH/bin \
-    /usr/local/opt/qt@5/bin \
+    $HOME/.asdf/installs/rust/stable/bin \
+    $HOME/.cargo/bin \
+    $HOME/.cargo/env \
+    $HOME/.config/yarn/global/node_modules/.bin \
+    $HOME/.yarn/bin \
+    $HOME/google-cloud-sdk/path.fish.inc \
+    /Applications/Visual Studio Code.app/Contents/Resources/app/bin \
+    /opt/homebrew/bin \
+    /usr/local/opt/qt@5/bin
 
 set -x GOPATH $HOME/go
-
 set -x HISTCONTROL erasedups
 set -x HISTIGNORE "%*"
 set -x VISUAL nvim
@@ -23,18 +21,12 @@ set -x LSCOLORS gxgxcxdxbxegedabagacad
 set -x PSQL_EDITOR 'nvim -c "setf sql"'
 set -x RI "--format ansi -T"
 set -x RIPGREP_CONFIG_PATH $HOME/.ripgreprc
-
 # for HiDpi
 set -x QT_AUTO_SCREEN_SCALE_FACTOR 1
 set -x GDK_SCALE 2
 set -x DOCKER_BUILDKIT 1
 #Use this for alacritty
 set -x TERM xterm-256color
-
-# Use this for kitty
-# set -x TERM xterm-kitty
-
-
 # erlang/elixir Env Vars
 set -x KERL_CONFIGURE_OPTIONS "--disable-debug --without-javac"
 set -x ERL_AFLAGS "-kernel shell_history enabled"
@@ -42,94 +34,74 @@ set -x KERL_BUILD_DOCS no
 set -x KERL_INSTALL_HTMLDOCS no
 set -x KERL_INSTALL_MANPAGES no
 
+abbr --add c circleci
+abbr --add color alacritty-colorscheme status
+abbr --add colors 'alacritty-colorscheme apply (alacritty-colorscheme list | fzf )'
+abbr --add d docker
+abbr --add df df -h                          # human-readable sizes
+abbr --add di docker images
+abbr --add dii docker images -a -q
+abbr --add dit yadm
+abbr --add dlg yadm log --graph --oneline --decorate --color --all
+abbr --add dot yadm
+abbr --add dps docker ps -a
+abbr --add dpsi docker ps -aq
+abbr --add dst yadm status
+abbr --add free free -m                      # show sizes in MB
+abbr --add h heroku
+abbr --add k 'xset r rate 220 48; setxkbmap -option ctrl:nocaps'
+abbr --add keyboard 'xset r rate 220 48; setxkbmap -option ctrl:nocaps'
+abbr --add kace kubespace
+abbr --add kns kubens
+abbr --add kt kitty --session ~/code/codepun/config/startup_session.kitty.conf
+abbr --add kx kubectx
+abbr --add l1 exa --oneline
+abbr --add la exa --all --long --header --classify --git
+abbr --add lg exa --long --header --classify --git -s modified --grid
+abbr --add ls exa --long --header --classify --git
+abbr --add lsd exa --only-dirs --long --header --git
+abbr --add mk minikube
+abbr --add more less
+abbr --add nfig command nvim ~/.config/nvim/init.vim
+abbr --add pacman 'sudo pacman -Rns (pacman -Qtdq)'
+abbr --add pgdisable systemctl disable postgresql.service
+abbr --add pgenable systemctl enable postgresql.service
+abbr --add pgrestart systemctl restart postgresql.service
+abbr --add pgstart systemctl start postgresql.service
+abbr --add pgstop systemctl stop postgresql.service
+abbr --add pm podman
+abbr --add tf terraform
+abbr --add uuid 'uuidgen | xclip -selection clipboard'
+abbr --add vpn-status /opt/cisco/anyconnect/bin/vpn -s status
+abbr --add vpn /opt/cisco/anyconnect/bin/vpn -s connect AmerEast-1
+abbr --add vpoff /opt/cisco/anyconnect/bin/vpn -s disconnect
 
-alias dit="yadm"
-alias dlg='yadm log --graph --oneline --decorate --color --all'
-alias dot="yadm"
-alias dps="docker ps -a"
-alias dpsi="docker ps -aq"
-alias dst="yadm status"
-alias free='free -m'                      # show sizes in MB
-alias keyboard='setxkbmap -option ctrl:nocaps && xset r rate 220 48'
-alias more=less
-
-alias h='heroku'
-alias k='xset r rate 220 48; setxkbmap -option "ctrl:nocaps"'
-alias tf=terraform
-alias pm=podman
-
-alias colors='alacritty-colorscheme apply (alacritty-colorscheme list | fzf )'
-alias color='alacritty-colorscheme status'
-
-alias nfig=' command nvim ~/.config/nvim/init.vim'
-alias pacmanclean='echo "sudo pacman -Rns (pacman -Qtdq)"; sudo pacman -Rns (pacman -Qtdq)'
-alias pgdisable='systemctl disable postgresql.service'
-alias pgenable='systemctl enable postgresql.service'
-alias pgrestart='systemctl restart postgresql.service'
-alias pgstart='systemctl start postgresql.service'
-alias pgstop='systemctl stop postgresql.service'
-alias record='sudo modprobe v4l2loopback exclusive_caps=1 max_buffers=2 && gphoto2 --stdout --capture-movie | ffmpeg -i - -vcodec rawvideo -pix_fmt yuv420p -threads 0 -f v4l2 /dev/video4'
-alias uuid='uuidgen | xclip -selection clipboard'
-alias vpn-status="/opt/cisco/anyconnect/bin/vpn -s status"
-alias vpn="/opt/cisco/anyconnect/bin/vpn -s connect AmerEast-1"
-alias vpoff="/opt/cisco/anyconnect/bin/vpn -s disconnect"
-
-alias k="kubectl"
-alias kns="kubens"
-alias kx="kubectx"
-alias kace="kubespace"
-alias mk="minikube"
-alias c="circleci"
-alias d="docker"
-alias df='df -h'                          # human-readable sizes
-alias di="docker images"
-alias dii="docker images -a -q"
-
-alias l1='exa --oneline'
-alias la='exa --all --long --header --classify --git'
-alias lg='exa --long --header --classify --git -s modified --grid'
-alias ls='exa --long --header --classify --git'
-alias lsd='exa --only-dirs --long --header --git'
-
-
-alias record='sudo modprobe v4l2loopback exclusive_caps=1 max_buffers=2 && gphoto2 --stdout --capture-movie | ffmpeg -i - -vcodec rawvideo -pix_fmt yuv420p -threads 0 -f v4l2 /dev/video4'
-
-alias kt='kitty --session ~/code/codepun/config/startup_session.kitty.conf'
+alias record='\
+    sudo modprobe v4l2loopback exclusive_caps=1 max_buffers=2 && \
+    gphoto2 --stdout --capture-movie | ffmpeg -i - -vcodec rawvideo -pix_fmt yuv420p -threads 0 -f v4l2 /dev/video4'
 
 alias screencast='\
-xrandr --setmonitor virtual-left 4096/947x2160/457+0+0 DisplayPort-0 &&\
-xrandr --setmonitor virtual-right 1024/947x2160/457+4096+0 none'
+    xrandr --setmonitor virtual-left 4096/947x2160/457+0+0 DisplayPort-0 && \
+    xrandr --setmonitor virtual-right 1024/947x2160/457+4096+0 none'
 
 alias noscreencast='\
-xrandr --delmonitor virtual-left &&\
-xrandr --delmonitor virtual-right'
+    xrandr --delmonitor virtual-left && \
+    xrandr --delmonitor virtual-right'
 
 alias money='\
-xrandr --setmonitor virtual-left 1920/947x1080/457+0+0 DisplayPort-0 &&\
-xrandr --setmonitor virtual-right 3200/947x1920/457+1920+0 none &&\
-xrandr --setmonitor virtual-bottom 5120/947x1080/457+0+1080 none'
+    xrandr --setmonitor virtual-left 1920/947x1080/457+0+0 DisplayPort-0 && \
+    xrandr --setmonitor virtual-right 3200/947x1920/457+1920+0 none && \
+    xrandr --setmonitor virtual-bottom 5120/947x1080/457+0+1080 none'
 
 alias nomoney='\
-xrandr --delmonitor virtual-left &&\
-xrandr --delmonitor virtual-right &&\
-xrandr --delmonitor virtual-bottom'
+    xrandr --delmonitor virtual-left && \
+    xrandr --delmonitor virtual-right && \
+    xrandr --delmonitor virtual-bottom'
 
 starship init fish | source
 
-if test -f ~/.asdf/asdf.fish
-    source ~/.asdf/asdf.fish
-end
-
-if test -f /opt/asdf-vm/asdf.fish
-    source /opt/asdf-vm/asdf.fish
-end
-if test -f /opt/homebrew/opt/asdf/libexec/asdf.fish
-    source /opt/homebrew/opt/asdf/libexec/asdf.fish
-end
-
-source ~/.git_aliases.fish
-
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/micah/code/google-cloud-sdk/path.fish.inc' ]; . '/home/micah/code/google-cloud-sdk/path.fish.inc'; end
-source /home/micah/.config/op/plugins.sh
+source_existing '~/.asdf/asdf.fish'
+source_existing /opt/asdf-vm/asdf.fish
+source_existing /opt/homebrew/opt/asdf/libexec/asdf.fish
+source_existing ~/.git_aliases.fish
+source_existing /home/micah/.config/op/plugins.sh
