@@ -76,6 +76,25 @@ abbr --add vpn-status /opt/cisco/anyconnect/bin/vpn -s status
 abbr --add vpn /opt/cisco/anyconnect/bin/vpn -s connect AmerEast-1
 abbr --add vpoff /opt/cisco/anyconnect/bin/vpn -s disconnect
 
+abbr --add gamend git commit --amend -C HEAD
+abbr --add gap git add --patch
+abbr --add gb git branch
+abbr --add gc git commit -v
+abbr --add gcl git clean -f -d
+abbr --add gco git checkout
+abbr --add gd git diff
+abbr --add gdc git diff --cached
+abbr --add glg git log --graph --oneline --decorate --color --all
+abbr --add glod git log --oneline --decorate
+abbr --add gra git rebase --abort
+abbr --add grc git rebase --continue
+abbr --add gri --set-cursor git rebase --interactive HEAD~%
+abbr --add gst git status
+abbr --add gull git pull --rebase origin (git rev-parse --abbrev-ref HEAD)
+abbr --add gush git push origin (git rev-parse --abbrev-ref HEAD) --force-with-lease
+abbr --add gwip git commit -m WIP
+abbr --add gelete "git branch --merged | rg -v main -N | xargs git branch -d"
+
 alias record='\
     sudo modprobe v4l2loopback exclusive_caps=1 max_buffers=2 && \
     gphoto2 --stdout --capture-movie | ffmpeg -i - -vcodec rawvideo -pix_fmt yuv420p -threads 0 -f v4l2 /dev/video4'
@@ -103,5 +122,4 @@ starship init fish | source
 source_existing '~/.asdf/asdf.fish'
 source_existing /opt/asdf-vm/asdf.fish
 source_existing /opt/homebrew/opt/asdf/libexec/asdf.fish
-source_existing ~/.git_aliases.fish
 source_existing /home/micah/.config/op/plugins.sh
