@@ -28,6 +28,8 @@ source ~/.posix_functions
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 #
 eval "$(starship init zsh)"
+eval "$(direnv hook zsh)"
+
 if [[ ! -e ~/.zsh/zsh-autosuggestions/.git/ ]]; then
   echo "Zsh autosuggestions not found. Installing"
   git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
@@ -36,4 +38,8 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 
+export GPG_TTY=$(tty)
+
+# opam configuration
+[[ ! -r /Users/micah.cooper/.opam/opam-init/init.zsh ]] || source /Users/micah.cooper/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 export GPG_TTY=$(tty)

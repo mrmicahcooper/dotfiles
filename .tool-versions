@@ -1,7 +1,7 @@
-elixir 1.14.2-otp-25
-erlang 25.1.2
 nodejs lts-hydrogen
-python 2.7.18 3.9.16
+elixir 1.14.3-otp-25
+erlang 25.2.2
+python 2.7.18 3.10.0
 rust 1.61.0
 lua 5.4.3
 golang 1.18.4
