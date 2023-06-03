@@ -15,6 +15,7 @@ SETUVAR _fish_abbr_dps:docker\x20ps\x20\x2da
 SETUVAR _fish_abbr_dpsi:docker\x20ps\x20\x2daq
 SETUVAR _fish_abbr_dst:yadm\x20status
 SETUVAR _fish_abbr_free:free\x20\x2dm
+<<<<<<< HEAD
 SETUVAR _fish_abbr_gamend:git\x20commit\x20\x2d\x2damend\x20\x2dC\x20HEAD
 SETUVAR _fish_abbr_gap:git\x20add\x20\x2d\x2dpatch
 SETUVAR _fish_abbr_gb:git\x20branch
@@ -33,6 +34,8 @@ SETUVAR _fish_abbr_gst:git\x20status
 SETUVAR _fish_abbr_gull:git\x20pull\x20\x2d\x2drebase\x20origin
 SETUVAR _fish_abbr_gush:git\x20push\x20origin\x20\x2d\x2dforce\x2dwith\x2dlease
 SETUVAR _fish_abbr_gwip:git\x20commit\x20\x2dm\x20WIP
+=======
+>>>>>>> 2bb7308 (foo)
 SETUVAR _fish_abbr_h:heroku
 SETUVAR _fish_abbr_k:xset\x20r\x20rate\x20220\x2048\x3b\x20setxkbmap\x20\x2doption\x20ctrl\x3anocaps
 SETUVAR _fish_abbr_kace:kubespace
