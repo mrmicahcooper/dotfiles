@@ -95,6 +95,7 @@ abbr --add gull git pull --rebase origin (git rev-parse --abbrev-ref HEAD)
 abbr --add gush git push origin (git rev-parse --abbrev-ref HEAD) --force-with-lease
 abbr --add gwip git commit -m WIP
 abbr --add gelete "git branch --merged | rg -v main -N | xargs git branch -d"
+abbr --add tf op run --env-file .env terraform
 
 alias record='\
     sudo modprobe v4l2loopback exclusive_caps=1 max_buffers=2 && \
