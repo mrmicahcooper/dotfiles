@@ -125,3 +125,4 @@ source_existing '~/.asdf/asdf.fish'
 source_existing /opt/asdf-vm/asdf.fish
 source_existing /opt/homebrew/opt/asdf/libexec/asdf.fish
 source_existing /home/micah/.config/op/plugins.sh
+source_existing /Users/micahcooper/.config/op/plugins.sh
