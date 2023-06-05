@@ -82,7 +82,7 @@ local servers = {
   'rust_analyzer',
   'tsserver',
   'cssls',
-  'sumneko_lua',
+  'lua_ls',
   'tailwindcss',
   'elixirls',
   'yamlls',

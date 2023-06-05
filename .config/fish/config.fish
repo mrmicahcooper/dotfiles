@@ -39,9 +39,7 @@ abbr --add color alacritty-colorscheme status
 abbr --add colors 'alacritty-colorscheme apply (alacritty-colorscheme list | fzf )'
 abbr --add d docker
 abbr --add df df -h                          # human-readable sizes
-abbr --add di docker images
-abbr --add dii docker images -a -q
-abbr --add dit yadm
+abbr --add di docker images abbr --add dii docker images -a -q abbr --add dit yadm
 abbr --add dlg yadm log --graph --oneline --decorate --color --all
 abbr --add dot yadm
 abbr --add dps docker ps -a
@@ -49,6 +47,10 @@ abbr --add dpsi docker ps -aq
 abbr --add dst yadm status
 abbr --add free free -m                      # show sizes in MB
 abbr --add h heroku
+abbr --add t terraform
+abbr --add a aws
+abbr --add o op
+abbr --add g glab
 abbr --add k 'xset r rate 220 48; setxkbmap -option ctrl:nocaps'
 abbr --add keyboard 'xset r rate 220 48; setxkbmap -option ctrl:nocaps'
 abbr --add kace kubespace
@@ -70,7 +72,6 @@ abbr --add pgrestart systemctl restart postgresql.service
 abbr --add pgstart systemctl start postgresql.service
 abbr --add pgstop systemctl stop postgresql.service
 abbr --add pm podman
-abbr --add tf terraform
 abbr --add uuid 'uuidgen | xclip -selection clipboard'
 abbr --add vpn-status /opt/cisco/anyconnect/bin/vpn -s status
 abbr --add vpn /opt/cisco/anyconnect/bin/vpn -s connect AmerEast-1
