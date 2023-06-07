@@ -65,7 +65,7 @@ abbr --add lsd exa --only-dirs --long --header --git
 abbr --add mk minikube
 abbr --add more less
 abbr --add nfig command nvim ~/.config/nvim/init.vim
-abbr --add pacman 'sudo pacman -Rns (pacman -Qtdq)'
+abbr --add pacmanclean 'sudo pacman -Rns (pacman -Qtdq)'
 abbr --add pgdisable systemctl disable postgresql.service
 abbr --add pgenable systemctl enable postgresql.service
 abbr --add pgrestart systemctl restart postgresql.service
