@@ -1,5 +1,5 @@
 nodejs lts
-elixir 1.14.3-otp-25
+elixir 1.15.0-otp-26
 erlang 25.2.2
 python 2.7.18 3.10.0
 rust 1.61.0

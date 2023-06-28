@@ -8,7 +8,8 @@ fish_add_path $HOME/go \
     $HOME/google-cloud-sdk/path.fish.inc \
     /Applications/Visual Studio Code.app/Contents/Resources/app/bin \
     /opt/homebrew/bin \
-    /usr/local/opt/qt@5/bin
+    /usr/local/opt/qt@5/bin \
+    $HOME/.fly/bin
 
 set -x GOPATH $HOME/go
 set -x HISTCONTROL erasedups
@@ -73,9 +74,6 @@ abbr --add pgstart systemctl start postgresql.service
 abbr --add pgstop systemctl stop postgresql.service
 abbr --add pm podman
 abbr --add uuid 'uuidgen | xclip -selection clipboard'
-abbr --add vpn-status /opt/cisco/anyconnect/bin/vpn -s status
-abbr --add vpn /opt/cisco/anyconnect/bin/vpn -s connect AmerEast-1
-abbr --add vpoff /opt/cisco/anyconnect/bin/vpn -s disconnect
 
 abbr --add gamend git commit --amend -C HEAD
 abbr --add gap git add --patch
@@ -89,7 +87,7 @@ abbr --add glg git log --graph --oneline --decorate --color --all
 abbr --add glod git log --oneline --decorate
 abbr --add gra git rebase --abort
 abbr --add grc git rebase --continue
-abbr --add gri --set-cursor git rebase --interactive HEAD~%
+abbr --add gri --set-cursor git rebase --interactive %
 abbr --add gst git status
 abbr --add gwip git commit -m WIP
 abbr --add gelete "git branch --merged | rg -v main -N | xargs git branch -d"
