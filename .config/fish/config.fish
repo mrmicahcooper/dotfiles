@@ -9,7 +9,8 @@ fish_add_path $HOME/go \
     /Applications/Visual Studio Code.app/Contents/Resources/app/bin \
     /opt/homebrew/bin \
     /usr/local/opt/qt@5/bin \
-    $HOME/.fly/bin
+    $HOME/.fly/bin \
+    /Applications/Postgres.app/Contents/Versions/latest/bin
 
 set -x GOPATH $HOME/go
 set -x HISTCONTROL erasedups
