@@ -24,6 +24,7 @@ $jobs"""
 
 right_format = """
   $cmd_duration\
+  $hostname\
   $username\
   $aws
 """
@@ -52,10 +53,16 @@ disabled = false
 [aws]
 format="[$symbol($profile in $region)]($style)"
 
-# [aws.region_aliases]
-# us-east-1= "iad"
-# us-west-2= "pdx"
+[aws.region_aliases]
+us-east-1= "iad"
+us-west-2= "pdx"
 #
+[hostname]
+# style = "bg:#DA627D"
+ssh_symbol = "SSH"
+ssh_only = false
+disabled = false
+
 [directory]
 style = "bg:#DA627D"
 format = "[ $path ]($style)"
