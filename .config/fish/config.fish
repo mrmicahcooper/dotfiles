@@ -17,8 +17,7 @@ set -x HISTCONTROL erasedups
 set -x HISTIGNORE "%*"
 set -x VISUAL nvim
 set -x EDITOR nvim
-set -x HISTSIZE 10000
-set -x LESS "FRX"
+set -x HISTSIZE 10000 set -x LESS "FRX"
 set -x LSCOLORS gxgxcxdxbxegedabagacad
 set -x PSQL_EDITOR 'nvim -c "setf sql"'
 set -x RI "--format ansi -T"
@@ -88,11 +87,17 @@ abbr --add glg git log --graph --oneline --decorate --color --all
 abbr --add glod git log --oneline --decorate
 abbr --add gra git rebase --abort
 abbr --add grc git rebase --continue
-abbr --add gri --set-cursor git rebase --interactive %
 abbr --add gst git status
 abbr --add gwip git commit -m WIP
 abbr --add gelete "git branch --merged | rg -v main -N | xargs git branch -d"
 abbr --add tf op run --env-file .env terraform
+
+abbr --add papi "cd ~/code/codebuilder/codebuilder-platform-api"
+abbr --add wapi "cd ~/code/codebuilder/workspace-manager-api"
+abbr --add images "cd ~/code/codebuilder/code-builder-images"
+abbr --add devfile "cd ~/code/codebuilder/devfile"
+abbr --add package "cd ~/code/codebuilder/worksace-manager-package"
+abbr --add integration "cd ~/code/codebuilder/code-builder-integration"
 
 alias gush="git push origin (git rev-parse --abbrev-ref HEAD) --force-with-lease"
 alias gull="git pull --rebase origin (git rev-parse --abbrev-ref HEAD)"
