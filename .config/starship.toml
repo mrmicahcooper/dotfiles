@@ -18,6 +18,7 @@ $nim\
 $rust\
 [](fg:#86BBD8 bg:#06969A)\
 [](fg:#06969A bg:#33658A)\
+$shell\
 [ ](fg:#33658A)\n\
 $character\
 $jobs"""
@@ -38,6 +39,14 @@ add_newline = false
 [character]
 success_symbol = "[╰─](fg:#DA627D)"
 error_symbol = "[╰─!](fg:#DA627D)"
+
+[shell]
+disabled = false
+format = '[ $indicator ]($style)'
+style = "bg:#33658A"
+fish_indicator = "󰈺"
+zsh_indicator = "󰰸"
+bash_indicator = ""
 
 [cmd_duration]
 min_time = 0
