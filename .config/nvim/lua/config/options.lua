@@ -13,6 +13,7 @@ vim.o.softtabstop = 2
 vim.o.shiftwidth = 2
 vim.bo.shiftwidth = 2
 vim.bo.expandtab = true
+vim.o.relativenumber = false
 
 -- vim.api.nvim_set_keymap('n', '<c-P>',
 --   "<cmd>lua require('fzf-lua').files()<CR>",

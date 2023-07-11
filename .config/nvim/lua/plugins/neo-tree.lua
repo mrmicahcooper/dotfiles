@@ -1,6 +1,6 @@
 return {
   "nvim-neo-tree/neo-tree.nvim",
-  -- enabled = false,
+  enabled = false,
   cmd = "Neotree",
   deactivate = function()
     vim.cmd([[Neotree close]])
@@ -21,12 +21,13 @@ return {
       bind_to_cwd = false,
       follow_current_file = true,
       use_libuv_file_watcher = true,
+      hide_dotfiles = false,
     },
     window = {
       mappings = {
         ["<space>"] = "none",
       },
-      position = "float",
+      position = "current",
     },
     default_component_configs = {
       indent = {
