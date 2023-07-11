@@ -3,8 +3,8 @@ return {
     "neovim/nvim-lspconfig",
     event = "BufReadPre",
     dependencies = {
-      { "folke/neoconf.nvim", cmd = "Neoconf", config = true },
-      { "folke/neodev.nvim", opts = { experimental = { pathStrict = true } } },
+      { "folke/neoconf.nvim", cmd = "Neoconf",                                config = true },
+      { "folke/neodev.nvim",  opts = { experimental = { pathStrict = true } } },
       "mason.nvim",
       "williamboman/mason-lspconfig.nvim",
       "hrsh7th/cmp-nvim-lsp",
@@ -20,14 +20,9 @@ return {
       },
 
       ensure_installed = {
-        "denols",
-        "rust_analyzer",
-        "tsserver",
-        "solargraph",
-        "gopls",
         "vls",
         "jsonls",
-        "elixir-ls",
+        "elixirls",
         "lua_ls",
       },
     },
