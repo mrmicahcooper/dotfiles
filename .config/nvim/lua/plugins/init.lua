@@ -1,7 +1,18 @@
 return {
   { "echasnovski/mini.pairs", enabled = false },
   { "akinsho/bufferline.nvim", enabled = false },
-  -- { "lukas-reineke/indent-blankline.nvim" enabled = false },
+  { "lukas-reineke/indent-blankline.nvim", enabled = false },
+  { "ggandor/flit.nvim", enabled = false },
+  { "ggandor/leap.nvim", enabled = false },
+  { "folke/todo-comments.nvim", enabled = false },
+  { "folke/trouble.nvim", enabled = false },
+  { "RRethy/vim-illuminate", enabled = false },
+  { "gbprod/yanky.nvim", enabled = false },
+  { "folke/flash.nvim", enabled = false },
+  { "echasnovski/mini.files", enabled = false },
+  { "nvim-neotest/neotest", enabled = false },
+  { "folke/edgy.nvim", enabled = false },
+  { "ahmedkhalf/project.nvim", enabled = false },
 
   "janko-m/vim-test",
   "jremmen/vim-ripgrep",
@@ -9,7 +20,6 @@ return {
   "nvim-treesitter/nvim-treesitter-textobjects",
   "godlygeek/tabular",
   "iamcco/markdown-preview.nvim",
-
   "tpope/vim-projectionist",
   "tpope/vim-unimpaired",
   "tpope/vim-fugitive",
