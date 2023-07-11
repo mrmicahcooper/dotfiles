@@ -1,6 +1,7 @@
 return {
   { "echasnovski/mini.pairs", enabled = false },
   { "akinsho/bufferline.nvim", enabled = false },
+  -- { "lukas-reineke/indent-blankline.nvim" enabled = false },
 
   "janko-m/vim-test",
   "jremmen/vim-ripgrep",

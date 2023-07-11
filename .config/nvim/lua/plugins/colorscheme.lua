@@ -3,9 +3,8 @@ return {
   { "marko-cerovac/material.nvim" },
   {
     "catppuccin/nvim",
-    name = "catppuccin",
-    priority = 1000,
     lazy = true,
+    name = "catppuccin",
     opts = {
       integrations = {
         alpha = true,
@@ -37,11 +36,10 @@ return {
       },
     },
   },
-
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "material-deep-ocean",
+      colorscheme = "catppuccin-mocha",
     },
   },
 }

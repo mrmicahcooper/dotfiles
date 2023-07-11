@@ -14,6 +14,10 @@ vim.o.shiftwidth = 2
 vim.bo.shiftwidth = 2
 vim.bo.expandtab = true
 vim.o.relativenumber = false
+vim.o.conceallevel = 0
+
+vim.cmd("source ~/.config/nvim/vim-test-config.vim")
+vim.cmd("source ~/.config/nvim/projections.vimrc")
 
 -- vim.api.nvim_set_keymap('n', '<c-P>',
 --   "<cmd>lua require('fzf-lua').files()<CR>",
@@ -59,4 +63,5 @@ vim.o.relativenumber = false
 --   "<leader>mp",
 --   [[<Cmd>lua require('material.functions').change_style('palenight')<CR>]],
 --   { noremap = true, silent = true }
+--
 -- )
