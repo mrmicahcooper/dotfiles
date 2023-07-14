@@ -22,10 +22,9 @@ $rust\
 $fill \
 $username\
 $hostname\
-$aws\
-$cmd_duration\
 $os \
 $memory_usage\
+$cmd_duration\
 $line_break\
 [╰─](fg:#DA627D)\
 $shell\
@@ -53,7 +52,7 @@ style = "fg:bright-white"
 
 [jobs]
 style = "fg:yellow"
-symbol = "󰑮"
+symbol = "󰑮 "
 format = "[$symbol$number]($style) "
 
 [cmd_duration]
@@ -78,6 +77,7 @@ us-east-1= "iad"
 ssh_symbol = "SSH"
 [hostname]
 ssh_only = false
+style="fg:green"
 format = '[󰒍 $ssh_symbol$hostname ]($style)'
 disabled = false
 
@@ -161,10 +161,10 @@ symbol = " "
 symbol = " "
 
 [memory_usage]
-symbol = ""
+symbol = " "
 threshold = 0
 disabled = false
-format = '$symbol[${ram_pct}]($style)'
+format = '$symbol[${ram_pct}]($style) '
 
 [meson]
 symbol = "喝 "
@@ -181,6 +181,7 @@ symbol = " "
 
 [os]
 disabled = false
+style="fg:green"
 
 [os.symbols]
 Alpine = " "
