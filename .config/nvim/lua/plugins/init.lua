@@ -32,7 +32,6 @@ return {
   -- { "saadparwaiz1/cmp_luasnip",                    enabled = false },
   { "zbirenbaum/copilot-cmp", enabled = false },
   { "zbirenbaum/copilot.lua", enabled = false },
->>>>>>> Stashed changes
 
   "janko-m/vim-test",
   "jremmen/vim-ripgrep",
