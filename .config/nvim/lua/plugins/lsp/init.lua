@@ -23,16 +23,14 @@ return {
         "denols",
         "rust_analyzer",
         "tsserver",
-        "solargraph",
-        "gopls",
-        "vls",
         "jsonls",
         "lua_ls",
         "elixirls",
       },
     },
     config = function(_, opts)
-      local capabilities = require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities())
+      local capabilities = require("cmp_nvim_lsp")
+      .default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
       require("mason-lspconfig").setup({ ensure_installed = opts.ensure_installed })
       require("mason-lspconfig").setup_handlers({
@@ -40,30 +38,9 @@ return {
           require("lspconfig")[server_name].setup({
             capabilities = capabilities,
             on_attach = function(client, buffer)
+              require("plugins.lsp.helpers").on_attach(client, buffer)
               require("plugins.lsp.format").on_attach(client, buffer)
-              require("plugins.lsp.keymaps").on_attach(client, buffer)
             end,
-          })
-        end,
-        ["tsserver"] = function()
-          require("lspconfig").tsserver.setup({
-            capabilities = capabilities,
-            on_attach = function(client, buffer)
-              require("plugins.lsp.format").on_attach(client, buffer)
-              require("plugins.lsp.keymaps").on_attach(client, buffer)
-            end,
-            root_dir = require("lspconfig").util.root_pattern("package.json"),
-            single_file_support = false,
-          })
-        end,
-        ["denols"] = function()
-          require("lspconfig").denols.setup({
-            capabilities = capabilities,
-            on_attach = function(client, buffer)
-              require("plugins.lsp.format").on_attach(client, buffer)
-              require("plugins.lsp.keymaps").on_attach(client, buffer)
-            end,
-            root_dir = require("lspconfig").util.root_pattern("deno.json", "deno.jsonc"),
           })
         end,
       })
@@ -71,8 +48,8 @@ return {
       require("lspconfig").nim_langserver.setup({
         capabilities = capabilities,
         on_attach = function(client, buffer)
+          require("plugins.lsp.helpers").on_attach(client, buffer)
           require("plugins.lsp.format").on_attach(client, buffer)
-          require("plugins.lsp.keymaps").on_attach(client, buffer)
         end,
       })
     end,

@@ -1,7 +1,7 @@
 return {
-  -- "neovim/nvim-lspconfig",
-  -- "hrsh7th/cmp-path",
-  -- "hrsh7th/cmp-cmdline",
+  "neovim/nvim-lspconfig",
+  "hrsh7th/cmp-path",
+  "hrsh7th/cmp-cmdline",
 
   "janko-m/vim-test",
   "jremmen/vim-ripgrep",
