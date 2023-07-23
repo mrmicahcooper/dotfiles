@@ -27,12 +27,6 @@ endfunction
 let g:test#custom_strategies = {'nvimtest': function('NvimTest')}
 let g:test#strategy = 'nvimtest'
 
-nmap <silent> <Leader>t :w \| TestFile<CR>
-nmap <silent> <Leader>T :w \| TestNearest<CR>
-nmap <silent> <Leader>ts :TestSuite<CR>
-nmap <silent> <Leader>l :TestLast<CR>
-nmap <silent> <Leader>g :TestVisit<CR>
-
 "Vim insert shortcuts
 iabbrev epry require IEx; IEx.pry
 iabbrev epau this.timeout(0); return pauseTest();

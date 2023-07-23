@@ -1,115 +1,46 @@
-local fn = vim.fn
+return {
+  -- "neovim/nvim-lspconfig",
+  -- "hrsh7th/cmp-path",
+  -- "hrsh7th/cmp-cmdline",
 
--- Automatically install packer
-local install_path = fn.stdpath 'data' .. '/site/pack/packer/start/packer.nvim'
-if fn.empty(fn.glob(install_path)) > 0 then PACKER_BOOTSTRAP = fn.system { 'git',
-    'clone',
-    '--depth',
-    '1',
-    'https://github.com/wbthomason/packer.nvim',
-    install_path,
-  }
-  print 'Installing packer close and reopen Neovim...'
-  vim.cmd [[packadd packer.nvim]]
-end
+  "janko-m/vim-test",
+  "jremmen/vim-ripgrep",
+  "kyazdani42/nvim-web-devicons",
+  "marko-cerovac/material.nvim",
+  "nvim-lua/plenary.nvim",
+  "tpope/vim-projectionist",
+  "tpope/vim-surround",
+  "vim-scripts/BufOnly.vim",
+  "wbthomason/packer.nvim",
+  "khaveesh/vim-fish-syntax",
+  "tpope/vim-unimpaired",
+  "rcarriga/nvim-notify",
+  "tpope/vim-endwise",
+  "godlygeek/tabular",
+  "evanleck/vim-svelte",
 
--- Use a protected call so we don't error out on first use
-local ok, packer = pcall(require, 'packer')
-if not ok then
-  return
-end
+  { 'ibhagwan/fzf-lua',
+    dependencies = { 'kyazdani42/nvim-web-devicons' }
+  },
 
-return require('packer').startup(function()
-  -- Packer can manage itself
-  use 'janko-m/vim-test'
-  use 'jremmen/vim-ripgrep'
-  use 'kyazdani42/nvim-web-devicons'
-  use 'marko-cerovac/material.nvim'
-  use 'nvim-lua/plenary.nvim'
-  use 'nvim-treesitter/nvim-treesitter-textobjects'
-  use 'tpope/vim-projectionist'
-  use 'tpope/vim-surround'
-  use 'vim-scripts/BufOnly.vim'
-  use 'wbthomason/packer.nvim'
-  use 'khaveesh/vim-fish-syntax'
-  use 'tpope/vim-unimpaired'
-  use 'tpope/vim-fugitive'
-  use 'rcarriga/nvim-notify'
-  use 'tpope/vim-endwise'
-  use 'godlygeek/tabular'
-  use 'evanleck/vim-svelte'
-  use {
-    "williamboman/mason.nvim",
-    "williamboman/mason-lspconfig.nvim",
-    "neovim/nvim-lspconfig",
-  }
+  {
+   'nvim-lualine/lualine.nvim',
+    dependencies = { 'kyazdani42/nvim-web-devicons' }
+  },
 
-  use({
-    "iamcco/markdown-preview.nvim",
-    run = function() vim.fn["mkdp#util#install"]() end,
-  })
+  { "iamcco/markdown-preview.nvim",
+    build = function() vim.fn["mkdp#util#install"]() end,
+  },
 
-  use {
+  {
+    "nanozuki/tabby.nvim",
+    config = function() require("tabby").setup() end,
+  },
+
+  {
     'numToStr/Comment.nvim',
     config = function()
       require('Comment').setup()
     end
   }
-
-  -- use {
-  --   "nanozuki/tabby.nvim",
-  --   config = function() require("tabby").setup() end,
-  -- }
-  --
-  use { 'ibhagwan/fzf-lua',
-    requires = { 'kyazdani42/nvim-web-devicons' }
-  }
-
-  use { 'nvim-lualine/lualine.nvim',
-    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-  }
-
-  -- Highlight, edit, and navigate code using a fast incremental parsing library
-  use { 'nvim-treesitter/nvim-treesitter',
-    run = ':TSUpdate',
-    requires = { 'nvim-treesitter/nvim-treesitter-textobjects' }
-  }
-
--- Add indentation guides even on blank lines
-
-  -- Add git related info in the signs columns and popups
-  use { 'lewis6991/gitsigns.nvim',
-    requires = { 'nvim-lua/plenary.nvim' },
-    config = function()
-      require('gitsigns').setup {
-        current_line_blame = false,
-        yadm = {
-          enable = true
-        },
-      }
-    end
-  }
-
-  --vim-cmp (autocomplete)
-  --Plug 'neovim/nvim-lspconfig'
-  use 'hrsh7th/cmp-nvim-lsp'
-  use 'hrsh7th/cmp-buffer'
-  use 'hrsh7th/cmp-path'
-  use 'hrsh7th/cmp-cmdline'
-  use 'hrsh7th/nvim-cmp'
-  
-  -- Snippets
-  use { 'L3MON4D3/LuaSnip',
-    requires = {
-      "rafamadriz/friendly-snippets" -- Community snippets
-    }
-  }
-
-  -- Automatically set up your configuration after cloning packer.nvim
-  -- Put this at the end after all plugins
-  if PACKER_BOOTSTRAP then
-    require('packer').sync()
-  end
-
-
-end)
+}
