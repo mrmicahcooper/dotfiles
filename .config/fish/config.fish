@@ -88,13 +88,6 @@ abbr --add gwip git commit -m WIP
 abbr --add gelete "git branch --merged | rg -v main -N | xargs git branch -d"
 abbr --add tf op run --env-file .env terraform
 
-abbr --add papi "cd ~/code/codebuilder/codebuilder-platform-api"
-abbr --add wapi "cd ~/code/codebuilder/workspace-manager-api"
-abbr --add images "cd ~/code/codebuilder/code-builder-images"
-abbr --add devfile "cd ~/code/codebuilder/devfile"
-abbr --add package "cd ~/code/codebuilder/worksace-manager-package"
-abbr --add integration "cd ~/code/codebuilder/code-builder-integration"
-
 alias l1="exa --oneline"
 alias la="exa --all --long --header --classify --git"
 alias lg="exa --long --header --classify --git -s modified --grid"
@@ -128,8 +121,8 @@ alias nomoney='\
 
 starship init fish | source
 
-source_existing '~/.asdf/asdf.fish'
+source_existing $HOME/.asdf/asdf.fish
 source_existing /opt/asdf-vm/asdf.fish
 source_existing /opt/homebrew/opt/asdf/libexec/asdf.fish
-source_existing /home/micah/.config/op/plugins.sh
-source_existing /Users/micahcooper/.config/op/plugins.sh
+source_existing $HOME/.config/op/plugins.sh
+source_existing $HOME/.mac-fish.fish
