@@ -58,11 +58,6 @@ abbr --add kace kubespace
 abbr --add kns kubens
 abbr --add kt kitty --session ~/code/codepun/config/startup_session.kitty.conf
 abbr --add kx kubectx
-abbr --add l1 exa --oneline
-abbr --add la exa --all --long --header --classify --git
-abbr --add lg exa --long --header --classify --git -s modified --grid
-abbr --add ls exa --long --header --classify --git
-abbr --add lsd exa --only-dirs --long --header --git
 abbr --add mk minikube
 abbr --add more less
 abbr --add nfig command nvim ~/.config/nvim/init.vim
@@ -99,6 +94,12 @@ abbr --add images "cd ~/code/codebuilder/code-builder-images"
 abbr --add devfile "cd ~/code/codebuilder/devfile"
 abbr --add package "cd ~/code/codebuilder/worksace-manager-package"
 abbr --add integration "cd ~/code/codebuilder/code-builder-integration"
+
+alias l1="exa --oneline"
+alias la="exa --all --long --header --classify --git"
+alias lg="exa --long --header --classify --git -s modified --grid"
+alias ls="exa --long --header --classify --git"
+alias lsd="exa --only-dirs --long --header --git"
 
 alias gush="git push origin (git rev-parse --abbrev-ref HEAD) --force-with-lease"
 alias gull="git pull --rebase origin (git rev-parse --abbrev-ref HEAD)"
