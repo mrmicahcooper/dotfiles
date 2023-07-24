@@ -88,6 +88,7 @@ abbr --add glod git log --oneline --decorate
 abbr --add gra git rebase --abort
 abbr --add grc git rebase --continue
 abbr --add gst git status
+abbr --add gow git show
 abbr --add gwip git commit -m WIP
 abbr --add gelete "git branch --merged | rg -v main -N | xargs git branch -d"
 abbr --add tf op run --env-file .env terraform
