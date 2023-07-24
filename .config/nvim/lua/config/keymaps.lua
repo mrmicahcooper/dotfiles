@@ -43,3 +43,7 @@ map("n", "<c-p>", "<cmd>Telescope find_files<cr>")
 map("n", "<leader>sf", "<cmd>Telescope find_files<cr>")
 map("n", "<leader>sb", "<cmd>Telescope buffers<cr>")
 map("n", "<c-b>", "<cmd>Telescope buffers<cr>")
+
+map("n", "<leader>gb", "<cmd>Git blame<cr>")
+map("n", "<leader>ge", "<cmd>Gedit:<cr>")
+map("n", "<leader>gw", "<cmd>Gwrite<cr>")
