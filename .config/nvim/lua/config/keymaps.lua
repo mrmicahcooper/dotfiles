@@ -31,11 +31,15 @@ map("n", "<leader>ts", "<cmd>TestSuite<cr>")
 map("n", "<leader>l", "<cmd>TestLast<cr>")
 
 --change colorschemes
-map("n", "<leader>cc", "<cmd>colorscheme catppuccin<cr>")
 map("n", "<leader>cl", "<cmd>colorscheme catppuccin-latte<cr>")
 map("n", "<leader>cf", "<cmd>colorscheme catppuccin-frappe<cr>")
 map("n", "<leader>ca", "<cmd>colorscheme catppuccin-macchiato<cr>")
 map("n", "<leader>co", "<cmd>colorscheme catppuccin-mocha<cr>")
+map("n", "<leader>mo",  "<cmd>colorscheme material-oceanic<cr>")
+map("n", "<leader>mdo", "<cmd>colorscheme material-deep-ocean<cr>")
+map("n", "<leader>mp",  "<cmd>colorscheme material-palenight<cr>")
+map("n", "<leader>ml",  "<cmd>colorscheme material-lighter<cr>")
+map("n", "<leader>md",  "<cmd>colorscheme material-darker<cr>")
 
 map("n", "<leader>r", "<cmd>Telescope live_grep<cr>")
 map("n", "<leader><space>", "<cmd>Telescope live_grep<cr>")
