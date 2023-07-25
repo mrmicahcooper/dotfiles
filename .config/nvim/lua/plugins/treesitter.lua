@@ -17,6 +17,8 @@ return {
         "heex",
         "json",
         "lua",
+        "hcl",
+        "terraform",
         "ocaml",
         "query",
         "ruby",
