@@ -24,13 +24,16 @@ return {
           globalstatus = true,
           always_divide_middle = true,
         },
+        sections = {
+          lualine_c = { '%F' }
+        },
         tabline = {
-          lualine_a = { { "tabs", mode = 2 } },
+          lualine_a = { { "tabs", mode = 1 } },
           lualine_b = {},
           lualine_c = {},
           lualine_x = {},
           lualine_y = {},
-          lualine_z = { "buffers" },
+          lualine_z = {},
         },
         extensions = {
           "quickfix",
@@ -52,4 +55,3 @@ return {
     end,
   },
 }
-

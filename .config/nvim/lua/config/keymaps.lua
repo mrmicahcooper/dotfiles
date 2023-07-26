@@ -33,7 +33,7 @@ map("n", "<leader>l", "<cmd>TestLast<cr>")
 --change colorschemes
 map("n", "<leader>cl", "<cmd>colorscheme catppuccin-latte<cr>")
 map("n", "<leader>cf", "<cmd>colorscheme catppuccin-frappe<cr>")
-map("n", "<leader>ca", "<cmd>colorscheme catppuccin-macchiato<cr>")
+map("n", "<leader>cm", "<cmd>colorscheme catppuccin-macchiato<cr>")
 map("n", "<leader>co", "<cmd>colorscheme catppuccin-mocha<cr>")
 map("n", "<leader>mo",  "<cmd>colorscheme material-oceanic<cr>")
 map("n", "<leader>mdo", "<cmd>colorscheme material-deep-ocean<cr>")

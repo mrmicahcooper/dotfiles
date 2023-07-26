@@ -19,22 +19,14 @@ return {
   "godlygeek/tabular",
   "evanleck/vim-svelte",
 
-  { 'ibhagwan/fzf-lua',
+  {
+    'ibhagwan/fzf-lua',
     dependencies = { 'kyazdani42/nvim-web-devicons' }
   },
 
   {
-   'nvim-lualine/lualine.nvim',
-    dependencies = { 'kyazdani42/nvim-web-devicons' }
-  },
-
-  { "iamcco/markdown-preview.nvim",
+    "iamcco/markdown-preview.nvim",
     build = function() vim.fn["mkdp#util#install"]() end,
-  },
-
-  {
-    "nanozuki/tabby.nvim",
-    config = function() require("tabby").setup() end,
   },
 
   {
