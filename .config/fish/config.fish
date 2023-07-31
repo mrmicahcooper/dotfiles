@@ -6,9 +6,9 @@ fish_add_path $HOME/go \
     $HOME/.config/yarn/global/node_modules/.bin \
     $HOME/.yarn/bin \
     $HOME/google-cloud-sdk/path.fish.inc \
-    /Applications/Visual Studio Code.app/Contents/Resources/app/bin \
     /opt/homebrew/bin \
     /usr/local/opt/qt@5/bin \
+    /usr/local/bin \
     $HOME/.fly/bin \
     /Applications/Postgres.app/Contents/Versions/latest/bin
 
@@ -122,6 +122,7 @@ alias nomoney='\
 starship init fish | source
 
 source_existing $HOME/.asdf/asdf.fish
+source_existing ~/.asdf/asdf.fish
 source_existing /opt/asdf-vm/asdf.fish
 source_existing /opt/homebrew/opt/asdf/libexec/asdf.fish
 source_existing $HOME/.config/op/plugins.sh
