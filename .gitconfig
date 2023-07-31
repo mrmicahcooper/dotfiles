@@ -45,9 +45,17 @@
   algorithm = patience
 [fetch]
   prune = true
-[credential]
-	helper = osxkeychain
 [init]
 	defaultBranch = main
 [hub]
 	protocol = https
+[gpg]
+  format = ssh
+[gpg "ssh"]
+  ; program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+[commit]
+	gpgsign = true
+[advice]
+	statushints = false
+[include]
+  path = ~/.gitconfig.local
