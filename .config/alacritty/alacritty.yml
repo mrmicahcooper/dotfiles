@@ -1,15 +1,5 @@
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
 
-# Import additional configuration files
-#
-# Imports are loaded in order, skipping all missing files, with the importing
-# file being loaded last. If a field is already present in a previous import, it will be replaced.
-#
-# All imports must either be absolute paths starting with `/`, or paths relative
-# to the user's home directory starting with `~/`.
-import:
-  - ~/.config/alacritty/current-theme.yml
-
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
 # set by alacritty itself.
@@ -100,10 +90,8 @@ window:
   # Scrolling distance multiplier.
   #multiplier: 3
 
-# Font configuration
 font:
-  size: 10
-  # size: 15
+  # size: imported from ~/.config/alacritty/alacritty.local.yml
   normal:
     family: IntelOneMono Nerd Font
     # family: FantasqueSansMono Nerd Font Mono
@@ -391,9 +379,9 @@ draw_bold_text_with_bright_colors: true
 #   - (macOS) /bin/bash --login
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
-shell:
-  program: /usr/bin/fish
-  # program: /usr/bin/zsh
+#
+# shell:
+#   program: imported from ~/.config/alacritty/alacritty.local.yml
 # args:
 #    - --login
 
@@ -823,3 +811,14 @@ shell:
 
   # Print all received window events.
   #print_events: false
+
+# Import additional configuration files
+#
+# Imports are loaded in order, skipping all missing files, with the importing
+# file being loaded last. If a field is already present in a previous import, it will be replaced.
+#
+# All imports must either be absolute paths starting with `/`, or paths relative
+# to the user's home directory starting with `~/`.
+import:
+  - ~/.config/alacritty/current-theme.yml
+  - ~/.config/alacritty/alacritty.local.yml
