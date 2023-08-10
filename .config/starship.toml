@@ -1,7 +1,7 @@
 #
 # 󱗿 󱗽    󰗗   󰒋 󰒍 󰷵
-# 󰤇 
-#        󰍟             󰁕 󰁖 󰁗 󰁘 󰁚 󰄾 󰅂 󰍟 󰓺 󰔰 󰘠 󰛂 󰛂 󰛂 󰜴 󰜵 󰞘 󰦥 󰧂 󰧚 󰧛 󰬪 󰬪 󰮺 󰳟 󰶻 󰷵 󱦰
+# 󰤇  
+#        󰍟             󰁕 󰁖 󰁗 󰁘 󰁚 󰄾 󰅂 󰍟 󰓺 󰔰 󰘠 󰛂 󰛂 󰛂 󰜴 󰜵 󰞘 󰦥 󰧂 󰧚 󰧛 󰬪 󰬪 󰮺 󰳟 󰶻 󰷵 󱦰 
 # bright-black, bright-red, bright-green, bright-blue, bright-yellow, bright-purple, bright-cyan, bright-white
 
 format = """
@@ -20,6 +20,7 @@ $nodejs\
 $nim\
 $rust\
 $fill \
+$aws \
 $username\
 $hostname\
 $os \
@@ -67,13 +68,17 @@ format = '[$user󰓺 ]($style) '
 disabled = false
 
 [aws]
-format="[$symbol($profile in $region) ]($style)"
-symbol = "  "
+format="[$symbol$profile 󰍎$region]($style)"
+symbol = " "
+# symbol = "☁️ "
 
 [aws.region_aliases]
-us-west-2= "pdx"
-us-east-1= "iad"
- 
+# us-west-2= "pdx"
+# us-east-1= "iad"
+# eu-west-1= "dub"
+# eu-central-1= "fra"
+# ca-central-1= "iad"
+#  
 ssh_symbol = "SSH"
 [hostname]
 ssh_only = false
