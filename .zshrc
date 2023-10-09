@@ -43,3 +43,6 @@ export GPG_TTY=$(tty)
 # opam configuration
 [[ ! -r /Users/micah.cooper/.opam/opam-init/init.zsh ]] || source /Users/micah.cooper/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 export GPG_TTY=$(tty)
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/bin/nomad nomad

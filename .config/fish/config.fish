@@ -86,8 +86,12 @@ abbr --add gst git status
 abbr --add gow git show
 abbr --add gwip git commit -m WIP
 abbr --add gelete "git branch --merged | rg -v main -N | xargs git branch -d"
-abbr --add tf op run --env-file .env terraform
+abbr --add tf op run --env-file .env -- terraform
+abbr --add nd op run --env-file .env -- nomad
+abbr --add mp multipass
 
+
+alias clipboard="xclip -selection clipboard"
 alias l1="exa --oneline"
 alias la="exa --all --long --header --classify --git"
 alias lg="exa --long --header --classify --git -s modified --grid"

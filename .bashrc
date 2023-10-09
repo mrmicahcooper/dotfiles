@@ -31,3 +31,5 @@ source ~/.posix_functions
 [ -f ~/.aws/env.local.sh ] && source ~/.aws/env.local.sh
 
 eval "$(starship init bash)"
+
+complete -C /usr/bin/nomad nomad
