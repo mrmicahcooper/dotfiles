@@ -16,7 +16,7 @@ $golang\
 $haskell\
 $java\
 $julia\
-$nodejs\
+${custom.nodejs}\
 $nim\
 $rust\
 $fill \
@@ -68,7 +68,8 @@ format = '[$user󰓺 ]($style) '
 disabled = false
 
 [aws]
-format="[$symbol$profile 󰍎$region]($style)"
+# format="[$symbol$profile 󰍎$region]($style)"
+format="[$symbol$profile]($style)"
 symbol = " "
 # symbol = "☁️ "
 
@@ -88,10 +89,9 @@ disabled = false
 
 [directory]
 format = "[$path ]($style) "
-truncation_length = 2
-truncation_symbol = "…/"
+truncation_length = 1
+truncation_symbol = "… /"
 truncate_to_repo = false
-read_only = " "
 
 [directory.substitutions]
 "Documents" = " "
@@ -183,6 +183,14 @@ symbol = " "
 
 [nodejs]
 symbol = " "
+
+[custom.nodejs]
+shell = ["node", "--version"]
+symbol = ""
+format = '[$symbol ($output) ]($style)'
+detect_files = ["package.json", ".node-version"]
+detect_extensions = ["js", "mjs", "cjs", "ts", "mts", "cts"]
+ignore_timeout = true
 
 [os]
 disabled = false

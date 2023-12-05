@@ -93,6 +93,7 @@ window:
 font:
   # size: imported from ~/.config/alacritty/alacritty.local.yml
   normal:
+    # family: Maple Mono NF
     family: 0xProto Nerd Font
     # family: IntelOneMono Nerd Font
     # family: FantasqueSansMono Nerd Font Mono
@@ -117,7 +118,7 @@ font:
   # spacing.
   offset:
     x: 0
-    y: 2 
+    y: 3
     # x: -1
     # y: -2
 
