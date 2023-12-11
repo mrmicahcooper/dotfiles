@@ -9,6 +9,7 @@ fish_add_path $HOME/go \
     /opt/homebrew/bin \
     /usr/local/opt/qt@5/bin \
     /usr/local/bin \
+    $HOME/.bun/bin/bun \
     $HOME/.fly/bin \
     /Applications/Postgres.app/Contents/Versions/latest/bin
 
