@@ -11,7 +11,8 @@ fish_add_path $HOME/go \
     /usr/local/bin \
     $HOME/.bun/bin/bun \
     $HOME/.fly/bin \
-    /Applications/Postgres.app/Contents/Versions/latest/bin
+    /Applications/Postgres.app/Contents/Versions/latest/bin \
+    /Users/micah.cooper/code/extdns-ng/venv/bin/
 
 set -x GOPATH $HOME/go
 set -x HISTCONTROL erasedups
@@ -90,6 +91,7 @@ abbr --add gelete "git branch --merged | rg -v main -N | xargs git branch -d"
 abbr --add tf op run --env-file .env -- terraform
 abbr --add nd op run --env-file .env -- nomad
 abbr --add mp multipass
+abbr --add e exercism
 
 
 alias clipboard="xclip -selection clipboard"

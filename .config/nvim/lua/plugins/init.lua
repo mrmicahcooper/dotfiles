@@ -2,7 +2,6 @@ return {
   "neovim/nvim-lspconfig",
   "hrsh7th/cmp-path",
   "hrsh7th/cmp-cmdline",
-
   "janko-m/vim-test",
   "jremmen/vim-ripgrep",
   "kyazdani42/nvim-web-devicons",
@@ -18,6 +17,7 @@ return {
   "tpope/vim-endwise",
   "godlygeek/tabular",
   "evanleck/vim-svelte",
+  "vinnymeller/swagger-preview.nvim",
 
   {
     'ibhagwan/fzf-lua',
@@ -26,7 +26,12 @@ return {
 
   {
     "iamcco/markdown-preview.nvim",
-    build = function() vim.fn["mkdp#util#install"]() end,
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    build = "cd app && yarn install",
+    init = function()
+      vim.g.mkdp_filetypes = { "markdown" }
+    end,
+    ft = { "markdown" },
   },
 
   {
