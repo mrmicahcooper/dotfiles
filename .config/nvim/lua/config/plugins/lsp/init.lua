@@ -21,7 +21,6 @@ return {
 
       ensure_installed = {
         "denols",
-        "rust_analyzer",
         "tsserver",
         "jsonls",
         "lua_ls",
@@ -38,8 +37,8 @@ return {
           require("lspconfig")[server_name].setup({
             capabilities = capabilities,
             on_attach = function(client, buffer)
-              require("plugins.lsp.helpers").on_attach(client, buffer)
-              require("plugins.lsp.format").on_attach(client, buffer)
+              require("config.plugins.lsp.helpers").on_attach(client, buffer)
+              require("config.plugins.lsp.format").on_attach(client, buffer)
             end,
           })
         end,
@@ -48,8 +47,8 @@ return {
       require("lspconfig").nim_langserver.setup({
         capabilities = capabilities,
         on_attach = function(client, buffer)
-          require("plugins.lsp.helpers").on_attach(client, buffer)
-          require("plugins.lsp.format").on_attach(client, buffer)
+          require("config.plugins.lsp.helpers").on_attach(client, buffer)
+          require("config.plugins.lsp.format").on_attach(client, buffer)
         end,
       })
     end,
