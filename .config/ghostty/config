@@ -1,0 +1,6 @@
+font-family  = "Maple Mono NF"
+font-feature = -calt
+font-feature = -dlig
+font-feature = -liga
+font-size    = 16
+theme        = catppuccin-latte
