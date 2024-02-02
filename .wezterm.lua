@@ -19,8 +19,8 @@ return {
   -- font = wezterm.font 'FantasqueSansMono Nerd Font Mono',
   -- font = wezterm.font 'JuliaMono',
   -- font = wezterm.font 'VictorMono Nerd Font',
-  font_size = 20,
-  line_height = 1.1,
+  font_size = 22,
+  line_height = 1,
   -- freetype_load_target = 'Light'
   -- freetype_load_target = 'HorizontalLcd',
   dpi = 96.0

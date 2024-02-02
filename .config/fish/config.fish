@@ -12,6 +12,7 @@ fish_add_path $HOME/go \
     $HOME/.bun/bin/bun \
     $HOME/.fly/bin \
     /Applications/Postgres.app/Contents/Versions/latest/bin \
+    /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin \
     /Users/micah.cooper/code/extdns-ng/venv/bin/
 
 set -x GOPATH $HOME/go
@@ -24,12 +25,15 @@ set -x LSCOLORS gxgxcxdxbxegedabagacad
 set -x PSQL_EDITOR 'nvim -c "setf sql"'
 set -x RI "--format ansi -T"
 set -x RIPGREP_CONFIG_PATH $HOME/.ripgreprc
+
 # for HiDpi
 set -x QT_AUTO_SCREEN_SCALE_FACTOR 1
 set -x GDK_SCALE 2
 set -x DOCKER_BUILDKIT 1
+
 #Use this for alacritty
 set -x TERM xterm-256color
+
 # erlang/elixir Env Vars
 set -x KERL_CONFIGURE_OPTIONS "--disable-debug --without-javac"
 set -x ERL_AFLAGS "-kernel shell_history enabled"
@@ -88,11 +92,11 @@ abbr --add gst git status
 abbr --add gow git show
 abbr --add gwip git commit -m WIP
 abbr --add gelete "git branch --merged | rg -v main -N | xargs git branch -d"
+abbr --add grain "git fetch && git rebase main"
 abbr --add tf op run --env-file .env -- terraform
 abbr --add nd op run --env-file .env -- nomad
 abbr --add mp multipass
 abbr --add e exercism
-
 
 alias clipboard="xclip -selection clipboard"
 alias l1="exa --oneline"
@@ -107,24 +111,6 @@ alias gull="git pull --rebase origin (git rev-parse --abbrev-ref HEAD)"
 alias record='\
     sudo modprobe v4l2loopback exclusive_caps=1 max_buffers=2 && \
     gphoto2 --stdout --capture-movie | ffmpeg -i - -vcodec rawvideo -pix_fmt yuv420p -threads 0 -f v4l2 /dev/video4'
-
-alias screencast='\
-    xrandr --setmonitor virtual-left 4096/947x2160/457+0+0 DisplayPort-0 && \
-    xrandr --setmonitor virtual-right 1024/947x2160/457+4096+0 none'
-
-alias noscreencast='\
-    xrandr --delmonitor virtual-left && \
-    xrandr --delmonitor virtual-right'
-
-alias money='\
-    xrandr --setmonitor virtual-left 1920/947x1080/457+0+0 DisplayPort-0 && \
-    xrandr --setmonitor virtual-right 3200/947x1920/457+1920+0 none && \
-    xrandr --setmonitor virtual-bottom 5120/947x1080/457+0+1080 none'
-
-alias nomoney='\
-    xrandr --delmonitor virtual-left && \
-    xrandr --delmonitor virtual-right && \
-    xrandr --delmonitor virtual-bottom'
 
 starship init fish | source
 

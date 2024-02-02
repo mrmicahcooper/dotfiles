@@ -1,6 +1,4 @@
-font-family  = "Maple Mono NF"
-font-feature = -calt
-font-feature = -dlig
-font-feature = -liga
-font-size    = 16
-theme        = catppuccin-latte
+font-family        = "0xProto Nerd Font"
+font-size          = 16
+theme              = catppuccin-macchiato
+background-opacity = 0.95
