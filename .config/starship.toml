@@ -7,6 +7,7 @@
 format = """
 [╭─󰧂 ](fg:#DA627D)\
 $directory\
+$direnv\
 $git_branch\
 $git_status\
 $c\
@@ -99,8 +100,21 @@ truncate_to_repo = false
 "Music" = " "
 "Pictures" = " "
 
-symbol = " "
+[direnv]
+disabled = false
+format = "[$symbol:$loaded:$allowed]($style)"
+# symbol = "direnv "
+symbol = "󱂀 "
+style="fg:green"
+loaded_msg = "loaded "
+unloaded_msg = " "
+# allowed_msg = "󰔓 "
+allowed_msg = " "
+# denied_msg = "󰔑 "
+denied_msg = " "
+
 [docker_context]
+symbol = " "
 style = ""
 format = '[$symbol $context ]($style) $path'
 
