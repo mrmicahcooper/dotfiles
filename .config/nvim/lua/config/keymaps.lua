@@ -7,8 +7,8 @@ local function map(mode, lhs, rhs, opts)
 end
 
 --Remap for dealing with word wrap
-map("n", "k", "v:count == 0 ? 'gk' : 'k'", { expr = true})
-map("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true})
+map("n", "k", "v:count == 0 ? 'gk' : 'k'", { expr = true })
+map("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true })
 
 -- copy to end of line
 map("n", "Y", "y$")
@@ -30,16 +30,19 @@ map("n", "<leader>T", "<cmd>w | TestNearest<CR>")
 map("n", "<leader>ts", "<cmd>TestSuite<cr>")
 map("n", "<leader>l", "<cmd>TestLast<cr>")
 
+-- vim dadbod
+map("n", "<leader>d", ":%DB sqlite:~/code/fam/data/fam_test.db<cr>")
+
 --change colorschemes
 map("n", "<leader>cl", "<cmd>colorscheme catppuccin-latte<cr>")
 map("n", "<leader>cf", "<cmd>colorscheme catppuccin-frappe<cr>")
 map("n", "<leader>cm", "<cmd>colorscheme catppuccin-macchiato<cr>")
 map("n", "<leader>co", "<cmd>colorscheme catppuccin-mocha<cr>")
-map("n", "<leader>mo",  "<cmd>colorscheme material-oceanic<cr>")
+map("n", "<leader>mo", "<cmd>colorscheme material-oceanic<cr>")
 map("n", "<leader>mdo", "<cmd>colorscheme material-deep-ocean<cr>")
-map("n", "<leader>mp",  "<cmd>colorscheme material-palenight<cr>")
-map("n", "<leader>ml",  "<cmd>colorscheme material-lighter<cr>")
-map("n", "<leader>md",  "<cmd>colorscheme material-darker<cr>")
+map("n", "<leader>mp", "<cmd>colorscheme material-palenight<cr>")
+map("n", "<leader>ml", "<cmd>colorscheme material-lighter<cr>")
+map("n", "<leader>md", "<cmd>colorscheme material-darker<cr>")
 
 map("n", "<leader>r", "<cmd>Telescope live_grep<cr>")
 map("n", "<leader><space>", "<cmd>Telescope live_grep<cr>")

@@ -18,7 +18,7 @@ return {
   "godlygeek/tabular",
   "evanleck/vim-svelte",
   "vinnymeller/swagger-preview.nvim",
-
+  "tpope/vim-dadbod",
   {
     'ibhagwan/fzf-lua',
     dependencies = { 'kyazdani42/nvim-web-devicons' }
