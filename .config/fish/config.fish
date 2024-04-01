@@ -114,6 +114,7 @@ alias record='\
 
 direnv hook fish | source
 starship init fish | source
+direnv hook fish | source
 
 source_existing $HOME/.asdf/asdf.fish
 source_existing ~/.asdf/asdf.fish
