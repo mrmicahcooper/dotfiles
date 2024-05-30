@@ -28,6 +28,10 @@ $shell\
 $jobs\
 $character"""
 
+# $username\
+# $hostname\
+# $os \
+
 command_timeout = 200
 add_newline = false
 
@@ -107,7 +111,8 @@ format = "[[♥ $time ](bg:#33658A)]($style)"
 
 
 [git_branch]
-format = "[$symbol$branch ]($style)"
+format = '[$symbol$branch ]($style)'
+truncation_length = 25
 symbol = " "
 
 [git_status]
