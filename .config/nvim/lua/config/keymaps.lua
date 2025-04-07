@@ -27,8 +27,10 @@ map("n", "<leader>]", "<cmd>exe 'vertical resize +30' <cr>")
 
 map("n", "<leader>t", "<cmd>w | TestFile<cr>")
 map("n", "<leader>T", "<cmd>w | TestNearest<CR>")
-map("n", "<leader>ts", "<cmd>TestSuite<cr>")
-map("n", "<leader>l", "<cmd>TestLast<cr>")
+map("n", "<leader>ts", "<cmd>w | TestSuite<cr>")
+map("n", "<leader>l", "<cmd>w | TestLast<cr>")
+
+vim.keymap.set("n", "<leader>cd", vim.diagnostic.open_float, { desc = "Line Diagnostics" })
 
 -- vim dadbod
 map("n", "<leader>d", ":%DB sqlite:~/code/fam/data/fam_test.db<cr>")
@@ -44,13 +46,22 @@ map("n", "<leader>mp", "<cmd>colorscheme material-palenight<cr>")
 map("n", "<leader>ml", "<cmd>colorscheme material-lighter<cr>")
 map("n", "<leader>md", "<cmd>colorscheme material-darker<cr>")
 
+<<<<<<< HEAD
 -- map("n", "<leader>r", "<cmd>Telescope live_grep<cr>")
 map("n", "<c-r>", "<cmd>Telescope live_grep<cr>")
 map("n", "<leader><space>", "<cmd>Telescope find_files<cr>")
 -- map("n", "<c-p>", "<cmd>Telescope find_files<cr>")
+=======
+map("n", "<leader>r", "<cmd>Telescope live_grep<cr>")
+map("n", "<leader><space>", "<cmd>Telescope find_files<cr>")
+-- map("n", "<leader><space>", "<cmd>Telescope live_grep<cr>")
+-- map("n", "<c-p>", "<cmd>Telescope find_files<cr>")
+map("n", "<c-f>", "<cmd>Telescope live_grep<cr>")
+>>>>>>> 8a7af08 (All work updates;/)
 map("n", "<leader>sf", "<cmd>Telescope find_files<cr>")
 map("n", "<leader>sb", "<cmd>Telescope buffers<cr>")
 map("n", "<c-b>", "<cmd>Telescope buffers<cr>")
+map("n", "<c-z>", "")
 
 map("n", "<leader>gb", "<cmd>Git blame<cr>")
 map("n", "<leader>ge", "<cmd>Gedit:<cr>")

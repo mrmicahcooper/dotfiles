@@ -1,6 +1,6 @@
 bun 1.0.18
-elixir 1.16
-erlang 26.0.2
+elixir 1.17.0-otp-27
+erlang 27.0
 golang 1.18.4
 julia 1.9.0
 lua 5.4.3

@@ -3,3 +3,5 @@
 /.config/nvim/lazy-lock.json
 /.config/alacritty/current-theme.yml
 /.config/alacritty/alacritty.local.yml
+
+~/code/mgmt-plane/.direnv/*

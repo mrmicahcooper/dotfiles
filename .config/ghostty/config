@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 font-family        = "0xProto Nerd Font"
 #font-family        = "Maple Mono NF"
 font-size          = 14
@@ -5,3 +6,31 @@ theme              = catppuccin-macchiato
 # theme              = catppuccin-latte
 # background-opacity = 0.95
 command = "/usr/bin/nu"
+=======
+keybind = super+shift+h=goto_split:left
+keybind = super+shift+l=goto_split:right
+keybind = super+shift+k=goto_split:top
+keybind = super+shift+j=goto_split:bottom
+
+# theme               = catppuccin-macchiato
+theme             = catppuccin-latte
+
+
+# font-family       = "Maple Mono NF"
+#font-family        = "0xProto Nerd Font"
+# font-family       = "RecMonoLinear Nerd Font Mono"
+font-family         = "RecMonoSmCasual Nerd Font Mono"
+font-size           = 15
+
+font-feature = calt 1
+font-feature = liga 1
+font-feature = dlig 1
+font-feature = dlig 1
+font-feature = slant -15
+
+
+shell-integration  = fish
+
+# background-opacity = 0.95
+#command = /opt/homebrew/bin/nu
+>>>>>>> 8a7af08 (All work updates;/)

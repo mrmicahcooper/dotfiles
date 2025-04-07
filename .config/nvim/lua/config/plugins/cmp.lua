@@ -58,12 +58,15 @@ return {
           { name = "nvim_lua" },
           { name = "nvim_lsp" },
           { name = "luasnip" },
-          { name = "buffer", keyword_length = 5 },
+          { name = "buffer",  keyword_length = 5 },
         },
-        completion = { completeopt = "menu,menuone,noinsert" },
+        completion = {
+          completeopt = "menu,menuone,noinsert",
+          autocomplete = false
+
+        },
         experimental = { ghost_text = true },
       })
     end,
   }
 }
-

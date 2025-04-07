@@ -8,13 +8,13 @@ return {
     bottom = 0
   },
 
-  color_scheme = "Catppuccin Latte",
+  -- color_scheme = "Catppuccin Latte",
   -- color_scheme = "Catppuccin Mocha",
   -- color_scheme = "Catppuccin Frappe",
-  -- color_scheme = "Catppuccin Macchiato",
+  color_scheme = "Catppuccin Macchiato",
 
-  font = wezterm.font 'Maple Mono NF',
-  -- font = wezterm.font '0xProto Nerd Font',
+  -- font = wezterm.font 'Maple Mono NF',
+  font = wezterm.font '0xProto Nerd Font',
   -- font = wezterm.font 'IntelOneMono Nerd Font',
   -- font = wezterm.font 'FantasqueSansMono Nerd Font Mono',
   -- font = wezterm.font 'JuliaMono',

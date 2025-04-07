@@ -3,8 +3,8 @@ return {
     "neovim/nvim-lspconfig",
     event = "BufReadPre",
     dependencies = {
-      { "folke/neoconf.nvim", cmd = "Neoconf", config = true },
-      { "folke/neodev.nvim", opts = { experimental = { pathStrict = true } } },
+      { "folke/neoconf.nvim", cmd = "Neoconf",                                config = true },
+      { "folke/neodev.nvim",  opts = { experimental = { pathStrict = true } } },
       "mason.nvim",
       "williamboman/mason-lspconfig.nvim",
       "hrsh7th/cmp-nvim-lsp",
@@ -29,7 +29,7 @@ return {
     },
     config = function(_, opts)
       local capabilities = require("cmp_nvim_lsp")
-      .default_capabilities(vim.lsp.protocol.make_client_capabilities())
+          .default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
       require("mason-lspconfig").setup({ ensure_installed = opts.ensure_installed })
       require("mason-lspconfig").setup_handlers({
@@ -54,23 +54,23 @@ return {
     end,
   },
 
-  {
-    "jose-elias-alvarez/null-ls.nvim",
-    event = "BufReadPre",
-    dependencies = { "mason.nvim" },
-    opts = function()
-      local nls = require("null-ls")
-      return {
-        sources = {
-          nls.builtins.diagnostics.credo,
-          nls.builtins.formatting.prettier,
-          nls.builtins.formatting.rubocop,
-          nls.builtins.formatting.stylua,
-          nls.builtins.formatting.nimpretty,
-        },
-      }
-    end,
-  },
+  -- {
+  --   "jose-elias-alvarez/null-ls.nvim",
+  --   event = "BufReadPre",
+  --   dependencies = { "mason.nvim" },
+  --   opts = function()
+  --     local nls = require("null-ls")
+  --     return {
+  --       sources = {
+  --         nls.builtins.diagnostics.credo,
+  --         nls.builtins.formatting.prettier,
+  --         nls.builtins.formatting.rubocop,
+  --         nls.builtins.formatting.stylua,
+  --         nls.builtins.formatting.nimpretty,
+  --       },
+  --     }
+  --   end,
+  -- },
 
   {
     "williamboman/mason.nvim",

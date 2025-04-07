@@ -25,7 +25,7 @@
      "$cmd_duration"
      "$line_break"
      "[╰─](fg:#DA627D)"
-     "$shell"
+     # "$shell"
      "$jobs"
      "$character"
      ];
@@ -116,7 +116,7 @@
      };
      
      "custom.elixir" = {
-       shell = ["rg" "-N" "elixir " ".tool-versions" "-r" ""];
+       shell = "which elixir | rg '(\d+\.\d+\.\d+)' -o -N;"
        symbol = "";
        format = "[$symbol ($output) ]($style)";
        detect_files = ["mix.exs"];

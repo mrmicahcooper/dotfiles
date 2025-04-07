@@ -7,7 +7,7 @@
 web:*.{html,css,js}*
 
 # Because who cares about case!?
---smart-case
+# --smart-case
 
 # --count
 
@@ -22,7 +22,7 @@ web:*.{html,css,js}*
 --colors=match:style:nobold
 
 --hidden
---ignore
+# --ignore
 
 # Show context by default
 # --context=1

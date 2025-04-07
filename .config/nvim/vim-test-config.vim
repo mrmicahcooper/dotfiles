@@ -26,6 +26,7 @@ endfunction
 
 let g:test#custom_strategies = {'nvimtest': function('NvimTest')}
 let g:test#strategy = 'nvimtest'
+" let g:test#strategy = 'toggleterm'
 
 "Vim insert shortcuts
 iabbrev epry require IEx; IEx.pry

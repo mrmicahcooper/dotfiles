@@ -1,3 +1,10 @@
+#
+# 󱗿 󱗽    󰗗   󰒋 󰒍 󰷵
+# 󰤇  
+#        󰍟             󰁕 󰁖 󰁗 󰁘 󰁚 󰄾 󰅂 󰍟 󰓺 󰔰 󰘠 󰛂 󰛂 󰛂 󰜴 󰜵 󰞘 󰦥 󰧂 󰧚 󰧛 󰬪 󰬪 󰮺 󰳟 󰶻 󰷵 󱦰 
+# bright-black, bright-red, bright-green, bright-blue, bright-yellow, bright-purple, bright-cyan, bright-white
+#${custom.elixir}\
+
 format = """
 [╭─󰧂 ](fg:#DA627D)\
 $nix_shell\
@@ -28,11 +35,17 @@ $shell\
 $jobs\
 $character"""
 
+# $nim\
+# $rust\
+# $fill \
+# $aws \
+# $gcloud \
+# $memory_usage\
 # $username\
 # $hostname\
 # $os \
 
-command_timeout = 200
+command_timeout = 300
 add_newline = false
 
 [character]
@@ -49,6 +62,7 @@ zsh_indicator = "󰰸"
 bash_indicator = ""
 
 [fill]
+disabled = true
 symbol = " "
 style = "fg:bright-white"
 
@@ -70,18 +84,29 @@ style_root = "fg:purple"
 format = "[$user󰓺 ]($style) "
 disabled = false
 
-
 [ aws ]
-format = "[$symbol$profile]($style)"
+disabled = true
+# format="[$symbol$profile 󰍎$region]($style)"
+format="[$symbol$profile]($style)"
 symbol = " "
 
 
 [ hostname ]
+ssh_symbol = "SSH"
 ssh_only = false
 style = "fg:green"
 format = "[󰒍 $ssh_symbol$hostname ]($style)"
 disabled = false
 
+[gcloud]
+disabled = true
+
+[aws.region_aliases]
+us-west-2= "pdx"
+us-east-1= "iad"
+eu-west-1= "dub"
+eu-central-1= "fra"
+ca-central-1= "iad"
 
 [ directory ]
 format = "[$path ]($style) "
@@ -89,26 +114,22 @@ truncation_length = 2
 truncation_symbol = "… /"
 truncate_to_repo = false
 
-
 [directory.substitutions]
 "Documents" = " "
 "Downloads" = " "
 "Music" = " "
 "Pictures" = " "
 
-
 [docker_context]
 symbol = " "
 style = ""
 format = "[$symbol $context ]($style) $path"
-
 
 [time]
 disabled = true
 time_format = "%R" # Hour:Minute Format
 style = "bg:#33658A"
 format = "[[♥ $time ](bg:#33658A)]($style)"
-
 
 [git_branch]
 format = '[$symbol$branch ]($style)'
