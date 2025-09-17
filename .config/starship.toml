@@ -1,27 +1,22 @@
-#
-# 󱗿 󱗽    󰗗   󰒋 󰒍 󰷵
-# 󰤇  
-#        󰍟             󰁕 󰁖 󰁗 󰁘 󰁚 󰄾 󰅂 󰍟 󰓺 󰔰 󰘠 󰛂 󰛂 󰛂 󰜴 󰜵 󰞘 󰦥 󰧂 󰧚 󰧛 󰬪 󰬪 󰮺 󰳟 󰶻 󰷵 󱦰 
-# bright-black, bright-red, bright-green, bright-blue, bright-yellow, bright-purple, bright-cyan, bright-white
-
 format = """
 [╭─󰧂 ](fg:#DA627D)\
+$nix_shell\
 $directory\
 $direnv\
 $git_branch\
 $git_status\
 $c\
-${custom.elixir}\
+$elixir\
 $elm\
 $golang\
 $haskell\
 $java\
 $julia\
-${custom.nodejs}\
+$bun\
 $nim\
 $rust\
 $fill \
-$aws \
+$aws\
 $username\
 $hostname\
 $os \
@@ -37,14 +32,15 @@ command_timeout = 200
 add_newline = false
 
 [character]
-success_symbol = "[](bold fg:cyan)"
-error_symbol = "[](bold fg:red)"
+success_symbol = "[](bold fg:cyan)"
+error_symbol = "[](bold fg:red)"
 
 [shell]
 style = "fg:#DA627D"
 format = "[$indicator ]($style)"
 disabled = false
 fish_indicator = "󰈺"
+nu_indicator = ""
 zsh_indicator = "󰰸"
 bash_indicator = ""
 
@@ -52,47 +48,43 @@ bash_indicator = ""
 symbol = " "
 style = "fg:bright-white"
 
-[jobs]
+[ jobs ]
 style = "fg:yellow"
 symbol = "󰑮 "
 format = "[$symbol$number]($style) "
 
-[cmd_duration]
+
+[ cmd_duration ]
 min_time = 0
 format = "[󱎫 $duration]($style) "
 
-[username]
+
+[ username ]
 show_always = true
 style_user = "fg:purple"
 style_root = "fg:purple"
-format = '[$user󰓺 ]($style) '
+format = "[$user󰓺 ]($style) "
 disabled = false
 
-[aws]
-# format="[$symbol$profile 󰍎$region]($style)"
-format="[$symbol$profile]($style)"
+
+[ aws ]
+format = "[$symbol$profile]($style)"
 symbol = " "
-# symbol = "☁️ "
 
-[aws.region_aliases]
-# us-west-2= "pdx"
-# us-east-1= "iad"
-# eu-west-1= "dub"
-# eu-central-1= "fra"
-# ca-central-1= "iad"
-#  
-ssh_symbol = "SSH"
-[hostname]
+
+[ hostname ]
 ssh_only = false
-style="fg:green"
-format = '[󰒍 $ssh_symbol$hostname ]($style)'
+style = "fg:green"
+format = "[󰒍 $ssh_symbol$hostname ]($style)"
 disabled = false
 
-[directory]
+
+[ directory ]
 format = "[$path ]($style) "
 truncation_length = 2
 truncation_symbol = "… /"
 truncate_to_repo = false
+
 
 [directory.substitutions]
 "Documents" = " "
@@ -100,121 +92,52 @@ truncate_to_repo = false
 "Music" = " "
 "Pictures" = " "
 
-[direnv]
-disabled = false
-format = "[$symbol:$loaded:$allowed]($style)"
-# symbol = "direnv "
-symbol = "󱂀 "
-style="fg:green"
-loaded_msg = "loaded  "
-unloaded_msg = "unloaded  "
-# allowed_msg = "󰔓 "
-allowed_msg = "allowed  "
-# denied_msg = "󰔑 "
-denied_msg = "denied  "
 
 [docker_context]
 symbol = " "
 style = ""
-format = '[$symbol $context ]($style) $path'
+format = "[$symbol $context ]($style) $path"
 
-[custom.elixir]
-shell = ["rg", "-N", "elixir ", ".tool-versions", "-r", ""]
-symbol = ""
-format = '[$symbol ($output) ]($style)'
-detect_files = ["mix.exs"]
 
 [time]
 disabled = true
 time_format = "%R" # Hour:Minute Format
 style = "bg:#33658A"
-format = '[[♥ $time ](bg:#33658A)]($style)'
+format = "[[♥ $time ](bg:#33658A)]($style)"
 
-[c]
-symbol = " "
-
-[conda]
-symbol = " "
-
-[dart]
-symbol = " "
-
-[elixir]
-symbol = " "
-
-[elm]
-symbol = " "
 
 [git_branch]
-format = '[$symbol$branch ]($style)'
+format = "[$symbol$branch ]($style)"
 symbol = " "
 
 [git_status]
-format = '[($all_status$ahead_behind) ]($style)'
-ahead = '⇡${count}'
-diverged = '⇕⇡${ahead_count}⇣${behind_count}'
-behind = '⇣${count}'
+format = "[($all_status$ahead_behind) ]($style)"
+ahead = "⇡$count"
+diverged = "⇕⇡$ahead_count⇣$behind_count"
+behind = "⇣$count"
 
-[golang]
-symbol = " "
 
-[guix_shell]
-symbol = " "
-
-[haskell]
-symbol = " "
-
-[haxe]
-symbol = "⌘ "
-
-[hg_branch]
-symbol = " "
-
-[java]
-symbol = " "
-
-[julia]
-symbol = " "
-
-[lua]
-symbol = " "
-
-[memory_usage]
+[ memory_usage ]
 symbol = "󰤇 "
 threshold = 0
 disabled = false
-format = '$symbol[${ram_pct}]($style) '
+format = "$symbol[$ram_pct]($style) "
 
-[meson]
-symbol = "喝 "
 
-[nim]
-symbol = " "
-format = "[$symbol $version]($style)"
-
-[nix_shell]
-symbol = " "
-
-[nodejs]
-symbol = " "
-
-[custom.nodejs]
-shell = ["node", "--version"]
-symbol = ""
-format = '[$symbol ($output) ]($style)'
-detect_files = ["package.json", ".node-version"]
-detect_extensions = ["js", "mjs", "cjs", "ts", "mts", "cts"]
-ignore_timeout = true
-
-[os]
+[ os ]
 disabled = false
-style="fg:green"
+style = "fg:green"
+
 
 [os.symbols]
+AlmaLinux = " "
+Alpaquita = " "
 Alpine = " "
 Amazon = " "
 Android = " "
 Arch = " "
+Artix = " "
+CachyOS = " "
 CentOS = " "
 Debian = " "
 DragonFly = " "
@@ -222,11 +145,13 @@ Emscripten = " "
 EndeavourOS = " "
 Fedora = " "
 FreeBSD = " "
-Garuda = "﯑ "
+Garuda = "󰛓 "
 Gentoo = " "
-HardenedBSD = "ﲊ "
-Illumos = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Kali = " "
 Linux = " "
+Mabox = " "
 Macos = " "
 Manjaro = " "
 Mariner = " "
@@ -234,38 +159,63 @@ MidnightBSD = " "
 Mint = " "
 NetBSD = " "
 NixOS = " "
-OpenBSD = " "
-openSUSE = " "
-OracleLinux = " "
-Pop = " "
+Nobara = " "
+OpenBSD = "󰈺 "
+OracleLinux = "󰌷 "
+Pop = " "
 Raspbian = " "
-Redhat = " "
 RedHatEnterprise = " "
-Redox = " "
-Solus = "ﴱ "
+Redhat = " "
+Redox = "󰀘 "
+RockyLinux = " "
 SUSE = " "
+Solus = "󰠳 "
 Ubuntu = " "
 Unknown = " "
-Windows = " "
+Void = " "
+Windows = "󰍲 "
+openSUSE = " "
 
-[package]
-symbol = " "
 
-[python]
+[ golang ]
+symbol = " "
+
+[ haskell ]
+symbol = " "
+
+[ hg_branch ]
+symbol = " "
+
+[ java ]
+symbol = " "
+
+[ julia ]
+symbol = " "
+
+[ lua ]
+symbol = " "
+
+[ elixir ]
+symbol = " "
+
+[ nix_shell ]
+symbol = " "
+
+[ nodejs ]
+symbol = " "
+
+[ python ]
 symbol = " "
 
-[rlang]
-symbol = "ﳒ "
-
-[ruby]
+[ ruby ]
 symbol = " "
 
-[rust]
+[ rust ]
 symbol = " "
 
-[scala]
+[ scala ]
 symbol = " "
 
-[spack]
-symbol = "🅢 "
-
+[ nim ]
+symbol = " "
+format = "[$symbol $version]($style)"

@@ -1,6 +1,7 @@
-# font-family        = "0xProto Nerd Font"
-font-family        = "Maple Mono NF"
-font-size          = 15
+font-family        = "0xProto Nerd Font"
+#font-family        = "Maple Mono NF"
+font-size          = 14
 theme              = catppuccin-macchiato
 # theme              = catppuccin-latte
 # background-opacity = 0.95
+command = "/usr/bin/nu"
