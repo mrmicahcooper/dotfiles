@@ -3,26 +3,20 @@
 [user]
   email = micah+github@mrmicahcooper.com
   name = "Micah Cooper"
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICasXnWXXFQNEopg+qN591ZFGny21q1QY+jmxDp801IB
+
 [alias]
   aliases=!git config -l | grep '^alias' | cut -c 7- | sort
-  b  = branch
   br = branch
-  cheddar = commit --amend -CHEAD
   co = checkout
   fixup = commit --fixup
   doff = reset HEAD^
-  ri = rebase --interactive
-  pruneremote = remote prune origin
-  tree = log --graph --oneline --decorate --color --all
-  tr = log --graph --oneline --decorate --color
-  add-untracked = !"git status --porcelain | awk '/\\?\\?/{ print $2 }' | xargs git add"
 	mush = push -o merge_request.create -o merge_request.target=master -o merge_request.merge_when_pipeline_succeeds
 [branch]
   autosetuprebase = always
 [color]
   ui = auto
 [core]
-  excludesfile = ~/.cvsignore
   editor = nvim
   whitespace = warn
 [help]
@@ -31,12 +25,6 @@
   singlekey = true
 [merge]
   summary = true
-[merge "bundlelock"]
-  name = lock Gemfile
-  driver = bundle install
-[merge "bundle"]
-  name = bundle
-  driver = bundle
 [push]
   default = tracking
 [rebase]
@@ -52,10 +40,8 @@
 [gpg]
   format = ssh
 [gpg "ssh"]
-  ; program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+  program = "/opt/1Password/op-ssh-sign"
 [commit]
 	gpgsign = true
 [advice]
 	statushints = false
-[include]
-  path = ~/.gitconfig.local
