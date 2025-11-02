@@ -1,0 +1,9 @@
+#font-family             = "Maple Mono NF"
+font-family              = "0xProto Nerd Font"
+window-title-font-family = "0xProto Nerd Font"
+font-size                = 12
+theme                    = Catppuccin Mocha
+command                  = "/usr/bin/nu"
+window-show-tab-bar      = auto
+gtk-titlebar-style       = tabs
+window-theme             = ghostty

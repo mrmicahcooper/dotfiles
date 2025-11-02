@@ -1,0 +1,16 @@
+[tools]
+bun     = "latest"
+elixir  = "latest"
+erlang  = "latest"
+golang  = "latest"
+julia   = "latest"
+lua     = "latest"
+nim     = "latest"
+ocaml   = "latest"
+rust    = "latest"
+zig     = "latest"
+nushell = "latest"
+yq      = "latest"
+
+[env]
+OPERATING_SYSTEM="{{ os() }}"
