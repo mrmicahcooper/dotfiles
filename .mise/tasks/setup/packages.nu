@@ -1,4 +1,4 @@
-#/usr/bin/env nu
+#!/usr/bin/env nu
 
 #MISE description="install packages"
 
