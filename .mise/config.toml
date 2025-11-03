@@ -1,5 +1,2 @@
-[tools]
-nushell = "latest"
-
 [env]
 OPERATING_SYSTEM = "{{ os() }}"
