@@ -2,10 +2,19 @@
 
 #MISE description="Scan through a directory and choose what keep track of. When you say yes to trakcing, that file is moved into dotfiles and symlinked back to its original location. When you say no, it' saved to an ignore list and never asked again"
 
-let ignored_files = if ('dotbot_ignore' | path exists) {
-  'dotbot_ignore' | open | lines
+const ignore_filename = 'dotbot_ignore'
+
+let ignored_files = if ($ignore_filename | path exists) {
+  $ignore_filename | open | lines 
 } else {
   []
+}
+
+let tracked_files = ls --all "HOME"
+
+reduce --fold [] {|file, acc|   
+ let filename = [$env.HOME $file] | path join 
+ $acc | append $filename
 }
 
 print '
@@ -16,19 +25,15 @@ print '
   q -> quit
 '
 
-let all_dotfiles = glob --no-dir --no-symlink --depth 1 $'($env.HOME)/.*' 
-let dotfiles = $all_dotfiles | where $it not-in $ignored_files
-print $dotfiles
+let host_files = (glob --no-dir --no-symlink --depth=1 $'($env.HOME)/.*') | where {|file| $file not-in $ignored_files}
 
-$dotfiles | each {|dotfile| 
-  let filename = $dotfile | path relative-to $env.HOME
-  let track = [$filename] | (input --numchar 1 --default 'y' --suppress-output $'($in | first)')
-  print ""
+$host_files | each {|choice| 
+  let track = [$choice] | (input --numchar 1 --default 'y' $'($in | first)')
 
   match $track {
-    'y' => { cp $dotfile ./HOME/ },
+    'y' => { cp $choice ./HOME/ },
     'n' => {},
-    'd' => { $"($filename)\n" | save --append "dotbot_ignore" }
+    'd' => { $"($choice)\n" | save --append $ignore_filename}
     'q' => { exit 0 }
   }
 }
