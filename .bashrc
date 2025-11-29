@@ -33,3 +33,4 @@ source ~/.posix_functions
 eval "$(starship init bash)"
 
 complete -C /usr/bin/nomad nomad
+. "$HOME/.cargo/env"

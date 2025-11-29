@@ -3,7 +3,9 @@ function! NvimTest(command) abort
   let jobid = get(g:, 'nvimtest_job_id', 0)
   " let test#neovim#term_position = "vertical topleft"
   if jobid
-    call chansend(jobid, ['clear', a:command, ''])
+    " call chansend(jobid, ['clear', a:command, ''])
+    " call chansend(jobid, ['clear', ''])
+    call chansend(jobid, [a:command, ''])
   else
     let term_position = get(g:, 'test#neovim#term_position', 'vertical topleft')
     execute term_position . ' new'

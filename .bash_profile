@@ -11,3 +11,4 @@ export PATH=$PATH:$GOPATH/bin
 export PATH="/usr/local/opt/qt@5/bin:$PATH"
 export PATH="$HOME/code/v:$PATH"
 export PATH="$HOME/.cargo/env:$PATH"
+. "$HOME/.cargo/env"

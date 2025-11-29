@@ -11,16 +11,18 @@ keybind = super+shift+h=goto_split:left
 keybind = super+shift+l=goto_split:right
 keybind = super+shift+k=goto_split:top
 keybind = super+shift+j=goto_split:bottom
+keybind = shift+enter=text:\n
 
-# theme               = catppuccin-macchiato
-theme             = catppuccin-latte
+theme               = Catppuccin Macchiato
+# theme             = catppuccin-latte
 
+#font-family   = 0xProto Nerd Font Mono
+font-family  = "Maple Mono NF"
+#font-family  = "RecMonoLinear Nerd Font Mono"
+#font-family = "RecMonoSmCasual Nerd Font Mono"
 
-# font-family       = "Maple Mono NF"
-#font-family        = "0xProto Nerd Font"
-# font-family       = "RecMonoLinear Nerd Font Mono"
-font-family         = "RecMonoSmCasual Nerd Font Mono"
-font-size           = 15
+#font-size     = 14
+font-size     = 15
 
 font-feature = calt 1
 font-feature = liga 1
@@ -28,9 +30,11 @@ font-feature = dlig 1
 font-feature = dlig 1
 font-feature = slant -15
 
-
-shell-integration  = fish
-
-# background-opacity = 0.95
 #command = /opt/homebrew/bin/nu
+<<<<<<< HEAD
 >>>>>>> 8a7af08 (All work updates;/)
+=======
+
+#shell-integration  = fish
+#command = /opt/homebrew/bin/fish
+>>>>>>> 860c1c3 (Clean up dotfiles)

@@ -1,17 +1,17 @@
-fish_add_path $HOME/go \
-    $HOME/.asdf/installs/rust/stable/bin \
-    $HOME/.cargo/bin \
-    $HOME/.cargo/env \
-    $HOME/.config/yarn/global/node_modules/.bin \
-    $HOME/.yarn/bin \
-    /opt/homebrew/bin \
-    /usr/local/opt/qt@5/bin \
+fish_add_path /opt/homebrew/bin \
     /usr/local/bin \
     /Applications/Postgres.app/Contents/Versions/latest/bin \
     /opt/homebrew/opt/curl/bin \
-    $HOME/.cargo/bin/rustlings \
     /Users/micahcooper/.mix/escripts \
-    /nix/store/m59acjj1jqx3jzm6h412q5yqrqynf06s-elixir-1.17.3/bin/mix
+    # /nix/store/m59acjj1jqx3jzm6h412q5yqrqynf06s-elixir-1.17.3/bin/mix
+    # $HOME/go \
+    # $HOME/.asdf/installs/rust/stable/bin \
+    # $HOME/.cargo/bin \
+    # $HOME/.cargo/env \
+    # $HOME/.config/yarn/global/node_modules/.bin \
+    # $HOME/.yarn/bin \
+    # /usr/local/opt/qt@5/bin \
+    # $HOME/.cargo/bin/rustlings \
 
 set -x VISUAL nvim
 set -x EDITOR nvim
@@ -21,18 +21,21 @@ set -x LSCOLORS gxgxcxdxbxegedabagacad
 set -x PSQL_EDITOR 'nvim -c "setf sql"'
 set -x RI "--format ansi -T"
 set -x RIPGREP_CONFIG_PATH $HOME/.ripgreprc
+set -x GOPRIVATE github.com/mimic-core/*
+
+# Claude Code config
+set -x CLAUDE_CODE_USE_VERTEX 1
+set -x CLOUD_ML_REGION us-east5
+set -x ANTHROPIC_VERTEX_PROJECT_ID experimental-micah-cooper
 
 # for HiDpi
-set -x QT_AUTO_SCREEN_SCALE_FACTOR 1
-set -x GDK_SCALE 2
 set -x DOCKER_BUILDKIT 1
-
 
 #Use this for alacritty
 set -x TERM xterm-256color
 
 # erlang/elixir Env Vars
-set -x KERL_CONFIGURE_OPTIONS "--disable-debug --without-javac"
+set -x KEV
 set -x ERL_AFLAGS "-kernel shell_history enabled"
 set -x KERL_BUILD_DOCS no
 set -x KERL_INSTALL_HTMLDOCS no
@@ -76,7 +79,7 @@ abbr --add uuid 'uuidgen | xclip -selection clipboard'
 abbr --add gamend git commit --amend -C HEAD
 abbr --add gain 'git fetch && git rebase origin/main'
 abbr --add gap git add --patch
-abbr --add gb git branch
+abbr --add gb git branch --sort=-committerdate
 abbr --add gc git commit -v
 abbr --add gcl git clean -f -d
 abbr --add gco 'git branch | fzf | xargs git checkout'
@@ -99,6 +102,7 @@ abbr --add mp multipass
 abbr --add e exercism
 abbr --add g gcloud
 abbr --add j just
+abbr --add mr mise run
 
 alias clipboard="xclip -selection clipboard"
 alias ls="lsd -l"
@@ -106,27 +110,24 @@ alias la="ls -a"
 alias lla="ls -la"
 alias lt="ls --tree"
 
-# alias l1="exa --oneline"
-# alias la="exa --all --long --header --classify --git"
-# alias lg="exa --long --header --classify --git -s modified --grid"
-# alias ls="exa --long --header --classify --git"
-# alias lsd="exa --only-dirs --long --header --git"
-
 alias gush="git push origin (git rev-parse --abbrev-ref HEAD) --force-with-lease"
 alias gull="git pull --rebase origin (git rev-parse --abbrev-ref HEAD) --autostash"
 
-alias record='\
-    sudo modprobe v4l2loopback exclusive_caps=1 max_buffers=2 && \
-    gphoto2 --stdout --capture-movie | ffmpeg -i - -vcodec rawvideo -pix_fmt yuv420p -threads 0 -f v4l2 /dev/video4'
 
-direnv hook fish | source
+# source_existing $HOME/.asdf/asdf.fish
+# source_existing ~/.asdf/asdf.fish
+# source_existing /opt/asdf-vm/asdf.fish
+# source_existing /opt/homebrew/opt/asdf/libexec/asdf.fish
+# source_existing $HOME/.config/op/plugins.sh
+# source_existing $HOME/.mac-fish.fish
+# source_existing $HOME/google-cloud-sdk/path.fish.inc
 starship init fish | source
+# direnv hook fish | source
 direnv hook fish | source
+$HOME/.local/bin/mise activate fish | source
 
-source_existing $HOME/.asdf/asdf.fish
-source_existing ~/.asdf/asdf.fish
-source_existing /opt/asdf-vm/asdf.fish
-source_existing /opt/homebrew/opt/asdf/libexec/asdf.fish
-source_existing $HOME/.config/op/plugins.sh
-source_existing $HOME/.mac-fish.fish
-source_existing $HOME/google-cloud-sdk/path.fish.inc
+set -gx WASMTIME_HOME "$HOME/.wasmtime"
+
+string match -r ".wasmtime" "$PATH" > /dev/null; or set -gx PATH "$WASMTIME_HOME/bin" $PATH
+set -x PATH $PATH /Users/micahcooper/.bin
+set -x MANPATH $MANPATH /Users/micahcooper/.local/share/man

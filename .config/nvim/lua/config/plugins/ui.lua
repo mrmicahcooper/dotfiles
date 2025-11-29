@@ -9,8 +9,8 @@ return {
     priority = 1000,
     lazy = false,
     config = function()
-      -- vim.cmd.colorscheme("catppuccin-macchiato")
-      vim.cmd.colorscheme("catppuccin-latte")
+      vim.cmd.colorscheme("catppuccin-macchiato")
+      -- vim.cmd.colorscheme("catppuccin-latte")
     end,
   },
 
