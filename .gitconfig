@@ -1,16 +1,15 @@
 [github]
-  ; user = micah-cooper_mimic
-  user = mrmicahcooper
+  ; user = mrmicahcooper
+  user = micah-cooper_mimic
 [user]
   name = "Micah Cooper"
-	; email = micah.cooper@mimic.com
-  email = mrmichacooper@gmail.com
-
-  signingKey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPtKw7kfKjMoFiiCDx1jZOpYgavN9OHdWAGUeGdcaC6w mrmicahcooper@gmail.com
-	; signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMPF+l+t8Wkvmf6hWltUwG0ZbefiHl6czCjhbDpPBM3O
+  ; email = mrmicahcooper@gmail.com
+	email = micah.cooper@mimic.com
+  ; signingKey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPtKw7kfKjMoFiiCDx1jZOpYgavN9OHdWAGUeGdcaC6w mrmicahcooper@gmail.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMPF+l+t8Wkvmf6hWltUwG0ZbefiHl6czCjhbDpPBM3O
 [credential]
-	username = mrmicahcooper
-	; username = micah-cooper_mimic
+	; username = mrmicahcooper
+	username = micah-cooper_mimic
 [gpg "ssh"]
   program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
 [commit]

@@ -46,22 +46,9 @@ map("n", "<leader>mp", "<cmd>colorscheme material-palenight<cr>")
 map("n", "<leader>ml", "<cmd>colorscheme material-lighter<cr>")
 map("n", "<leader>md", "<cmd>colorscheme material-darker<cr>")
 
-<<<<<<< HEAD
--- map("n", "<leader>r", "<cmd>Telescope live_grep<cr>")
-map("n", "<c-r>", "<cmd>Telescope live_grep<cr>")
 map("n", "<leader><space>", "<cmd>Telescope find_files<cr>")
--- map("n", "<c-p>", "<cmd>Telescope find_files<cr>")
-=======
-map("n", "<leader>r", "<cmd>Telescope live_grep<cr>")
-map("n", "<leader><space>", "<cmd>Telescope find_files<cr>")
--- map("n", "<leader><space>", "<cmd>Telescope live_grep<cr>")
--- map("n", "<c-p>", "<cmd>Telescope find_files<cr>")
 map("n", "<c-f>", "<cmd>Telescope live_grep<cr>")
->>>>>>> 8a7af08 (All work updates;/)
-map("n", "<leader>sf", "<cmd>Telescope find_files<cr>")
-map("n", "<leader>sb", "<cmd>Telescope buffers<cr>")
 map("n", "<c-b>", "<cmd>Telescope buffers<cr>")
--- map("n", "<c-z>", "")
 
 map("n", "<leader>gb", "<cmd>Git blame<cr>")
 map("n", "<leader>ge", "<cmd>Gedit:<cr>")

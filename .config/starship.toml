@@ -7,23 +7,17 @@
 
 format = """
 [╭─󰧂 ](fg:#DA627D)\
-$nix_shell\
+$mise\
 $directory\
-$direnv\
 $git_branch\
 $git_status\
-$c\
 $elixir\
-$elm\
 $golang\
-$haskell\
-$java\
-$julia\
 $bun\
-$nim\
 $rust\
 $fill \
 $aws\
+$gcloud\
 $username\
 $hostname\
 $os \
@@ -48,6 +42,9 @@ $character"""
 command_timeout = 300
 add_newline = false
 
+[mise]
+disabled = true
+
 [character]
 success_symbol = "[](bold fg:cyan)"
 error_symbol = "[](bold fg:red)"
@@ -62,7 +59,7 @@ zsh_indicator = "󰰸"
 bash_indicator = ""
 
 [fill]
-disabled = true
+disabled = false
 symbol = " "
 style = "fg:bright-white"
 
@@ -99,7 +96,10 @@ format = "[󰒍 $ssh_symbol$hostname ]($style)"
 disabled = false
 
 [gcloud]
-disabled = true
+disabled = false
+format = '[$symbol$account(@$domain::$project)(\($region\))]($style) '
+# symbol = '🇬️ '
+symbol = '󱇶 '
 
 [aws.region_aliases]
 us-west-2= "pdx"
@@ -149,11 +149,9 @@ threshold = 0
 disabled = false
 format = "$symbol[$ram_pct]($style) "
 
-
 [ os ]
 disabled = false
 style = "fg:green"
-
 
 [os.symbols]
 AlmaLinux = " "
@@ -163,7 +161,7 @@ Amazon = " "
 Android = " "
 Arch = " "
 Artix = " "
-CachyOS = " "
+# CachyOS = " "
 CentOS = " "
 Debian = " "
 DragonFly = " "
@@ -185,7 +183,7 @@ MidnightBSD = " "
 Mint = " "
 NetBSD = " "
 NixOS = " "
-Nobara = " "
+# Nobara = " "
 OpenBSD = "󰈺 "
 OracleLinux = "󰌷 "
 Pop = " "
