@@ -7,7 +7,6 @@
 
 format = """
 [╭─󰧂 ](fg:#DA627D)\
-$mise\
 $directory\
 $git_branch\
 $git_status\
@@ -41,9 +40,6 @@ $character"""
 
 command_timeout = 300
 add_newline = false
-
-[mise]
-disabled = true
 
 [character]
 success_symbol = "[](bold fg:cyan)"
