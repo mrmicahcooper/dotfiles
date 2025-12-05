@@ -55,6 +55,8 @@ alias dc   = yadm commit -v
 alias dain = yadm pull rebase origin/master
 alias dush = yadm push origin master
 
+alias nfig = nvim ~/.config/nvim
+
 def gb --wrapped [...args] { git branch --sort=-committerdate ...$args | lines }
 def gri [count] { git rebase --interactive $'HEAD~($count)' }
 def gain --wrapped [...args] { git fetch; git rebase origin/main ...$args }
