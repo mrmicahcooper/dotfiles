@@ -47,11 +47,13 @@ alias gull   = git pull --rebase origin (git rev-parse --abbrev-ref HEAD)
 alias gush   = git push origin (git rev-parse --abbrev-ref HEAD) --force-with-lease
 alias gwip   = git commit -a -m "wip"
 
-alias dot = yadm
-alias dst = yadm status
-alias dap = yadm add -u -p
-alias dlg = yadm log --graph --oneline --decorate --color --all
+alias dot  = yadm
+alias dst  = yadm status
+alias dap  = yadm add -u -p
+alias dlg  = yadm log --graph --oneline --decorate --color --all
+alias dc   = yadm commit -v
 alias dain = yadm pull rebase origin/master
+alias dush = yadm push origin master
 
 def gb --wrapped [...args] { git branch --sort=-committerdate ...$args | lines }
 def gri [count] { git rebase --interactive $'HEAD~($count)' }
