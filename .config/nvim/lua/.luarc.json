@@ -1,5 +1,5 @@
 {
-    "workspace.library": [
+    mworkspace.library": [
         "/home/micah/.local/share/nvim/lazy/neodev.nvim/types/stable",
         "/usr/share/nvim/runtime/lua",
         "/home/micah/.local/share/nvim/lazy/mason.nvim/lua",

@@ -11,18 +11,6 @@ local nmap = function(keys, func, desc)
   vim.keymap.set("n", keys, func, { buffer = bufnr, desc = desc })
 end
 
--- vim.lsp.config('expert', {
---   cmd = { 'expert' },
---   root_markers = { 'mix.exs', '.git' },
---   filetypes = { 'elixir', 'eelixir', 'heex' },
--- })
---
--- vim.lsp.enable 'expert'
-
--- vim.lsp.buf.definition({ on_list = on_list })
--- vim.lsp.buf.references(nil, { on_list = on_list })
-
-
 vim.api.nvim_create_autocmd('LspAttach', {
   group = vim.api.nvim_create_augroup('my.lsp', {}),
   callback = function(args)

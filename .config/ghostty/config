@@ -1,22 +1,13 @@
-font-family = "0xProto Nerd Font"
-# font-family = "Maple Mono NF"
-#font-family = "RecMonoLinear Nerd Font Mono"
-#font-family = "RecMonoSmCasual Nerd Font Mono"
+# font-family = "0xProto Nerd Font"
+# font-family = "RecMonoLinear Nerd Font Mono"
+# font-family = "RecMonoSmCasual Nerd Font Mono"
+
 font-family  = "Maple Mono NF"
 
 font-size     = 15
 
 theme               = Catppuccin Macchiato
-# theme              = catppuccin-latte
 
-# background-opacity = 0.95
-
-# font-feature = calt 1
-# font-feature = liga 1
-# font-feature = dlig 1
-# font-feature = dlig 1
-# font-feature = slant -15
-#
 keybind = super+shift+h=goto_split:left
 keybind = super+shift+l=goto_split:right
 keybind = super+shift+k=goto_split:top

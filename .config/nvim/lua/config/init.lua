@@ -18,14 +18,3 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup("config.plugins")
 require("colorizer").setup()
 require("config.lsp")
-
--- local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
---
--- parser_config.nu = {
---   install_info = {
---     url = "https://github.com/nushell/tree-sitter-nu",
---     files = { "src/parser.c", "src/scanner.c" },
---     branch = "main",
---   },
---   filetype = "nu",
--- }

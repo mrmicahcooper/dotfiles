@@ -78,8 +78,14 @@ def glog [lines=500] {
 #checkout a branch from a dropdown
 def gco [] { git branch --sort=-committerdate
   | lines 
-  | input list "Chose a branch" 
+  | input list "Choose a branch to checkout" 
   | ^git checkout ($in | str trim)
+}
+
+def gdel [] { git branch --sort=-committerdate
+  | lines 
+  | input list --multi "Choose a branch to delete" 
+  | ^git branch -D ...($in | str trim)
 }
 
 def truncate [string length: int] {
@@ -89,4 +95,16 @@ def truncate [string length: int] {
   } else {
     $string
   }
+}
+
+def pam-dev [reason: string = "Debug logs" hours: int = 8] {
+  (
+  gcloud alpha pam grants create ENTITLEMENT_ID \
+    --resource-type=RESOURCE_TYPE \
+    --resource-id=RESOURCE_ID \
+    --duration=GRANT_DURATION \
+    --justification="JUSTIFICATION" \
+    [--additional-email-recipients=EMAIL_ADDRESSES]
+  )
+
 }

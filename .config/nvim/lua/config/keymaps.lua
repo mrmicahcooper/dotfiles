@@ -6,6 +6,8 @@ local function map(mode, lhs, rhs, opts)
   vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
 
+map("t", "<cmd>w", "<cmd>\\ <cmd>n> <cmd>w")
+
 --Remap for dealing with word wrap
 map("n", "k", "v:count == 0 ? 'gk' : 'k'", { expr = true })
 map("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true })
@@ -31,6 +33,15 @@ map("n", "<leader>ts", "<cmd>w | TestSuite<cr>")
 map("n", "<leader>l", "<cmd>w | TestLast<cr>")
 
 vim.keymap.set("n", "<leader>cd", vim.diagnostic.open_float, { desc = "Line Diagnostics" })
+
+vim.keymap.set("n", "<leader>2", function()
+  vim.diagnostic.goto_next({ severity = vim.diagnostic.severity.WARN, wrap = true })
+end, { desc = "Next Warning" })
+
+vim.keymap.set("n", "<leader>1", function()
+  vim.diagnostic.goto_next({ severity = vim.diagnostic.severity.ERROR, wrap = true })
+end, { desc = "Next Warning" })
+
 
 -- vim dadbod
 map("n", "<leader>d", ":%DB sqlite:~/code/fam/data/fam_test.db<cr>")
