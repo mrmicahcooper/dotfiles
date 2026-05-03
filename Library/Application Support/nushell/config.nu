@@ -13,7 +13,6 @@ path add  /Applications/Postgres.app/Contents/Versions/latest/bin
 path add  /nix/var/nix/profiles/default/bin
 path add  /Users/micahcooper/.local/bin/mise
 
-
 alias show   = gh pr view --web
 alias fg     = job unfreeze
 alias g      = gcloud
@@ -47,6 +46,7 @@ alias gush   = git push origin (git rev-parse --abbrev-ref HEAD) --force-with-le
 alias gwip   = git commit -a -m "wip"
 
 alias cm = chezmoi
+def dot --wrapped [...args] { chezmoi git -- ...$args }
 
 alias dot  = chezmoi git -- 
 alias dst  = chezmoi git -- status
