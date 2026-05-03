@@ -14,5 +14,5 @@ keybind = super+shift+k=goto_split:top
 keybind = super+shift+j=goto_split:bottom
 keybind = shift+enter=text:\n
 
-# command = /opt/homebrew/bin/nu
+command = /opt/homebrew/bin/nu
 # command = "/usr/bin/nu"

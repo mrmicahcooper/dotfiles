@@ -13,7 +13,6 @@ path add  /Applications/Postgres.app/Contents/Versions/latest/bin
 path add  /nix/var/nix/profiles/default/bin
 path add  /Users/micahcooper/.local/bin/mise
 
-use ($nu.default-config-dir | path join mise.nu)
 
 alias show   = gh pr view --web
 alias fg     = job unfreeze
@@ -108,3 +107,5 @@ def pam-dev [reason: string = "Debug logs" hours: int = 8] {
   )
 
 }
+
+use ($nu.default-config-dir | path join mise.nu)
