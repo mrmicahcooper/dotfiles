@@ -46,13 +46,14 @@ alias gull   = git pull --rebase origin (git rev-parse --abbrev-ref HEAD)
 alias gush   = git push origin (git rev-parse --abbrev-ref HEAD) --force-with-lease
 alias gwip   = git commit -a -m "wip"
 
-alias dot  = yadm
-alias dst  = yadm status
-alias dap  = yadm add -u -p
-alias dlg  = yadm log --graph --oneline --decorate --color --all
-alias dc   = yadm commit -v
-alias dain = yadm pull rebase origin/master
-alias dush = yadm push origin master
+alias cm = chezmoi
+
+alias dot  = chezmoi git -- 
+alias dst  = chezmoi git -- status
+alias dap  = chezmoi git -- add -u -p
+alias dlg  = chezmoi git -- log --graph --oneline --decorate --color --all
+alias dc   = chezmoi git -- commit -v
+alias dush = chezmoi git -- push origin master
 
 alias nfig = nvim ~/.config/nvim
 
