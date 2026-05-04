@@ -1,0 +1,63 @@
+gri()
+{
+  echo "git rebase -i HEAD~$1"
+  command git rebase -i HEAD~$1
+}
+
+function dbomb()
+{
+  echo "destroying all containers and images"
+  command docker rm $(docker ps -a -f status=exited -q) 
+  command docker rmi -f $(dii) 
+  command docker image prune --force
+}
+
+# # ex - archive extractor; usage: ex <file>
+ex ()
+{
+  if [ -f $1 ] ; then
+    case $1 in
+      *.tar.bz2)   tar xjf $1   ;;
+      *.tar.gz)    tar xzf $1   ;;
+      *.bz2)       bunzip2 $1   ;;
+      *.rar)       unrar x $1     ;;
+      *.gz)        gunzip $1    ;;
+      *.tar)       tar xf $1    ;;
+      *.tbz2)      tar xjf $1   ;;
+      *.tgz)       tar xzf $1   ;;
+      *.zip)       unzip $1     ;;
+      *.Z)         uncompress $1;;
+      *.7z)        7z x $1      ;;
+      *)           echo "'$1' cannot be extracted via ex()" ;;
+    esac
+  else
+    echo "'$1' is not a valid file"
+  fi
+}
+
+alias aws-profile='export AWS_PROFILE=$(aws configure list-profiles --output text | fzf)'
+
+a()
+{
+  aws $@ | jq
+}
+
+#to use. Export your pcsk credentisl. Then call `init-aws <profile-name>`
+init-aws()
+{
+  echo "Configuring AWS CLI for $1"
+  echo "Exporting PCSK env vars from clipboard"
+  source <(pbpaste) 
+
+  echo "Setting AWS_PROFILE to $1"
+  export AWS_PROFILE=$1
+
+  echo "Configuring aws_access_key_id for \"$1\""
+  aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID --profile $1
+  echo "Configuring aws_secret_access_key for \"$1\""
+  aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY --profile $1
+  echo "Configuring aws_session_tokenws_access_key_id for \"$1\""
+  aws configure set aws_session_token $AWS_SESSION_TOKEN  --profile $1
+
+  unset AWS_ACCESS_KEY_ID AWS_SESSION_TOKEN AWS_SECRET_ACCESS_KEY
+}

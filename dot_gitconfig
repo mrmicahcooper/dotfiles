@@ -1,0 +1,77 @@
+[github]
+  ; user = mrmicahcooper
+  user = micah-cooper_mimic
+[user]
+  name = "Micah Cooper"
+  ; email = mrmicahcooper@gmail.com
+	email = micah.cooper@mimic.com
+  ; signingKey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPtKw7kfKjMoFiiCDx1jZOpYgavN9OHdWAGUeGdcaC6w mrmicahcooper@gmail.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMPF+l+t8Wkvmf6hWltUwG0ZbefiHl6czCjhbDpPBM3O
+[credential]
+	; username = mrmicahcooper
+	username = micah-cooper_mimic
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+[commit]
+  gpgsign = true
+[gpg]
+  format = ssh
+[commit]
+  gpgsign = true
+[alias]
+  aliases=!git config -l | grep '^alias' | cut -c 7- | sort
+  b  = branch
+  br = branch
+  cheddar = commit --amend -CHEAD
+  co = checkout
+  fixup = commit --fixup
+  doff = reset HEAD^
+  ri = rebase --interactive
+  pruneremote = remote prune origin
+  tree = log --graph --oneline --decorate --color --all
+  tr = log --graph --oneline --decorate --color
+  add-untracked = !"git status --porcelain | awk '/\\?\\?/{ print $2 }' | xargs git add"
+	mush = push -o merge_request.create -o merge_request.target=master -o merge_request.merge_when_pipeline_succeeds
+[branch]
+  autosetuprebase = always
+[color]
+  ui = auto
+[core]
+  excludesfile = ~/.cvsignore
+  editor = nvim
+  whitespace = warn
+[help]
+  autocorrect = 10
+[interactive]
+  singlekey = true
+[merge]
+  summary = true
+[merge "bundlelock"]
+  name = lock Gemfile
+  driver = bundle install
+[merge "bundle"]
+  name = bundle
+  driver = bundle
+[push]
+  default = tracking
+[rebase]
+  autosquash = true
+[diff]
+  algorithm = patience
+[fetch]
+  prune = true
+[init]
+	defaultBranch = main
+[hub]
+	protocol = https
+[advice]
+	statushints = false
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[safe]
+	directory = *
+[url "ssh://git@github.com/"]
+    insteadOf = https://github.com/
