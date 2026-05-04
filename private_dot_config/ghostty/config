@@ -1,18 +1,24 @@
 # font-family = "0xProto Nerd Font"
+# font-family = "0xProto Nerd Font"
+# font-family = "LythMonoSquare Nerd Font"
+# font-family = "Maple Mono NF"
+# font-family = "RecMonoLinear Nerd Font Mono"
 # font-family = "RecMonoLinear Nerd Font Mono"
 # font-family = "RecMonoSmCasual Nerd Font Mono"
+# font-family = "RecMonoSmCasual Nerd Font Mono"
+# font-family  = "Maple Mono NF"
+font-family = "LythMonoRound Nerd Font"
 
-font-family  = "Maple Mono NF"
+adjust-cell-height=8%
+adjust-cell-width=2%
 
-font-size     = 15
+font-size     = 16
 
-theme               = Catppuccin Macchiato
+# theme = Catppuccin Macchiato
+theme = Catppuccin Mocha
 
 keybind = super+shift+h=goto_split:left
 keybind = super+shift+l=goto_split:right
 keybind = super+shift+k=goto_split:top
 keybind = super+shift+j=goto_split:bottom
 keybind = shift+enter=text:\n
-
-command = /opt/homebrew/bin/nu
-# command = "/usr/bin/nu"
