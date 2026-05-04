@@ -1,6 +1,14 @@
 Host *
   {{ if eq .chezmoi.os "darwin" }}
     IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+
+  #Personal
+  #Host github.com
+  #  HostName github.com
+  #  User mrmicahcooper
+  #  User git
+  #  IdentityFile ~/.ssh/id_ed25519_personal
+
   {{ else }}
     IdentityAgent ~/.config/1Password/ssh/agent.sock
   {{ end }}
