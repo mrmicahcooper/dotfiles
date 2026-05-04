@@ -1,7 +1,15 @@
+[settings]
+experimental = true
+lockfile = true
+
 [tools]
 elixir = "latest"
 erlang = "latest"
 podman = "latest"
 nodejs = "latest"
+fnox = "latest"
+
+"aqua:cli/cli" = "latest"
+"aqua:anthropics/claude-code" = "latest"
 
 "vfox:mise-plugins/vfox-1password" = "latest"
