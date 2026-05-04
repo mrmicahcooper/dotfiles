@@ -15,7 +15,8 @@ return {
   "vinnymeller/swagger-preview.nvim",
   "tpope/vim-dadbod",
   "tpope/vim-eunuch",
-  "direnv/direnv.vim", "norcalli/nvim-colorizer.lua",
+  "direnv/direnv.vim", 
+  "catgoose/nvim-colorizer.lua",
 
   {
     "catppuccin/nvim",

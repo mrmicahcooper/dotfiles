@@ -4,6 +4,7 @@
 #        󰍟             󰁕 󰁖 󰁗 󰁘 󰁚 󰄾 󰅂 󰍟 󰓺 󰔰 󰘠 󰛂 󰛂 󰛂 󰜴 󰜵 󰞘 󰦥 󰧂 󰧚 󰧛 󰬪 󰬪 󰮺 󰳟 󰶻 󰷵 󱦰 
 # bright-black, bright-red, bright-green, bright-blue, bright-yellow, bright-purple, bright-cyan, bright-white
 #${custom.elixir}\
+# $elixir\
 #${custom.nu_jobs}\
 
 format = """
@@ -11,7 +12,7 @@ format = """
 $directory\
 $git_branch\
 $git_status\
-$elixir\
+${custom.elixir}\
 $golang\
 $bun\
 $rust\
@@ -69,6 +70,14 @@ command = "job list | length"
 use_stdin = false
 style = "fg:yellow"
 symbol = "󰑮 "
+format = "[$symbol$output]($style) "
+
+[ custom.elixir ]
+command = "^mise current elixir"
+detect_files = ["mix.exs"]
+detect_extensions = ["exs"]
+# use_stdin = false
+symbol = " "
 format = "[$symbol$output]($style) "
 
 [ cmd_duration ]
