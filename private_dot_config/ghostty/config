@@ -6,8 +6,8 @@
 # font-family = "RecMonoLinear Nerd Font Mono"
 # font-family = "RecMonoSmCasual Nerd Font Mono"
 # font-family = "RecMonoSmCasual Nerd Font Mono"
-# font-family  = "Maple Mono NF"
-font-family = "LythMonoRound Nerd Font"
+ font-family  = "Maple Mono NF"
+# font-family = "LythMonoRound Nerd Font"
 
 adjust-cell-height=8%
 adjust-cell-width=2%
