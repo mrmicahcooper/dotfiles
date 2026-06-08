@@ -8,8 +8,9 @@ erlang = "latest"
 podman = "latest"
 nodejs = "latest"
 fnox = "latest"
+rust = "latest"
+zellij = "latest"
 
 "aqua:cli/cli" = "latest"
 "aqua:anthropics/claude-code" = "latest"
-
 "vfox:mise-plugins/vfox-1password" = "latest"
