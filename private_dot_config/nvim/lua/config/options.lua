@@ -3,8 +3,10 @@ vim.g.netrw_liststyle = 0
 vim.g.netrw_banner = 0
 
 --Remap space as leader key
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+-- vim.g.mapleader = " "
+-- vim.g.maplocalleader = " "
+-- 
+-- vim.keymap.set({"n", "v"}, "<Space>", "<Nop>", {silent = true})
 
 -- vim.o.ignorecase = true
 vim.bo.autoindent = true
@@ -36,8 +38,7 @@ vim.o.splitright = true
 vim.o.swapfile = false
 vim.o.tabstop = 2
 vim.o.textwidth = 100
-vim.o.timeoutlen = 100
--- vim.o.timeoutlen = 1000
+vim.o.timeoutlen = 1000
 vim.o.updatetime = 300
 vim.o.whichwrap = "b,s,<,>,[,],h,l"
 vim.o.writebackup = false
@@ -51,5 +52,9 @@ vim.opt.termguicolors = true
 vim.cmd("filetype plugin indent on")
 vim.cmd("source ~/.config/nvim/projections.vimrc")
 vim.cmd("source ~/.config/nvim/vim-test-config.vim")
+
+-- Folding
+-- vim.opt.foldmethod = "expr"
+-- vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
 
 vim.env.PATH = vim.env.HOME .. "/.local/share/mise/shims:" .. vim.env.PATH

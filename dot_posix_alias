@@ -63,8 +63,8 @@ alias df='df -h'                          # human-readable sizes
 alias di="docker images"
 alias dii="docker images -a -q"
 
-alias l1='exa --oneline'
-alias la='exa --all --long --header --classify --git'
-alias lg='exa --long --header --classify --git -s modified --grid'
-alias ls='exa --long --header --classify --git'
-alias lsd='exa --only-dirs --long --header --git'
+alias l1='eza --oneline'
+alias la='eza --all --long --header --classify --git'
+alias lg='eza --long --header --classify --git -s modified --grid'
+alias ls='eza --long --header --classify --git'
+alias lsd='eza --only-dirs --long --header --git'

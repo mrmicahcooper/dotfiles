@@ -10,7 +10,30 @@ nodejs = "latest"
 fnox = "latest"
 rust = "latest"
 zellij = "latest"
+fd = "latest"
+ripgrep = "latest"
+fzf = "latest"
+kubectl = "latest"
+terraform = "latest"
+python = "latest"
+eza = "latest"
 
 "aqua:cli/cli" = "latest"
 "aqua:anthropics/claude-code" = "latest"
 "vfox:mise-plugins/vfox-1password" = "latest"
+
+"npm:skills" = "latest"
+
+[env]
+#workflows env var for mimic runner
+SSL_CERT_FILE="/Users/micahcooper/.local/share/mise/installs/python/3.14.6/lib/python3.14/site-packages/certifi/cacert.pem"
+# MGMT_PLANE_COOKIE={
+#   redact = true
+#   value = ""
+# }
+
+# [tasks.mimic-run]
+# dir = "~/code/mimic/workflows"
+# run = """
+#
+# """

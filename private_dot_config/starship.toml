@@ -7,27 +7,27 @@
 # $elixir\
 #${custom.nu_jobs}\
 
-format = """
-[╭─󰧂 ](fg:#DA627D)\
-$directory\
-$git_branch\
-$git_status\
-${custom.elixir}\
-$golang\
-$bun\
-$rust\
-$fill \
-$aws\
-$gcloud\
-$username\
-$hostname\
-$os \
-$memory_usage\
-$cmd_duration\
-$line_break\
-[╰─](fg:#DA627D)\
-$shell\
-$character"""
+# format = """
+# [╭─󰧂 ](fg:#DA627D)\
+# $directory\
+# $git_branch\
+# $git_status\
+# ${custom.elixir}\
+# $golang\
+# $bun\
+# $rust\
+# $fill \
+# $aws\
+# $gcloud\
+# $username\
+# $hostname\
+# $os \
+# $memory_usage\
+# $cmd_duration\
+# $line_break\
+# [╰─](fg:#DA627D)\
+# $shell\
+# $character"""
 
 # $nim\
 # $rust\
@@ -38,6 +38,28 @@ $character"""
 # $username\
 # $hostname\
 # $os \
+
+
+format = """
+[╭─󰧂 ](fg:#DA627D)\
+$directory\
+$git_branch\
+$git_status\
+${custom.elixir}\
+$golang\
+$bun\
+$rust\
+$fill \
+$username\
+$hostname\
+$os \
+$cmd_duration\
+$line_break\
+[╰─](fg:#DA627D)\
+$shell\
+$character"""
+
+
 
 command_timeout = 300
 add_newline = false
@@ -51,7 +73,8 @@ style = "fg:#DA627D"
 format = "[$indicator ]($style)"
 disabled = false
 fish_indicator = "󰈺"
-nu_indicator = ""
+# nu_indicator = ""
+nu_indicator = ""
 zsh_indicator = "󰰸"
 bash_indicator = ""
 
