@@ -1,5 +1,6 @@
 return {
-  "norcalli/nvim-colorizer.lua",
+
+  -- "norcalli/nvim-colorizer.lua",
   -- "tpope/vim-vinegar",
 
   -- colorscheme
@@ -13,6 +14,7 @@ return {
       -- vim.cmd.colorscheme("catppuccin-latte")
     end,
   },
+
 
   {
     "lukas-reineke/indent-blankline.nvim",
