@@ -3,37 +3,25 @@ experimental = true
 lockfile = true
 
 [tools]
-elixir = "latest"
-erlang = "latest"
-podman = "latest"
-nodejs = "latest"
-fnox = "latest"
-rust = "latest"
-zellij = "latest"
-fd = "latest"
-ripgrep = "latest"
-fzf = "latest"
-kubectl = "latest"
-terraform = "latest"
-python = "latest"
-eza = "latest"
-
-"aqua:cli/cli" = "latest"
 "aqua:anthropics/claude-code" = "latest"
+"aqua:cli/cli" = "latest"
+"npm:skills" = "latest"
 "vfox:mise-plugins/vfox-1password" = "latest"
 
-"npm:skills" = "latest"
+elixir = "latest"
+erlang = "latest"
+fd = "latest"
+fnox = "latest"
+fzf = "latest"
+kubectl = "latest"
+nodejs = "latest"
+podman = "latest"
+python = "latest"
+ripgrep = "latest"
+rust = "latest"
+terraform = "latest"
+zellij = "latest"
 
 [env]
-#workflows env var for mimic runner
-SSL_CERT_FILE="/Users/micahcooper/.local/share/mise/installs/python/3.14.6/lib/python3.14/site-packages/certifi/cacert.pem"
-# MGMT_PLANE_COOKIE={
-#   redact = true
-#   value = ""
-# }
-
-# [tasks.mimic-run]
-# dir = "~/code/mimic/workflows"
-# run = """
-#
-# """
+NUM_CPUS = "{{ (num_cpus() | int / 2) | int }}"
+MIX_OS_DEPS_COMPILE_PARTITION_COUNT = "{{ (num_cpus() | int / 2) | int }}"
