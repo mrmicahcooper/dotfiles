@@ -1,0 +1,108 @@
+# config.nu
+
+use std/util "path add"
+
+$env.config.buffer_editor = 'nvim'
+$env.config.show_banner = false
+
+path add  /opt/homebrew/bin 
+path add  /usr/local/bin 
+path add  ~/.local/bin/mise
+path add  ~/.local/share/mise
+
+alias show   = gh pr view --web
+alias fg     = job unfreeze
+
+# GIT helpers
+alias gamend = git commit --amend -C HEAD
+alias gap    = git add --patch
+alias gb     = git branch | lines
+alias gc     = git commit -v
+alias gca    = git commit -a -v
+alias gcam   = git commit --amend -C HEAD
+alias gcl    = git clean -f -d
+alias gco    = git checkout
+alias gd     = git diff
+alias gdc    = git diff --cached
+alias glg    = git log --graph --oneline --decorate --color --all
+alias gnap   = git add -N --ignore-removal . and gap and gref
+alias gnpr   = git checkout main and git pull --rebase origin main --autostash
+alias gow    = git show
+alias gpr    = git pull --rebase
+alias gr     = git rebase
+alias gra    = git rebase --abort
+alias grc    = git rebase --continue
+alias grm    = git rebase main --autostash
+alias grom   = git rebase origin/main --autostash
+alias gst    = git status
+alias gull   = git pull --rebase origin (git rev-parse --abbrev-ref HEAD)
+alias gush   = git push origin (git rev-parse --abbrev-ref HEAD) --force-with-lease
+alias gwip   = git commit -a -m "wip"
+
+alias tf = terraform
+
+def dot --wrapped [...args] { chezmoi git -- ...$args }
+
+alias cm = chezmoi
+alias dot  = chezmoi git -- 
+alias dst  = chezmoi git -- status
+alias dap  = chezmoi git -- add -u -p
+alias dlg  = chezmoi git -- log --graph --oneline --decorate --color --all
+alias dc   = chezmoi git -- commit -v
+alias dush = chezmoi git -- push origin master
+
+alias nfig = nvim ~/.config/nvim
+
+def gb --wrapped [...args] { git branch --sort=-committerdate ...$args | lines }
+def gri [count] { git rebase --interactive $'HEAD~($count)' }
+def gain --wrapped [...args] { git fetch; git rebase origin/main ...$args }
+def glod --wrapped [...args] { git log --pretty=format:"%C(auto)%h%d %s %Cblue%an %Cgreen(%cr)" ...$args }
+
+#git log as a nushell table
+def glog [lines=500] {
+  (
+  git log 
+    --pretty=format:"%h»¦«%s»¦«%an»¦«%d"
+    -n $lines
+    | lines
+    | split column "»¦«" hash message author branch
+    | upsert message {|m| $m.message | truncate $in 80}
+    | less
+  )
+}
+
+#checkout a branch from a dropdown
+def gco [] { git branch --sort=-committerdate
+  | lines 
+  | input list "Choose a branch to checkout" 
+  | ^git checkout ($in | str trim)
+}
+
+def gdel [] { git branch --sort=-committerdate
+  | lines 
+  | input list --multi "Choose a branch to delete" 
+  | ^git branch -D ...($in | str trim)
+}
+
+def truncate [string length: int] {
+  if ($string | str length) > $length {
+    let max: int = $length - 3
+    ($string | str substring 0..$max) + '...'
+  } else {
+    $string
+  }
+}
+
+def pam-dev [reason: string = "Debug logs" hours: int = 8] {
+  (
+  gcloud alpha pam grants create ENTITLEMENT_ID \
+    --resource-type=RESOURCE_TYPE \
+    --resource-id=RESOURCE_ID \
+    --duration=GRANT_DURATION \
+    --justification="JUSTIFICATION" \
+    [--additional-email-recipients=EMAIL_ADDRESSES]
+  )
+}
+
+mkdir ($nu.data-dir | path join "vendor/autoload")
+starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
