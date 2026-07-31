@@ -53,6 +53,21 @@ vim.cmd("filetype plugin indent on")
 vim.cmd("source ~/.config/nvim/projections.vimrc")
 vim.cmd("source ~/.config/nvim/vim-test-config.vim")
 
+-- use nushell as the shell
+-- Set the path to your Nushell executable (adjust the path if necessary)
+-- vim.opt.shell = "/opt/homebrew/bin/nu"
+--
+-- -- Configure flags and pipe redirections to make Nushell work nicely with Neovim
+-- vim.opt.shellcmdflag = "--login --stdin --no-newline -c"
+-- vim.opt.shellredir = "out+err> %s"
+-- vim.opt.shellpipe = "| complete | update stderr { ansi strip } | tee { get stderr | save --force --raw %s } | into record"
+--
+-- -- Reset escaping and quoting constraints for non-POSIX compatibility
+-- vim.opt.shelltemp = false
+-- vim.opt.shellxescape = ""
+-- vim.opt.shellxquote = ""
+-- vim.opt.shellquote = ""
+
 -- Folding
 -- vim.opt.foldmethod = "expr"
 -- vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
