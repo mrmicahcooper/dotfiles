@@ -1,0 +1,28 @@
+[github]
+  user = plinkbot
+[user]
+  name = "Plink"
+  email = plink+git@clank.us
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIF4+frCVCkUalOFIdTgcHEFUq/0NJ8WRv3x5mhRpFI1C
+[credential]
+	username = plinkbot
+[commit]
+  gpgsign = true
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+[gpg]
+  format = ssh
+[core]
+  whitespace = warn
+[push]
+  default = tracking
+[rebase]
+  autosquash = true
+[diff]
+  algorithm = patience
+[fetch]
+  prune = true
+[init]
+	defaultBranch = main
+[safe]
+	directory = *
