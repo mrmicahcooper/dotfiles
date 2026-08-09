@@ -2,26 +2,65 @@
 experimental = true
 lockfile = true
 
-[tools]
-"aqua:anthropics/claude-code" = "latest"
-"aqua:cli/cli" = "latest"
-"npm:skills" = "latest"
-"vfox:mise-plugins/vfox-1password" = "latest"
-
-elixir = "latest"
-erlang = "latest"
-fd = "latest"
-fnox = "latest"
-fzf = "latest"
-kubectl = "latest"
-nodejs = "latest"
-podman = "latest"
-python = "latest"
-ripgrep = "latest"
-rust = "latest"
-terraform = "latest"
-zellij = "latest"
-
 [env]
 NUM_CPUS = "{{ (num_cpus() | int / 2) | int }}"
 MIX_OS_DEPS_COMPILE_PARTITION_COUNT = "{{ (num_cpus() | int / 2) | int }}"
+ERL_AFLAGS="-kernel shell_history enabled"
+
+[tools]
+# Languages
+elixir = "latest"
+erlang = "latest"
+nodejs = "latest"
+deno = "latest"
+python = "latest"
+rust = "latest"
+zig = "latest"
+
+# CLIs
+"aqua:cli/cli" = "latest"
+"npm:skills" = "latest"
+1password = "latest"
+chezmoi = "latest"
+fnox = "latest"
+fzf = "latest"
+kubectl = "latest"
+neovim = "latest"
+podman = "latest"
+ripgrep = "latest"
+terraform = "latest"
+
+# TUIs
+"claude-code" = "latest"
+ollama = "latest"
+zellij = "latest"
+
+# Ohher
+flyctl = "latest"
+starship = "latest"
+sqlite = "latest"
+
+#----------
+[tasks.opencode]
+env.GIT_CONFIG_GLOBAL = "~/.bot/.gitconfig"
+description = """
+Start opencode with a different .gitconfig. 
+his gives the coding agent a different git identity
+"""
+run = """
+#! /usr/bin/env nu
+
+env | rg GIT
+
+which git | print
+git config get user.name
+
+print "hello"
+
+# opencode
+"""
+
+[tasks.fonts]
+description = "Install favorite fonts"
+run = """
+"""
