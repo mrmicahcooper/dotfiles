@@ -3,6 +3,7 @@ experimental = true
 lockfile = true
 
 [env]
+_.file= "~/.secrets.env"
 NUM_CPUS = "{{ (num_cpus() | int / 2) | int }}"
 MIX_OS_DEPS_COMPILE_PARTITION_COUNT = "{{ (num_cpus() | int / 2) | int }}"
 ERL_AFLAGS="-kernel shell_history enabled"
