@@ -1,6 +1,6 @@
 [settings]
 experimental = true
-lockfile = true
+# lockfile = true
 
 [env]
 _.file= "~/.secrets.env"
@@ -26,17 +26,23 @@ chezmoi = "latest"
 fnox = "latest"
 fzf = "latest"
 kubectl = "latest"
+kubectx = "latest"
 neovim = "latest"
 podman = "latest"
 ripgrep = "latest"
 terraform = "latest"
+colima = "latest"
+envsubst = "latest"
 
 # TUIs
 "claude-code" = "latest"
 ollama = "latest"
 zellij = "latest"
+opencode = "latest"
+claude = "latest"
+k9s = "latest"
 
-# Ohher
+# Other
 flyctl = "latest"
 starship = "latest"
 sqlite = "latest"
