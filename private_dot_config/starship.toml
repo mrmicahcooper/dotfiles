@@ -40,26 +40,41 @@
 # $os \
 
 
-format = """
-[╭─󰧂 ](fg:#DA627D)\
-$directory\
-$git_branch\
-$git_status\
-${custom.elixir}\
-$golang\
-$bun\
-$rust\
-$fill \
-$username\
-$hostname\
-$os \
-$cmd_duration\
-$line_break\
-[╰─](fg:#DA627D)\
-$shell\
-$character"""
+#======For non-zellij====
+# format = """
+# [╭─󰧂 ](fg:#DA627D)\
+# $directory\
+# $git_branch\
+# $git_status\
+# ${custom.elixir}\
+# $golang\
+# $bun\
+# $rust\
+# $fill \
+# $username\
+# $hostname\
+# $os \
+# $cmd_duration\
+# $line_break\
+# [╰─](fg:#DA627D)\
+# $shell\
+# $character"""
 
+#=====+zellij=============
+ format = """
+ $shell\
+ [󰧂 ](fg:#DA627D)\
+ $git_branch\
+ $git_status\
+ $golang\
+ $bun\
+ $rust"""
 
+ right_format="""
+ ${custom.elixir}\
+ $os \
+ $cmd_duration\
+ $character"""
 
 command_timeout = 300
 add_newline = false

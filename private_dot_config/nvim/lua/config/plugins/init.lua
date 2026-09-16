@@ -18,17 +18,20 @@ return {
   "godlygeek/tabular",
   "evanleck/vim-svelte",
   "vinnymeller/swagger-preview.nvim",
-  "tpope/vim-dadbod",
-  "tpope/vim-eunuch",
+  "tpope/vim-dadbod", "tpope/vim-eunuch",
   "catgoose/nvim-colorizer.lua",
-  {
-    "mrjones2014/smart-splits.nvim",
-    config = function()
-      require("smart-splits").setup({
-        multiplexer_integration = "zellij",
-      })
-    end
-  },
+  -- {
+  --   "swaits/zellij-nav.nvim",
+  --   lazy = true,
+  --   event = "VeryLazy",
+  --   keys = {
+  --     { "<c-s-h>", "<cmd>ZellijNavigateLeftTab<cr>",  { silent = true, desc = "navigate left or tab"  } },
+  --     { "<c-s-j>", "<cmd>ZellijNavigateDown<cr>",  { silent = true, desc = "navigate down"  } },
+  --     { "<c-s-k>", "<cmd>ZellijNavigateUp<cr>",    { silent = true, desc = "navigate up"    } },
+  --     { "<c-s-l>", "<cmd>ZellijNavigateRightTab<cr>", { silent = true, desc = "navigate right or tab" } },
+  --   },
+  --   opts = {},
+  -- },
 
   {
     "carldaws/miser.nvim",
@@ -233,28 +236,6 @@ return {
         desc = "Sidekick Toggle Opencode",
       },
     },
-  },
+  }
 
-  -- zellij navitation with ctrl
-  -- send commands to zellig nav
-  -- {
-  --   "hiasr/vim-zellij-navigator.nvim",
-  --   config = function()
-  --     require('vim-zellij-navigator').setup()
-  --   end
-  -- },
-  --
-  -- {
-  --   "swaits/zellij-nav.nvim",
-  --   lazy = true,
-  --   event = "VeryLazy",
-  --   keys = {
-  --     { "<c-h>", "<cmd>ZellijNavigateLeftTab<cr>",  { silent = true, desc = "navigate left or tab"  } },
-  --     { "<c-j>", "<cmd>ZellijNavigateDown<cr>",  { silent = true, desc = "navigate down"  } },
-  --     { "<c-k>", "<cmd>ZellijNavigateUp<cr>",    { silent = true, desc = "navigate up"    } },
-  --     { "<c-l>", "<cmd>ZellijNavigateRightTab<cr>", { silent = true, desc = "navigate right or tab" } },
-  --   },
-  --   opts = {},
-  -- }
-  --
 }

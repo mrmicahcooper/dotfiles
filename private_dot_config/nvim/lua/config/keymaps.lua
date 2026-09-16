@@ -70,7 +70,7 @@ map("n", "<leader>gw", "<cmd>Gwrite<cr>")
 -- map('n', '<C-f>', '<cmd>vsplit<CR>', { silent = true })
 -- map('n', '<C-F', '<cmd>vsplit | wincmd F<CR>', { silent = true })
 
--- Navigate window splits
+--Native Navigate window splits
 vim.keymap.set('n', '<C-j>', '<C-w>j', { desc = 'Go to lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w>k', { desc = 'Go to upper window' })
 --

@@ -156,6 +156,7 @@ keybinds clear-defaults=true {
         bind "Alt [" { PreviousSwapLayout; }
         bind "Alt ]" { NextSwapLayout; }
         bind "Alt f" { ToggleFloatingPanes; }
+        bind "Ctrl Shift p" { ToggleFloatingPanes; }
         bind "Alt i" { MoveTab "left"; }
         bind "Alt n" { NewPane; }
         bind "Alt o" { MoveTab "right"; }
@@ -385,7 +386,8 @@ web_client {
 // Choose the theme that is specified in the themes section.
 // Default: default
 // 
-theme "catppuccin-mocha"
+//theme "catppuccin-mocha"
+theme "everforest-dark"
  
 // Theme to use when the host terminal reports a dark color palette.
 // Requires `theme_light` to also be set; otherwise `theme` is used.
@@ -412,8 +414,8 @@ default_mode "normal"
 // Default: $SHELL
 // 
 //default_shell "nu"
-default_shell "nu"
-default_shell_args "-l"
+default_shell "/opt/homebrew/bin/nu"
+default_shell_args "--login"
  
 // Choose the path to override cwd that zellij will use for opening new panes
 // 
@@ -741,3 +743,10 @@ show_startup_tips false
 //   - "off" (do not forward notifications to the host terminal)
 // 
 // host_notification_protocol "auto"
+layout {
+    default_mode_layout {
+        floating_panes {
+            pane height="75%" width="75%"
+        }
+    }
+}

@@ -1,15 +1,5 @@
 # config.nu
 
-use std/util "path add"
-
-$env.config.buffer_editor = 'nvim'
-$env.config.show_banner = false
-
-path add  /opt/homebrew/bin 
-path add  /usr/local/bin 
-path add  ~/.local/bin/mise
-path add  ~/.local/share/mise
-
 alias show   = gh pr view --web
 alias fg     = job unfreeze
 
@@ -40,6 +30,7 @@ alias gush   = git push origin (git rev-parse --abbrev-ref HEAD) --force-with-le
 alias gwip   = git commit -a -m "wip"
 
 alias tf = terraform
+alias zl = zellij
 
 def dot --wrapped [...args] { chezmoi git -- ...$args }
 
@@ -51,7 +42,9 @@ alias dlg  = chezmoi git -- log --graph --oneline --decorate --color --all
 alias dc   = chezmoi git -- commit -v
 alias dush = chezmoi git -- push origin master
 
-alias nfig = nvim ~/.config/nvim
+def nfig [] { cd ~/.config/nvim; nvim . }
+def zfig [] { cd ~/.config/zellij; nvim . }
+def gfig [] { cd ~/.config/ghostty; nvim . }
 
 def gb --wrapped [...args] { git branch --sort=-committerdate ...$args | lines }
 def gri [count] { git rebase --interactive $'HEAD~($count)' }
@@ -104,5 +97,9 @@ def pam-dev [reason: string = "Debug logs" hours: int = 8] {
   )
 }
 
-mkdir ($nu.data-dir | path join "vendor/autoload")
-starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
+#pdq config
+# Local shell customizations for pdq
+# Increase max open file descriptors
+ulimit -n 4096
+alias pdq = cd ~/code/pdq
+
