@@ -46,8 +46,7 @@ end, { desc = "Next Warning" })
 -- vim dadbod
 map("n", "<leader>d", ":%DB sqlite:~/code/fam/data/fam_test.db<cr>")
 
---change colorschemes
-map("n", "<leader>cl", "<cmd>colorscheme catppuccin-latte<cr>")
+--change colorschemes map("n", "<leader>cl", "<cmd>colorscheme catppuccin-latte<cr>")
 map("n", "<leader>cf", "<cmd>colorscheme catppuccin-frappe<cr>")
 map("n", "<leader>cm", "<cmd>colorscheme catppuccin-macchiato<cr>")
 map("n", "<leader>co", "<cmd>colorscheme catppuccin-mocha<cr>")
@@ -56,6 +55,8 @@ map("n", "<leader>mdo", "<cmd>colorscheme material-deep-ocean<cr>")
 map("n", "<leader>mp", "<cmd>colorscheme material-palenight<cr>")
 map("n", "<leader>ml", "<cmd>colorscheme material-lighter<cr>")
 map("n", "<leader>md", "<cmd>colorscheme material-darker<cr>")
+map("n", "<leader>fo", "<cmd>colorscheme everforest<cr>")
+map("n", "<leader>ro", "<cmd>colorscheme rose-pine<cr>")
 
 map("n", "<leader><space>", "<cmd>Telescope find_files<cr>")
 map("n", "<c-f>", "<cmd>Telescope live_grep<cr>")
@@ -64,3 +65,28 @@ map("n", "<c-b>", "<cmd>Telescope buffers<cr>")
 map("n", "<leader>gb", "<cmd>Git blame<cr>")
 map("n", "<leader>ge", "<cmd>Gedit:<cr>")
 map("n", "<leader>gw", "<cmd>Gwrite<cr>")
+
+-- vim.keymap.set('n', '<C-f>', ':vsplit<CR>', { silent = true })
+-- map('n', '<C-f>', '<cmd>vsplit<CR>', { silent = true })
+-- map('n', '<C-F', '<cmd>vsplit | wincmd F<CR>', { silent = true })
+
+-- Navigate window splits
+vim.keymap.set('n', '<C-j>', '<C-w>j', { desc = 'Go to lower window' })
+vim.keymap.set('n', '<C-k>', '<C-w>k', { desc = 'Go to upper window' })
+--
+-- Navigate splits horizontally OR switch tabs if at the edge
+vim.keymap.set('n', '<C-h>', function()
+  local cur_win = vim.api.nvim_get_current_win()
+  vim.cmd('wincmd h')
+  if vim.api.nvim_get_current_win() == cur_win then
+    vim.cmd('tabprevious')
+  end
+end, { desc = 'Go to left window or previous tab' })
+
+vim.keymap.set('n', '<C-l>', function()
+  local cur_win = vim.api.nvim_get_current_win()
+  vim.cmd('wincmd l')
+  if vim.api.nvim_get_current_win() == cur_win then
+    vim.cmd('tabnext')
+  end
+end, { desc = 'Go to right window or next tab' })

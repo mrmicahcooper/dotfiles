@@ -16,7 +16,7 @@ vim.bo.tabstop = 2
 vim.o.autoindent = true
 vim.o.backup = false
 vim.o.cmdheight = 0
-vim.o.colorcolumn = "100"
+vim.o.colorcolumn = "120"
 vim.o.conceallevel = 0
 vim.o.cursorline = true
 vim.o.expandtab = true
@@ -48,10 +48,15 @@ vim.wo.signcolumn = "yes"
 vim.wo.wrap = true
 vim.opt.termguicolors = true 
 
-
 vim.cmd("filetype plugin indent on")
 vim.cmd("source ~/.config/nvim/projections.vimrc")
 vim.cmd("source ~/.config/nvim/vim-test-config.vim")
+
+-- Ensures that when exiting NeoVim, Zellij returns to normal mode
+vim.api.nvim_create_autocmd("VimLeave", {
+    pattern = "*",
+    command = "silent !zellij action switch-mode normal"
+})
 
 -- use nushell as the shell
 -- Set the path to your Nushell executable (adjust the path if necessary)

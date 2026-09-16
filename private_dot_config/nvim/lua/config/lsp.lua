@@ -1,20 +1,15 @@
-local function on_list(options)
-  vim.fn.setqflist({}, ' ', options)
-  vim.cmd.cfirst()
-end
-
-local nmap = function(keys, func, desc)
-  if desc then
-    desc = "LSP: " .. desc
-  end
-
-  vim.keymap.set("n", keys, func, { buffer = bufnr, desc = desc })
-end
-
 vim.api.nvim_create_autocmd('LspAttach', {
   group = vim.api.nvim_create_augroup('my.lsp', {}),
   callback = function(args)
     local client = assert(vim.lsp.get_client_by_id(args.data.client_id))
+
+    local nmap = function(keys, func, desc)
+      if desc then
+        desc = "LSP: " .. desc
+      end
+
+      vim.keymap.set("n", keys, func, { buffer = args.buf, desc = desc })
+    end
 
     nmap("<leader>rn", vim.lsp.buf.rename, "[R]e[n]ame")
     nmap("<leader>ca", vim.lsp.buf.code_action, "[C]ode [A]ction")
