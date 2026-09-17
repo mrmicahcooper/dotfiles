@@ -168,7 +168,17 @@ return {
     "folke/sidekick.nvim",
     opts = {
       -- add any options here
-      cli = {},
+      cli = {
+        win = {
+          layout = "left",
+          width = 0.4
+        }
+        -- mux = {
+        --   enabled = true,
+        --   backend = "zellij"
+        --
+        -- }
+      },
       nes = { enabled = false },
     },
     keys = {

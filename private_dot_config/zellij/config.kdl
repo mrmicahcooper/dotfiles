@@ -165,7 +165,7 @@ keybinds clear-defaults=true {
         bind "Ctrl esc" { Quit; }
     }
     shared_except "locked" "move" {
-        bind "Ctrl v" { SwitchToMode "move"; }
+        bind "Ctrl g" { SwitchToMode "move"; }
     }
     shared_except "locked" "session" {
         bind "Ctrl m" { SwitchToMode "session"; }
