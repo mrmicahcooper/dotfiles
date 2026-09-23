@@ -4,6 +4,7 @@ return {
   -- "tpope/vim-vinegar",
 
   -- colorschemes
+  -- 
   { "rose-pine/neovim", name = "rose-pine" },
   {
     "catppuccin/nvim",
@@ -33,6 +34,18 @@ return {
   },
 
   {
+    "ember-theme/nvim",
+    name = "ember",
+    priority = 1000,
+    config = function()
+      require("ember").setup({
+        variant = "ember-soft", -- "ember" | "ember-soft" | "ember-light" | "ember-lighter"
+      })
+      vim.cmd("colorscheme ember")
+    end,
+  },
+
+  {
     "lukas-reineke/indent-blankline.nvim",
     main = "ibl",
     event = "VeryLazy",
@@ -45,4 +58,3 @@ return {
 
 
 }
-

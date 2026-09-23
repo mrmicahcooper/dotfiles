@@ -10,28 +10,14 @@ return {
   "tpope/vim-projectionist",
   "tpope/vim-surround",
   "vim-scripts/BufOnly.vim",
-  -- "wbthomason/packer.nvim",
   "khaveesh/vim-fish-syntax",
   "tpope/vim-unimpaired",
-  "rcarriga/nvim-notify",
   "tpope/vim-endwise",
   "godlygeek/tabular",
   "evanleck/vim-svelte",
   "vinnymeller/swagger-preview.nvim",
   "tpope/vim-dadbod", "tpope/vim-eunuch",
   "catgoose/nvim-colorizer.lua",
-  -- {
-  --   "swaits/zellij-nav.nvim",
-  --   lazy = true,
-  --   event = "VeryLazy",
-  --   keys = {
-  --     { "<c-s-h>", "<cmd>ZellijNavigateLeftTab<cr>",  { silent = true, desc = "navigate left or tab"  } },
-  --     { "<c-s-j>", "<cmd>ZellijNavigateDown<cr>",  { silent = true, desc = "navigate down"  } },
-  --     { "<c-s-k>", "<cmd>ZellijNavigateUp<cr>",    { silent = true, desc = "navigate up"    } },
-  --     { "<c-s-l>", "<cmd>ZellijNavigateRightTab<cr>", { silent = true, desc = "navigate right or tab" } },
-  --   },
-  --   opts = {},
-  -- },
 
   {
     "carldaws/miser.nvim",
@@ -65,26 +51,26 @@ return {
     config = function()
       -- Install parsers
       require("nvim-treesitter").install {
+        "bash",
         "c",
         "eex",
         "elixir",
         "fish",
         "go",
-        "bash",
         "gomod",
         "gosum",
         "graphql",
-        "nu",
+        "hcl",
         "heex",
         "json",
+        "julia",
         "lua",
-        "hcl",
-        "terraform",
+        "nu",
         "ocaml",
         "query",
         "ruby",
         "rust",
-        "julia",
+        "terraform",
         "toml",
         "typescript",
         "v",
@@ -147,23 +133,6 @@ return {
     ft = { "markdown" },
   },
 
-  -- {
-  --   'MeanderingProgrammer/render-markdown.nvim',
-  --   -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-mini/mini.nvim' },            -- if you use the mini.nvim suite
-  --   -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-mini/mini.icons' },        -- if you use standalone mini plugins
-  --   dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' }, -- if you prefer nvim-web-devicons
-  --   ---@module 'render-markdown'
-  --   ---@type render.md.UserConfig
-  --   opts = {},
-  --   config = function()
-  --     require('render-markdown').setup({
-  --       code = {
-  --         conceal_delimiters = false
-  --       }
-  --     })
-  --   end
-  -- },
-  --
   {
     "folke/sidekick.nvim",
     opts = {
@@ -182,17 +151,6 @@ return {
       nes = { enabled = false },
     },
     keys = {
-      -- {
-      --   "<tab>",
-      --   function()
-      --     -- if there is a next edit, jump to it, otherwise apply it if any
-      --     if not require("sidekick").nes_jump_or_apply() then
-      --       return "<Tab>" -- fallback to normal tab
-      --     end
-      --   end,
-      --   expr = true,
-      --   desc = "Goto/Apply Next Edit Suggestion",
-      -- },
       {
         "<c-.>",
         function() require("sidekick.cli").toggle() end,
