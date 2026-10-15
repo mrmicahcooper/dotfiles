@@ -17,3 +17,4 @@ source ~/.posix_functions
 [ -f ~/.git-completion.bash ] && source ~/.git-completion.bash
 
 eval "$(starship init bash)"
+eval "$(~/.local/bin/mise activate bash)"

@@ -744,9 +744,19 @@ show_startup_tips false
 // 
 // host_notification_protocol "auto"
 layout {
-    default_mode_layout {
-        floating_panes {
-            pane height="75%" width="75%"
+//    floating_panes {
+//        pane height="75%" width="75%"
+//    }
+    default_tab_template {
+      swap_floating_layout {
+        floating_panes max_panes=1 {
+            pane x="5%" y="5%" width="90%" height="90%"
+            //pane height="90%"
         }
+      }  
+      //  floating_panes max_panes=2 {
+      //      pane x="4%" y="5%" width="45%" height="90%"
+      //      pane x="51%" y="5%" width="45%" height="90%"
+      //  }
     }
 }

@@ -27,7 +27,7 @@ alias grom   = git rebase origin/main --autostash
 alias gst    = git status
 alias gull   = git pull --rebase origin (git rev-parse --abbrev-ref HEAD)
 alias gush   = git push origin (git rev-parse --abbrev-ref HEAD) --force-with-lease
-alias gwip   = git commit -a -m "wip"
+alias gwip   = git commit -a -m "chore(wip): work-in-progress"
 
 alias tf = terraform
 alias zl = zellij
@@ -50,6 +50,11 @@ def gb --wrapped [...args] { git branch --sort=-committerdate ...$args | lines }
 def gri [count] { git rebase --interactive $'HEAD~($count)' }
 def gain --wrapped [...args] { git fetch; git rebase origin/main ...$args }
 def glod --wrapped [...args] { git log --pretty=format:"%C(auto)%h%d %s %Cblue%an %Cgreen(%cr)" ...$args }
+def gamendush --wrapped [...args] { 
+  mix format
+  git add .
+  git push origin (git rev-parse --abbrev-ref HEAD) --force-with-lease
+}
 
 #git log as a nushell table
 def glog [lines=500] {
@@ -86,20 +91,8 @@ def truncate [string length: int] {
   }
 }
 
-def pam-dev [reason: string = "Debug logs" hours: int = 8] {
-  (
-  gcloud alpha pam grants create ENTITLEMENT_ID \
-    --resource-type=RESOURCE_TYPE \
-    --resource-id=RESOURCE_ID \
-    --duration=GRANT_DURATION \
-    --justification="JUSTIFICATION" \
-    [--additional-email-recipients=EMAIL_ADDRESSES]
-  )
-}
-
 #pdq config
 # Local shell customizations for pdq
 # Increase max open file descriptors
 ulimit -n 4096
 alias pdq = cd ~/code/pdq
-

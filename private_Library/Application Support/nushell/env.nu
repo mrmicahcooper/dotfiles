@@ -20,13 +20,14 @@ use std/util "path add"
 
 $env.config.buffer_editor = 'nvim'
 $env.config.show_banner = false
-$env.ZELLIJ_SOCKET_DIR = "/tmp/zellij"
+# $env.ZELLIJ_SOCKET_DIR = "/tmp/zellij"
 
 path add  /opt/homebrew/bin 
 path add  /usr/local/bin 
 # path add  ~/.local/bin/mise
-path add  ~/.local/bin
-path add  ~/.local/share/mise
+path add ~/.local/bin
+path add ~/.local/share/mise
+path add ~/.opencode/bin
 
 #
 use mise.nu
