@@ -24,10 +24,10 @@ $env.config.show_banner = false
 
 path add  /opt/homebrew/bin 
 path add  /usr/local/bin 
-# path add  ~/.local/bin/mise
+path add ~/.local/bin/mise
 path add ~/.local/bin
 path add ~/.local/share/mise
 path add ~/.opencode/bin
 
 #
-use mise.nu
+# use mise.nu

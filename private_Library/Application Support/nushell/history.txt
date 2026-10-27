@@ -1,0 +1,10123 @@
+mise
+mise install
+which starship
+starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
+starship
+config nu
+mkdir ($nu.data-dir | path join "vendor/autoload")
+config nu
+gst
+mkdir code/pdq
+gst
+git
+brew install gitr
+brew install git
+git
+iex
+opencode
+nvim ~/.config/
+opencode
+fg
+mise install
+postico
+cd ~/Downloads/
+ls
+mv * ~/Pictures/
+ls
+cd
+cd Pictures/
+ls
+cd
+ls
+nvim ~/.mise.toml
+gst
+fg
+gst
+mise install
+fg
+mise install
+opencode
+lx
+ls
+cd code/pdq/
+ls
+cd ./
+cd ../
+ls
+cd
+gst
+glod
+cd code/
+ls
+nvim ~/.config/ghostty/
+gst
+ls
+nvim .
+nvim ~/.mise.toml
+cd code/pdq
+git clone git@github.com:pdq/houston.git
+mix help | rg hex
+mix local.hex
+cd houston/
+mise trust
+mise install
+gcloud
+which gcloud
+mise install
+mix test
+mix deps.get
+mix hex.repo add oban
+mise hex.repo list
+mix hex.user auth
+mix deps.get
+mise tasks ls
+mise tasks list
+mise tasks ls --all
+fg
+nvim .
+which task
+task list
+task setup -- --run-dev
+task list
+task banner
+task setup
+envsubst
+which envsubst
+gst
+fg
+task setup
+emvsubst
+envsubst
+envsubst --help
+docker
+task devops:reset
+task ls | rg colima
+task list
+task
+task | rg colima
+task reset
+task local
+zsh
+task se5tup
+task setup
+fg
+nvim mise.toml
+mise install
+task setup
+ls /Users/micah.cooper/.docker/contexts/meta
+ls /Users/micah.cooper/.docker
+rg .docker
+task setup -- --run-dev
+containerd
+colima
+g
+nvim .
+containerd
+brew install containerd
+task setup
+colima stop
+gh
+gh auth login
+task setup
+mix start
+mix
+fg
+nvim ~/mix:e .
+mix start
+opencode
+dfg
+fg
+mix test
+task
+task doctor
+task setup
+nvim .
+ls
+cd ../
+ls
+mix start
+gull
+mix start
+gst
+gull
+gain
+mix deps.get
+mix start
+fg
+fg
+nivm .
+q
+nfig
+opencode
+gt
+fg
+nfig
+cd ~/.config/nvim/
+nvim .
+nfig
+cm apply ~/.config/nvim
+nvim .
+fg
+nfig
+cm apply ~/.config/nvim
+nvim .
+fg
+gst
+nvim .
+fg
+gst
+nvim mix.exs
+nvim .
+nvim .
+ls
+cd ../
+ls
+fg
+cd balenciauthga/
+nvim 
+mix compile
+mix deps.get
+fg
+mix format
+fg
+Lgst
+gb -r
+git co auth-1560-write-injection-for-ecto-queries-to-limit-device-access-to
+git co -b auth-1560-write-injection-for-ecto-queries-to-limit-device-access-to
+gst
+rm sketch
+git co mise.lock
+gst
+gcl
+gst
+gap
+gst
+gc -m 'Inject query for schemas with device_id'
+gst
+gap
+git co --patch
+gst
+nfig
+gush
+opencode
+opencode
+cd ../houston/
+fg
+psql
+fg
+Lgst
+gst
+git ad .
+git add .
+gc -m 'Test device_group query by "role_visibility"'
+gush
+mix format
+gsat
+gst
+gap
+gamend
+nfig
+fg
+nvim .
+yarn
+npm
+nfig
+opencode
+nfig
+nvim .
+gst
+glod
+git show
+glod
+glog
+fg
+gt
+gt auth --token gt auth --token 6N8i4Z1d3OOz1lMqhXbyGYlXQlO8EexO6Nl1CW0fIf1KvcED1LuzuqWStWdg
+gt auth --token 6N8i4Z1d3OOz1lMqhXbyGYlXQlO8EexO6Nl1CW0fIf1KvcED1LuzuqWStWdg
+gt
+nvim .
+lgst
+glod
+gst
+gap
+gtmix format
+mix format
+gst
+fg
+fg
+gst
+gap
+fg
+gst
+gap
+gamend
+gush
+gst
+gcl
+gt
+show
+glod
+gain
+gst
+fg
+Lgst
+gst
+grc
+gst
+fg
+grc
+gst
+gush
+mix format
+mix deps.get
+mix format
+nvim .
+fg
+fg
+gst
+gush
+nvim .
+gst
+glod
+fg
+gst
+fg
+fg
+gst
+nvim .
+fg
+fg
+gst
+fg
+gst
+gt
+glod
+gb
+gt
+gt track --help
+gt track
+gain
+gush
+gt submit --draft --ai
+fg
+gst
+fg
+gt --help
+gt --help | rg ai
+gt
+fg
+:e .
+fg
+nvim .
+gst
+glod
+gitgst
+gst
+git add lib/
+gamend
+gush
+fg
+gst
+git add lib
+gst
+gc -m 'Properly sort private and public functions in multi-tenancy.ex'
+gush
+fg
+gst
+gap
+gc -m 'Improve join scoping on multi-tenancy visiblity_id'
+gush
+fg
+gst
+gcl
+gst
+fg
+readme
+mix start
+env
+nvim .
+mix compile
+mix start
+cd ../devops/
+task doctor
+mise trust
+task doctor
+cd ../devops/
+mise install
+task doctor
+which task
+cd ../houston/
+task doctor
+mix start
+k8s
+colima
+colima list
+colima ssh
+gst
+f g
+fg
+fg
+ls
+ls -a
+cd ./.devops
+ls
+task doctor
+cd ../
+task setup
+mix start
+task setup
+fg
+gst
+cd ../devops/
+gull
+gst
+git co .
+gcl
+cd ../houston/
+mise install
+opencode
+opencode --continue
+cd code/pdq/houston/
+gst
+mix start
+kubectl
+kubectl list
+mise run k9s
+fg
+nvim ~/.mise.toml
+gh auth token
+config nu
+fg
+mise install
+mise install
+i
+k9s
+nvim ~/.zshrc.local
+config nu
+opencode
+task setup
+cd code/pdq
+cd houston/
+task setup
+gain
+task setup
+mix start
+mix start
+ls
+cd houston/
+mix test
+gst
+fg
+nvim .
+task
+task | rg stop
+task nuke
+fg
+glod
+gri 6
+gush
+gain
+gush
+gd
+ge
+nvim ~/.mise.toml
+gcl
+gst
+fg
+pkill -9 beam
+fg
+gst
+gap
+vst
+gst
+glod
+git fixup 82ac200072
+gri 6
+gush
+show
+gain
+fg
+gst
+git add .
+grc
+gush
+mix format
+gush
+gst
+fg
+gst
+gd
+git add .
+gamend
+gush
+gst
+opencode --continue
+cd ../balenciauthga/
+cd ../
+ls
+git clone git@github.com:pdq/eggnog.git
+fg
+cd eggnog/nvim .
+cd eggnog/lib/
+nvim .
+mise install
+fg
+mix deps.et
+mix deps.get
+cd ../
+mix deps.get
+fg
+nvim .
+ls
+nvim .
+cd ../houston/
+nvim .
+gain
+fg
+nvim .
+Lgst
+gst
+nbim .
+task setup
+fg
+gst
+gap
+gst
+glod
+gc
+nvim .
+gst
+gap
+gc -m 'chore(device-rbac): set role visility id for all loaded sessions'
+fg
+cd ../eggnog
+fg
+nvim .
+iex
+fg
+gst
+fg
+gst
+gap
+fg
+gst
+gap
+mix format
+nvim .
+gst
+gap
+gst
+glod
+gc
+gush
+mix precommit
+gain
+gush
+fg
+fg
+gst
+god
+glod
+gamend
+gush
+fg
+mix test
+fg
+rg  "stub(Houston.LaunchDarkly, :get_org_flag, fn"<\n>
+rg "stub\(Houston.LaunchDarkly, :get_org_flag, fn"<\n>
+rg "Houston.LaunchDarkly, :get_org_flag, fn"<\n>
+rg "Houston.LaunchDarkly, :get_org_flag, fn"fg<\n>
+fg
+gst
+fg
+gst
+glod
+mix test
+gst
+git co --patch
+fg
+nvim .
+fg
+mix test
+fdg
+mix test --max-failures 3
+fg
+gst
+git co --patch
+fg
+git co --patch
+fg
+gst
+gap
+gst
+gc -m 'chore(device-rbac): ensure stub fallback for LaunchDarlky tests'
+fg
+gst
+gap
+gst
+gc
+mix format
+gst
+gap
+git add .
+gst
+gamend
+gush
+fg
+gst
+gst
+git co mian
+git co main
+gull
+fg
+gst
+which nushell
+which nu
+sudo nvim /etc/shells
+fg
+chsh -s /opt/homebrew/bin/nu
+fg
+git co -
+fg
+chsh -s /opt/homebrew/bin/nu
+opencode
+mise install
+mise list
+mise tasks ls
+mise install
+mise trust
+cd code/pdq/houston/
+chsh
+chcn --help
+chsh --help
+chsh help
+man chsh
+mix test lib/connect/inventory/groups/actions/update_dynamic_group_membership_test.exs
+config nu
+fg
+mix test lib/connect/inventory/groups/actions/update_dynamic_group_membership_test.exs
+gst
+gamend
+gush
+task setup
+config env
+gush
+glod
+fg
+nvim .
+g
+mix test lib/houston_web/controllers/api/groups_controller_test.exs
+mix start
+fg
+gst
+gap
+gamend
+gush
+mix test lib/connect/self_serve/actions/check_self_serve_entitlement_test.exs
+fg
+gst
+mix test lib/houston_web/graphql/resolvers/deployments_resolver_test.exs
+mix test lib/houston_web/controllers/api/groups_controller_test.exs
+fg
+gst
+gap
+gamend
+mix test lib/connect/inventory/groups/actions/update_dynamic_group_membership_test.exs
+fg
+gst
+gush
+gst
+fg
+mix test lib/houston_web/graphql/resolvers/deployments_resolver_test.exs
+mix test lib/houston_web/graphql/resolvers/deployments_resolver_test.exs:714
+mix test lib/houston_web/graphql/resolvers/deployments_resolver_test.exs:1574
+mix test lib/houston_web/graphql/resolvers/deployments_resolver_test.exs:729
+mix test lib/houston_web/graphql/resolvers/deployments_resolver_test.exs:717
+fg
+gst
+gd
+fg
+gst
+gd
+fg
+mix test lib/houston_web/graphql/resolvers/deployments_resolver_test.exs:717
+gst
+gain
+gst
+glod
+gc -m 'fix(DeviceGroup): remove schema ecto primary key'
+git add .
+gc -m 'fix(DeviceGroup): remove schema ecto primary key'
+fg
+gst
+opencode
+gush
+mix format
+gst
+gap
+gamend
+gush
+gst
+mix test lib/connect/self_serve/actions/check_self_serve_entitlement_test.exs
+psql
+psql -h localhost:5432 -u postges
+psql -h localhost:5432
+fg
+psql --help
+psql -h localhost -p 5432 -U postgres -W postgres
+psql
+psql postgres@postgres:localhost:5432/houston
+psql postgres:postgres@localhost:5432/houston
+nvim ~/.mise.toml
+fg
+nvim ~/.config/mise.toml
+env
+env | rg PG
+psql
+gst
+psql
+gst6
+gst
+fg
+gst
+fg
+gst
+gap
+gc
+gush
+fg
+gc --amend
+gush
+show
+mix test lib/connect/inventory/devices/actions/calculate_and_publish_device_counts_test.exs
+opencode --continue
+gst
+uu
+l
+fg
+fg
+nvim .
+gst
+glod
+git fixup 6020e73e71
+git add .
+git fixup 6020e73e71
+gri 5
+gst
+gush
+mix format
+git fixup 6020e73e71
+git add .
+git fixup 6020e73e71
+gri 5
+gush
+mix test lib/connect/inventory/scans/actions/save_scan_results_test.exs
+mix test lib/connect/inventory/scans/actions/save_scan_results_test.exs:126
+fg
+gain
+mix deps.get
+mix test lib/connect/inventory/scans/actions/save_scan_results_test.exs:126
+fg
+gst
+gain
+gst
+mix test lib/connect/inventory/scans/actions/save_scan_results_test.exs:141
+imix test lib/connect/inventory/scans/actions/save_scan_results_test.exs:141
+mix test lib/connect/inventory/scans/actions/save_scan_results_test.exs:141
+mix test lib/connect/inventory/scans/actions/save_scan_results_test.exs:126
+fg
+gst
+gap
+gush
+fg
+mix format
+gst
+gap
+gush
+gsat
+gst
+fv
+fg
+gst
+mix test lib/houston/repo/multi_tenancy_test.exs:866
+mix test lib/houston/repo/multi_tenancy_test.exs:870
+mix test lib/houston/repo/multi_tenancy_test.exs:869
+mix test test/multi_tenancy_test.exs:870
+mix test test/multi_tenancy_test.exs:869
+mix test test/multi_tenancy_test.exs:870
+fg
+mix deps.clean boundary
+mix test test/multi_tenancy_test.exs:870
+fg
+gst
+gt
+gst
+git co --patch
+gst
+gcl
+gst
+fg
+show
+mix start
+mix deps.get
+mise install
+mise tools
+fg
+nvim ~/.mise.toml
+k9s
+colima status
+k9s
+gst
+gd
+mise inst4all
+mise install
+cm add ~/.mise.toml
+fg
+dst
+dot add .
+dot commit -m 'Update mise.toml'
+dot push origin master
+gst
+fg
+nvim .
+mix test lib/connect/websocket_proxy/consumers/device_sent_message/task_ack_consumer_test.exs:59
+fg
+gst
+gd
+git co .
+gst
+fg
+gain
+fg
+gst
+git add .
+grc
+gst
+gd
+mise install
+fg
+gst
+gcl
+fg
+gush
+mix test lib/houston/automations_test.exs
+mix test lib/houston/automations_test.exs:3835
+fg
+gst
+mix test lib/houston/automations_test.exs:3835
+fg
+gst
+gps
+gap
+qgst
+gst
+git co .
+gst
+giush
+gain
+imix test lib/connect/websocket_proxy/consumers/received_message_from_device_consumer_test.exs:191
+mix test lib/connect/websocket_proxy/consumers/received_message_from_device_consumer_test.exs
+mix test lib/connect/inventory/devices/actions/calculate_and_publish_device_counts_test.exs
+mix test lib/connect/inventory/devices/actions/calculate_and_publish_device_counts_test.exs:143
+mix test lib/connect/self_serve/actions/request_self_serve_token_test.exs
+mix test lib/connect/inventory/scans/actions/update_custom_scanner_test.exs
+mix test lib/connect/vulnerabilities/device_vulnerabilities/actions/set_device_vulnerabilities_ignored_test.exs
+mix test lib/connect/vulnerabilities/device_vulnerabilities/actions/set_device_vulnerabilities_ignored_test.exs:312
+mix test lib/connect/websocket_proxy/consumers/device_sent_message/smart_scans_send_schedule_consumer_test.exs:89
+mix test lib/connect/inventory/devices/actions/calculate_and_publish_device_counts_test.exs
+fg
+gast
+gst
+gap
+glod
+git fixup d20d6d2db9
+gri 5
+gst
+gcl
+git co .
+gri 5
+gst
+gra
+gst
+gri 5
+gst
+gd
+gcl
+gst
+git co .
+grc
+gst
+glod
+gush
+mix format
+gst
+gap
+glod
+git fixup 67ec80dee9
+gri 5
+gst
+git co .
+gst
+grc
+gst
+gush
+gain
+gush
+gst
+mix test lib/connect/inventory/scans/actions/save_scan_results_test.exs
+mix start
+btop
+nvim ~/.mise.toml
+mix test lib/connect/websocket_proxy/consumers/device_sent_message/task_ack_consumer_test.exs:38
+mise inst4all
+mise install
+fg
+gst
+btop
+mise install
+nvim ~/.mise.toml
+brew install btop
+}imix test lib/connect/vulnerabilities/actions/create_suggested_group_and_automation_test.exs
+mix test test/support/fail_on_warning_and_error_logs_test.exs
+mix test lib/connect/inventory/groups/actions/list_group_devices_test.exs
+gtmix test lib/connect/inventory/groups/actions/list_group_devices_test.exs
+mix test lib/connect/inventory/groups/actions/list_group_devices_test.exs
+fg
+gtmix test lib/connect/inventory/groups/actions/list_group_devices_test.exs
+mix test lib/connect/inventory/groups/actions/list_group_devices_test.exs
+fg
+mix test lib/connect/inventory/groups/actions/list_group_devices_test.exs
+mix test lib/connect/inventory/groups/actions/list_group_devices_test.exs:29
+imix test lib/connect/inventory/groups/actions/list_group_devices_test.exs:29
+mix test lib/connect/inventory/groups/actions/list_group_devices_test.exs:29
+iex -S mix test lib/connect/inventory/groups/actions/list_group_devices_test.exs:29
+mix test lib/connect/inventory/groups/actions/list_group_devices_test.exs:29
+psql
+gst
+fg
+gst
+fg
+gst
+git co --patch
+gst
+fg
+fg
+gst
+fg
+gst
+gap
+ast
+gst
+glod
+gc -m 'chore(device-rbac): add more feature flag fallbacks to tests'
+gst
+mix test lib/connect/inventory/groups/actions/list_group_devices_test.exs:29
+mix test lib/connect/inventory/groups/actions/list_group_devices_test.exs
+Lmix test lib/connect/inventory/groups/actions/list_group_devices_test.exs
+mix test lib/connect/inventory/groups/actions/list_group_devices_test.exs
+fg
+gst
+gap
+gst
+git add lib/connect/
+gc
+gst
+fg
+gst
+gain
+gst
+gcl
+gain 
+gst
+git co .
+gain
+gush
+fg
+show
+fg
+gszt
+gst
+git add .
+gamend
+gush
+gap
+gst
+mix foramtg
+mix format
+fg
+gst
+gap
+gst
+gamend
+gst
+gush
+gst
+mix test lib/connect/vulnerabilities/actions/create_suggested_group_and_automation_test.exs
+mix test lib/connect/inventory/scans/actions/save_scan_results_test.exs
+fg
+gst
+gap
+glod
+gamend
+mix format
+gush
+mix test lib/connect/inventory/scans/actions/create_custom_scanner_test.exs
+fg
+gst
+mix format
+mix test lib/connect/inventory/scans/actions/create_custom_scanner_test.exsmix test lib/connect/inventory/scans/actions/create_custom_scanner_test.exs
+gap
+gst
+gamend
+gush
+mix test lib/connect/inventory/scans/actions/create_custom_scanner_test.exs
+mix test lib/connect/inventory/groups/workers/update_dynamic_groups_test.exs
+mix test lib/houston/repo/multi_tenancy_test.exs
+mix test lib/houston/repo/multi_tenancy_test.exs:852
+fg
+gst
+gap
+gst
+gc -m 'chore(device-rbac): device_rbac can be "forced"'
+mix format
+migst
+gst
+gap
+fg
+gst
+gamend
+gush
+mix test lib/connect/deployments/device_tasks/consumers/task_ack_consumer_test.exs
+fg
+gain
+mix test lib/connect/deployments/device_tasks/consumers/task_ack_consumer_test.exs:59
+mix test lib/houston_grpc/organization/organization_service_test.exs
+mix test lib/houston/repo/multi_tenancy_test.exs
+fg
+gst
+gap
+mix foramt
+mix format
+git add .
+gaemdn
+gamend
+fg
+gush
+pmix test lib/connect/deployments/device_tasks/consumers/task_ack_consumer_test.exs:48
+mix test lib/connect/deployments/device_tasks/consumers/task_ack_consumer_test.exs:48
+mix test lib/connect/deployments/device_tasks/consumers/task_ack_consumer_test.exs
+kkkkkkkkkkkkkkmix test lib/connect/deployments/device_tasks/consumers/task_ack_consumer_test.exs
+mix test lib/connect/deployments/device_tasks/consumers/task_ack_consumer_test.exs
+mix test lib/connect/deployments/device_tasks/consumers/task_ack_consumer_test.exsmix test lib/connect/deployments/device_tasks/consumers/task_ack_consumer_test.exs:60
+mix test lib/connect/deployments/device_tasks/consumers/task_ack_consumer_test.exs:60
+colima stop
+fg
+mix test lib/connect/deployments/device_tasks/consumers/task_ack_consumer_test.exs:60
+task setup
+mix test lib/connect/websocket_proxy/consumers/device_sent_message/task_ack_consumer_test.exs:41
+fg
+gb
+nfig
+fg
+vim .
+mix test lib/connect/deployments/device_tasks/consumers/task_ack_consumer_test.exs:38
+nvim .
+gst
+git co --patch
+mix test lib/connect/deployments/device_tasks/consumers/task_ack_consumer_test.exs:38
+fg
+gst
+git co --patch
+gst
+mix test lib/connect/deployments/device_tasks/consumers/device_task_step_snapshots_producer_test.exs
+zellij
+fg
+zellig
+ls
+which nu
+ls
+zellij
+opencode --continue
+mix test lib/houston_grpc/organization/organization_service_test.exs:70
+mix test lib/connect/deployments/device_tasks/consumers/device_task_step_snapshots_producer_test.exs
+mix test lib/houston_web/graphql/resolvers/insights_resolver/outstanding_vulnerabilities_by_impact_test.exs
+nvim .
+nfig
+mix test lib/houston_web/sockets/user_socket_test.exs
+fg
+gst
+gap
+gst
+glod
+mix foramt
+mix format
+gst
+gc
+gst
+git co .
+gst
+gush
+fg
+git cfg
+gst
+git add .
+gamend
+gush
+mix test lib/connect/self_serve/actions/check_self_serve_entitlement_test.exs
+fg
+gst
+gap
+gamend
+gush
+gain
+gst
+fg
+fg
+gst
+mix test lib/houston_grpc/organization/organization_service_test.exs:24
+gst
+fg
+git add .
+grc
+fg
+gst
+gain
+mix test lib/houston_grpc/organization/organization_service_test.exs:24
+mix deps.get
+mix test lib/houston_grpc/organization/organization_service_test.exs:24
+mix test lib/houston_web/graphql/resolvers/insights_resolver/outstanding_vulnerabilities_by_impact_test.exs
+fg
+mix gql
+gst
+nvim .
+mix test lib/utils/launch_darkly_test.exs
+mix test lib/houston_web/graphql/resolvers/insights_resolver/outstanding_vulnerabilities_by_impact_test.exs
+fg
+gst
+gain
+x deps.get
+mix deps.get
+fg
+gst
+mix test lib/houston_web/graphql/resolvers/insights_resolver/outstanding_vulnerabilities_by_impact_test.exs
+gush
+mix test lib/houston_web/graphql/resolvers/insights_resolver/outstanding_vulnerabilities_by_impact_test.exs:45
+mix test lib/houston_web/graphql/resolvers/insights_resolver/outstanding_vulnerabilities_by_impact_test.exs
+mix test lib/houston_web/graphql/resolvers/insights_resolver/outstanding_vulnerabilities_by_impact_test.exs:54
+mix test lib/houston_grpc/organization/organization_service_test.exs
+fg
+git log -patch
+git log --patch
+mix test lib/houston_grpc/organization/organization_service_test.exs
+mix test lib/connect/deployments/device_tasks/consumers/task_ack_consumer_test.exs
+fg
+gst
+gap
+gst
+git reset
+gst
+gap
+gaend
+gamend
+gush
+mix test lib/utils/launch_darkly_test.exs
+mix compile --force
+fg
+gst
+gap
+git reset
+git co .
+show
+mix test lib/utils/launch_darkly_test.exs:33
+mix test lib/houston_grpc/organization/organization_service_test.exs
+fg
+gst
+git add .
+gamend
+gush
+fg
+gst
+gain
+mix test test/support/fail_on_warning_and_error_logs_test.exs
+mix test lib/houston_grpc/organization/organization_service_test.exs
+mix test lib/houston_web/graphql/resolvers/insights_resolver/outstanding_vulnerabilities_by_impact_test.exs
+fg
+gain
+gush
+mix test lib/connect/insights/dashboard/actions/get_policy_status_test.exs
+mix test lib/houston_web/graphql/resolvers/insights_resolver/policy_status_test.exs
+fg
+gst
+glod
+git add . 
+gamend
+gaush
+gush
+mix test lib/houston_web/graphql/resolvers/insights_resolver/outstanding_vulnerabilities_by_impact_test.exs
+fg
+st
+gst
+git co ain
+git co main
+fg
+gull
+fg
+git co -
+fg
+gst
+gamend
+gst
+git co .
+gst
+fg
+git log --patch
+fg
+gst
+gamend
+git co main
+mix test lib/connect/deployments/device_tasks/consumers/task_ack_consumer_test.exs
+fg
+git co -
+mix test lib/connect/websocket_proxy/consumers/device_sent_message/task_ack_consumer_test.exs
+fg
+git log --patch
+mix test lib/connect/websocket_proxy/consumers/device_sent_message/task_ack_consumer_test.exs
+fg
+gst
+gap
+gst
+gamend
+gush
+fg
+mix format
+mix test lib/utils/launch_darkly_test.exs
+mix test lib/utils/launch_darkly_test.exs:70
+gush
+git co main
+fg
+git co -
+gst
+git add .
+gst
+gamend
+gush
+mix test lib/houston/scripts/move_devices_to_socket_proxy_test.exs
+fg
+gain
+gst
+gd
+git co .
+gst
+gain
+fg
+gst
+gd
+fg
+gst
+gap
+gamend
+mix format
+gush
+st
+gst
+gap
+gamend
+rmix test test/support/fail_on_warning_and_error_logs_test.exs
+mix test test/support/fail_on_warning_and_error_logs_test.exs
+mix test lib/utils/launch_darkly_test.exs:31
+mix test lib/utils/launch_darkly_test.exs:34
+fg
+gst
+mix test lib/utils/launch_darkly_test.exs:34
+fg
+mix test lib/utils/launch_darkly_test.exs:33
+nvim .
+Lgst
+gst
+mix test test/support/fail_on_warning_and_error_logs_test.exs
+fg
+gst
+fg
+gst
+gd
+mix test lib/utils/launch_darkly_test.exs
+fg
+gst
+gap
+fg
+gst
+g ap
+gap
+fg
+Lgst
+gst
+gap
+gst
+gamend
+gush
+fg
+gst
+nvim .
+mix test lib/connect/inventory/groups/workers/group_recalc_reconciliation_worker_test.exs
+fg
+git log --patch
+fg
+mix test lib/connect/inventory/groups/workers/group_recalc_reconciliation_worker_test.exs
+nvim ~/.config/ghostty/config
+ghostty +list-themes
+fg
+gst
+nfig
+nvim .
+nfig
+nvig
+nfig
+fg
+nvim .
+nfig
+fg
+fg
+:qa
+nvim .
+gst
+ls
+ls -a
+mix test lib/connect/inventory/groups/workers/device_group_recalc_worker_v2_test.exs
+mix test lib/connect/inventory/groups/workers/group_recalc_reconciliation_worker_test.exs:29
+mix test lib/connect/inventory/groups/workers/group_recalc_reconciliation_worker_test.exs
+gst
+git co --patch
+fg
+gst
+gap
+gamend
+gush
+mix format
+gap
+gamend
+gush
+gst
+fg
+st
+gain
+mix test lib/connect/insights/dashboard/actions/get_availability_test.exs
+mix test lib/houston/device_tasks_test.exs
+mix deps.get
+fg
+gst
+gap
+gamend
+mix test lib/houston/device_tasks_test.exs
+fg
+nfig
+fg
+mix test lib/houston/device_tasks_test.exs
+mix format
+mix test lib/houston/device_tasks_test.exs
+fg
+gst
+gap
+gic
+gc
+ix format
+mix format
+gush
+gsat
+gst
+fg
+gst
+gap
+gamend
+gush
+gap
+gst
+mix test
+nfig
+fg
+nvim .
+fg
+nfig
+nvim .
+task setup
+mix start
+task nuke
+fg
+task setup
+gst
+gain
+fg
+nvim .
+gst
+gain
+fg
+git log --patch
+glod
+git log --patch
+fg
+mix deps.clean --all --unlock --unused
+fg
+mix deps.get
+gst
+gd
+glod
+gst
+git co mix.lock
+gst
+mix deps.get
+fg
+mix deps.get
+gst
+ge
+gd
+gst
+gc -m 'chore(deps): remove unused tribunal deps from lockfile'
+git add .
+gc -m 'chore(deps): remove unused tribunal deps from lockfile'
+gst
+fg
+gst
+gain
+gush
+fg
+gst
+gap
+glod
+git fixup 2b9992752d
+gri 5
+gush
+mix test lib/houston/scans/controller_test.exs
+fg
+gst
+fg
+iex -S mix
+mix test lib/houston/repo/multi_tenancy_test.exs:44
+nvim .
+task setup
+colima start
+fg
+git log --patch
+git log --patch playwright/e2e/software/vulnerabilities-counts
+task nuke
+btop
+task setup
+mix test lib/houston/repo/multi_tenancy_test.exs:44
+fg
+iex
+fg
+iex
+iex sketch.exs
+iex
+iex sketch.exs
+Bar.one
+iex sketch.exs
+mix test lib/houston/repo/multi_tenancy_test.exs:44
+mix test lib/houston/repo/multi_tenancy_test.exs:43
+mix test lib/houston/repo/multi_tenancy_test.exs:48
+iex sketch.exs
+fg
+iex sketch.exs
+gst
+cat sketch.exs
+iex sketch.exs
+fg
+fg
+gst
+git co --patch
+nfig
+cd ~/.config/nvim/
+nvim .
+fg
+fg
+gst
+ghostty +list-fonts
+cd ../
+nvim mise.toml
+mise install
+lnr
+lnr auth
+lnr auth login
+lnr
+lnr issue list
+lns issue
+lnr issue list
+lns issue
+lns issue --help
+lnr issue --help
+lnr
+lnr completion
+lnr completion --help
+confi nu
+cd houston/
+mise items
+gst
+git wortree list
+git worktree list
+mise items
+mise items:new foobar
+h
+mise items:new foobar
+mise work
+mise work:new
+mise work:new foo
+config nu
+mise install
+mise work:new foo
+cd houston/
+mise work:new foo
+ls
+cd ../
+ls
+cd
+ls
+cd code/pdq/houston/
+ls
+gst
+fg
+nvim .
+mise work:new foo
+gb
+git worktree remove foo
+mise work:new foo
+gb
+gb -D foo
+mise work:new foo
+cd ../
+ls
+ls worktrees/
+fg
+mix start
+gst
+fg
+nvim .
+ls
+ls ../worktrees/
+gb
+git worktree remove foo
+gb -D foo
+gst
+ls
+gst
+ls
+git worktree add -b foobar ../worktrees/first-one
+ls ../worktrees/
+fg
+fg
+cd ../
+mise work:new bar
+cd houston/
+mise work:new bar
+ls
+cd ../worktrees/
+ls
+cd ../worktrees/
+cd ../houston/
+mise work:new bar
+ls
+fg
+psq
+expand ~
+path expand .
+'.' | path expand 
+mise work:new bar
+chmod +x ../tasks/work/new
+mkdir ../tasks/work
+mise work:new bar
+ls ../
+ls ../tasks/
+ls -a ../
+cd ../
+mkdir .mise
+mv mise.toml .mise/config.toml
+mv tasks/ .mise/tasks
+mise tasks ls
+nvim mise.toml
+fg
+ls
+mise tasks ls
+mise work:new bar
+mise work:new barh:w
+mise work:new barh
+mise work:new bar
+ls
+ls worktrees/
+mise work:new bar
+ls worktrees/
+ls
+nvim .
+fg
+./work.nu work
+source .work
+chmod +x work.nu
+work
+chmod +x work.nu
+./work.nu work.nu
+./work.nu wor
+./work.nu word
+./work.nu work
+./work.nu 
+./work.nu
+cd houston/
+./work.nu
+work
+./work
+./work.nu
+work
+source ./work
+work
+ls
+fg
+config nu
+cd ./
+cd pdq
+ocnfig nu
+config nu
+cd ../
+cd pdq
+work
+$env.PATH
+cd ../
+cd code/pdq
+ls
+work
+ls
+ls -a
+work new
+./work
+use work
+work
+ls
+./work
+work
+work main
+work
+wokr
+work
+use "std/path"
+config nu
+use std/util "path add"<\n>
+path add ./
+work
+cd ../
+cd pdq
+work
+cd ./
+cd ../
+cd pdq
+work
+cd ../
+cd pdq
+work
+cd houston/
+work
+config nu
+work remove
+git worktree list --help
+git worktree list porcelain
+git worktree list --porcelain
+git worktree list porcelain
+git worktree list
+git worktree list | string split
+git worktree list | str split
+git worktree list | str split " "
+git worktree list | str-split
+git worktree list | str row
+git worktree list | str-row
+git worktree list | str row ""
+git worktree list | str row " "
+git worktree list | str split row " "
+git worktree list | split row " "
+git worktree list | split row -r '\w'
+git worktree list | split row -r '\w+'
+git worktree list | split row -r '\s+'
+git worktree list | lines |  split row -r '\s+'
+git worktree list | lines 
+git worktree list | lines
+git worktree remove --help
+git worktree list | lines |  split row -r '\s+'
+git worktree list | lines | input list | split row -r '\s+'
+git worktree list | lines | input list | split row -r '\s+' | first
+ls
+nvim .
+gb
+gb -D bar foobar
+gst
+git worktree list
+ls
+gb
+work remove
+work
+ls
+gb
+work remove
+work
+work | lines
+work | lines | each | split row -r '\s+'
+work | lines | each {|line| $line | split row -r '\s+'}
+work | lines
+work | lines | each {|line| $line | split row -r '\s+'}
+work
+work remove
+gb
+work
+gb -D foobar
+gst
+work remove
+work new foo
+ls
+fg
+gsrt
+fg
+ls
+work
+work remove
+work new foobar
+kkkkkkkkkkkkkkmix test lib/connect/deployments/device_tasks/consumers/task_ack_consumer_test.exs
+work new foobar
+ls
+ls ../worktrees/
+work go
+work --help
+work new --help
+work remove -h
+work go | cd
+cd code/pdq/houston/
+work go
+work go | cd $in
+cd work go
+cd (work go)
+work go | cd
+work go | cd $in
+work go
+cd code/pdq/houston/
+work go
+work go | cd
+cd code/pdq/houston/
+work --help
+work
+owrk
+work
+work --help
+work
+work remove
+ls
+work go
+config nu
+worky
+fg
+config nu
+werk
+cd houston/
+werk
+wer
+werk
+fg
+worky
+fg
+work
+cd ../
+ls
+cd pdq
+work
+cd houston/
+work
+$env.PATH
+$env.PATH | rg pdq
+cd ../
+cd pdq
+$env.PATH | rg pdq
+work
+cd houston/
+work
+worky
+werk
+fg
+config nu
+werk
+work go
+work go | cd $in
+work
+fg
+worky
+work go | cd $in
+cd houston/
+work go
+work new auth-1588-refactorrename-multi_tenancyex
+work go
+worky
+alias gork = work go | cd $in
+gork
+alias gork = (work go) | cd $in
+work go | cd $In
+work go | cd $in
+work go
+work
+work | cd
+cd code/pdq/houston/
+gst
+ls
+work
+work list
+gst
+work list
+work
+work | cd $in
+ls
+gb
+gdel
+ls
+gb
+gst
+config nu
+fg
+work
+work list
+gst
+gb
+git worktree list
+git worktree show /Users/micah.cooper/code/pdq/worktrees/auth-1588-refactorrename-multi_tenancyex
+git wt
+git w
+nvim .
+git config -l
+git config -l | rg '^alias'
+git config -l | list
+git config -l | to list
+git config -l | lines
+git config -l | lines |  where { $in | str starts-with "alias." }
+git config -l | lines |  where { $in | str starts-with "alias." } | str replace 'alias' ''
+git config -l | lines |  where { $in | str starts-with "alias." } | str replace 'alias.' ''
+git alias
+git config -l | lines |  where { $in | str starts-with "alias\." } | str replace 'alias.' ''
+git config -l | lines |  where { $in | str starts-with "alias." } | str replace 'alias.' ''
+git config -l | lines |  where { $in | str starts-with "alias" } | str replace 'alias.' ''
+git config -l | lines |  where { $in | str starts-with "alias" } | str replace 'alias.' '' | split row "="
+git config -l | lines |  where { $in | str starts-with "alias" } | str replace 'alias.' ''
+git config -l | lines |  where { $in | str starts-with "alias" } | str replace 'alias.' '' | split column "="
+git aliases
+git wk list
+nvim ~/.gitconfig
+git wk list
+git wk list --porcelain
+git wk list --help
+git wk list --porcelain | list
+git wk list --porcelain | lnes
+git wk list --porcelain | lines
+git wk list --porcelain | lines | chunk 3
+git wk list --porcelain | lines | chunks 3
+git wk list --porcelain | lines | chunks 4
+git wk list --porcelain | lines | chunks 4 | flatten
+git wk list --porcelain | lines | chunks 4
+work list
+ls worktrees
+ls ../worktrees
+ls ../
+cd ../../houston/
+ls
+gst
+gd
+git add .
+git co main
+gst
+git stash
+git co main
+gull
+gst
+gb
+worky
+werk
+alias gork = (work go) | cd $in
+alias gork = "work go | cd $in"
+alias gork = work go | cd $in
+fg
+config nu
+doit
+work go
+work
+fg
+config nu
+doit
+work
+fg
+gst
+config nu
+work
+cd houston/
+work
+wwork
+work
+fg
+config nu
+houston
+fg
+config nu
+houston
+fg
+config nu
+houston
+fg
+config nu
+work
+houston
+nvim .
+config nu
+work | cd $in
+gst
+work new auth-1407-spike-audit-all-device-actions-and-write-tickets-for | cd $in
+work list
+work | cd $in
+cd
+cd code/pdq/
+work remove
+cd houston/
+work remove
+gdel
+gb
+work list
+work
+work new auth-1407-spike-audit-all-device-actions-and-write-tickets-for | cd $in
+work remove
+work new auth-1407-spike-audit-all-device-actions-and-write-tickets-for | cd $in
+gb
+gdel
+work new auth-1407-spike-audit-all-device-actions-and-write-tickets-for | cd $in
+work remove
+gdel
+work new auth-1407-spike-audit-all-device-actions-and-write-tickets-for | cd $in
+work new auth-1407-spike-audit-all-device-actions-and-write-tickets-for
+cd ../houston
+cd ../
+ls
+ls -a
+cd ../houston/
+work remove
+git worktree list
+git worktree lsit
+git worktree list | split column
+git worktree list | split column " "
+git worktree list | split column " " --number 3
+git worktree list | split column " " --number 3 dir hash branch
+work
+work list
+work new auth-1407-spike-audit-all-device-actions-and-write-tickets-for | cd $in
+work
+wor list
+work list
+git wk list
+git wk --list
+git wk list | split column -r '\s+'
+git wk list | split column -r '\s+' --number 3
+git wk list | lines
+git wk list | lines | split column -r '\s+'
+git wk list | lines | split column -r '\s+' path sha branch
+work list
+work
+work list
+work
+work | cd $in
+work
+work | get path
+work | get path $in
+let foo = (work in)
+let foo = (work)
+$foo
+foo
+$foo
+work
+cd houston/
+work
+work list
+work
+work | cd $in
+ls
+work | cd $in
+work list
+work
+ls
+work new foobar
+ls
+ls ../worktrees/
+rm -rf ../worktrees/foobar/
+work new foobar
+work new foo
+ls
+work list
+work remove
+work list
+work new foobar | cd $in
+work remove
+work new foobar | cd $in
+gb
+gdel
+work new foobar
+git wk add --help
+work remove
+gb
+gdel
+work new foobar
+work new foobar | cd $in
+work new foo | cd $in
+work new bar | cd $in
+ls
+work remove
+q
+lucd
+d
+cd
+cd code/pdqw
+cd code/pdq
+work list
+cd houston
+work list
+houston
+work list
+work
+cd ../
+houston
+source `~/Library/Application Support/nushell/config.nu`
+houston
+source `~/Library/Application Support/nushell/config.nu`
+houston
+source `~/Library/Application Support/nushell/config.nu`
+houston
+source `~/Library/Application Support/nushell/config.nu`
+houston
+source `~/Library/Application Support/nushell/config.nu`
+houston
+source `~/Library/Application Support/nushell/config.nu`
+houston
+houston foo
+work
+workit
+source `~/Library/Application Support/nushell/config.nu`
+work it
+workit
+work
+main-list
+work main-list
+work
+work remove
+cd
+houston
+workit
+cd code/pdq
+workit
+cd houston/
+workit
+work
+cd ./../
+workit
+work new foo | cd $in
+work new foob | cd $in
+ls
+cd ../houston
+cd ../
+ls
+cd ../houston/
+gb
+work remove
+gdel
+config nu
+work list
+work new auth-1407-spike-audit-all-device-actions-and-write-tickets-for | cd $in
+gst
+gull
+gst
+gain
+fg
+work list
+work
+workit
+nvim 
+fg
+nvim .
+gst
+config nu
+source `~/Library/Application Support/nushell/config.nu`
+nfig
+config nu
+source `~/Library/Application Support/nushell/config.nu`
+nfig
+fg
+config nu
+nfig
+source `~/Library/Application Support/nushell/config.nu`
+nfig
+fg
+nvim .
+nfig
+opencode
+houston
+cd code/pdq
+workit
+nvim .
+gstr
+gst
+rm tmp_E1D47C7A8AC128F9AD587642C3D05B9A2C6128101F2EA50CD331F40CADF2FA9A/
+rm -r tmp_E1D47C7A8AC128F9AD587642C3D05B9A2C6128101F2EA50CD331F40CADF2FA9A/
+gst
+rm audit.txt
+gst
+git add .
+gc
+mix format
+zellij
+zellij --help
+cd
+nvim .
+gst
+zellij
+zellij list-sessions
+zellij delete all sessions
+zellij foobar
+z
+fg
+config nu
+xl
+zl
+source `~/Library/Application Support/nushell/config.nu`
+zl
+zl --help
+zellij list-sessions
+zl list-sessions
+source `~/Library/Application Support/nushell/config.nu`
+zl
+zellij
+zellij options
+zellij
+zellij
+zellij list-sessions
+zellij list-sessions --help
+zellij list-sessions --short
+zellij list-sessions --short | lines
+fg
+config nu
+source `~/Library/Application Support/nushell/config.nu`
+pdq
+ls
+gst
+zellij list-sessions
+nvim work
+nvim .
+ls
+rg
+cd ~/.config/zellij/
+nvim .
+zellij attach pdq
+zellij attach
+zellig -a pdq
+zl -a pdq
+zl attach pdq
+nvim .
+zl
+zl -s pdq
+zl --help
+zl kill-all-sessions
+cd ~/.config/zellij/
+nvim .
+ls
+nvim .
+config env
+zellij -s test
+config env
+config nu
+zellij attach test
+nvim .
+env
+$env.PATH
+mise
+nvim
+brew
+zellij
+config nu
+which nu
+fg
+cd code/pdq
+ls
+nvim .
+cd
+nvim .
+zellij
+:q
+nvim ~/.config/nvim
+nvim .
+nvim .
+nfig
+qkjggkj:q
+nvim ~/.config/zellij/
+zellij
+zellij kill-all-sessions
+nvim .
+zellij
+pdq
+nvim .
+nfig
+nvim .
+gst
+nfig
+nvim .
+nfig
+nvim .
+zellij attach
+nvim .
+clear
+clear
+nvim .
+cd code/pdq
+nvim .
+nvim ~/.config/zellij/
+mise
+cd code/pdq
+nvim .
+cd ~/.config/zellij/
+nfig
+nvim .
+zellij
+zl list-sessions
+zl kill-all-sessions
+nvim .
+mise
+ls
+cd
+ls
+nvim .
+cd code/
+ls
+nvim ~/.config/zellij/config.kdl
+cd code/
+nvim ~/.config/zellij/config.kdl
+zl kill-all-sessions
+zl
+nvim ~/.config/zellij/config.kdl
+nvim .
+pdq
+cd code/
+nvim .
+nfig
+nvim .
+pkill -9 zellij
+zl
+nvim .
+cd code/
+nvim .
+zellij run --env
+cd code/
+zellij run --env
+zellij run -- env
+nfig
+:wqa
+:qa
+clear
+zellij
+zellij run -- env
+clear
+zellij run -- env
+zellij run -- env | rg PATH
+nvim .
+nvim ~/.config/zellij/config.kdl
+pkill -9 zellij
+zellij
+zellig
+zellij
+nvim .
+mise
+nvim .
+zellic list_clients
+zl list_clients
+zl list-clients
+zl
+zellij
+config env
+cd
+config
+zl
+cd code
+zl
+zl
+config env
+config nu
+nvim .
+zl
+$env.SHELL
+nu -l
+nvim .
+zl
+$env.PATH
+nvim ~/.config/zellij/config.kdl
+pkill -9 nu
+$env.PATH
+config env
+$env.NU_VERSION
+which nu
+brew upgrade nu
+brew list
+brew upgrade nushell
+clear
+config nu
+$env.PATH
+$env.PATH
+:Q
+qkj:qa
+nvim .
+clear
+zl
+pdq
+ls
+work
+worky
+workit
+ls
+gst
+gb
+gb --help
+gb --current
+git b --current
+gb -q
+gb
+git branch
+git branch --help
+gb --show-current
+git branch --show-current
+zellij -s (git branch --show-current)
+zellij -s 1407
+ls
+clear
+nvim .
+pdq
+nvim .
+cd houston
+gst
+zellij attach 1407
+zl list-sessions
+zl attach '1407'
+zellij attach
+zellij attach -c 1407
+zellij
+clear
+workit
+gst
+nvim .
+glod
+gain
+clear
+opencode
+ffg
+nvim ~/.config/zellij/config.kdl
+pkill -9 zellij
+nvim ~/.config/zellij/config.kdl
+cd config/
+nfig
+cd config/
+nvim ~/.config/zellij/config.kdl
+cm add ~/.config/zellij/
+cm add ~/.config/nvim
+dst
+nfig
+zellij
+dst
+dot add .
+dot commit -m 'Update zellij and neovim for better navigation'
+dot push origin master
+gst
+nvim .
+gst
+git reset
+fg
+dst
+t
+gst
+fg
+dst
+dot add ~/.config/zellij
+dst
+cm add ~/.config/zellij/
+dst
+dot add .
+dot commit --amend -C HEAD
+dot push origin master -f 
+dst
+mix format
+gst
+gd
+gst
+nfig
+config nu
+fg
+gst
+git add .
+gc -m 'chore(wip): skip'
+gst
+cd
+nfig
+nvim .
+nfig
+nvim .
+nfig
+gst
+pdq
+workit
+gst
+gap
+fg
+cd
+pdq
+nvim .
+nvim 
+:q
+nvim ~/.config/starship.toml
+nvim .
+nfig
+ls
+pdq
+cd houston/
+cd
+zellij attach -c 1407
+zellij attach
+nvim ~/.config/starship.toml
+ls
+workit
+nvim ~/.config/starship.toml
+nvim .
+cd
+nvim .
+zsh
+ls
+bash
+gst
+ls
+glod
+glog
+gst
+nvim .
+gst
+las
+ls
+ls -a
+nvim ~/.config/starship.toml
+dst
+cm add ~/.config/starship.toml
+cm add ~/.config/nvim/
+cm add ~/.config/zellij
+Ldst
+dst
+got add .
+dot commit -m 'More zellij updates'
+dot add .
+dot commit -m 'More zellij updates'
+dot push origin master
+pkill -9 zellij
+zellij
+zellij --layout compact
+workit
+ls
+nvim .
+workit
+nvim .
+cd
+pdq
+cd houston/
+nvim ~/.config/zellij/config.kdl
+gst
+workit
+nvim .
+gst
+ls
+gst
+ls
+gst
+ls
+i
+gst
+ls
+zellij
+pkill -9 zellij
+zellij kill-all-sessions
+psq
+pdq
+workit
+gst
+glod
+gst
+gap
+gst
+glod
+gain
+gst
+glod
+mix format
+gc
+gst
+gap
+gst
+gc
+gst
+git reset device_database_operations_audit.txt
+gst
+gc
+gst
+gush
+gst
+pdq
+cd houston/
+ls
+gst
+mix format
+gst
+gush
+workit
+gst
+gush
+nvim ~/.mise.toml
+ls
+nvim .
+zellij
+zellijg
+$env.PATH
+zellij
+nvim ~/.config/zellij/config.kdl
+$env.PATH
+zellij
+k
+pkill -9 zellij
+zellij
+$env.PATH
+zellij
+fg
+$env.PATH
+config env
+$env.PATH
+config env
+ls
+config env
+$env.PATH
+nu -l
+zellij
+which nu
+nvim ~/.config/zellij/config.kdl
+zellij
+which zellij
+fg
+nvim .
+cd
+nvim ~/.mise.toml
+mise clean
+mise uninstall zellij
+brew install zellij
+nvim ~/.config/zellij/config.kdl
+$env.PATH
+zellij
+zellij --hel
+zellij --help
+zellij setup --dump-config > ~/.config/zellij/config.kdl
+zellij setup --dump-config | save ~/.config/zellij/config.kdl
+fg
+nvim ~/.config/zellij/config.kdl
+ls
+psq
+pdq
+ls
+$env.PATH
+ls
+gst
+nvim .
+zellij
+zellij attach
+pkill -9 zellij
+nvim .
+ls
+$env.PATH
+mise
+$env.PATH
+nvim ~/.config/zellij/config.kdl
+zellij
+pkill -9 zellij
+gst
+zellij kill-all-sessions
+pdq
+workit
+gst
+gd
+cat device_database_operations_audit.txt
+show
+gt
+gt track
+gt track --draft --ai
+gt track --help
+gt submit --help
+gt submit --draft --ai
+config nu
+source `~/Library/Application Support/nushell/config.nu`
+zfig
+fg
+nvim ~/.config/zellij/config.kdl
+config nu
+zfig
+source `~/Library/Application Support/nushell/config.nu`
+show
+zfig
+gain
+gush
+nvim .
+pdq
+nvim 
+pdq
+ls
+work
+zellij list-sessions
+zellij -s 'auth-1407-spike-audit-all-device-actions-and-write-tickets-for'
+zellij attach --create auth-1407-spike-audit-all-device-actions-and-write-tickets-for
+ls
+zellij
+zellij attach --create foobar
+zellij attach --create foobar-baz
+zellij attach --create foobar
+zellij attach --create 'auth-1407-spike-audit-all-device-actions-and-write-tickets-for'
+zellij attach --create 'auth-1407-spike-audit-all'
+zellij attach --create 'auth1407spikeauditall'
+zellij attach --create 'auth140-7-p0-ikeauditall'
+zellij attach --create 'auth140-7-p0-ikeaudit-kjdsfa-aall'
+nvim .
+zellij
+zellij attach --create 'auth140-7-p0-i-kdjfkkdkjfdskaj0dafkjasdasdkjf-asdfkljasd'
+fg
+work list
+gb --show-current
+git branch --show-current
+config nu
+main list
+pdq
+work main list
+work list
+workit
+"foobalskerjf" | str substr 0..3
+"foobalskerjf" | str substring 0..3
+/foo/bar/baz | path basename
+"/foo/bar/baz" | path basenam
+"/foo/bar/baz" | path basename
+work new foobarbaz
+work remove
+pdq
+work remove
+pdq
+cd houston/
+work remove
+gdel
+work new foobarbaz
+config nu
+work new foobarbazx
+ls
+work list
+work
+ls
+gst
+work list
+git worktree list
+work list
+ZELLIJ in $env
+"ZELLIJ" in env
+$env.ZELLIG_SESSION_NAME
+$env.ZELLIJ_SESSION_NAME
+work new foobarbazxx
+$env.ZELLIJ_SESSION_NAME
+if $env.ZELLIJ_SESSION_NAME { print "yes" }
+if $env.ZELLIJ_SESSION_NAME? { print "yes" }
+if $env.ZELLIJ_SESSION_NAME? |deafult false
+if $env.ZELLIJ_SESSION_NAME? | deafult false
+$env.ZELLIJ_SESSION_NAME? | deafult false
+$env.ZELLIJ_SESSION_NAME? | default false
+if $env.ZELLIJ_SESSION_NAME? | default false {print "yes"} else { print "no" }
+if ($env.ZELLIJ_SESSION_NAME? | default false) {print "yes"} else { print "no" }
+work list
+pdq
+main list
+work list
+work list
+pdq
+work list
+work list
+config env
+config nu
+config env
+work list
+pdq
+work list
+pdq
+config env
+nvim .
+pdq
+config env
+work list
+work list
+pdq
+pkill -9 zellij
+work list
+pkill -9 zellij
+work list
+pdq
+ls
+work list
+pkill -9 zellij
+ls
+gst
+ls
+work list
+pkill -9 zellij
+gst
+ls
+gd
+config nu
+pdq
+nvim .
+work list
+work
+work list
+work
+work start
+work list
+work --help
+fg
+work
+pdq
+gst
+cd houston/
+workit
+cd ../worktrees/auth-1407-spike-audit-all-device-actions-and-write-tickets-for/
+gst
+work start
+gain
+gst
+gd
+gst
+nvim .
+git log
+glod
+ghostty +list-themes
+:q
+config nu
+gfig
+source `~/Library/Application Support/nushell/config.nu`
+gfig
+work start
+cm add ~/.config/zellij
+cm add ~/.config/ghostty
+cm add `~/Library/Application Support/nushell/`
+dst
+dot add .
+dot reset `private_Library/Application Support/nushell/history.txt1`
+dst
+gst
+git reset
+gst
+gap
+gst
+rm `private_Library/Application Support/nushell/history.txt`
+rm -rf private_dot_config/ghostty/auto/
+gst
+glod
+gamend
+gush
+cm cd
+gst
+config nu
+pdq
+work
+zfig
+gst
+work list
+work start
+nvim .
+gb
+work new auth-1588-refactorrename-multi_tenancyex
+pdq
+gb
+pdq
+cd houston/
+gb
+work new auth-1588-refactorrename-multi_tenancyex
+zfig
+work new auth-1588-refactorrename-multi_tenancyex
+work
+work new test-1
+work new test
+wor list
+work list
+work
+work remove
+git worktree remove /Users/micah.cooper/code/pdq/worktrees/foobarbaz
+work remove
+work
+work start
+nvim .
+work start
+pdq
+work start
+work list
+pdq
+work start
+zellij kill-all-sessions
+work start
+zellij
+nvim .
+work start
+pdq
+ls
+cd hous
+houston
+cd houston/
+work start
+pdq
+cd houston/
+ls
+gst
+work start
+work start
+zellij kill-all-sessions
+nvim ../
+work start
+zellij kill-all-sessions
+work start
+nvim ../../work
+pkill -9 zellij
+work start
+fg
+config nu
+config env
+ls
+gst
+work start
+kjls
+cd ../
+ls
+work remove
+ls
+rm -rf foo test test-1
+gst
+work
+ls
+pdw
+ls
+pdw
+pdq
+ls
+cd worktrees/
+ls
+cd ../houston/
+work list
+work
+gb
+gdel
+work new test
+fb
+ls
+gb
+work list
+work
+work new test
+work new "test"
+ls
+ls ../worktrees/auth-1407-spike-audit-all-device-actions-and-write-tickets-for/
+ls worktrees
+ls ../worktrees
+rm ../worktrees/test/
+work new test-1
+rm ../worktrees/test-1/
+work new testbar
+work start
+cd ../worktrees/auth-1407-spike-audit-all-device-actions-and-write-tickets-for/
+gst
+gd
+zfig
+gst
+gsat
+gast
+gst
+gap
+gst
+gc -m 'chore(device-rbac): auto inject queries that are just for Device'
+gush
+:q
+nvim .
+n
+gain
+gst
+gd
+gain
+gull
+git add .
+git stash
+gain
+git comain
+gull
+gst
+gull
+git co -
+gst
+git co main
+work list
+work all
+wori
+work
+git worktree list
+work start
+pdq
+cd houston/
+ls
+nvim 
+gull
+git rebase main
+gush
+fg
+gst
+work start
+cd ../
+nvim work
+zellij list-sessions
+ls
+nvim .
+gull
+gst
+opencode
+nvim ~/.config/opencode/
+work start
+nvim work
+work start
+gst
+gull
+zellij
+zellij kill-all-sessions
+pdq
+work start
+zfig
+nvim work
+work start
+fg
+nvim work
+work start
+fgt
+nvim work
+work start
+zellij attach --create auth-1407-spike-audit-all-devic options --default-cwd /Users/micah.cooper/code/pdq/worktrees/auth-1407-spike-audit-all-device-actions-and-write-tickets-for
+zellij attach --create auth-1407-spike-audit-all-devic options --default-cwd /Users/micah.cooper/code/pdq/worktrees/
+zellij attach --create auth-1407-spike-audit-all-devic
+:wq
+zellij attach --create foobar
+zellij kill-all-sessions
+zellij attach --create auth-1407
+zellij attach --create auth-1407-spike-audit
+zellij attach --create auth-1407-spike-audit-all-devic
+zellij attach --create auth-1407-spike-audit-all
+zellij attach --create auth-1407-spike-audit-all-devi
+zellij attach --create auth-1407-spike-audit-all-devic
+zellij attach --create auth-1407-spike-audit-all-...
+"auth-1407-spike-audit-all" | parse --regex '\w+-+\d+'
+"auth-1407-spike-audit-all" | parse --regex '\w+\d+'
+"auth-1407-spike-audit-all" | parse --regex '\w+'
+"auth-1407-spike-audit-all" | parse --regex 'auth+'
+"auth-1407-spike-audit-all" | parse --regex 'auth+' | first
+"auth-1407-spike-audit-all" | parse --regex '\w+' | first
+"auth-1407-spike-audit-all" | parse --regex '(\w+)' | first
+"auth-1407-spike-audit-all" | parse --regex '(\w+)' | get "capture0"
+"auth-1407-spike-audit-all" | parse --regex '(\w+-+\d+)' | get "capture0"
+"auth-1407-spike-audit-all" | parse --regex '(\w+-+\d+)'
+fg
+gst
+work start
+fg
+gst
+work start
+zellij kill-all-sessions
+fg
+gst
+work start
+zellij kill-all-sessions
+zellij attach --create auth-1407-spike-audit-all-de --run -- nvim
+zellij attach --create auth-1407-spike-audit-all-de --run nvim
+zellij attach --create auth-1407-spike-audit-all-de -- nvim
+zellij attach --create auth-1407-spike-audit-all-de -- nvim .
+fg
+zellij attach --create auth-1407-spike options --default-cwd /Users/micah.cooper/code/pdq/worktrees/ -- nvim .
+zellij attach --create auth-1407-spike -- nvim . options --default-cwd /Users/micah.cooper/code/pdq/worktrees/
+zellij attach --create auth-1407-spike --default-cwd /Users/micah.cooper/code/pdq/worktrees/
+zellij attach --create auth-1407-spike option s--default-cwd /Users/micah.cooper/code/pdq/worktrees/
+ls
+zellij attach --create auth-1407-spike options --default-cwd /Users/micah.cooper/code/pdq/worktrees
+zellij attach --create auth-1407-spike options --default-cwd /Users/micah.cooper/code/pdq/worktrees -e nvim .
+zellij attach --create auth-1407-spike options --default-cwd /Users/micah.cooper/code/pdq/worktrees -- -e nvim .
+:q
+zellij attach --create auth-1407-spike options --default-cwd /Users/micah.cooper/code/pdq/worktrees
+zellig attach --help
+zellij attach --help
+zellij attach --create auth-1407-spike -- nvim . options --default-cwd /Users/micah.cooper/code/pdq/worktrees
+zellij attach --create auth-1407-spike --cwd /Users/micah.cooper/code/pdq/worktrees -- nvim .
+zellij attach --create auth-1407-spike  -- --cwd ~/ nvim .
+zellij attach --create auth-1407-spike  options --cwd ~/
+:q
+zellij --cwd ~/ attach --create auth-1407-spike
+zellij --session new-project-session --cwd ~/ run -- nvim .
+zellij attach --create auth-1407-spike  options --default-cwd ~/
+fg
+gst
+zl kill-all-sessions
+work start
+fg
+zfig
+git log --patch lib/houston/repo/multi_tenancy.ex
+nvim .
+mix format
+nfig
+nvim .
+zfig
+nfig
+nvim .
+fg
+nfig
+nvim .
+cm add ~/.config/zellij/
+dst
+got add .
+dot diff
+cm add ~/.config/nvim/
+dst
+dot add .
+dot commit -m "Change zellij's ctrl+v to ctrl+g. Move sidekick to the left"
+dot push origin mater
+dot push origin master
+gst
+mix format
+gst
+mix format
+gst
+gap
+glod
+gd
+gst
+gap
+gamend
+mix format
+gamend
+fg
+glod
+gst
+gap
+gamend
+gush
+gst
+fg
+work start
+gull
+gst
+work start
+gst
+zfig
+gst
+pdq
+ls
+show
+cd worktrees/auth-1407-spike-audit-all-device-actions-and-write-tickets-for/
+gst
+show
+cd ../balenciauthga/
+pdq
+cd balenciauthga/
+nvim .
+gst
+gbgb
+gb
+pdw
+gst
+gd
+git co .
+gst
+fg
+cd ../eggnog/
+mix test lib/grpc_test.exs
+nvim .
+iex
+fg
+mix format
+fg
+mix format
+mix test lib/grpc/client_test.exs:74
+mix test lib/grpc/client_test.exs:85
+mix test lib/grpc/client_test.exs:61
+mix test lib/grpc/client_test.exs:50
+mix test lib/grpc/client_test.exs:51
+mix test lib/grpc/client_test.exs:42
+mix test lib/grpc/client_test.exs:52
+mix test lib/grpc/client_test.exs:23
+fg
+mix test lib/grpc/client_test.exs:33
+gst
+mix test lib/grpc/client_test.exs:42
+mix test lib/grpc/client_test.exs:23
+mix test lib/grpc/client_test.exs
+fg
+mix test test/grpc/client_test.exs
+mix test lib/grpc/client_test.exs
+fg
+mix test
+mix test lib/grpc/client_test.exs
+:q
+mix test lib/grpc/client_test.exs
+mix test lib/grpc/client_test.exs:41
+mix test lib/grpc/client_test.exs:43
+mix test lib/grpc/client_test.exs:73
+mix test lib/grpc/client_test.exs:75
+mix test lib/grpc/client_test.exs:72
+mix test lib/grpc/client_test.exs:89
+mix test lib/grpc/client_test.exs:83
+mix test lib/grpc/client_test.exs:84
+mix test lib/grpc/client_test.exs:80
+mix test lib/grpc/client_test.exs:68
+mix test lib/grpc/client_test.exs:122
+mix test lib/grpc/client_test.exs:118
+mix test lib/grpc/client_test.exs:116
+mix test lib/grpc/client_test.exs:118
+mix test lib/grpc/client_test.exs:122
+mix test lib/grpc/client_test.exs:129
+mix test lib/grpc/client_test.exs:141
+mix test lib/grpc/client_test.exs:139
+mix test lib/grpc/client_test.exs:133
+mix test lib/grpc/client_test.exs:121
+fg
+gst
+mix test
+fg
+gst
+mix t4est
+mix deps.clean --unused
+gst
+mix test
+mix test lib/grpc/client_test.exs
+mix test lib/grpc/client_test.exs:38
+mix test lib/grpc/client_test.exs:42
+mix test lib/grpc/client_test.exs:40
+mix test lib/grpc/client_test.exs:38
+mix test lib/grpc/client_test.exs:39
+:q
+fg
+gst
+git add .
+gwip
+:mix test lib/grpc/client_test.exs:39
+mix test lib/grpc/client_test.exs:39
+mix test lib/grpc/client_test.exs:46
+mix test lib/grpc/client_test.exs:45
+mix test lib/grpc/client_test.exs:47
+fg
+gst
+gap
+mix test
+mix test
+mix test lib/injector_test.exs
+mix test lib/grpc/client_test.exs
+mix test lib/grpc/client_test.exs:40
+mix test lib/grpc/client_test.exs
+mix test lib/grpc/client_test.exs:97
+fg
+mix format
+mix test lib/grpc/client_test.exs:97
+mix test lib/grpc/client_test.exs:42
+mix test lib/grpc/client_test.exs:55
+mix test lib/grpc/client_test.exs:74
+mix test lib/grpc/client_test.exs:94
+mix test lib/grpc/client_test.exs:97
+mix test lib/grpc/client_test.exs:102
+umix test lib/grpc/client_test.exs:102
+mix test lib/grpc/client_test.exs:102
+mix test lib/grpc/client_test.exs
+mix test lib/grpc/client_test.exs:107
+mix test lib/grpc/client_test.exs
+fg
+mix format
+gst
+fg
+gst
+tglod
+gst
+gap
+git add .
+mix test
+fg
+gst
+gamend
+gst
+git co -b auth-1622-swap-grpc-pooling-from-poolboy-to-grpc
+gst
+glod
+gush
+mix test
+mix test lib/injector_test.exs:263
+mix test lib/injector_test.exs:289
+fg
+gst
+mix test
+fg
+gst
+gd
+glod
+git add .
+gt track
+gst
+glod
+gc -amend
+gc --amend
+gst
+gush
+gh pr create
+fg
+gst
+git add .
+gamend
+gush
+gst
+glod
+git show
+show
+mix test lib/grpc/client_test.exs
+mix test lib/grpc/client_test.exs:62
+fg
+mix test
+cd ../
+ls
+cd houston/
+gull
+task
+nvim .
+work start
+fg
+mix test
+mix test lib/injector_test.exs:31
+mix test lib/injector_test.exs:34
+mix test lib/injector_test.exs:42
+mix test lib/injector_test.exs:44
+mix test lib/injector_test.exs:46
+mix test lib/injector_test.exs:55
+fg
+mix test lib/injector_test.exs
+nvim .
+mix foramt
+mix test lib/injector_test.exs:37
+mix test lib/injector_test.exs:52
+mix test lib/injector_test.exs:35
+mix test lib/injector_test.exs:43
+mix test lib/injector_test.exs:33
+mix test lib/injector_test.exs
+mix test lib/injector_test.exs:266
+mix test lib/injector_test.exs:279
+mix test lib/injector_test.exs:262
+mix test lib/injector_test.exs:280
+mix test lib/injector_test.exs:265
+mix test lib/injector_test.exs:287
+fg
+nvim work
+fg
+task setup
+mix test lib/injector_test.exs:284
+mix test lib/injector_test.exs
+fg
+gst
+gap
+gamend
+ggush
+gush
+show
+gst
+gain
+mise install
+mix test
+gush
+mix format
+gst
+gap
+gamend
+gush
+fg
+mix test
+fg
+gst
+mix format
+mxi test
+mix test
+git add .
+gamend
+mix test lib/injector_test.exs:263
+mix test lib/injector_test.exs:264
+mix test lib/injector_test.exs:267
+fg
+Lgst
+gst
+gap
+mix format
+gst
+gap
+gamend
+gush
+work on
+work start
+cd
+cd ../
+ls
+pdq
+work on
+gst
+gd
+nvim .
+mix deps.clean eggnog
+mix deps.get
+mix start
+gain
+gst
+gd
+git add .
+git satsh
+git stash
+gull
+git stashp op
+git stash pop
+mix start
+git log --patch 
+git show 
+/trim
+git show
+git show | rg grim
+glod
+gst
+nvim .
+cd balenciauthga/
+gb
+glod
+gull
+cd ../eggnog/
+st
+git show
+mix start
+mix phx.server
+mix foramt
+mix format
+fg
+gst
+gap
+fg
+gst
+fg
+gst
+git reset
+gst
+gap
+gst
+gd
+gap
+mix deps.get
+gst
+git reset
+git diff mix.lock
+fg
+mix deps.clean eggnog --unlock
+mix deps.get
+gd mix.lock
+mix start
+work on
+gst
+gb
+gst
+git co main
+work on
+qkjkjjj:q
+:q
+fg
+gst
+gain
+gst
+git add .
+git stash
+gain
+git stash pop
+mix start
+gst
+git co main
+work on
+gst
+work
+gull
+gain
+gull
+fg
+nvim .
+fg
+mix deps.clean eggnog --unlock
+mix deps.get
+mix start
+fg
+work on
+work on
+fg
+gb
+pdq
+gst
+ls
+cd houston/
+gb
+git worktree list
+gull
+gst
+fg
+nvim .
+fg
+nvim .
+gst
+gb
+gco
+cd ../worktrees/auth-1407-spike-audit-all-device-actions-and-write-tickets-for/
+fg
+mix start
+nvim .
+gst
+cd ../
+ls
+cd ../eggnog/
+nvim .
+st
+gst
+gap
+gamend
+gush
+fg
+gst
+fg
+mix test
+gain
+gc --amend
+fg
+gst
+gap
+gamend
+gst
+gc --amend
+gush
+mix test
+gst
+nvim .
+cd ../
+gst
+glg
+gb
+gst
+gull
+gst
+git co .
+gst5
+gst
+gull
+fg
+work on
+work on
+nvim .
+fg
+nvim .mise/config.toml
+fg
+work on
+zl list-sessions
+zl delete-all-sessions
+zl list-sessions
+zellij
+pkill -9 zellij
+zl list-sessions
+zl kill-all-sessions
+zl list-sessions
+:q
+zl
+zl --help
+zl kill-session --help
+zl kill-session houston
+zl list-sessions
+zl kill --session houston
+zl kill-session --session houston
+zl kill-session --help
+zl kill-session houston
+zl list-sessions
+zl kill-session 'houston '
+work on
+ls
+gain
+gst
+git co .
+gst
+cat nohup.out
+rm nohup.out
+nvim work
+work on
+fg
+work on
+nvim ~/.config/zellij/config.kdl
+zellij list-sessions
+pdq
+nvim .
+ls
+git pull --rebase origin main
+work on
+pkill -9 nvim
+pkill -9 neovim
+work on
+cd ~/.config/zellij/
+rg vim
+nvim .
+which nvim 
+fg
+work on
+pdq
+gst
+:wqa
+work on
+work on
+pkill -9 zellij
+pdq
+work on
+nvim ~/.config/zellij/config.kdl
+gain
+git rebase main
+glg
+fg
+showq
+show
+opencode
+mise upgrade jopencode
+mise upgrade opencode
+opencode
+opencode auth
+opencode auth login
+nvim .
+gst
+glod
+git reset HEAD!
+git reset HEAD~
+gst
+glod
+git reset HEAD~
+gst
+fg
+nvim opencode.jsonc
+gd
+git show billing/actions/get_billable_devices_count.ex
+cd eggnog
+nvim README.md
+g
+mix test lib/injector_test.exs
+nvim .
+gst
+glod
+git add .
+mix format
+gst
+gap
+gamend
+gush
+fg
+gst
+gst
+fg
+gb
+fg
+gst
+fg
+gst
+git add lib
+gst
+glod
+gc
+gst
+gc
+gst
+show
+gush
+gain
+gst
+git co .
+gst
+gcl
+gull
+gaigain
+gain
+gush
+mix format
+mise install
+mix format
+gst
+cmise exec -- dprint fmt
+mise exec -- dprint fmt
+dprint fmt
+mix deps.et
+mix deps.get
+gst
+mix format
+gst
+gush
+mix test
+task setup
+fg
+gst
+mix test
+i 
+mix test lib/connect/inventory/devices/actions/delete_device_rbac_attribute_value_test.exs
+mix test
+mix test --max-failures 3
+mix test lib/connect/inventory/scans/actions/save_scan_results_test.exs
+mix test lib/connect/inventory/scans/actions/save_scan_results_test.exs:195
+fg
+git show
+glod
+gst
+git show
+show
+gull
+gb
+gst
+gd
+git add .
+git stash
+gull
+gb
+glod
+gain
+gull
+git log --patch
+glod
+gain
+glod
+git log --patch
+mix test lib/connect/inventory/scans/actions/save_scan_results_test.exs
+mix test lib/connect/inventory/scans/actions/save_scan_results_test.exs:190
+gain
+gst
+fg
+mix test lib/connect/inventory/scans/actions/save_scan_results_test.exs:190
+fg
+gst
+mix test lib/connect/inventory/scans/actions/save_scan_results_test.exs:190
+glod
+gap
+gwip
+gst
+gc
+gd
+gst
+mix test lib/connect/inventory/scans/actions/save_scan_results_test.exs
+mix test --max-failures 3
+mix test lib/houston_web/controllers/devices_controller_test.exs
+kjmix test lib/houston_web/controllers/devices_controller_test.exs
+mix test lib/houston_web/controllers/devices_controller_test.exs
+mix test --max-failures 3
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:213
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:211
+mix test lib/connect/inventory/devices/actions/bulk_set_device_rbac_attributes_test.exs:44
+mix test lib/connect/inventory/devices/actions/bulk_set_device_rbac_attributes_test.exs:207
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:215
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:209
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:903
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:230
+kimix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:226
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:226
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:229
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:245
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:283
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:132
+opencode
+gain
+gst
+git add .
+gamend
+gain
+brew upgrade mise
+mise upgrade opencode
+opencode
+task ai:install:open_code
+which opencode
+opencode --version
+find
+which opencode
+mise upgrade opencode
+mise uninstall opencode
+mise uninsatll opencode --all
+mise uninstall opencode --all
+mise install opencode
+opencode --version
+opencode
+mise uninstall opcndoe
+fg
+opencode
+mise uninstall opencode
+opencode
+which opencode
+ls /Users/micah.cooper/.local/share/mise/installs/npm-opencode-cli/latest/node_modules/.bin/opencode
+ls /Users/micah.cooper/.local/share/mise/installs/npm-opencode-cli/latest/node_modules/.bin
+rm /Users/micah.cooper/.local/share/mise/installs/npm-opencode-cli/latest/node_modules/.bin/opencode
+opencode
+gst
+git co opencode.jsonc
+opencode
+fg
+nvim .
+gain
+mix test lib/connect/inventory/devices/actions/bulk_set_device_rbac_attributes_test.exs
+mix
+:qa
+fg
+mix
+work on
+gain
+gst
+gd
+gst
+glod
+git show
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:226
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:228
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:580
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exsmix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:34
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:75
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:39
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:37
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:30
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:77
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:125
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:132
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:130
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:132
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:136
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:26
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:32
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:29
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:119
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:130
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:136
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:75
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:142
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:141
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:112
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:118
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:29
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:109
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:113
+fg
+mix coveralls
+gst
+gain
+gush
+gst
+:q
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:113
+mix test lib/houston/repo/multi_tenancy_test.exs:779
+mix test lib/houston/repo/multi_tenancy_test.exs:777
+mix test lib/houston/repo/multi_tenancy_test.exs:779
+mix test lib/houston/repo/multi_tenancy_test.exs:777
+mix test lib/houston/repo/multi_tenancy_test.exs:780
+mix test lib/houston/repo/multi_tenancy_test.exs:778
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:100
+mix test lib/grpc/client_test.exs:49
+mix test lib/grpc/client_test.exs:51
+mix test lib/grpc/client_test.exs:71
+mix test lib/grpc/client_test.exs
+mix test lib/grpc/client_test.exs:151
+mix test lib/grpc/client_test.exs:148
+mix test lib/grpc/client_test.exs:152
+mix test lib/grpc/client_test.exs:151
+mix test lib/grpc/client_test.exs:136
+mix test lib/grpc/client_test.exs:139
+mix test lib/grpc/client_test.exs
+mix test lib/grpc/client_test.exs:133
+fg
+Lgst
+gst
+gap
+fg
+mix test lib/grpc/client_test.exs
+fg
+gst
+gap
+mix test
+mix test lib/grpc/client_test.exs:47
+mix test lib/grpc/client_test.exs:40
+mix test lib/grpc/client_test.exs:41
+mix test lib/grpc/client_test.exs:40
+mix test lib/grpc/client_test.exs
+mix test lib/grpc/client_test.exs:45
+mix test lib/grpc/client_test.exs:44
+mix test lib/grpc/client_test.exs
+mix test lib/grpc/client_test.exs:36
+mix test lib/grpc/client_test.exs
+fg
+gst
+mix test
+mix coveralls
+fg
+gst
+gap
+glod
+gamend
+gush
+nvim .
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:118
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:116
+fg
+work on
+pdq
+nfig
+psq
+pdq
+nvim work
+work on
+nvim work
+nfig
+ls
+work on
+gain
+gst
+pdq
+ls
+nivm work
+nvim work
+work
+fg
+work
+fg
+nu format work
+format work
+format --help
+fmt
+fg
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs
+task setup
+work on
+gst
+glod
+gain
+gst
+git add .
+git stash
+gain
+gd
+fg
+Lgst
+gst
+git add .
+grc
+git stash pop
+q
+ls
+mix test --max-failures 3
+gst
+pdq
+cd eggnog/
+gain
+nvim .
+work on
+pdq
+nvim ~/.config/ghostty/config
+gain
+gst
+git add .
+git stash
+gst
+gain
+gush
+gst
+gain
+fg
+ii
+imix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:29
+fg
+work on
+cd eggnog/
+gt track
+mise install
+gt
+mise update --all
+mise update all
+mise update
+brew upgrade mise
+gt
+mise use -g npm:@withgraphite/graphite-cli@1.8.6
+gt track
+fg
+nvim .
+fg
+gst
+gap
+fg
+gst
+gap
+gc
+gst
+glod
+gush
+task setup
+mix test
+mix test lib/connect/live_connection/actions/start_live_connection_test.exs:155
+mix test lib/connect/live_connection/actions/start_live_connection_test.exs
+gst
+glod
+gap
+gc -m 'chore(device-rbac): fix tests for role scoped devices'
+gush
+mix test lib/houston_web/graphql/resolvers/sagents_conversation_resolver_test.exs:2036
+mix test lib/houston_web/graphql/resolvers/sagents_conversation_resolver_test.exs:2008
+mix test lib/houston_web/graphql/resolvers/sagents_conversation_resolver_test.exs:2009
+zellij
+fg
+mix test lib/houston_web/graphql/resolvers/sagents_conversation_resolver_test.exs:2002
+mix test lib/houston_web/graphql/resolvers/sagents_conversation_resolver_test.exs
+mix test lib/houston_web/graphql/resolvers/sagents_conversation_resolver_test.exs:2006
+mix test lib/houston_web/graphql/resolvers/sagents_conversation_resolver_test.exs:2296
+mix test lib/houston_web/graphql/resolvers/sagents_conversation_resolver_test.exs
+mix test lib/houston_web/graphql/resolvers/sagents_conversation_resolver_test.exs:2288
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs:226
+gtkjgtmix test lib/houston_web/graphql/resolvers/sagents_conversation_resolver_test.exs
+mix test lib/houston_web/graphql/resolvers/sagents_conversation_resolver_test.exs
+gst
+fg
+gst
+gap
+nfig
+cm add ~/.config/nvim/
+dst
+dot add .
+dot commit -m "Add more neovim colorschemes"
+dush
+fg
+nfig
+nvim .
+mix test lib/houston_web/graphql/resolvers/sagents_conversation_resolver_test.exs:20
+cd ../
+ls
+cd auth-1407-spike-audit-all-device-actions-and-write-tickets-for/
+ls
+mix
+mix test lib/houston_web/graphql/resolvers/sagents_conversation_resolver_test.exs
+mix test lib/houston_web/graphql/resolvers/sagents_conversation_resolver_test.exs:67
+mix test lib/houston_web/graphql/resolvers/sagents_conversation_resolver_test.exs
+nfig
+gst
+fg
+nvim .
+gst
+gap
+gst
+glod
+gamend
+imix test lib/connect/insights/pub_sub/device_telemetry_event_consumer_test.exs:166
+mix test lib/connect/insights/pub_sub/device_telemetry_event_consumer_test.exs
+pkill -9 opencode
+gst
+pkill -9 nvim
+nvim work
+nvim .
+gst
+git show
+gst
+gull
+git co mian
+git co main
+gull
+gst
+gd
+gra
+gst
+glod
+git reset HEAD~
+gst
+git co .
+gull
+gst
+mix test
+gd
+gra
+qqgain
+gain
+fg
+git add .
+grc
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs
+mix test
+fg
+l
+ls
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs
+mix test lib/houston/repo/multi_tenancy_test.exs
+mix test
+mix test lib/houston/repo/multi_tenancy_test.exs
+mix test lib/houston/repo/multi_tenancy_test.exs:810
+kkj:q
+gst
+gd
+gst
+git diff lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs
+gst
+glod
+mix test lib/houston/repo/multi_tenancy_test.exs
+fg
+gst
+gap
+;mix format
+gst
+mix format
+gap
+mix test lib/houston/repo/multi_tenancy_test.exs:813
+fg
+gst
+gamend
+mix test lib/houston/repo/multi_tenancy_test.exs
+gst
+gain
+gst
+gd
+fg
+mix test lib/connect/insights/pub_sub/device_telemetry_event_consumer_test.exs:116
+gst
+gain
+nvim .
+gst
+gra
+glod
+git reset --hard origin/main
+gst
+gain
+gcl
+gst
+gcl --force
+ls
+rm -rfm tmp_*
+rm -rf tmp_*
+gst
+gd
+git co .
+gst
+gain
+gst
+fg
+mix test lib/connect/insights/pub_sub/device_telemetry_event_consumer_test.exs
+gst
+gap
+gst
+gamend
+mix test
+fg
+fg
+gst
+q
+umix test
+mix test
+mix test lib/connect/deployments/workers/organization_usage_report_worker_test.exs:224
+git add .
+git stash
+gain
+git stash pop
+imix test lib/connect/deployments/workers/organization_usage_report_worker_test.exs:220
+mix test lib/connect/deployments/workers/organization_usage_report_worker_test.exs:222
+mix test lib/connect/deployments/workers/organization_usage_report_worker_test.exs:220
+git log --patch lib/connect/deployments/workers/organization_usage_report_worker_test.exs:214
+git log --patch lib/connect/deployments/workers/organization_usage_report_worker_test.exs
+mix test lib/connect/deployments/workers/organization_usage_report_worker_test.exs
+fg
+gst
+gd
+gst
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs
+gst
+gst
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs
+gst
+gap
+imix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs
+gst
+gpa
+gap
+fg
+mix test lib/houston_web/graphql/resolvers/device_rbac_resolver_test.exs
+gst
+gap
+gst
+git reset opencode.jsonc
+gst
+glod
+gamend
+mix format
+gst
+gap
+qgst
+gain
+gst
+i
+git add .
+gamend
+git gst
+gst
+git add lib/
+gst
+gamend
+gst
+gamend
+git add .
+git stash
+gain
+gst
+gush
+mix deps.get
+gain
+mix deps.get
+gush
+glod
+show
+gain
+gush
+mix test lib/connect/insights/pub_sub/device_telemetry_event_consumer_test.exs
+:bd!
+mix test lib/connect/insights/pub_sub/device_telemetry_event_consumer_test.exs
+gst
+gull
+gain
+gst
+mix test lib/connect/deployments/workers/organization_usage_report_worker_test.exs
+gap
+git log --patch lib/connect/deployments/workers/organization_usage_report_worker_test.exs
+gst
+mix test lib/connect/deployments/workers/organization_usage_report_worker_test.exs:222
+gap
+gst
+gamend
+guah
+gush
+gst
+colima stop
+gat
+mix start
+work new auth-1588-refactorrename-multi_tenancyex
+gst
+ls
+ls ../
+work on
+ls
+ls worktrees/
+cd ../
+ls
+cd pdq/
+ls
+cd balenciauthga/
+gb
+git branch
+git worktree list
+cd ../
+ls
+cd worktrees/
+ls
+rm -rf balenciauthga/ devops/ portal.pdq.com/ testbar/ websocket-proxy/
+ls
+gst
+cd ../
+ls
+nvim work
+work new auth-1588-refactorrename-multi_tenancyex
+work remove
+fg
+nvim work
+fgg
+fg
+nvim work
+zellig kill-session --help
+zellij kill-session --help
+zellij delete-session --help
+fg
+nvim work
+work remove
+git worktree list
+cd houston/
+git worktree list
+fg
+nvim .
+work remove
+fg
+nvim work
+work
+work remove
+cd ../worktrees/auth-1588-refactorrename-multi_tenancyex/ai/
+cd ../
+ls
+gst
+gd
+gst
+git co --patch
+gst
+git add .
+git stash
+cd ../
+ls
+cd ../
+ls
+cd houston/
+cd ../
+work remove
+ls
+cd ../
+ls
+cd houston/
+git worktree remove ../worktrees/auth-1588-refactorrename-multi_tenancyex/
+ls
+nvim work
+work
+gb
+cd houston/
+gb
+ls
+work
+gull
+gst
+git stashp op
+git stash pop
+fg
+gst
+work new auth-1588-refactorrename-multi_tenancyex
+git co main
+ls
+nvim work
+work new auth-1407-spike-audit-all-device-actions-and-write-tickets-for
+work list
+ls
+pwd
+git worktree remove ../worktrees/auth-1407-spike-audit-all-device-actions-and-write-tickets-for/_build/
+work list
+work
+git worktree remove ../worktrees/auth-1407-spike-audit-all-device-actions-and-write-tickets-for/
+git worktre remove /Users/micah.cooper/code/pdq/worktrees/auth-1407-spike-audit-all-device-actions-and-write-tickets-for
+work list
+work
+rm -rf /Users/micah.cooper/code/pdq/worktrees/auth-1407-spike-audit-all-device-actions-and-write-tickets-for
+work list
+work
+git worktree prune /Users/micah.cooper/code/pdq/worktrees/auth-1407-spike-audit-all-device-actions-and-write-tickets-for
+git worktree prune
+work
+ls
+gull
+work remove
+git worktree remove /Users/micah.cooper/code/pdq/work.houston.auth-1588-refactorrename-multi_tenancyex --force
+work
+fg
+mix phx.server
+mix deps.get
+task setup
+ls ~/code/pdq
+ls ~/code/pdq | path basename
+ls ~/code/pdq | get "name" | path basename
+rm -rfm worktrees
+ls
+cd ./
+ls
+cd ../
+ls
+rm -rfm worktrees
+rm -rf worktrees
+ls
+ls ~/code/pdq | get "name" | path basename | where $it =~ '(work | \w+@)'
+ls ~/code/pdq | get "name" | path basename | where $it =~ '(^work)'
+ls ~/code/pdq | get "name" | path basename | where $it =~ '(^[work])'
+ls ~/code/pdq | get "name" | path basename | where $it =~ '([^work])'
+ls ~/code/pdq | get "name" | path basename | where $it =~ '([^work] | [^\w+@])'
+ls ~/code/pdq | get "name" | path basename | where $it =~ '([^work] | [^\w+\@])'
+ls ~/code/pdq | get "name" | path basename | where $it =~ '[^work] | [^\w+\@]'
+ls ~/code/pdq | get "name" | path basename | where $it =~ '[^work]'
+ls ~/code/pdq | get "name" | path basename | where $it =~ '[^\w@]'
+ls ~/code/pdq | get "name" | path basename | where $it =~ '[^\w\@]'
+ls ~/code/pdq | get "name" | path basename | where $it =~ '^[^\w\@]'
+ls ~/code/pdq | get "name" | path basename | where $it =~ '^[^\.]'
+ls ~/code/pdq | get "name" | path basename | where $it =~ '[^\.]'
+ls ~/code/pdq | get "name" | path basename | where $it =~ '[^\.+]'
+ls ~/code/pdq | get "name" | path basename | where $it =~ '[^work]'
+ls ~/code/pdq | get "name" | path basename | where $it =~ '[^work|houston\@]'
+ls ~/code/pdq | get "name" | path basename | where $it =~ '[^work|houston@]'
+ls ~/code/pdq | get "name" | path basename | where $it =~ '[^houston@]'
+ls ~/code/pdq | get "name" | path basename | where $it =~ '[^houston@+]'
+ls ~/code/pdq | get "name" | path basename | where $it =~ '[^houston\@+]'
+ls ~/code/pdq | get "name" | path basename | where $it =~ 'de'
+ls
+rm foo->bar
+ls
+ls eggnog/
+ls
+rm foo->bar
+fg
+nvim ../work
+work
+nvim .
+work
+fg
+nvim ../work
+work
+work new houston foobar
+ls
+ls ../
+mix start
+rm -rf ../houston->foobar/
+gain
+nvim ../work
+mix compile --force
+task setup
+ls
+work new eggnog foobar
+ls
+ls ../
+pwd
+work new eggnog foobar
+mise install
+mise remove opencode
+mise install
+mise list
+mix start
+mise install
+mise list | rg opencode
+opencode
+whicn opencode
+mise config
+mise list | rg opencode
+mise tools
+mise list
+mise use -g npm:@opencode/cli
+opencode
+mise use -g npm:@opencode/cli
+mise list
+opencode
+psql
+opencode
+work new auth-1407-spike-audit-all-device-actions-and-write-tickets-for
+work on
+pdq
+opencdoe
+opencode
+mise install
+mise doctor
+which opencode
+mise link
+mise link opencode
+mise link --force opencode
+mise link --force npm:@opencode/cli
+mise list
+nvim ~/.config/ghostty/config
+mise install
+opencode
+whicn opencode
+which opencode
+mise install npm:@opencode/cli
+fg
+mise install
+mise upgrade --all
+mise upgrade
+which opencode
+opencode
+psq
+pwd
+opencode
+mise reinstall npm:@opencode/cli
+mise uninstall opencode
+mise uninstall npm:@opencode/cli
+mise uninstall npm:@opencode/cli --all
+mise install npm:@opencode/cli
+opencode
+mise uninstall npm:@opencode/cli --all
+mise install
+u
+mise uninstall opencode
+mise install
+mise install opencode2
+mise install
+mise upgrade npm:@opencode/cli
+mise upgrade --force npm:@opencode/cli
+mise upgrade --before npm:@opencode/cli
+mise install -minimum-release-age 0s
+mise upgrade  --minimum-release-age 0s
+opencode
+opencode --version
+which opencode
+mise install -minimum-release-age 0s
+mise install 0--minimum-release-age 0s
+mise install --minimum-release-age 0s
+whicn opencode
+opencode
+gst
+git co main
+mix start
+gain
+mix start
+mix deps.get
+mix start
+mix ecto.migrate
+mix start
+gst
+gd
+fg
+mix comple
+mix compile
+psq
+psql
+mix start
+ls
+gst
+gd
+fg
+gain
+gst
+git add .
+git stash
+gain
+git stashp op
+git stash pop
+mix start
+mix deps.get
+mix start
+psql
+fg\
+mix start
+gst
+gap
+gst
+mix t4est
+gst
+gc
+imix format
+mix format
+;gst
+gst
+gap
+gc
+gush
+mix test
+show
+work on
+nvim work
+glod
+git reset head~~~~
+gst
+qugst
+glod
+glg
+git reset --hard origin/auth-1407-spike-audit-all-device-actions-and-write-tickets-for
+gst
+gain
+gush
+glg
+gush
+glg
+git reset HEAD~~~~~
+glg
+gst
+gst | rg demo
+gap
+gst
+gap
+gst
+gap
+gst
+glg
+git commit -m 'chore(device-rbac): auto inject queries that are just for Device'
+mix start
+mix ecto.migrate
+i
+mix ecto.migrate
+mix start
+psql
+nvim .
+gst
+gd
+glod
+git add .
+gamend
+opencode
+claude
+fg
+gb
+k9s
+q
+pdql
+psql
+mix start
+i
+mix start
+psql
+mix ecto.reset
+psql
+mix start
+mix ecto.reset
+psql
+gst
+mix start
+gap
+gst
+gc -m 'chore(device-rbac): ensure all skips apply for system device actions'
+mix ecto.reset
+ngst
+gst
+glod
+gain
+fg
+gst
+gap
+git add .
+grc
+gain
+mix test
+psql
+gst
+gain
+gush
+mix test lib/connect/packages/actions/add_multi_os_package_version_test.exs
+mix test
+i
+gst
+gd
+mix test lib/connect/packages/actions/add_multi_os_package_version_test.exs:4348
+gst
+gap
+tamend
+gamend
+gush
+show
+mix test lib/connect/packages/schemas/package_cloud_file_test.exs
+gst
+gd
+mix test lib/connect/packages/schemas/package_cloud_file_test.exsmix test lib/connect/packages/schemas/package_cloud_file_test.exs
+mix test lib/connect/packages/schemas/package_cloud_file_test.exs
+gst
+glod
+gamend
+gush
+gain
+gst
+gd
+git add .
+gamend
+gush
+gain
+gst
+gita dd .
+git add .
+grc
+mix deps.get
+mix test lib/connect/packages/schemas/package_cloud_file_test.exs
+gush
+mix start
+mix start
+mix s tart
+gst
+gull
+gush
+mix start
+mix ecto.migrate
+gst
+mix test lib/houston/automation/automation_test.exs
+gst
+gap
+gamend
+gush
+show
+fg
+gt
+mix test lib/connect/remote_desktop/actions/bulk_install_rdp_agent_test.exs
+gst
+gap
+mix format
+gst
+gc -m 'chore(device-rbac): remove additional skips from human actions'
+gush
+mix test
+show
+mix test lib/connect/insights/pub_sub/device_telemetry_event_consumer_test.exs:179
+mix test lib/connect/insights/pub_sub/device_telemetry_event_consumer_test.exs
+gain
+mix help test
+mix test --repeat-until-failure 3 lib/connect/insights/pub_sub/device_telemetry_event_consumer_test.exs
+mix test --repeat-until-failure 10 lib/connect/insights/pub_sub/device_telemetry_event_consumer_test.exs
+git log --patch lib/connect/insights/pub_subglod
+glod
+git log --patch lib/connect/insights/pub_sub/device_telemetry_event_consumer_test.exs
+gst
+glod
+gst
+gap
+gst
+gamend
+gain
+mix test lib/connect/insights/pub_sub/device_telemetry_event_consumer_test.exs
+gush
+show
+mix start
+task nuke
+show
+task setup
+gst
+mix test
+gain
+gst
+gd
+git co .
+gst
+git rebase auth-1661-fix-update-pinned-version-of-npm-in-build
+git rebase origin auth-1661-fix-update-pinned-version-of-npm-in-build
+git fetch
+gul
+gull
+gull
+git fetch
+git rebase origin/auth-1661-fix-update-pinned-version-of-npm-in-build
+gst
+gush
+gst
+ls ../
+clear
+ls ../
+clear
+ls
+ls ../
+ls
+ls ../
+work on 
+work new auth-1588-refactorrename-multi_tenancyex
+work new houston auth-1588-refactorrename-multi_tenancyex
+ls
+ls ../
+git worktree remove /Users/micah.cooper/code/pdq/houston@auth-1588-refactorrename-multi_tenancyex/
+gb
+gdel
+zellij list-sessions
+zellij list-sessions -s
+zellij list-sessions -s |lines
+foo in zellij list-sessions -s |lines
+(foo in zellij list-sessions -s |lines)
+("foo" in zellij list-sessions -s |lines)
+"foo" in (zellij list-sessions -s |lines)
+tain
+gain
+glod
+gush
+work new houston auth-1588-refactorrename-multi_tenancyex
+work new auth-1588-refactorrename-multi_tenancyex
+kj
+gush
+gain
+glg
+gb
+git co -auth-1407-spike-audit-all-device-actions-and-write-tickets-for-2
+gst
+w
+gst
+gcl
+gull
+glg
+gb
+git co -b  auth-1407-spike-audit-all-device-actions-and-write-tickets-for-2
+git push origin  auth-1407-spike-audit-all-device-actions-and-write-tickets-for:auth-1407-spike-audit-all-device-actions-and-write-tickets-for-2
+mix deps.get
+gst
+git push origin  auth-1407-spike-audit-all-device-actions-and-write-tickets-for:auth-1407-spike-audit-all-device-actions-and-write-tickets-for-2
+gst
+git log
+glod
+gain
+glod
+gain
+git co main
+guoll
+gull
+git co -
+glod
+gst
+gb
+gst
+gap
+gc -m 'chore(device-rbac): remove additional skips from human more actions'
+nvim ../work
+gain
+gush
+mix test
+gst
+rm fail.exs
+gst
+gap
+ts5t
+gst
+fg
+git reset
+gap
+glod
+gc -m 'chore(device-rbac): properly scope mcp api to device roles'
+gst
+gc -m 'chore(device-rbac): properly scope mcp api to device roles'
+mix format
+fg
+mix format
+gst
+gap
+gst
+gc -m 'chore(device-rbac): properly scope mcp api to device roles'
+mix format
+gst
+gap
+gst
+gc -m 'chore(device-rbac): properly scope mcp api to device roles' 
+gush
+gst
+glod
+git reset HEAD!
+git reset HEAD~
+gst
+gap
+mix test
+gst
+q
+gap
+gst
+gc -m 'chore(device-rbac): properly scope mcp api to device roles' 
+gst
+gap
+gst
+gc -m 'chore(device-rbac): properly scope mcp api to device roles' 
+mix format
+gst
+gap
+gc -m 'chore(device-rbac): properly scope mcp api to device roles' 
+gush
+gst
+gap
+gamend
+mix start
+gush
+gst
+gap
+gst
+git reset
+gst
+gap
+gst
+gamend
+gush
+nvim .
+:cd!
+fg
+task setup
+nvim .
+fg
+gap
+gc -m 'chore(device-rbac): skip device_rbac for mark_duplicated'
+fg
+mix test
+mix test lib/houston/users/plugs/load_oauth_session_test.exs
+nvim .
+gst
+git add .
+git satsh
+git stash
+gst
+fg
+gst
+nvim .
+mix test lib/houston/users/plugs/load_oauth_session_test.exs
+cd ../
+gfb
+gb
+nvim .
+:qa
+mix test lib/houston/users/plugs/load_oauth_session_test.exs
+mix
+mise install
+cd ../
+cd auth-1407-spike-audit-all-device-actions-and-write-tickets-for/
+cd ../
+ls
+ls -a
+pwd
+cd pdq
+ls
+cd houston@auth-1407-spike-audit-all-device-actions-and-write-tickets-for/
+which opencode
+which mix
+mix test lib/houston/users/plugs/load_oauth_session_test.exs
+gst
+:qmix test lib/houston/users/plugs/load_oauth_session_test.exs
+mix test lib/houston/users/plugs/load_oauth_session_test.exs
+gap
+glod
+gamend
+gst
+fg
+mix test
+gain
+gush
+mix test lib/connect/redis/commands_test.exs:245
+mix test lib/connect/redis/commands_test.exs
+gst
+lib/connect/inventory/scan_statistics/actions/get_device_scan_statistics_test.exs:589mix test lib/connect/inventory/scan_statistics/actions/get_device_scan_statistics_test.exs
+gst
+mix test lib/connect/inventory/scan_statistics/actions/get_device_scan_statistics_test.exs
+show
+ls
+task ai:setup
+task ai:mcp:sync
+task ai:mcps:sync
+claude
+mix start
+mix ecto.migrate
+task ai:mcps:local
+mix start
+task ai:mcps:local
+glod
+gst
+work
+work new auth-1588-refactorrename-multi_tenancyex
+nvim work
+work on
+nvim .
+work new
+work new auth-1588-refactorrename-multi_tenancyex
+gb
+:q
+work on
+zellij kill-all-sessions
+zellij list-sessions
+zellij delete-all-sessions
+zellij list-sessions
+work
+ls
+gb
+cd houston/
+work new
+gst
+gd
+gb
+git co main
+gb
+gull
+gb
+git push origin :auth-1407-spike-audit-all-device-actions-and-write-tickets-for-2
+gb -D auth-1407-spike-audit-all-device-actions-and-write-tickets-for-2
+gb
+work on auth-1588-refactorrename-multi_tenancyex --project houston
+work new auth-1588-refactorrename-multi_tenancyex --project houston
+:qa
+gb
+gb -r
+gb -r | rg refactor
+gb
+ls
+ls ../
+git worktree remove /Users/micah.cooper/code/pdq/houston@auth-1588-refactorrename-multi_tenancyex/
+gb -D ../houston@auth-1588-refactorrename-multi_tenancyex/
+rm -rf ../houston@auth-1588-refactorrename-multi_tenancyex/
+work new auth-1588-refactorrename-multi_tenancyex --project houston
+nvim work
+gain
+gst
+gap
+gc -m 'chore(device-rbac): skip device_rbac for supporting device registrion functions'
+mix format
+gap
+gc -m 'chore(device-rbac): skip device_rbac for supporting device registrion functions'
+gush
+gain
+gush
+nvim .
+work on
+gb
+ls
+ls ../
+work new auth-1588-refactorrename-multi_tenancyex
+ls
+cd ../
+ls
+rm -rf i
+work new auth-1588-refactorrename-multi_tenancyex
+git worktree add /Users/micah.cooper/code/pdq/houston@auth-1588-refactorrename-multi_tenancyex auth-1588-refactorrename-multi_tenancyex
+ls
+cd houston/
+git worktree add /Users/micah.cooper/code/pdq/houston@auth-1588-refactorrename-multi_tenancyex auth-1588-refactorrename-multi_tenancyex
+git worktree add /Users/micah.cooper/code/pdq/houston@auth-1588-refactorrename-multi_tenancyex -b auth-1588-refactorrename-multi_tenancyex
+ls
+ls ../
+cd ../houston@auth-1588-refactorrename-multi_tenancyex/
+gst
+ls
+gst
+gain
+glg
+nvim work
+fg
+glod
+git log --patch
+fg
+gap
+gc -m 'chore(device-rbac): skip device_rbac for device functions'
+gush
+mix test lib/houston/device_connection_updates_test.exs
+cd ../
+cd houston@auth-1407-spike-audit-all-device-actions-and-write-tickets-for/
+mix test lib/houston/device_connection_updates_test.exs
+<\n> gst
+gap
+gamend
+gush
+mix format
+gap
+gamend
+gush
+work on
+nvim ~/.config/ghostty/config
+gain
+gush
+show
+gull
+ls ../
+show
+mix test lib/houston/process_store_test.exs:18
+task setup
+Lgst
+gst
+mix test lib/houston/repo/multi_tenancy_test.exs
+mix test
+mix test lib/houston/repo/multi_tenancy_test.exs
+gst
+gap
+fg
+gst
+gap
+gc -m "chore(device-rbac): don't clear visibility id with the org context"
+mix test
+mix test lib/connect/websocket_proxy/actions/maybe_handle_connection_setting_test.exs
+mix test lib/connect/websocket_proxy/consumers/device_connected_consumer_test.exs
+gst
+gap
+glod
+gc -m 'chore(device-rbac): apply skips to more internal functions'
+mix format
+mix test lib/houston/process_store_test.exs:19
+mix test lib/houston/process_store_test.exs:13
+gst
+gap
+gc -m 'chore(device-rbac): apply skips to more internal functions'
+gain
+gull
+gush
+gain
+gush
+mix test lib/connect/vulnerabilities/workers/backfill_device_vuln_detections_worker_test.exs
+mix test lib/connect/redis/commands_test.exs
+mix test lib/connect/insights/pub_sub/device_telemetry_event_consumer_test.exs
+gst
+show
+iex
+gain
+git rebase main
+glod
+mix test lib/houston/process_store_test.exs
+show
+mix test lib/houston/process_store_test.exs:18
+mix test lib/connect/redis/commands_test.exs
+glod
+git log --patch
+l
+nvim ~/.gitconfig
+task setup
+mix test lib/houston/process_store_test.exs
+mix test lib/houston/process_store_test.exs:18
+i
+mix test lib/houston/process_store_test.exs:18
+mix test lib/houston/process_store_test.exs:25
+mix test lib/houston/process_store_test.exs:15
+mix test lib/houston/process_store_test.exs:25
+mix test lib/houston/process_store_test.exs:26
+fg
+gst
+gap
+mxi format
+mix format
+gst
+gap
+gain
+gst
+gc
+imix foermat
+mix format
+gst
+gap
+gst
+gc
+gush
+mix test
+fg
+fg
+mix test lib/houston/repo/multi_tenancy_bulk_writes_test.exs
+mix test lib/houston/repo/multi_tenancy_test.exs
+cd ./
+cd ../
+cd houston@auth-1407-spike-audit-all-device-actions-and-write-tickets-for/
+mix test lib/houston/repo/multi_tenancy_test.exs
+i
+l
+mix test lib/houston/repo/multi_tenancy_test.exs
+cd eggnog/
+git log --patch
+fg
+gst
+imix test lib/houston/repo/multi_tenancy_test.exs
+mix test lib/houston/repo/multi_tenancy_test.exs
+gp
+gap
+glod
+gamend
+gush
+gull
+gain
+gull
+gush
+gst
+gush
+mix format
+mix deps.get
+mix format
+gain
+gush
+nvim .
+fg
+ls
+pwd
+glod
+gull
+gst
+gd
+git co .
+gain
+git co b9f5127
+nvim .
+git co main
+gst
+glod
+gst
+gb
+glod
+git co b9f5127
+git co main
+gst
+git add .
+git stash
+glod
+git co b9f5127
+git co main
+fg
+git stash pop
+mix test lib/grpc/client_test.exs
+gst
+git co -b foo
+gst
+git add .
+gwiop
+gwip
+git co mian
+git co main
+gst
+gap
+gc -m 'chore(device-rbac): clear visiblity after failed lookup in mcp'
+gst
+mix format
+mix test
+gst
+gap
+glod
+gc
+gain
+git add .
+grc
+gush
+mix test
+gst
+git add .
+gamend
+fguumix test
+gush
+mix test lib/houston_web/graphql/resolvers/sagents_conversation_resolver_test.exs
+mix test
+git log --patch
+git add .
+gamend
+gush
+mix test lib/connect/vulnerabilities/device_vulnerabilities/actions/set_device_vulnerability_status_open_pending_test.exs
+gst
+glod
+git log --path /Users/micah.cooper/code/pdq/houston@auth-1407-spike-audit-all-device-actions-and-write-tickets-for/lib/connect/vulnerabilities/device_vulnerabilities/actions/set_device_vulnerability_status_open_pending_test.exs
+git log --patch /Users/micah.cooper/code/pdq/houston@auth-1407-spike-audit-all-device-actions-and-write-tickets-for/lib/connect/vulnerabilities/device_vulnerabilities/actions/set_device_vulnerability_status_open_pending_test.exs
+glod
+git reset HEAD~13
+gst
+git add .
+gc -m 'chore(device_rbac): skip rbac where not needed'
+gain
+git reset HEAD~
+gst
+mix test lib/connect/vulnerabilities/device_vulnerabilities/actions/set_device_vulnerability_status_open_pending_test.exs
+git ad d.
+git add .
+gc -m 'chore(device_rbac): skip rbac where not needed'
+mix format
+mix test lib/houston_web/graphql/resolvers/sagents_conversation_resolver_test.exs
+gst
+gap
+gamend
+gush
+mix test lib/connect/vulnerabilities/device_vulnerabilities/actions/set_device_vulnerability_status_open_pending_test.exs
+gst
+git add .
+gamend
+mimix test
+gush
+mix test lib/connect/vulnerabilities/actions/set_device_vuln_detection_status_test.exs
+git add .
+gamend
+gush
+mix format
+git add .
+gamend
+gush
+config nu
+t
+fg
+mix test
+mix test lib/connect/vulnerabilities/device_vulnerabilities/actions/set_device_vulnerability_status_open_pending_test.exs
+gst
+gammendush
+gamenduse
+source `~/Library/Application Support/nushell/config.nu`
+gamendush
+gammendush
+nfig
+config nu
+gst
+mix test lib/connect/vulnerabilities/workers/backfill_device_vuln_detections_worker_test.exs
+mix test lib/connect/vulnerabilities/consumers/vulnerability_scan/asynchronous_test.exs
+gap
+gamendush
+source `~/Library/Application Support/nushell/config.nu`
+gamendush
+gst
+gamend
+gush
+nvim .
+work on
+gain
+gain
+git add .
+grc
+gush
+gst
+gain
+gush
+gc --amend --allow-empty
+gush
+gain
+gst
+nvim .
+gain
+git add .
+grc
+nmix test lib/connect/accounts/organizations/actions/get_product_dashboard_organization_stats_test.exs
+mix test lib/connect/accounts/organizations/actions/get_product_dashboard_organization_stats_test.exs
+gst
+gain
+kkkkkkkkkkmix test lib/connect/accounts/organizations/actions/get_product_dashboard_organization_stats_test.exs:89
+mix test lib/connect/accounts/organizations/actions/get_product_dashboard_organization_stats_test.exs
+mix test lib/connect/accounts/organizations/actions/get_product_dashboard_organization_stats_test.exs:89
+gst
+mix test lib/connect/accounts/organizations/actions/get_product_dashboard_organization_stats_test.exs
+gap
+mix format
+git add .
+grc
+git add .
+gamend
+gush
+work on
+cd
+opencode
+mise install opencode
+mise uninstall opencode
+mise uninstall npm:@opencode/cli --all
+mise install npm:@opencode/cli --allow-builds=true
+mise install npm:@opencode/cli -- --allow-builds=true
+mise install npm:@opencode/cli --force
+brew upgrade mise
+mise install npm:@opencode/cli --force
+mise install --force npm:opencode-ai
+mise install
+opencode
+which opencode
+de /Users/micah.cooper/.local/share/mise/installs/npm-opencode-ai/1.18.33/node_modules/
+cd /Users/micah.cooper/.local/share/mise/installs/npm-opencode-ai/1.18.33/node_modules/
+ls
+cd ./
+ls ../
+cd ../../
+ls
+cd ../
+ls
+cd npm-opencode-ai/
+ls
+cd ../
+ls
+mise uninstall npm:@opencode/cli --force --all
+mise uninstall npm:@opencode/cli --all
+mise uninstall npm:@opencode-ai --all
+mise list
+mise list | rg open
+mise uninstall opencode --prune
+mise unuse opencode
+mise unuse opencode-ai
+mise unuse npm:opencode-ai
+mise unuse npm:opencode/cli
+mise list | rg open
+mise unuse anomalyco/opencode
+mise unuse npm:@opencode/cli
+mise list | rg open
+mise uninstall github:anomalyco/opencode --all
+mise unuse npm:opencode-ai
+mise uninstall npm:opencode-ai --all
+mise list | rg open
+mise install
+opencode
+nvim ~/.mise.toml
+opencode
+mise unuse npm:opencode-ai
+mise uninsatll npm:opencode-ai
+mise uninsatll npm:opencode-ai --all
+mise use -g opencode@2.0.1
+curl -fsSL https://opencode.ai/install | bash
+curl -fsSL https://opencode.ai/v2/install | bash
+mise use -g opencode@2.0.20
+curl -fsSL https://opencode.ai/v2/install | bash
+which opencode
+opencode
+npm ununse opencode
+npm unuse opencode
+mise unuse opencode
+whicn opencode
+which opencode
+opencode
+mise install
+kj
+mise install
+whicn opencode
+which opencode
+/Users/micah.cooper/.local/share/mise/shims/opencode
+which opencode
+mise unuse opencode
+mise install  opencode --all
+mise uninstall opencode --all
+task ai:setup:interactive
+opencode
+opencode
+nvim .
+gst
+gc --amend --allow-empty
+gst
+gush
+gain
+git add .
+git stash
+gain
+gush
+gain
+nvim ~/.mise.toml
+gst
+ls
+gull
+gb
+git co auth-1407-device-rbac-2
+git co -b auth-1407-device-rbac-2
+git reset --hard origin/auth-1407-spike-audit-all-device-actions-and-write-tickets-for
+gush
+mix deps.get
+gush
+show
+gst
+cat opencode.jsonc
+gt track
+gain
+git co main
+git co -
+gull
+gain
+gush
+claude
+git co main
+nvim .
+fg
+gb
+git co -b fast-reconnects
+nvim .
+work new eggnog fast-reconnects
+nvim ../work
+work new fast-reconnects --project eggnog
+fg
+git show foo
+git co foo
+git reset HEAD~
+gst
+gb
+git co main
+gdel
+gb
+git co fast-reconnects
+cd ../eggnog@fast-reconnects/
+gst
+git co main
+fg
+cd ../eggnog/
+gst
+git add .
+gwiop
+gwip
+cd ../eggnog@fast-reconnects/
+gst
+git cherry-pick main
+git show
+giut reset HEAD!
+giut reset HEAD~
+gst
+git reset HEAD~
+gst
+gd
+worko n
+gain
+fg
+nvim .
+gst
+gb
+gull
+gst
+gb
+gdel
+gst
+gb
+work on
+work new fast-reconnects --project eggnog
+work on
+pdq
+gst
+:qw
+gtmix test lib/houston/process_store_test.exs:9
+mix test lib/houston/process_store_test.exs:10
+gain
+gb
+git fetch
+git fetch --prune
+gull
+gb
+glg
+git pull --rebase origin main
+gb
+glod
+mix test lib/houston/process_store_test.exs:9
+mix deps.get
+mix test
+mix deps.get
+glod
+mix test lib/houston/process_store_test.exs:9
+task gst
+gst
+git add .
+git stash
+gst
+mix test
+gain
+mix deps.get
+mix test
+mix deps.compile --force
+mix test
+MIX_ENV=test mix compile --force
+rm -rfm _build
+rm -rf _build
+task setup
+work on
+work on
+gb
+gst
+gb
+gst
+glod
+gst
+gd
+git co .
+gb
+work on
+work on 
+cd
+pdq
+ls
+cd houston@auth-1588-refactorrename-multi_tenancyex/
+gst
+ls
+git show
+gd
+zl list-sessions
+zellih
+gst
+zellij
+q
+gst
+gb
+cd
+pdq
+work on
+work
+cd houston/
+ls
+gb
+work remove
+git worktree list
+ls
+work
+git stash pop
+mix test
+mix test lib/houston/process_store_test.exs:11
+mix test lib/houston/process_store_test.exs:22
+mix test lib/houston/process_store_test.exs:26
+mix test lib/houston/process_store_test.exs:21
+mix test lib/houston/process_store_test.exs:22
+mix test lib/houston/process_store_test.exs:24
+mix test lib/houston/process_store_test.exs:23
+gst
+gap
+gc -m 'feat(process_store): formalize storing data in a process'
+mix format
+mix test lib/houston/process_store_test.exs:50
+mix test lib/houston/process_store_test.exs
+gst
+gap
+glod
+gc
+mix format
+gc
+gush
+opencode
+gst
+gap
+gst
+git reset opencode.jsonc
+gst
+glod
+gamend
+gap
+gamend
+mix format
+gamend
+mix test lib/houston/process_store_test.exs
+mix format
+mix test lib/houston/process_store_test.exs:16
+gst
+mix test lib/houston/process_store_test.exs:16
+mix format
+mix test lib/houston/process_store_test.exs
+gap lib/houston/process*
+gst
+glod
+gamend
+mix format
+gamend
+task setup
+gush
+mix format
+mix fomrat
+fg
+mix format
+mix test lib/houston/process_store_test.exs
+gst
+ga
+gap
+gc -m 'feat(rbac-injection): use device injection for LoadSession'
+gst
+mix format
+gst
+git add lib/houston/repo/injection/
+gst
+gc -m 'feat(rbac-injection): use device injection for LoadSession'
+gst
+git co --patch
+gst
+gap
+gamend
+gst
+git co .
+gst
+mix test
+mix test lib/connect/vulnerabilities/workers/cpe_vulnerability_cleanup_worker_test.exs
+mix test lib/houston/process_store_test.exs:37
+iex
+mix format
+mix test lib/houston/process_store_test.exs:37
+gst
+mix test lib/houston/repo/absinthe_batch_test.exs
+mix test lib/houston/process_store_test.exs:10
+mix test lib/houston/repo/absinthe_batch_test.exs:6
+mix test lib/houston/repo/absinthe_batch_test.exs:7
+mix test lib/houston/repo/absinthe_batch_test.exs
+mix test lib/houston/repo/absinthe_batch_test.exs:52
+mix test lib/houston/repo/absinthe_batch_test.exs:50
+mix test lib/houston/repo/absinthe_batch_test.exs:67
+mix test lib/houston/process_store_test.exs
+mix test lib/houston/process_store_test.exs:12
+mix test lib/houston/process_store_test.exs
+mix test lib/houston/process_store_test.exs:16
+mix test lib/houston/process_store_test.exs:21
+mix test lib/houston/subscription_test.exs
+mix test lib/houston/repo/absinthe_batch_test.exs
+mix test lib/houston/repo/absinthe_batch_test.exs:24
+mix test lib/houston/repo/absinthe_batch_test.exs
+glod
+mix format
+mix test lib/houston/process_store_test.exs
+mix test lib/connect/vulnerabilities/workers/cpe_vulnerability_cleanup_worker_test.exs
+ls
+mix test
+mix test lib/connect/vulnerabilities/workers/rewrite_clickhouse_device_vulnerabilities_versionless_cpe_for_prefix_worker_test.exs
+mix test lib/connect/inventory/scans/actions/save_scan_results_test.exs
+mix test
+tain
+gain
+gst
+gap
+glod
+git reset HEAD~~
+gst
+git add .
+gc -m 'chore(wip): wip'
+mix format
+gst
+tgap
+gap
+gc -m 'chore(wip): wip'
+gush
+gain
+task setup
+mix start
+mix test
+mix start
+mix test lib/connect/inventory/scans/actions/save_scan_results_test.exs
+mix start
+mix test lib/connect/inventory/scans/actions/save_scan_results_test.exs
+gst
+gap
+gst
+gamend
+mix format
+gap
+gamend
+mix test lib/houston/process_store_test.exs
+ls
+cd pdq
+config nu
+ls
+work new feature-branch --project houston
+work remove
+zelllij
+zl
+work on
+nvim work
+ls
+pwd
+cd ../
+ls
+cd
+cd code/pdq
+cd
+ls
+cd
+work
+cd code/pdq
+work
+work remove 
+cd houston/
+git worktree remove /Users/micah.cooper/code/pdq/houston@feature-branch
+gb
+gb -D feature-branch
+cd ../
+ls
+cd
+ls
+cd code/
+ls
+work
+nvim pdq/.mise/config.toml
+ls
+cd
+ls
+fish
+brew instal fish
+brew install fish
+fish
+ls
+bash
+ls
+cd code/pdq
+work
+work --help
+work on
+fg
+nvim .
+nvim .
+work new new-feature
+nci
+nfig
+config nu
+cd ~/code/pdq/eggnog/
+gull
+git fetch
+git co bump-grpc-to-1-0-5
+mix deps.get
+nvim .
+gull
+glod
+nvim .
+nivm .
+nvim .
+mix test
+gst
+mix test lib/grpc/client_test.exs
+cd ../
+cd eggnog/
+mix test lib/grpc/client_test.exs
+mix test lib/grpc/client_test.exs:91
+mix test lib/grpc/client_test.exs
+mix test lib/grpc/client_test.exs:73
+mix test lib/grpc/client_test.exs
+mix test lib/grpc/client_test.exs:90
+mix test lib/grpc/client_test.exs:91
+mix test lib/grpc/client_test.exs:90
+mix test lib/grpc/client_test.exs:91
+mix test lib/grpc/client_test.exs
+mix test lib/grpc/client_test.exs:92
+mix test lib/grpc/client_test.exs
+nvim .
+gst
+mix test
+mix format
+glod
+gap
+gc -m 'chore(connection-client): wait to establish connection in call/2'
+gush
+mix test lib/houston/process_store_test.exs:22
+imix test lib/houston/process_store_test.exs:13
+mix test lib/houston/process_store_test.exs:13
+mix start
+mix test
+gst
+glod
+git reset HEAD!
+git reset HEAD~
+i
+gst
+fg
+gap
+gst
+git reset --patch
+gst
+gap
+gst
+gc -m 'chore(wip): wip'
+git add lib/houston/process*
+gst
+git add lib/houston/repo/injection/
+gst
+gamend
+mix format
+gst
+gamend
+gst
+git co --patch
+gst
+gap
+gst
+gamend
+git oc .
+git co .
+gst
+iex
+gush
+gt track
+gain
+gush
+mix deps.get
+gt submit --draft --ai
+mix start
+mix deps.get
+mix start
+fg
+mix start
+mix test lib/houston/process_store_test.exs:13
+gst
+gap
+gst
+gc -m 'chore(wip): wip-2'
+git co .
+mix format
+gap
+gain
+gush
+work on
+mix start
+nvim ~/.config/ghostty/config
+pdq
+ls
+gst
+glod
+show
+fg
+mix test lib/houston_web/controllers/reports_controller_test.exs
+cd ../
+ls
+cd houston@auth-1588-refactorrename-multi_tenancyex/
+mix test lib/houston_web/controllers/reports_controller_test.exs
+gain
+mix test lib/houston_web/controllers/reports_controller_test.exs
+gap
+mix format
+gap
+ygst
+gst
+gamend
+gush
+mix test lib/houston/repo/multi_tenancy_test.exs:901
+mix test lib/houston/repo/multi_tenancy_test.exs:889
+mix test lib/houston/repo/multi_tenancy_test.exs:902
+task setup
+mix test lib/houston/repo/multi_tenancy_test.exs:902
+gst
+mix test lib/houston/repo/multi_tenancy_test.exs:901
+mix format
+mix test lib/houston/repo/multi_tenancy_test.exs:901
+mix test lib/houston_web/controllers/reports_controller_test.exs
+gap
+gst
+gamend
+gush
+mix format
+gst
+gap
+gamend
+gush
+mix test
+mix test lib/houston/repo/multi_tenancy_test.exs
+mix test lib/connect_mcp/server_test.exs
+gst
+gap
+mix foramt
+mix format
+gap
+gst
+gamend
+gush
+mix start
+Lgst
+mix start
+how
+show
+mix test lib/houston/repo/multi_tenancy_test.exs:957
+mix start
+mix compile
+mix start
+mix compile --force
+mix start
+gb
+mix start
+git show
+gd
+gst
+mix start
+cd houston@auth-1588-refactorrename-multi_tenancyex/
+mix start
+gst
+mix start
+gb
+gd
+gb
+nvim .
+mix start
+task nuke
+task setup
+fg
+mix start
+rm -rf _build
+mix start
+psql
+:q
+gst
+git add .
+gamend
+mix format
+git add .
+gamend
+gush
+mix start
+work on
+pkill -9 erlang
+task start
+cd ../
+cd houston@auth-1588-refactorrename-multi_tenancyex/
+mix start
+gst
+gap
+mix format
+gap
+gamend
+mix compile --force; mix start
+gst
+gap
+gamend
+gush
+show
+gain
+gush
+mix tess
+gst
+mix test
+gap
+gst
+glod
+gst
+gd
+glod
+gc
+mix format
+mix test
+gst
+gap
+mxi test
+mix test
+work on
+work on
+mix format
+mix test lib/houston/repo/multi_tenancy_test.exs
+mix test
+gst
+mix test lib/houston/repo/multi_tenancy_test.exs:692
+gap
+gst
+gamend
+mix test
+mix format
+gst
+gamend
+gush
+mix test lib/houston/process_store_test.exs
+mix test
+i
+gst
+gap
+glod
+gamend
+mix foramt
+mix format
+gst
+gap
+gamend
+gush
+gush
+i
+mix test lib/houston/repo/multi_tenancy_test.exs
+mix test
+mix test lib/houston/repo/multi_tenancy_test.exs:933
+mix test lib/houston/repo/multi_tenancy_test.exs:937
+git log --patch
+mix test lib/houston/repo/multi_tenancy_test.exs
+mix test lib/houston/repo/multi_tenancy_test.exs:957
+mix test lib/houston/repo/multi_tenancy_test.exs:959
+gst
+gap
+gamend
+mgush
+gush
+show
+ci
+cd ../eggnog
+pdq
+cd eggnog/
+gull
+git co main
+gull
+gra
+git co main
+gull
+git reset --hard origin/main
+git co main
+gain
+gull
+git fetch
+glod
+git reset --hard origin/main
+glod
+nvim 
+nvim .
+mix deps
+mix deps.info grpc
+gst
+gap
+gamend
+guhs
+gush
+show
+mix format
+gst
+gap
+gst
+glod
+git reset HEAD~~
+gst
+git add .
+gst
+gc -m 'feat(device_rbac): use ProcessStore and ActorContext for rbac gates'
+gst
+gush
+gain
+gush
+mix test
+psql
+nvim .
+work on
+work on
+nvim .
+pdq
+ls
+cd houston/
+gain
+mix test lib/houston_web/graphql/resolvers/sagents_conversation_resolver_test.exs:2016
+mix test lib/mix/tasks/sharding/exercise_test.exs:13
+mix test lib/houston_web/graphql/resolvers/sagents_conversation_resolver_test.exs:2025
+gst
+tap
+gap
+mix format
+gst
+gap
+gst
+gamend
+gush
+mix test lib/houston/repo/multi_tenancy_test.exs
+gain
+gst
+gap
+gamend
+gain
+gush
+gst
+gap
+gc -m 'Clear process store on clear_org_context'
+gush
+gst
+gap
+glod
+gc -amend
+gc --amend
+gain
+gush
+gain
+nvim .
+gull
+glod
+gush
+git rebase main
+pdq
+cd houston/
+pdq
+ls
+cd eggnog/
+git worktree remove /Users/micah.cooper/code/pdq/eggnog@fast-reconnects/
+git worktree remove /Users/micah.cooper/code/pdq/eggnog@fast-reconnects/ --force
+ls
+cd ../
+ls
+nvim ~/.config/zellij/config.kdl
+mix test lib/houston/repo/multi_tenancy_bulk_writes_test.exs
+opencode
+opencode --version
+which opencode
+nvim ~/
+pdq
+ls
+work
+work on
+gst
+gain
+work
+work on
+work
+work | lines
+work | inpuut list
+work on
+work
+work | input list "foo"
+work | get "worktree"
+work
+work input
+work | input
+work
+work | get "worktree"
+work | lines
+work
+git worktree list --help
+cd houston/
+git worktree list --help
+git worktree list --porcelain
+git worktree list
+git worktree list | lines
+cd ../
+work
+cd ../
+pdq
+work
+work | get worktree
+work | select worktree
+work | from csv
+work | select worktree
+work
+work | flatten --all
+work | flatten
+work
+work | flatten
+work
+work | input
+work | get worktree
+work | raw
+work | describe
+work
+work | at 0
+work[2]
+(work).1
+work
+work | from csv
+work 
+work | from csv
+work
+gst
+gb
+git co -b auth-1588-refactorrename-multi_tenancyex-2
+gush
+gt track
+work
+work | get sha
+work
+fg
+gst
+gap
+glod
+git show
+gc --amend
+gush
+gain
+mix format
+gush
+gst
+gush
+work on
+"/Users/micah.cooper/code/pdq/houston@auth-1588-refactorrename-multi_tenancyex" | path basename
+"/Users/micah.cooper/code/pdq/houston@auth-1588-refactorrename-multi_tenancyex" | str split "@"
+"/Users/micah.cooper/code/pdq/houston@auth-1588-refactorrename-multi_tenancyex" | split "@"
+"/Users/micah.cooper/code/pdq/houston@auth-1588-refactorrename-multi_tenancyex" | str-split
+"/Users/micah.cooper/code/pdq/houston@auth-1588-refactorrename-multi_tenancyex" |  parse --regex 'v(?P<main>[^@])'
+"/Users/micah.cooper/code/pdq/houston@auth-1588-refactorrename-multi_tenancyex" |  parse --regex '(?P<main>[^@])'
+"/Users/micah.cooper/code/pdq/houston@auth-1588-refactorrename-multi_tenancyex" |  parse --regex '(?P<main>[^@]+)'
+"/Users/micah.cooper/code/pdq/houston@auth-1588-refactorrename-multi_tenancyex" |  parse --regex '(?P<main>^[^@]+)'
+"/Users/micah.cooper/code/pdq/houston@auth-1588-refactorrename-multi_tenancyex" |  parse --regex '(?P<main>^[^@]+)' | get main
+work remove
+work
+work on
+wokr on
+work on
+yarn
+nvim ~/.mise.toml
+mise install
+nvim .
+nvim .
+nfig
+nvim .
+nfig
+gst
+nvim work
+gst
+pdq
+work remove
+ls
+git clone git@github.com:pdq/rover.git
+ls
+nvim work
+cd rover/
+work new rover main
+nvim .
+ls
+cd ../
+cd rover
+nvim .
+./scripts/rover-vm.sh
+fg
+nvim .
+./scripts/rover-vm.sh
+pdq
+mise install
+./scripts/rover-vm.sh
+gst
+task setup
+./scripts/rover-vm.sh
+./scripts/provision-vm.sh --pull-cirrus
+nvim .
+gst
+gull
+mix deps.get
+work on
+:q
+work remove
+ls
+work remove
+nvim .
+mix deps.get
+mix start
+ls
+tart run local --dir rover:/Users/micah.cooper/code/pdq/rover
+nvim work
+tart run local --dir rover:/Users/micah.cooper/code/pdq/rover
+mix start
+Jk
+tart run local --dir rover:/Users/micah.cooper/code/pdq/rover
+gst
+gd
+mix start
+nvim .
+mix start
+tart run local --dir rover:/Users/micah.cooper/code/pdq/rover
+mix test lib/houston_web/absinthe/subscription_phase_test.exs
+cd ../
+cd houston/
+gull
+gst
+git co -b foo
+git add .
+gwip
+gain
+mix start
+:q
+:q
+tart run local --dir rover:/Users/micah.cooper/code/pdq/rover
+mix test lib/houston_web/absinthe/subscription_phase_test.exs
+mix test lib/houston_web/absinthe/subscription_phase_test.exs:40
+mix test lib/houston_web/absinthe/subscription_phase_test.exs
+mix test lib/houston_web/absinthe/subscription_phase_test.exs:42
+mix test lib/houston_web/absinthe/subscription_phase_test.exs
+tart run local --dir rover:/Users/micah.cooper/code/pdq/rover
+gst
+gb
+git co auth-1675-pre-release-bug-real-time-updates-do-not-arrive-until-a-page
+gst
+git add .
+gamend
+mix format
+gst
+gap
+gamend
+gco
+gb
+cd ../
+ls
+cd houston/
+git reset HEAD!
+git reset HEAD~
+gst
+git add .
+git stash
+git co main
+gdel
+cd ../houston@auth-1675-pre-release-bug-real-time-updates-do-not-arrive-until-a-page/
+gst
+glg
+gb -D foo
+git satsh pop
+git stash pop
+gst
+fg
+gst
+gap
+git add .
+grc
+gst
+glod
+gamend
+mix format
+gst
+glod
+git reset HEAS~
+git reset HEAD~
+gst
+gap
+gst
+gc
+gush
+gain
+gap
+mix format
+mix deps.get
+gst
+cat `telescope|preview_scrolling_left`
+rm `telescope|preview_scrolling_left`
+gst
+gamend
+gush
+gt track
+gt submit --draft --ai
+gain
+mix test lib/houston_web/absinthe/subscription_phase_test.exs
+gst
+git co .
+gst
+gt view
+nvim .
+work on
+mix test
+gap
+gamend
+task stop
+gush
+mix format
+gap
+gamend
+gain
+gush
+show
+nvim .
+mix format
+gst
+gush
+gst
+gt show
+work new houston auth-1675-pre-release-bug-real-time-updates-do-not-arrive-until-a-page
+mix deps.get
+gst
+gain
+mix test
+gst
+mix format
+gst
+gush
+mise install
+gain
+gush
+work on
+work on
+pdq
+ls
+cd houston@auth-1675-pre-release-bug-real-time-updates-do-not-arrive-until-a-page/
+gush
+gain
+gush
+work on
+pdq
+k
+work on
+pkill -9 zellij
+zellij kill-all-sessions
+gain
+glod
+mix test
+mix deps.get
+mix test
+task start
+task setup
+mix format
+fg
+nvim 
+gush
+gain
+mix test
+work
+work remove
+work
+tart run local --dir rover:/Users/micah.cooper/code/pdq/rover
+gst
+show
+work on
+gst
+gull
+k
+iex
+mix format
+mix test lib/utils/map_test.exs:613
+mix test lib/utils/map_test.exs:617
+mix format
+gst
+gap
+gst
+git co lib/houston/workers/deployments_worker.ex
+gst
+gb
+gst
+git add .
+git stash
+psql
+nvim .
+gst
+git stash list
+work new houston auth-1707-ensure-all-oban-jobs-are-scoping-device-accss
+gd
+gb
+gco
+nvim work
+qi
+nvim work
+work new houston auth-1707-ensure-all-oban-jobs-are-scoping-device-accss
+ls
+cd houston/
+gdel
+work new houston auth-1707-ensure-all-oban-jobs-are-scoping-device-accss
+gb
+gdel
+work new houston auth-1707-ensure-all-oban-jobs-are-scoping-device-accss
+zellij kill-all-sessions
+work on
+ls
+work remove
+gb
+gdel
+work new houston auth-1707-ensure-all-oban-jobs-are-scoping-device-accss
+gst
+git stash pop
+gst
+git reset
+gst
+gap
+gst
+git add lib/houston/oban_actor.ex
+gst
+gdc
+fg
+mix format
+mix format (git diff --name-only | grep -E '\.(ex|exs)$')
+git diff --name-only
+git diff --name-only | mix format
+git diff --name-only | mix format $in
+git diff --name-only | mix format
+mix test
+gst
+gap
+git rest
+git reset
+gap
+gst
+git add lib/houston/oban_actor.ex
+gst
+gap
+gst
+gc
+imix format
+mix format
+gap
+gst
+gc
+gst
+git add .
+git stash
+gush
+iex
+gst
+glod
+gush
+gain
+gush
+mise install
+gush
+gt track
+gain
+git co aain
+gull
+git rebase main
+gt submit --draft --ai
+gap
+qkjgap
+gap
+gamend
+gush
+mix test
+task start
+task setup
+fg
+mix test
+pdq
+gst
+gap
+gamend
+gain
+gap
+gamend
+mix deps.get
+gst
+gamend
+mix format
+gamend
+git hsow
+gush
+git show
+mix test lib/connect/inventory/devices/workers/device_export_worker_test.exs
+gst
+gap
+mix format
+gat
+gamend
+gush
+iex
+gap
+gamend
+gush
+gain
+gush
+raise with KeyError
+gap
+gamend
+gush
+gst
+gush
+nvim .mise/config.toml
+fg
+mix format
+nvim .
+fg
+gst
+gd lib/houston/repo/injection/device_rbac.ex
+git co lib/houston/repo/injection/device_rbac.ex
+gst
+gst
+gain
+work on houston auth-1682-pre-release-bug-org-wide-software-and-windows-update-recalcs
+nvim .
+work new houston auth-1682-pre-release-bug-org-wide-software-and-windows-update-recalcs
+work on
+work remove
+ls
+ls ../
+work remove
+git worktree list
+ls
+ls ../
+rm -rf ../houston@auth-1588-refactorrename-multi_tenancyex/
+zellij list-sessions
+zellij kill-all-sessions
+work on
+zellij list-sessions
+zellij delete-all-sessions
+zellij list-sessions
+ls
+work on
+ls
+gull
+gst
+gd
+git co -b multi-tenancy-injection
+git add .
+gwip
+config nu
+gst
+pdq
+cm diff
+qdst
+dst
+ls
+pdq
+nvim work
+work reset
+fg
+nvim .
+gst
+ls
+gst
+git init 
+git add work .mise
+gst
+gc -m 'Track PDQ-specific setup'
+git remote add origin https://github.com/mrmicahcooper/pdq.git
+git push origin main -u
+gst
+git add .
+gamend
+gush
+git show
+nvim .gitignore
+$env.path
+$env.path | rg pdq
+nvim .
+wor on
+pdq
+work on
+work
+task setup
+i
+dst
+psql
+nvim .
+pdql
+psql
+nvim ../.mise/config.toml
+psql
+nvim ../.mise/config.toml
+psql
+work on
+gst
+gap
+gc -m 'Add pdq-specific tooling and env vars'
+gusah
+gush
+mix start
+pkill -9 beam
+mix deps.get
+btop
+tart run local --dir rover:/Users/micah.cooper/code/pdq/rover
+./scripts/provision-vm.sh --name micah-cooper-staging-device
+./scripts/provision-vm.sh -n micah-cooper-staging-device
+tart run micah-cooper-staging-device --dir rover:/Users/micah.cooper/code/pdq/rover
+nvim .
+tart run local --dir rover:/Users/micah.cooper/code/pdq/rover
+gb
+ls
+cd houston/
+gb
+opencode
+gfb
+gb
+git brannch --list foo
+gb --list
+gb --list --porcelain
+gb
+foo in (gb --list)
+"foo" in (gb --list)
+git worktree add --help
+work new houston multi-tenancy-injection
+gb
+work new houston multi-tenancy-injection
+gst
+gb
+git co main
+ls
+cd ../
+lc
+ls
+work
+ls
+work new houston multi-tenancy-injection
+ls
+cd ../houston@multi-tenancy-injection/
+glod
+git co main
+cd ../houston/
+gst
+glod
+gull
+gb
+gb --list
+gco
+gb
+gdel
+gb
+work on
+work clear-sessions
+work on
+work on
+work clear-all
+work
+work remove
+work
+gb
+ls
+work new houston multi-tenancy-injection
+work remove
+work
+zellij list-sessions
+work new houston multi-tenancy-injection
+zellij list-sesions
+zellij list-sessions
+work new houston multi-tenancy-injection
+work remove
+work new houston multi-tenancy-injection
+work on
+work remove
+work new houston multi-tenancy-injection
+zellij-list-sessions
+zellij list-sesisons
+zellij list-sessions
+"foo" in (zellij list-sessions)
+"foo" in (zellij list-sessions --short)
+zellij list-sessions --help
+(zellij list-sessions) == "foo"
+"foo" in (zellij list-sessions)
+work new houston multi-tenancy-injection
+work remove
+work on
+work new houston multi-tenancy-injection
+work remove
+work new houston multi-tenancy-injection
+work remove
+work new houston multi-tenancy-injection
+nvim .
+glod
+mix test lib/houston/process_store_test.exs
+tain
+gain
+gst
+gd
+cm cd
+glod
+git reset HEAD~
+gst
+git co lib/houston/repo/multi_tenancy.ex
+gst
+cd
+which zellij
+nvim ~/.mise.toml
+mise install
+gain
+git add .
+git stash
+gull
+gain
+git stash pop
+which gull
+gull
+confign nu
+config nu
+gfig
+herdr
+claude --continue
+iex
+gst
+glod
+git add .
+gwip
+mix format
+mix deps.get
+gst
+gwip
+mix format
+work
+work
+gst
+gst
+git ad d.
+git add .
+gwiop
+gwip
+mix format
+git add .
+gwip
+gst
+git add .
+git commit --no-verify
+nvim .
+ls
+ls ../
+cd ../houston@auth-1717-feat-oban-workers-inherit-a-actor-context/ai/
+gst
+ls
+cd ../
+ls
+cd -
+gst
+gain
+mix test lib/connect/inventory/devices/workers/device_export_worker_test.exs:8
+mix test lib/connect/inventory/devices/workers/device_export_worker_test.exs
+fg
+cd ../
+ls
+cd houston@auth-1588-refactorrename-multi_tenancyex-2/
+git log --patch
+gap
+gst
+gc
+gush
+mix test lib/connect/inventory/devices/workers/migrate_device_worker_test.exs
+gc
+git add .
+glod
+gamend
+gush
+gt track
+gt track --ai
+gt submit --ai
+mix test lib/connect/inventory/devices/workers/migrate_device_worker_test.exs
+mix test lib/houston/groups/graphql_tests/group_graphql_test.exs
+imix test lib/connect/inventory/devices/workers/migrate_device_worker_test.exs
+mix test lib/connect/inventory/devices/workers/migrate_device_worker_test.exs
+task setup
+mix test lib/connect/inventory/devices/workers/migrate_device_worker_test.exs
+task setup
+mix test lib/connect/inventory/devices/workers/migrate_device_worker_test.exs
+tain
+gain
+gst
+gap
+gamend
+gush
+l
+mix format
+mix deps.get
+mix format
+dd .
+git add .
+gamend
+gush
+gap
+gst
+gap
+gamend
+gush
+mix test lib/connect/inventory/devices/workers/migrate_device_worker_test.exs
+mix test lib/connect/inventory/devices/workers/migrate_device_worker_test.exsmix test lib/connect/inventory/devices/workers/migrate_device_worker_test.exs
+mix test lib/connect/inventory/devices/workers/migrate_device_worker_test.exs
+gd
+gap
+mix format
+mix test lib/connect/inventory/devices/workers/migrate_device_worker_test.exs
+gst
+git reset
+gst
+glod
+gst
+mix test lib/connect/vulnerabilities/workers/delete_old_vulnerabilities_worker_test.exs
+mix test lib/houston/oban_worker_test.exs:46
+mix test lib/houston/oban_worker_test.exs:48
+mix test lib/houston/oban_worker_test.exs:47
+mix test lib/houston/oban_worker_test.exs:50
+mix test lib/houston/oban_worker_test.exs:44
+mix test lib/houston/oban_worker_test.exs:49
+iex
+mix format
+mix test lib/houston/oban_worker_test.exs:57
+mix test lib/houston/oban_worker_test.exs:61
+mix test lib/houston/oban_worker_test.exs:60
+mix test lib/houston/oban_worker_test.exs:63
+mix test lib/houston/oban_worker_test.exs:70
+mix test lib/houston/oban_worker_test.exs:68
+mix test lib/houston/oban_worker_test.exs:66
+gst
+gap
+gc
+gap
+git reset
+gst
+git add lib/houston/oban_worker*
+gst
+gc
+mix format
+gst
+gc
+gst
+gap
+gst
+git add .
+gst
+gc
+gush
+git add .
+gamend
+mix format
+gst
+gap
+gamend
+gush
+gt track
+gt submit --ai --draft
+mix test lib/houston/oban_worker_test.exs:73
+gap
+gamend
+mix format
+gst
+gap
+gamend
+gush
+gap
+gamend
+gush
+gap
+gamend
+gush
+gita dd .
+gamend
+gush
+gst
+gap
+gamend
+gush
+mix format
+git add .
+gamendush
+gush
+gst
+gamend
+gush
+gst
+gap
+gain
+gamend
+gain
+mix format
+mix deps.get
+mix format
+gst
+gamend
+gush
+gst
+gap
+gamedn
+gamend
+gush
+mix comiple
+mix compile
+gap
+mix formatgst
+gap
+gst
+gamend
+gush
+mix format
+gst
+gap
+gamend
+gush
+gap
+gameng
+gamend
+gush
+mix format
+gst
+gap
+gst
+git reset
+gap
+gst
+gap
+gamend
+gush
+gull
+factmix test lib/connect/inventory/devices/workers/migrate_device_worker_test.exs
+mix test lib/connect/inventory/devices/workers/migrate_device_worker_test.exs
+:bd!
+mix test lib/connect/inventory/devices/workers/migrate_device_worker_test.exs
+mix test lib/connect/inventory/devices/workers/migrate_device_worker_test.exs:40
+gst
+gap
+gc -m 'fix(device_rbac): only clear context before setting it'
+mix format
+gc -m 'fix(device_rbac): only clear context before setting it'
+gain
+gst
+gap
+gamend
+gst
+gain
+gush
+gst
+gap
+gamend
+gush
+gst
+gamend
+gush
+mix format
+gamend
+git add .
+gamend
+gush
+gstr
+gdst
+gain
+gush
+gain
+gst
+gap
+gamend
+gush
+gain
+mix dialyzer
+mix dialzyer
+cd../
+cd ../
+cd houston@auth-1717-feat-oban-workers-inherit-a-actor-context/
+mix deps.get; git add . ; gamend; gush
+cd ../
+cd houston@auth-1725-enforce-that-all-oban-job-use-the-houstonobanworker/
+gb
+git reset --hard auth-1717-feat-oban-workers-inherit-a-actor-context
+glod
+mix dialyzer
+gst
+gap
+gamend
+gush
+mix format
+mix dialyzer
+nvim .
+fg
+gst
+gap
+gamend
+gap
+gst
+mix format
+gst
+gap
+gamend
+mix dialyzer
+mix compile
+gush
+mix test lib/houston/oban_worker_test.exs
+cd ../
+cd houston@auth-1717-feat-oban-workers-inherit-a-actor-context/
+mix test lib/houston/oban_worker_test.exs
+igst
+gst
+gap
+tgst
+gamend
+mix format
+gap
+gamend
+gain
+mix dialyzer
+gush
+mix format
+mix test lib/houston/oban_worker_test.exs
+mix dialyzer
+mix test lib/houston/oban_worker_test.exs
+mix dialyzer
+mix test lib/houston/oban_worker_test.exs
+cd ../
+cd houston@auth-1717-feat-oban-workers-inherit-a-actor-context/
+gb
+i
+mix test lib/houston/oban_worker_test.exs
+c
+gap
+mix format
+mix dialyzer
+mix compile --force
+mix test lib/houston/oban_worker_test.exs
+mix format
+mix test lib/houston/oban_worker_test.exs
+gst
+gap
+gamend
+gush
+mix dialyzer
+mix test lib/houston/oban_worker_test.exs
+gap
+gamend
+gap
+gamend
+gush
+mix format
+gap
+mix test lib/houston/oban_worker_test.exs
+gst
+git reset
+gst
+gap
+gamend
+gush
+gap
+gamend
+gush
+gap
+gst
+gap
+gamend
+gain
+nvim .
+mix test lib/houston/oban_worker_test.exs
+gush
+work remove
+work new houston auth-1588-refactorrename-multi_tenancyex-2
+gain
+gst
+fg
+mix test lib/houston/oban_worker_test.exs
+gst
+mix format
+gap
+gst
+gamend
+mix format
+gap
+git stash
+gull
+gst
+gd
+gra
+gst
+glod
+gain
+gush
+gst
+git stashp op
+git stash pop
+gd
+gst
+gap
+gst
+gain
+gd
+git add .
+grc
+gst
+glg
+gush
+mix deps.get
+gush
+gst
+gap
+task setup:minimal
+claude
+task setup:minimal
+gb
+ls
+task
+task | rg setup
+task setup;dev
+task setup:dev
+mix format
+gst
+gap
+mix test
+task setup:dev
+mise install
+task | rg setup
+task setup
+mix test lib/connect/inventory/groups/workers/device_group_recalc_worker_v2_test.exs
+mix test
+gain
+gst
+gd
+git add .
+gst
+gwip
+mix test lib/connect/inventory/groups/workers/device_group_recalc_worker_v2_test.exs:643
+gain
+gd
+gst
+rm lib/connect/sharding/workers/org_id_backfill_worker.ex
+gst
+git add .
+grc
+gain
+git reset HEAD~
+mix test lib/connect/inventory/groups/workers/device_group_recalc_worker_v2_test.exs:669
+mix test lib/connect/inventory/groups/workers/device_group_recalc_worker_v2_test.exs
+mix test lib/connect/inventory/groups/workers/device_group_recalc_worker_v2_test.exs:671
+mix test lib/connect/inventory/groups/workers/device_group_recalc_worker_v2_test.exs:676
+mix test lib/connect/inventory/groups/workers/device_group_recalc_worker_v2_test.exs:670
+claud
+pdq
+nvim .
+mix install
+mise install
+claude
+which chalk
+mise use "npm:chalk"
+chalk
+which chalk
+source `~/Library/Application Support/nushell/config.nu`
+chalk
+which chalk
+mise list
+mise list | rg chalk
+gst
+git co mise.toml
+which chalk
+opencode
+claude
+gst
+chalk
+npm install -g chalk
+achalk
+which chalk
+chalk
+which nppm
+which npm
+nvim .
+work new houston auth-1725-enforce-that-all-oban-job-use-the-houstonobanworker
+task setup
+work
+zl list-sessions
+zl kill-session houston@auth-1725-enforce
+zl delete-session houston@auth-1725-enforce
+chalk
+mise install -g "npm:chalk"
+cd
+mise install "npm:chalk"
+mise use -g "npm:chalk"
+chalk
+which chalk
+node
+which node
+mise doctor
+mise uninstall --all fnox && mise install fnox
+mise uninstall --all fnox; mise install fnox
+mise uninstall --all usage && mise install usage
+mise uninstall --all usage ; mise install usage
+brew upgrade mise
+chalk
+i
+mise install
+chalk
+nvim ~/.mise.toml
+claude
+nvim ~/.bashrc
+echo 'eval "$(~/.local/bin/mise activate bash)"' >> ~/.bashrc
+bash
+which mise
+bash
+zsh
+opencode
+nvim .
+opencode
+fg
+nvim 
+fg
+opencode
+nvim .
+mix update
+mise update --all
+mise upgrade --all
+mise update
+mise update --all
+mise upgrade
+gst
+chalk
+claude
+gst
+git add **/*_worker.ex
+gst
+git add **/workers/**/*.ex
+gst
+gwip
+mix format
+fg
+nvim .
+gst
+gap
+gst
+gap
+gst
+gap
+mix test lib/houston/workers/reports_worker_test.exs
+opencode
+cd ../
+cd houston@auth-1725-enforce-that-all-oban-job-use-the-houstonobanworker/
+mix test lib/houston/workers/reports_worker_test.exs
+mix test lib/houston/workers/reports_worker_test.exs:112
+gap
+gst
+iq
+gst
+gc -m 'feat(ObanWorker): use ObanWorker for all oban jobs'
+gst
+gush
+i
+gst
+glod
+gush
+gain
+gst
+git co .
+gst
+git diff | rg FIX
+git add .
+mix format
+gc -m 'feat(ObanWorker): use ObanWorker for all oban jobs'
+gush
+qgst
+gst
+gap
+gamend
+mix test lib/connect/inventory/groups/workers/device_group_recalc_worker_v2_test.exs
+gush
+gamend
+gull
+gamend
+gain
+mix start
+gush
+gst
+opcndoe
+opencode
+gst
+glod
+pdq
+gst
+cd
+mise install
+opencode --version
+mise install
+mise upgrade opencode
+opencode --version
+opencode
+nvim ~/.mise.toml
+pdq
+nvim .mise/config.toml
+gb
+opencode
+mise uninstall -g opencode
+mise remove opencode
+nvim ~/.mise.toml
+curl -fsSL https://opencode.ai/v2/install | bash
+opencode --version
+which npm
+npm install -g @opencode/cli
+config nu 
+config env
+opencode --version
+which opencode
+npm uninstall -g opencode
+which opencode
+opencode
+$env.path
+$env.path | rg open
+config env
+$env.path | rg open
+config env
+opencode2
+source `~/Library/Application Support/nushell/config.nu`
+opencode2
+opencode
+npm install -g @opencode/cli
+opencode --version
+opencode
+pdq
+opencode
+copencode -s ses_ec93afde0ffe4pKqeydf60Eaq2
+\opencode -s ses_ec93afde0ffe4pKqeydf60Eaq2
+opencode -s ses_ec93afde0ffe4pKqeydf60Eaq2
+opencode --contiue
+gb
+git rebase  auth-1717-feat-oban-workers-inherit-a-actor-context
+mix test lib/houston/billing/external/stripe_worker_test.exs
+gst
+git add .
+grc
+gst
+cd ../
+cd houston@auth-1725-enforce-that-all-oban-job-use-the-houstonobanworker/
+mix test lib/houston/billing/external/stripe_worker_test.exs
+nmix test lib/connect/deployments/automations/workers/run_automation_test.exs
+mix test lib/connect/deployments/automations/workers/run_automation_test.exs
+cd ../
+cd houston@auth-1725-enforce-that-all-oban-job-use-the-houstonobanworker/
+nmix test lib/connect/deployments/automations/workers/run_automation_test.ex
+mix test lib/connect/deployments/automations/workers/run_automation_test.ex
+mix test lib/connect/deployments/automations/workers/run_automation_test.exs
+mix format
+mix test lib/connect/deployments/automations/workers/run_automation_test.exs:34
+gst
+mix test lib/connect/deployments/automations/workers/run_automation_test.exs
+gap
+gst
+gc -m 'feat(ObanWorker): optionally set actor_context at runtime'
+mix foramt
+mix format
+gap
+mix format
+gst
+gc -m 'feat(ObanWorker): optionally set actor_context at runtime'
+gush
+mix test lib/connect/deployments/automations/workers/run_automation_test.exs
+gst
+gap
+gamend
+gush
+mix test lib/houston/oban_worker_test.exs:83
+mix test lib/houston/oban_worker_test.exs
+opencode --continue
+gst
+gst
+cgst
+gst
+mkdir lib/houston/oban_worker
+mix test lib/connect/deployments/automations/workers/run_automation_test.exs
+mix format
+mix test lib/connect/deployments/automations/workers/run_automation_test.exs
+mix test lib/connect/deployments/automations/workers/run_automation_test.exs:50
+cd ../
+cd houston@auth-1725-enforce-that-all-oban-job-use-the-houstonobanworker/
+mix test lib/connect/deployments/automations/workers/run_automation_test.exs:50
+mix compile
+mix test lib/connect/deployments/automations/workers/run_automation_test.exs:50
+mix format
+gst
+glod
+l
+gap
+git add .
+gamend
+gst
+glod
+gst
+git add .
+gull
+gst
+gd
+git co .
+gull
+git fetch
+git co gr-api-group-update-devices
+gst
+gap
+gush
+gst
+gap
+gst
+glod
+git show
+gdc
+mix test lib/connect/deployments/automations/workers/run_automation_test.exs:50
+glg
+q:q
+work new houston auth-1759-handle-all-oban-job-actor-context-use-cases
+gst
+gap
+mix format
+gst
+gap
+gamend
+glod
+git rebase auth-1717-feat-oban-workers-inherit-a-actor-context
+git show g
+git show  a75eaf161d
+gst
+glod
+gain
+gst
+glod
+glg
+gush
+gain
+git rebase auth-1717-feat-oban-workers-inherit-a-actor-context
+glg
+glod
+git show 2e4a9b8bea
+glod
+gain
+nvim .
+gb
+gitco main
+git co mian
+git co main
+gull
+git rebase main
+gra
+gain
+git rebase main
+ggst
+gd
+gst
+gd
+gst
+git add .
+git stash
+gull
+gain
+git rebase main
+glod
+git show
+glod
+git reset HEAD~~~~
+gst
+glod
+gc -m 'feat(ObanWorker): introduce Houston.ObanWorker'
+gst
+git add .
+gc -m 'feat(ObanWorker): introduce Houston.ObanWorker'
+gain
+work on
+work on
+cd ../
+ls
+cd houston@auth-1759-handle-all-oban-job-actor-context-use-cases/
+gush
+git reset --hard auth-1725-enforce-that-all-oban-job-use-the-houstonobanworker
+glod
+git reset HEAD~~~~~~~~
+gst
+git add .
+gwip
+mix deps.get
+mix format
+gwip
+gc -m WIP --no-verify
+gst
+gb
+git rebase auth-1717-feat-oban-workers-inherit-a-actor-context
+gst
+;
+gra
+gst
+glod
+git reset HEAD~
+gst
+git add lib/houston/oban*
+gst
+git add lib/houston/actor_context.ex
+gst
+gc -m 'WIP' --no-verify
+gst
+git co .
+gst
+gcl
+git show
+git rebase auth-1717-feat-oban-workers-inherit-a-actor-context
+gst
+fg
+gd
+gra
+git rebase auth-1717-feat-oban-workers-inherit-a-actor-context
+grc
+mix test lib/houston/oban_worker_test.exs:109
+mix test lib/houston/oban_worker_test.exs:78
+task setup
+mix test lib/houston/oban_worker_test.exs:78
+mix test lib/houston/process_store_test.exs:11
+mix test lib/houston/oban_worker_test.exs:88
+mix test lib/houston/oban_worker_test.exs:89
+gst
+gap
+mix test lib/houston/oban_worker_test.exs:89
+mix test lib/houston/process_store_test.exs:16
+mix test lib/houston/oban_worker_test.exs:85
+gst
+git reset
+gst
+gap
+mix format
+gap
+gst
+gc -m 'feat(ObanWorker): use `c:actor_context/1` to cusomtize actor context'
+gush
+gst
+gap
+mix test lib/houston/billing/external/stripe_worker_test.exs
+fg
+gst
+gd
+gst
+mix test lib/connect/deployments/automations/workers/run_automation_test.exs
+mix test lib/houston/billing/external/stripe_worker_test.exs
+glod
+gap
+gst
+glod
+gst
+git reset
+gap
+gst
+gc -m 'feat(ObanWorker): use `c:actor_context/1` for run automation'
+gap
+gst
+gc -m 'feat(ObanWorker): manually set actor context in stripe_worker'
+gush
+gst
+gt track
+gst
+gap
+glod
+gst
+git fixup 10503b25de
+gri 5
+gush
+mix test lib/houston/billing/external/stripe_worker_test.exs
+gst
+gap
+glod
+git fixup 6cd164b3e7
+mix format
+gst
+git add .
+git fixup 6cd164b3e7
+gri 4
+gri 6
+gst
+gt track
+gt untrack
+gt track
+gt submit --ai --draft
+gap
+gc -m 'chore(ObanWorker): use default settings for device_export_worker.ex'
+gush
+mix format
+gst
+gap
+gst
+gamend
+mix format
+gst
+gap
+gst
+glod
+git add .
+gamend
+gush
+mix test lib/houston/billing/external/stripe_worker_test.exs
+mix test lib/connect/vulnerabilities/workers/delete_old_vulnerabilities_worker_test.exs
+mix test lib/connect/vulnerabilities/workers/delete_old_vulnerabilities_worker_test.exs:45
+mix test lib/connect/vulnerabilities/workers/delete_old_vulnerabilities_worker_test.exs
+gst
+gap
+gst
+glod
+git reset
+gst
+git add lib/connect/
+glod
+gamend
+gldo
+glod
+git show 5d63111bde
+gap
+gc
+gush
+mix format
+gap
+gst
+gc -m 'chore(ObanWorker): fix comment typos. clean process state'
+gush
+gain
+gush
+mix test lib/houston/oban_worker_test.exs
+gst
+gap
+mix test lib/houston/oban_worker_test.exs
+gamend
+gush
+gain
+gush
+mix test lib/connect/deployments/deployments/actions/deploy_package_test.exs:3365
+mix test lib/connect/deployments/deployments/actions/deploy_package_test.exs
+gap
+glod
+gamend
+gush
+gain
+gush
+gst
+gull
+gst
+gd
+git co .
+gull
+gain
+gush
+mix test lib/connect/websocket_proxy/consumers/device_sent_message/task_progress_consumer_test.exs
+nvim .
+gst
+glod
+gain
+glod
+git reset HEAD~8
+gst
+gcl
+gst
+git co assets
+gst
+git add .
+git stash
+gb
+git rebase auth-1759-handle-all-oban-job-actor-context-use-cases
+gst
+glod
+git stash pop
+fg
+git stash abort
+gst
+gst
+gap
+glod
+gamend
+mix format
+gst
+gap
+gamend
+igst
+gst
+gush
+gst
+rm lib/connect/inventory/devices/workers/houston_instance_offline_setter.ex
+gst
+git reset
+gst
+nvim .
+gap
+git rewset
+git reset
+gst
+mix test lib/connect/accounts/workers/publish_accounts_snapshot_worker_test.exs
+cd ../
+cd houston@auth-1759-handle-all-oban-job-actor-context-use-cases/
+mix test lib/connect/accounts/workers/publish_accounts_snapshot_worker_test.exs
+gain
+gst
+gush
+ik
+gap
+gst
+gap
+gst
+git add .
+gwip
+gain
+glod
+gap
+glod
+gamend
+gush
+kjgst
+gst
+gap
+gst
+glod
+gwip
+gst
+git add .
+gst
+gwip
+mix format
+gst
+gap
+gamend
+gush
+gst
+git add .
+mix test
+gamend
+mix format
+gap
+gamend
+gst
+gst
+gap
+gc -m 'chore(oban_worker): ensue jobs have required values'
+gain
+gush
+glod
+gst
+gull
+gst
+gain
+gst
+glod
+mix compile
+mix deps.get
+mix compile
+gap
+gamend
+mix format
+gst
+gap
+gst
+gamend
+gush
+gst
+glod
+glg
+gst
+glod
+gst
+gb
+gain
+gull
+git reset HEAD..origin/main
+git reset --soft origin/main
+gst
+glod
+git add .
+git stash
+gain
+gull
+git rebase main
+git stash pop
+glod
+gst
+git stash list
+gst
+gap
+gst
+git rm  lib/houston/oban_actor.ex
+git add lib/houston/process_store.ex lib/houston/repo/injection/device_rbac.ex
+gst
+git add lib/houston/billing/external/stripe_worker.ex
+gst
+gc -m 'chore(wip): wip'
+gst
+git co .
+gst
+gc --amend
+git reset HEAD~
+gst
+git co lib/houston/billing/external/stripe_worker.ex
+gst
+gap
+gst
+git add .
+gc -m 'feat(ObanWorker): introduce Houston.ObanWorker'
+gush
+gain
+gush
+mix depslget
+mix deps.get
+glod
+mix local.hex
+mix compile
+gst
+glod
+git show
+gst
+git fetch
+git rebaase main
+gst
+glod
+mix compile --force
+gush
+gain
+gst
+glod
+git rebase main
+glg
+glod
+gc --amend
+gll
+gull
+glod
+git show
+mix test lib/connect/vulnerabilities/workers/delete_old_vulnerabilities_worker_test.exs
+qgst
+gst
+gap
+gst
+glod
+gamend
+gush
+gull
+gush
+task setup
+gst
+gst
+task | rg stand
+task standalone:start
+mise install
+pitchfork supervisor start
+pitchfork
+pitchfork supervisor start
+pitchfork activate
+pitchfork activate nu
+pitchfork start
+gull
+gst
+gull
+git rebase main
+gst
+glod
+glod
+gb
+gst
+git rebase auth-1717-feat-oban-workers-inherit-a-actor-context
+gst
+git add .
+grc
+gst
+fg
+gst
+grc
+gst
+grc
+gst
+git rebase main
+gush
+mix deps.get
+gst
+glod
+gb
+git rebase auth-1759-handle-all-oban-job-actor-context-use-cases
+gst
+gra
+glod
+git show
+git reset HEAD~
+gst
+git add .
+git stash
+git reset --hard auth-1759-handle-all-oban-job-actor-context-use-cases
+git satsh pop
+git add .
+gwiop
+gwip
+mix deps.get
+gush
+gst
+gwip
+gc -m 'feat(ObanWorker): use ObanWorker for all oban jobs'
+gush
+gull
+gst
+glod
+gain
+glod
+gap
+gst
+glod
+gc -m 'chore(oban_worker): dont set org id when using Obanworker'
+mix format
+gc -m 'chore(oban_worker): dont set org id when using Obanworker'
+gush
+cd
+nvim .
+cm diff
+mise install
+work on
+mise backends switch fnox
+cm diff
+chezmoi diff --help
+cm
+cm merge-all
+mix format
+gst
+;gst
+gap
+glod
+gamend
+gush
+gain
+gull
+nvim .
+work on
+gst
+opencode --continue
+work on
+nvim 
+work on
+nvim .
+work new houston auth-1717-feat-oban-workers-inherit-a-actor-context
+gst
+cd
+work
+work clear-all
+pdw
+pdq
+work clear-all
+zellij list-sessions
+zellij kill-all-sessions
+zellij kill-all-sessions -f
+zellij kill-all-sessions --help
+zellij kill-all-sessions --yes
+zellij delete-all-sessions
+zellij delete-all-sessions --yes
+work clear-all
+zellij delete-all-sessions --yes
+work clear-all
+nvim work
+work 
+work on
+cd ../
+ced houston@auth-1717-feat-oban-workers-inherit-a-actor-context/
+cd houston@auth-1717-feat-oban-workers-inherit-a-actor-context/
+gst
+gull
+git fetch
+git pull --rebase origin main
+git rebase --pull origin/main
+git rebase main
+gst
+glod
+gush
+gst
+ls
+ls ../
+gst
+ls
+gst
+task setup
+cm diff
+cm add ~/.bashrc ~/.config/nvim ~/.config/zellij/ ~/.mise.toml
+cat .mise.toml
+open ~/.mise/toml
+open ~/.mise.toml
+cat ~/.mise.toml
+nvim ~/.mise.toml
+cm add `~/Library/Application Support/nushell/env.nu` `~/Library/Application Support/nushell/config.nu`
+dst
+dot add .
+got commit -m 'Update dotfiles'
+dot commit -m 'Update dotfiles'
+dush
+iex -S mix
+cd houston@auth-1717-feat-oban-workers-inherit-a-actor-context/
+iex -S mix
+iex
+cm diff | less
+nvim ~/.linear
+nvim ~/.opencode/
+nfig
+gst
+gd
+gst
+gb
+git rebase auth-1717-feat-oban-workers-inherit-a-actor-context
+gst
+git rebase main
+gst
+glod
+gush
+work on
+work on
+work on
+pdq
+gst
+work on
+gb
+work on
+zellij list-sessions
+fg
+nvim work
+pdw
+pwd
+work on
+zellij attach --create houston options --default-cwd /Users/micah.cooper/code/pdq/houston
+work clear-all
+work on
+ls
+gull
+work remove
+ls 
+work remove
+gb
+cd houston/
+gb
+gdel
+work
+work --project houston
+nvim work
+gst
+gap
+nvim .mise/config.toml
+mix format
+mise install
+gst
+gap
+gst
+glod
+gc -m 'update'
+gush
+gb -l
+gb -r
+git remote list
+git remote
+git remove --list
+git remote --list
+git remote origin
+git remove --help
+git config remotes
+work on
+gst
+git log --show-signature
+gpg
+which gpg
+bash
+git log --show-signature
+nvim ~/.gitconfig
+brew install gpg
+gb
+gst
+glod
+gull
+glod
+git reset HEAD~
+gst
+gap
+gc -m 'chore(oban_check): add ObanWorker to safe_to_flush'
+gush
+git log --show-signature
+glod
+git reset HEAD~~~~
+gst
+git add .
+gc -m 'feat(ObanWorker): introduce Houston.ObanWorker'<\n>
+gush
+gain
+gush
+gain
+gst
+glod
+nvim .
+opencode --continue
+gst
+gb
+cd ../
+cd houston@auth-1725-enforce-that-all-oban-job-use-the-houstonobanworker/
+gst
+gap
+work on
+work remove
+zellij attach --create houston options --default-cwd /Users/micah.cooper/code/pdq/houston
+work on
+nvim .
+opencode --continue
+work on
+work on
+pdq
+gst
+cd ../
+cd houston@auth-1759-handle-all-oban-job-actor-context-use-cases/
+gull
+gain
+gst
+glod
+gull
+glod
+gd
+git rebase main
+glod
+show
+gush
+glod
+git reset --soft origin/main
+gst
+gap
+gst
+git reset
+gst
+git add .
+git stash
+gull
+gain
+git reset --hard origin/main
+git stash pop
+gap
+gst
+gap
+gst
+git reset
+gst
+nvim .
+gull
+gst
+git fetch
+gst
+ls
+git doctor
+git fetch
+git reset --hard origin/main
+gst
+git pull origin main
+gst
+git retch
+git fetch --prune
+rm /Users/micah.cooper/code/pdq/houston/.git/refs/remotes/origin/ins-650.lock
+git reset --hard origin/main
+gull
+glod
+fg
+nvim .
+git fetch
+rm -f .git/index.lock
+gst
+git fetch
+work on
+work clear-all
+work on
+cd code/pdq/houston/
+gull
+git fetch
+rm /Users/micah.cooper/code/pdq/houston/.git/refs/remotes/origin/ins-650.lock
+ls /Users/micah.cooper/code/pdq/houston/.git/refs/remotes/origin/
+ps aux | rg git
+ps au
+btop
+git remote prune origin
+git update-ref -d refs/remotes/origin/main
+gull
+git fetch
+rm .git/refs/remotes/origin/
+ls .git/refs/remotes/origin/
+gb
+git worktree --list
+git worktree list
+git worktree remove/Users/micah.cooper/code/pdq/houston@auth-1759-handle-all-oban-job-actor-context-use-cases
+git worktree remove /Users/micah.cooper/code/pdq/houston@auth-1759-handle-all-oban-job-actor-context-use-cases
+cd ../
+cd houston@auth-1759-handle-all-oban-job-actor-context-use-cases/
+git rebase origin/main
+gst
+git add .
+git reset
+git add .
+git stash
+git pull --rebase origin/main
+git pull --rebase origin main
+git fetch --prune
+git remote prune origin
+git fetch --prune
+gb -r
+git pull --rebase origin main
+glod
+gb
+git stash pop
+gst
+gb
+gst
+gap
+gst
+git reset
+gst
+git add checks/
+gst
+gc -m 'chore(oban_check): add ObanWorker to safe_to_flush'
+gst
+git add lib/houston/actor_context.ex lib/houston/process_store* lib/houston/oban_worker*
+gst
+gc
+gst
+gap
+gst
+git reset
+gap
+gst
+git add .
+gc -m 'feat(ObanWorker): use ObanWorker for different types of jobs'
+gush
+gst
+gap
+gst
+gamend
+gush
+gst
+nvim .
+work on
+work on
+gst
+glod
+gap
+gst
+gap
+kjkjgst
+gst
+git reset lib/connect/ai/conversation_eval/workers/run_eval_worker.ex
+gst
+gap
+git co lib/connect/accounts/workers/sync_user_permissions_worker.ex
+gst
+git add .
+gst
+git reset
+git add lib/houston/oban_worker*
+gst
+gc -m 'wip(oban_worker); return updated job from actor_context'
+gc -m 'wip(oban_worker); return updated job from actor_context' --no-verify
+git add .
+gwip --no-verify
+gush
+gst
+ls
+glod
+gain
+gush
+gain
+gush
+glod
+gain
+gull
+k
+git rebase main
+gst
+git rebase main
+gush
+gst
+git add .
+grc
+gst
+git add .
+grc
+git reset HEAD~~
+gst
+gcl
+gst
+glod
+git reset HEAD~
+gst
+gcl
+gst
+glod
+git reset main
+gst
+git add .
+git stash
+git rebase main
+git stash pop
+gst
+git add .
+gwiop
+gwip
+mix format
+gap
+gst
+gap
+gst
+git reset
+gst
+gap
+gst
+gap
+gc -m 'chore(checks): add safe_to_flush check to ObanWorker'
+gst
+git add lib/houston/actor_context.ex lib/houston/oban_worker lib/houston/process_store.ex
+gst
+git add lib/houston/oban_worker* lib/houston/process_store*
+gst
+gc
+mix format
+gst
+gap
+gst
+git add lib/houston/oban_worker* lib/houston/repo/injection/device_rbac.ex
+gst
+gc
+gst
+gush
+gst
+gamend
+gst
+gst
+git add  lib/connect/accounts
+gst
+gush
+git reset
+gst
+gamend
+mix format
+gst
+gamend
+git add  lib/connect/accounts
+gst
+mix test  lib/connect/accounts/workers/
+git satsh --keep-index
+gst
+mix test  lib/connect/accounts/workers/
+git reset
+gst
+git add lib/houston/oban_worker.ex
+gst
+gamend
+git add .
+gst
+git reset
+git add lib/houston/oban_worker.ex
+mix test  lib/connect/accounts/workers/
+gst
+gamend
+mix foramt
+mix format
+gst
+gamend
+gst
+gap
+gst
+git reset
+git add lib/houston/oban_worker.ex
+gamend
+gst
+gap
+gst
+gap
+gst
+gush
+gst
+git stash pop
+gst
+git reset
+git show
+gst
+git add .
+gwiop
+gst
+g
+gwip
+glg
+git cherry-pick c7c8b0240c
+glod
+glg
+git cherry-pick 2da02481a3
+gst
+gd
+nivm .
+mix test lib/houston/oban_worker_test.exs:144
+mix
+cd ../
+cd houston@auth-1759-handle-all-oban-job-actor-context-use-cases/
+mix test lib/houston/oban_worker_test.exs:144
+mix test lib/houston/oban_worker_test.exs
+mix test lib/houston/oban_worker_test.exs:137
+gst
+gap
+gst
+git add .
+grc
+gst
+glod
+gamend
+gst
+gamend
+gc
+gst
+mix format
+gap
+gc -m 'chore(oban_worker): handle actor_context responses'
+glg
+git cherry-pick ae6e50d750
+gst
+gd
+fg
+gush
+lod
+jgst
+gst
+git reset
+gst
+git co .
+gush
+gst
+gush
+i
+gst
+git add .
+gamend
+mix format
+gst
+gush
+nvim .
+gull
+git rebase main
+gush
+mix deps.get
+gst
+mix deps.get
+gush
+gst
+mix format
+gst
+gap
+mix test lib/houston/oban_worker_test.exs
+gst
+gap
+glod
+gamend
+gush
+gst
+cd
+gst
+mise install
+skills
+skills list
+skills add mattpocock/skills -a opencode
+gst
+glod
+git show
+gst
+gst
+gd
+glg
+gb
+gst
+glod
+nvim ~/.mise.toml
+gull
+pdq
+cd houston/
+gull
+gst
+glod
+git rebase main
+gst
+gd
+git add .
+grc
+glod
+git reset HEAD~~~
+gst
+git add .
+gcl
+gst
+git stash
+gb
+git rebase auth-1759-handle-all-oban-job-actor-context-use-cases
+gst
+git stash pop
+gst
+git add .
+grc
+gst
+glod
+gst
+git reset
+gst
+gcl
+gst
+git add .
+gwip
+mix deps.get
+gst
+gwiop
+mix format
+gwip
+gst
+git add .
+gst
+od
+glod
+gst
+gwip
+gst
+gst
+gst
+gush
+mix test lib/connect/ai/conversation_eval/workers/run_eval_worker_test.exs
+glod
+gst
+gap
+gst
+git reset
+gst
+gap
+gst
+git reset
+gst
+gap
+glod
+gst
+gap
+gamend
+mix format
+gst
+git add .
+gamend
+gst
+gst
+glod
+gst
+git stash pop
+gst
+git reset
+gst
+gcl
+gst
+gap
+git stash pop
+gst
+git reset
+gst
+glod
+git reset
+git co .
+git stashp op
+git stash pop
+gst
+git stash apply --force
+git stash pop --force
+gst
+git co .
+gst
+git rest
+git reset
+gst
+git stash list
+glod
+gst
+gap
+gst
+gcl
+git co .
+gst
+git stash pop
+git stash drop
+gst
+git reset
+git co .
+gst
+gcl
+git stash pop
+glod
+gst
+git co.
+git co .
+gst
+git reset
+git co .
+gst
+gcl
+glod
+git show
+glod
+fg
+mix format
+mix test lib/houston/oban_worker_test.exs
+gst
+gap
+glod
+gc -m 'chore(oban_worker): simplify custom ObanWorker Error'
+gush
+gull
+gush
+gsat
+gst
+gst
+glod
+gst
+git reset HEAD~
+gst
+git stash
+glg
+gb
+git reset main
+gst
+git rebase auth-1759-handle-all-oban-job-actor-context-use-cases
+gst
+git add .
+git stash
+git rebase auth-1759-handle-all-oban-job-actor-context-use-cases
+git stash pop
+gd
+git add .
+gst
+git stash pop
+git reset
+git co .
+gst
+git stash drop
+gst
+glod
+git stash pop
+gst
+gita dd .
+git add .
+gst
+git reset
+gst
+gd lib/houston/oban_worker.ex
+gst
+git co lib/houston/oban_worker_test.exs
+gst
+git stash drop
+git add .
+git stash
+=gst
+git stash apply
+gst
+git add  lib/connect/accounts/workers
+glod
+gst
+git co -b auth-1759-accounts
+gst
+gc -m 'feat(ObanWorker): use ObanWorker for accounts jobs'
+git co -
+gst
+git co -b auth-1759-agents
+git add  lib/connect/agents/workers/
+gst
+gc -m 'feat(ObanWorker): use ObanWorker for agents jobs'
+git co -
+git co -b auth-1759-ai
+git add    lib/connect/ai
+gst
+gc -m 'feat(ObanWorker): use ObanWorker for ai jobs'
+git co -
+git co -b auth-1759-billinb
+gb -m auth-1759-billing
+git add lib/connect/billing
+gst
+gc -m 'feat(ObanWorker): use ObanWorker for billing jobs'
+git co -b auth-1759-dba
+git add lib/connect/dba
+gst
+gc -m 'feat(ObanWorker): use ObanWorker for dba jobs'
+gst
+gb
+gst
+git co -
+glg
+git co auth-1759-dba
+gst
+git add .
+git stash
+gri 5
+glod
+gb
+git stash pop
+gb
+gco
+git co -b auth-1759-deployments
+gst
+git add lib/connect/deployments/
+gst
+gc -m 'feat(ObanWorker): use ObanWorker for deployment jobs'
+git co -
+git co -b auth-1759-insights
+git add lib/connect/insights.ex
+git add lib/connect/insights
+i
+gst
+gc -m 'feat(ObanWorker): use ObanWorker for insights jobs'
+git co -
+gst
+git co -b auth-1759-inventory
+git add lib/connect/inventory/
+gst
+gc -m 'feat(ObanWorker): use ObanWorker for inventory jobs'
+git co -
+gst
+q
+git co -b auth-1759-policies
+gst
+gc -m 'feat(ObanWorker): use ObanWorker for policies jobs'
+git co -
+gst
+git co -
+git add lib/connect/policies/
+gst
+gc -m 'feat(ObanWorker): use ObanWorker for policies jobs'
+git co -
+gst
+git co -b auth-1759-integrations
+git add lib/houston/integrations
+gst
+gc -m 'feat(ObanWorker): use ObanWorker for integrations jobs'
+gst
+git co -
+git co -b auth-1759-vulnerabilities
+git add lib/connect/vulnerabilities/
+gst
+gc -m 'feat(ObanWorker): use ObanWorker for vulnerabilities jobs'
+gst
+git co 0-
+git co -
+gst
+git co -b auth-1759-software
+git add lib/connect/software/
+gst
+gc -m 'feat(ObanWorker): use ObanWorker for software jobs'
+gst
+git co -
+gst
+git co -b auth-1759-self-serve
+git add lib/connect/self_serve/actions/
+git add lib/connect/self_serve/
+gst
+gc -m 'feat(ObanWorker): use ObanWorker for self-serve jobs'
+gst
+git add .
+gst
+git co -
+gst
+git co -b auth-1759-misc
+gc -m 'feat(ObanWorker): use ObanWorker for remaining jobs'
+gst
+gb
+gb | rg auth-17519
+gb
+gb | rg auth
+gb | rg auth-1759<\n>
+gb | from list<\n>
+gb
+gb | str join
+gb | | where ($it | str starts-with "auth-1759")<\n>
+gb | where ($it | str starts-with "auth-1759")<\n>
+gb | filter ($it | str starts-with "auth-1759")<\n>
+gb | where ($it | str starts-with "auth-1759")<\n>
+gb | where ($it | str contains "auth-1759")<\n>
+gb | where ($it | str contains "auth-1759") | each {|branch| git push origin $branch $branch}<\n>
+gco<\n>
+gush
+gb --porcelain
+gb --short
+gb
+^git branch
+^git branch | lines
+^git branch | linesgb
+gb
+git co auth-1759-self-serve; gush
+git co auth-1759-software; gush
+git co auth-1759-vulnerabilities; gush
+[ "auth-1759-integrations", "auth-1759-policies", "auth-1759-inventory", "auth-1759-insights", "auth-1759-deployments", "auth-1759-dba", "auth-1759-billing", "auth-1759-ai", "auth-1759-agents", "auth-1759-accounts" ] | each {|branch| git co $branch; gush}<\n>
+git push origin auth-1759-integrations
+gst
+i
+[ "auth-1759-policies", "auth-1759-inventory", "auth-1759-insights", "auth-1759-deployments", "auth-1759-dba", "auth-1759-billing", "auth-1759-ai", "auth-1759-agents", "auth-1759-accounts" ] | each {|branch| git co $branch; git push origin $branch }<\n>
+["auth-1759-agents", "auth-1759-accounts" ] | Gach {|branch| git co $branch; git push origin $branch }<\n>
+["auth-1759-agents", "auth-1759-accounts" ] | each {|branch| git co $branch; git push origin $branch }<\n>
+gst
+git co auth-1759-integrations
+gst
+mix test
+git show
+mix test lib/houston/integrations/alexandria/
+mix test lib/houston/integrations/
+gst
+git reset HEAD!
+git reset HEAD~
+gst
+gd
+gst
+mix test lib/houston/integrations/alexandria/delta_import_worker_test.exs
+gst
+git co .
+gb
+kj
+gst
+git co -b auth-1759-handle-all-oban-job-actor-context-use-cases-2
+gush
+gap
+glod
+gull
+gst
+gd
+glod
+git add .
+gamedn
+gamend
+gst
+gc -m 'chore(oban_worker): keep skipping org_id'
+gst
+git add .
+gc -m 'chore(oban_worker): keep skipping org_id'
+gush
+gull
+glod
+gst
+gush
+gap
+gst
+gc -m 'feat(ObanWorker): use ObanWorker for integrations jobs'
+gush
+git co auth-1759-ai
+gst
+glod
+git show
+mix test lib/connect/ai/
+mix test lib/connect/ai/conversation_eval/workers/run_eval_worker_test.exs
+gst
+git show
+glod
+gd
+gst
+git reset HEAD~
+gst
+gap
+gst
+gcl
+gb
+gst
+gst
+gap
+gst
+gc -m 'feat(ObanWorker): use ObanWorker for ai jobs'
+gush
+nvim foo
+opencode
+gst
+gb
+gst
+gb
+gst
+git show
+fg
+ls
+git show
+nvim .
+gull
+task setup
+mix start
+nvim .
+opencode
+gst
+work on
+work remove
+gst
+glod
+git rebase main
+gst
+glod
+gst
+gra
+gst
+git shoiw
+git reset HEAD~
+gst
+git add .
+glod
+gain
+git rebase main
+gst
+gd
+git stash
+git rebase main
+gst
+gd
+gra
+gst
+glod
+gst
+git reset --hard main
+git stash pop
+gst
+gd
+gc -m 'feat(ObanWorker): use ObanWorker for ai jobs'
+git add .
+gc -m 'feat(ObanWorker): use ObanWorker for ai jobs'
+gst
+gush
+gb
+gdel
+gb
+gdel
+gco
+gb
+git push origin :auth-1759-handle-all-oban-job-actor-context-use-cases-2
+gc -D  auth-1759-handle-all-oban-job-actor-context-use-cases-2
+gb -D  auth-1759-handle-all-oban-job-actor-context-use-cases-2
+gb -D auth-1759-handle-all-oban-job-actor-context-use-cases-2
+git co main
+work remove
+work on
+gb -D auth-1759-handle-all-oban-job-actor-context-use-cases
+git fetch
+git fetch --prune
+rm /Users/micah.cooper/code/pdq/houston/.git/refs/remotes/origin/ins-650.lock
+git pull --rebase origin main
+gain
+source `~/Library/Application Support/nushell/config.nu`
+gain
+config nu
+gst
+work on
+gush
+gst
+gt track
+gt submit --ai --draft
+gst
+git reset HEAD~
+mix test lib/connect/ai/conversation_eval/workers/run_eval_worker_test.exs
+cd ../
+cd houston@auth-1725-enforce-that-all-oban-job-use-the-houstonobanworker/ai/
+cd ../../
+cd houston@auth-1725-ai
+ls
+cd houston/
+gb
+pwd
+cd ../
+cd houston@auth-1725-enforce-that-all-oban-job-use-the-houstonobanworker/
+gst
+mix test lib/connect/ai/conversation_eval/workers/run_eval_worker_test.exs
+gap
+gst
+git reset
+gst
+gap
+mix test lib/connect/ai/conversation_eval/workers/run_eval_worker_test.exs
+gst
+git reset
+gst
+gap
+gst
+gc -m 'feat(ObanWorker): use ObanWorker for ai jobs'
+gush
+graphite
+gt
+gb --help --all
+gs
+gb
+git push origin :auth-1759-ai
+gb -m auth-1725-ai-jobs
+gst
+gush
+gt track
+gt submit --ai --draft
+gb
+git co auth-1759-integrations
+git push origin :auth-1759-integrations
+gb -m auth-1725-integrations-jobs
+glod
+git show
+git reset HEAD~
+gst
+mix test lib/connect/packages/global_package_import_integrity_test.exs
+cd ../
+cd houston@auth-1725-enforce-that-all-oban-job-use-the-houstonobanworker/
+mix test lib/connect/packages/global_package_import_integrity_test.exs
+gst
+pkill -9 zellij
+ls
+pdq
+zellij list-sessions
+gst
+mix test lib/houston/integrations/
+mix test  lib/connect/packages/global_package_import_integrity_test.exs
+gc -m 'feat(ObanWorker): use ObanWorker for integrations jobs'
+git add .
+gc -m 'feat(ObanWorker): use ObanWorker for integrations jobs'
+gush
+gt track
+gt submit --ai --draft
+gco
+fg
+mix test lib/houston/oban_worker_test.exs
+cd ../
+cd houston@auth-1725-enforce-that-all-oban-job-use-the-houstonobanworker/
+mix test lib/houston/oban_worker_test.exs
+gst
+gap
+gc -m 'fix(oban_worker): handle any return from actor_context'
+gush
+git co -
+git rebase main
+gst
+grta
+gra
+gst
+gb
+git push origin :auth-1725-integrations-jobs
+gst
+glod
+git reset HEAD~
+gst
+git add .
+git stash
+git reset --hard origin/main
+git stash pop
+git add .
+gc -m 'feat(ObanWorker): use ObanWorker for integrations jobs'
+gush
+opencode
+gb
+glod
+gst
+gush
+gb
+git push origin :auth-1725-integrations-jobs
+gb -m auth-1725-integrations-jobs-oban-worker
+gst
+gush
+gst
+gb
+gt track
+gt submit --ai --draft
+gb
+git push origin :auth-1759-accounts
+git co auth-1759-accounts
+gb -m auth-1725-accounts
+gst
+glod
+git reset HEAD~
+gst
+git add .
+git stash
+git reset --hard origin/main
+git stahs pop
+gst
+gita dd.
+git add .
+gc -m 'feat(ObanWorker): use ObanWorker for accounts jobs'
+gush
+gt track
+gt submit --ai --draft
+gbgb
+gb
+agco
+gco
+glod
+gst
+gap
+gamend
+mix format
+gamend
+gush
+gb
+nvim .gb
+gst
+gd
+mix format
+fg
+nvim .
+nvim .
+mix test lib/houston/oban_worker_test.exs
+source `~/Library/Application Support/nushell/config.nu`
+mix test lib/houston/oban_worker_test.exs
+cd ../
+cd houston@auth-1725-enforce-that-all-oban-job-use-the-houstonobanworker/
+mix test lib/houston/oban_worker_test.exs
+gst
+gap
+glod
+mix test lib/connect/ai/conversation_eval/workers/run_eval_worker_test.exs
+gc -m 'chore(oban_worker): set actor_context callback uses :system actor_type'
+mix format
+gc -m 'chore(oban_worker): actor_context callback uses :system actor_type'
+gush
+gst
+gap
+mx format
+mix format
+gst
+gap
+gamend
+gush
+gt
+gain
+gst
+gull
+git pull --rebase origin/main
+git pull --rebase origin main
+source `~/Library/Application Support/nushell/config.nu`
+gain
+gush
+mix deps.get
+gush
+gco
+gain
+gush
+gco
+fg
+mix test lib/connect/ai/conversation_eval/workers/run_eval_worker_test.exs:60
+gap
+gst
+gap
+glg
+gb
+mix test lib/connect/ai/conversation_eval/workers/run_eval_worker_test.exs:61
+gap
+gst
+git co mix.lock
+gst
+glod
+git fixup 4c43f76f26
+mix deps.get
+gain
+gst
+git fixup 4c43f76f26
+gri 4
+gst
+gain
+gst
+gb
+gush
+gb -D auth-1759-handle-all-oban-job-actor-context-use-cases-2
+gb
+git push origin :auth-1759-agents
+gb -m auth-1803-use-oban-worker-for-all-agents-workers
+gst
+git reset HEAD~
+gst
+gd
+gb
+gb -m auth-1725-ai-jobs
+gull
+git add .
+git reset
+git co .
+gull
+gb
+git co auth-1759-agents
+gb -m auth-1759-agents
+gb -m auth-1803-use-oban-worker-for-all-agents-workers
+git reset HEAD~
+gst
+git add .
+git satsh
+git stash
+git reset --hard origin/main
+git stash pop
+git add .
+glod
+gc -m 'chore(oban_worker): use ObanWorker for agents workers'
+gush
+gt track
+gt submit --ai --draft
+gb
+git co auth-1759-billing
+git push origin :auth-1759-billing
+gb -m auth-1804-use-oban-worker-for-all-billing-workers
+gst
+git reset HEAD~
+git add .
+git satsh
+git reset --hard origin/main
+git stash pop
+git add .
+gc -m 'chore(oban_worker): use ObanWorker for billing workers'
+gush
+gt track
+gt submit --ai --draft
+gb
+git co auth-1759-dba
+git push origin :auth-1759-dba
+gb
+gb -m auth-1805-use-oban-worker-for-all-dba-workers
+git reset HEAD~
+gst
+git ad d.
+git stash
+git reset --hard origin/main
+gain
+git stash pop
+git ad .
+git add .
+gc -m 'chore(oban_worker): use ObanWorker for dba workers'
+gush
+gt track
+gt submit --ai --draft
+gb
+git co auth-1759-deployments
+git push origin :auth-1759-deployments
+gb -m auth-1806-use-oban-worker-for-all-deployment-workers
+gst
+git reset HEAD~
+gst
+git add .
+git stash
+git reset --hard origin/main
+gain
+git stash pop
+git add .
+git reset
+gap
+gst
+git add .
+mix test lib/connect/deployments/
+gst
+gc -m 'chore(oban_worker): use ObanWorker for deployment workers'
+gush
+gt track
+git reset HEAD~
+gst
+mix test lib/connect/deployments/device_tasks/workers/archive_old_tasks_test.exs:106
+mix test lib/connect/deployments/device_tasks/workers/archive_old_tasks_test.exs:110
+mix test lib/connect/deployments/device_tasks/workers/archive_old_tasks_test.exs:112
+glod
+gap
+gap lib/houston/oban_worker.ex
+gst
+gb
+gap lib/connect/deployments/device_tasks/workers/archive_old_tas*
+mix format
+gst
+glod
+gst
+l
+gst
+mix test lib/connect/deployments --max-failures 1
+mix test lib/connect/deployments/device_tasks/workers/archive_old_tasks_test.exs
+mix test lib/connect/deployments/device_tasks/workers/archive_old_tasks_test.exsmix test lib/connect/deployments/device_tasks/workers/archive_old_tasks_test.exs
+mix test lib/connect/deployments/device_tasks/workers/archive_old_tasks_test.exs
+fg
+Lgb
+gb
+fg
+mix format
+gst
+gap  lib/connect/deployments/device_tasks/workers/archive_old_tasks.ex
+mix format
+gst
+gap  lib/connect/deployments/device_tasks/workers/archive_old_tasks.ex
+gst
+mix testmix test lib/connect/deployments --max-failures 1
+mix test lib/connect/deployments --max-failures 1
+mix test lib/connect/deployments/device_tasks/workers/archive_old_tasks_test.exs
+gst
+gap  lib/connect/deployments/device_tasks/workers/archive_old_tasks.ex
+gst
+mix test lib/connect/deployments --max-failures 1
+gst
+gap
+git add .
+gst
+gc -m 'chore(oban_worker): use ObanWorker for deployment workers'
+mix format
+gst
+gap
+gc -m 'chore(oban_worker): use ObanWorker for deployment workers'
+gain
+gush
+mix deps.get
+gst
+gush
+gt track
+gt submit --ai --draft
+gain
+gush
+fg
+nivm .
+gb
+git co auth-1759-insights
+git push origin :auth-1759-insights
+gb -m auth-1809-use-oban-worker-for-all-insights-workers
+gst
+git reset HEAD~
+gst
+git add .
+git stash
+config nu
+gull
+gst
+gain
+gst
+gra
+git reset --hard main
+git stash pop
+gst
+mix test lib/connect/insights/workers/ lib/connect/insights/deployments/workers/ lib/connect/insights/dashboard/workers/
+gap
+gst
+gc -m 'chore(oban_worker): use ObanWorker for insights workers'
+gush
+gt track
+gt submit --ai --draft
+gst
+gb
+gco auth-1806-use-oban-worker-for-all-deployment-workers
+git co auth-1806-use-oban-worker-for-all-deployment-workers
+gb
+git co auth-1759-inventory
+git push origin :auth-1759-inventory
+gb -m auth-1813-use-oban-worker-for-all-inventory-workers
+git reset HEAD~
+gst
+git add .
+git stash
+gain
+gst
+gra
+git reset --hard main
+git stashp op
+git stash pop
+gst
+git add .
+mix test lib/connect/inventory/*/workers/
+mix test lib/connect/inventory/scans/workers/sync_scan_schedule_worker_test.exs:71
+mix test lib/connect/inventory/scans/workers/sync_scan_schedule_worker_test.exs:69
+gst
+git add .
+cgst
+git reset
+gst
+gap
+gst
+gap
+fg
+gap
+gst
+gc -m 'chore(oban_worker): use ObanWorker for inventory workers'
+gush
+gt track
+gt submit --ai --draft
+gb
+gco
+config nu
+gst
+gco
+source `~/Library/Application Support/nushell/config.nu`
+gco
+gst
+gain
+gush
+gst
+gb
+git co auth-1759-policies
+git push origin :auth-1759-policies
+gb -m auth-1816-use-oban-worker-for-all-policies-workers
+gull
+git reset HEAD~
+git add .
+git stash
+git reset --hard main
+git stash pop
+gap
+gst
+gc -m 
+gc -m 'chore(oban_worker): use ObanWorker for policies workers'
+gush
+gt track
+gt submit --ai --draft
+bco
+gco
+nvim .
+git log --patch
+gst
+gap
+mix test lib/connect/deployments/device_tasks/workers/archive_old_tasks_test.exs
+gst
+gap
+gc
+gush
+gst
+gap
+gc
+gush
+work on eggnog
+work new eggnog
+pwd
+work on eggnog
+ls
+gull
+gst
+gull
+glod
+git co -b auth-1819-ensure-eggnogs-grpc-dependency-is-the-source-of-true-for
+gst
+gap
+mix deps.get
+gst
+gap
+gc -m 'chore(grpc): override grpc deps'
+gst
+gush
+gt track
+gt submit
+gst
+gai
+gain
+gst
+gull
+gd
+gra
+git reset --hard origin/main
+git co -
+gst
+gb
+git co auth-1819-ensure-eggnogs-grpc-dependency-is-the-source-of-true-for
+git reset HEAD~
+git add .
+git stash
+git reset --hard origin/main
+git stashp 
+git stash pop
+gst
+git add .
+gc -m 'chore(grpc): override grpc deps'
+gst
+gush
+gt track
+gt submit --ai --draft
+gst
+mix hex.audit
+fg
+gb
+git co auth-1759-vulnerabilities
+gst
+gb
+git push orign :auth-1759-vulnerabilities
+git push origin :auth-1759-vulnerabilities
+gb -m auth-1820-use-oban-worker-for-all-vulnerabilities-workers
+git reset HEAD~
+git add .
+git stash
+git reset --hard origin/main
+gain
+git stash pop
+git add .
+git reset
+gap
+gst
+gc -m 'chore(oban_worker): use ObanWorker for vulnerabilities workers'
+mix deps.get
+gc -m 'chore(oban_worker): use ObanWorker for vulnerabilities workers'
+gush
+gt track
+gt submit --ai --draft
+gb
+git co auth-1759-software
+glg
+glod
+gb -m auth-1821-use-oban-worker-for-all-software-workers
+git reset HEAD~
+git add .
+git stash
+git reset --hard origin/main
+gain
+git stash pop
+gap
+gst
+gc -m 'chore(oban_worker): use ObanWorker for software workers'
+gush
+gt track
+gt submit --ai --draft
+gst
+gb
+git co auth-1759-self-serve
+git push origin :auth-1759-self-serve
+gb -m auth-1822-use-oban-worker-for-all-self-serve-workers
+git reset HEAD~
+git add .
+git stash
+git reset --hard origin/main
+gst
+gain
+git stash pop
+gap
+gst
+gc -m 'chore(oban_worker): use ObanWorker for self-serve workers'
+gst
+gush
+gt track
+gt submit --ai --draft
+gb
+git co auth-1759-misc
+git push origin :auth-1759-misc
+gst
+gb -m auth-1823-use-oban-worker-for-all-remaining-obanworkers
+glod
+gb
+gb -r | rg -misc
+gb -r | rg '-misc'
+gb -r | rg 'misc'
+gst
+git stash pop
+gst
+gb
+gco
+gst
+git add .
+gwiop
+gwip
+mix deps.get
+gst
+gwip
+rg ISLAccountWorker
+gst
+gd
+git co .
+gco
+git co -
+gst
+git co auth-1816-use-oban-worker-for-all-policies-workers
+gst
+fg
+l
+mix test lib/connect/policies/workers/policy_guardrail_window_worker_test.exs:28
+mix deps.get
+mix test lib/connect/policies/workers/policy_guardrail_window_worker_test.exs:28
+gst
+gap
+gst
+gap
+gc -m 'chore(oban_worker): handle atom keys in oban_worker '
+mix format
+gst
+gap
+gst
+gc -m 'chore(oban_worker): handle atom keys in oban_worker '
+gush
+gst
+git show
+mix test lib/houston/oban_worker_test.exs:123
+mix test lib/houston/oban_worker_test.exs
+mix test lib/houston/oban_worker_test.exs:116
+mix test lib/houston/oban_worker_test.exs:111
+imix test lib/houston/oban_worker_test.exs:120
+mix test lib/houston/oban_worker_test.exs:120
+gst
+mix test lib/connect/policies/workers/policy_guardrail_window_worker_test.exs
+glod
+gamend
+gush
+:q
+gst
+mix test lib/connect/policies/workers/policy_sweep_policy_scheduler_test.exs
+gst
+gap
+gst
+glod
+gap
+gst
+gamend
+mix format
+gst
+gap
+mix format
+gst
+gamend
+gush
+gain
+gush
+mix deps.get
+gush
+gush umix test lib/connect/policies/workers/policy_sweep_policy_scheduler_test.exs
+git co auth-1806-use-oban-worker-for-all-deployment-workers
+mix test lib/connect/policies/workers/policy_sweep_policy_scheduler_test.exs
+mix test lib/houston/repo/multi_tenancy_test.exs
+mix deps.get
+gain
+mix test lib/houston/repo/multi_tenancy_test.exs
+mix test lib/houston/repo/multi_tenancy_test.exs:875
+gst
+glod
+git reset HEAD~~~
+gst
+glod
+gst
+gap
+gst
+git add .
+gc -m 'chore(oban_worker): use ObanWorker for deployments workers'
+gst
+git stash
+git reset --hard origin/main
+gain
+gst
+git pull --rebase origin main
+gst
+git fetch
+gain
+gst
+git stash pop
+gap
+gc -m 'chore(oban_worker): use ObanWorker for deployments workers'
+kjmix test lib/houston/repo/multi_tenancy_test.exs
+mix test lib/houston/repo/multi_tenancy_test.exs
+gush
+gull
+gb
+pwd
+mix test lib/houston/repo/multi_tenancy_bulk_writes_test.exs
+cd ../
+cd houston/
+mix test lib/houston/repo/multi_tenancy_test.exs
+mix deps.get
+gain
+git rebase main
+mix test lib/houston/repo/multi_tenancy_test.exs
+mix test lib/houston/repo/multi_tenancy_test.exs:885
+git reset
+git reset HEAD~
+gst
+git add .
+git stash
+git stashp op
+git stash pop
+mix test lib/houston/repo/multi_tenancy_test.exs:885
+mix test lib/houston/repo/multi_tenancy_test.exs:880
+nvim .
+nbim .
+mix test lib/houston/repo/multi_tenancy_bulk_writes_test.exs
+mix test lib/houston/repo/multi_tenancy_test.exs
+gst
+gap
+gst
+git add .
+git reset lib/houston/repo/multi_tenancy.ex
+gst
+git reset lib/houston/repo/multi_tenancy_test.exs
+gst
+gc -m 'chore(oban_worker): use ObanWorker for deployments workers'
+git add .
+gc -m 'chore(multi_tenancy_test): restore process state after inline oban job'
+gush
+gb
+remaining
+gco
+gst
+gst
+glod
+git show 5770fba7a9
+glod
+git reset HEAD~
+git add .
+git stash
+glod
+gush
+gain
+gst
+gra
+git reset HEAD~
+git reset --hard origin/main
+gst
+git stash pop
+gst
+glod
+gst
+git reset
+gst
+git co .
+gst
+glod
+gull
+gst
+git reflog
+git show b4821ca338
+git reset --hard b4821ca338
+gst
+glod
+git reset --hard origin/main
+gst
+Pgst
+gst
+git add lib/
+gst
+gwip
+gst
+git add .
+gc -m 'chore(wip): track updated files'
+gco
+source `~/Library/Application Support/nushell/config.nu`
+gco
+mix test lib/houston/repo/multi_tenancy_test.exs
+gc -m 'chore(multi_tenancy_test): restore process state after inline oban job'
+git add .
+gc -m 'chore(multi_tenancy_test): restore process state after inline oban job'
+gst
+gush
+gco
+gain
+gst
+gap
+gc
+gush
+gco
+mix test lib/connect/deployments/automations/workers/trigger_automations_on_group_membership_change_worker_test.exs
+=gst
+gap
+gst
+gap
+glod
+gc --amend
+mix test lib/connect/api/groups/actions/create_group_test.exs
+gb
+mix test lib/houston/integrations/alexandria/packages_test.exs
+mix test
+glod
+git show
+guhs
+gush
+pkill -9 discord
+work on
+work on
+gb
+gco
+gst
+gb
+glod
+git show --name-onl7y
+git show --name-onlu
+git show --name-only
+git show --name-only --pretty="" <commit-hash>
+git show --name-only --pretty=""
+gst
+git show
+gst
+git show
+git reset HEAD~
+gst
+gd
+nvim .
+gst
+git show
+gdel
+gain
+gst
+git rm lib/houston/scripts/workers/prune_orphaned_cloud_files_worker.ex
+git rm lib/houston/scripts/workers/prune_orphaned_package_steps_worker.ex
+grc
+gst
+gush
+gst
+git reset HEAD~
+gap
+gst
+gc -m 'chore(oban_worker): use ObanWorker actor_context for remaining misc. jobs'
+gst
+gush
+gt track
+gt submit --ai --draft
+gull
+gain
+nvim .
+mix test lib/houston/oban_worker_test.exs
+nvim diff
+gco
+gst
+gd
+git co .
+gst
+gcl
+gian
+gain
+gull
+gb
+gco
+gain
+gull
+gst
+mix test
+gst
+gush
+gst
+gst
+gap
+gc -m 'chore(oban_worker): scope entry_id_scan worker to :organization'
+mix format
+gstg
+gst
+gush
+fg
+kjgst
+gap
+gamend
+gst
+git add .
+gamend
+gush
+gain
+mix test lib/connect/deployments/deployments/actions/deploy_package_test.exs
+cd ../
+cd houston@auth-1725-enforce-that-all-oban-job-use-the-houstonobanworker/
+mix test lib/connect/deployments/deployments/actions/deploy_package_test.exs
+gst
+glod
+git add .
+gdc
+gc --amend -C HEAD
+gst
+glod
+gush
+gb
+:bd~
+mix test lib/connect/deployments/deployments/actions/deploy_package_test.exs
+cd ../
+cd houston@auth-1725-enforce-that-all-oban-job-use-the-houstonobanworker/
+mix test lib/connect/deployments/deployments/actions/deploy_package_test.exs
+mix test lib/connect/deployments/deployments/actions/deploy_package_test.exs:3269
+nvim .
+gsat
+gst
+gco
+gst
+gain
+gush
+mix format
+gap
+gst
+gain
+gush
+6gull
+gull
+gush
+gst
+gush
+gco auth-1823-use-oban-worker-for-all-remaining-obanworkers
+gst
+git co auth-1823-use-oban-worker-for-all-remaining-obanworkers
+gst
+gap
+glod
+gst
+gc -m 'chore(oban_worker): scope entry_id_scan worker to :organization'
+gst
+gush
+gst
+psql
+psql
+task setup
+psql
+mise update --all
+mise self-update
+brew upgrade mise
+mise --version
+mise upgrade
+brew uninstall mise && curl https://mise.run | sh
+brew uninstall mise ; curl https://mise.run | sh
+config nu
+kjjjjkj
+i
+source `~/Library/Application Support/nushell/config.nu`
+jjjjjji
+source `~/Library/Application Support/nushell/mise.nu`
+config env
+~/.local/bin/mise
+config env
+nvim ~/
+let mise_path = $nu.default-config-dir | path join mise.nu
+nvim
+nvim .
+work on
+ls
+vi /Users/micah.cooper/Library/Application Support/nushell/mise.nu
+rm /Users/micah.cooper/Library/Application Support/nushell/mise.nu
+config nu
+config env
+vi /Users/micah.cooper/Library/Application Support/nushell/env.nu
+ls
+source `~/Library/Application Support/nushell/mise.nu`
+source `~/Library/Application Support/nushell/config.nu`
+config env
+config nu
+vi /Users/micah.cooper/Library/Application Support/nushell/env.nu
+ls
+let mise_path = $nu.default-config-dir | path join mise.nu
+$mise_path
+^mise activate nu
+^mise activate nu | save $mise_path --force
+config nu
+vi /Users/micah.cooper/Library/Application Support/nushell/config.nu
+source `~/Library/Application Support/nushell/config.nu`
+nvim .
+which mise
+cm diff
+dot add `~/Library/Application Support/nushell/`
+dst
+cm diff | less
+mise self-update
+vi .
+mix test lib/connect/deployments/deployments/actions/deploy_package_test.exs:3269
+git co auth-1820-use-oban-worker-for-all-vulnerabilities-workers
+source `~/Library/Application Support/nushell/config.nu`
+source `~/Library/Application Support/nushell/mise.nu`
+nvim .
+opencode --continue
+work on
+pdq
+work clear-all
+gst
+gb
+git co auth-1820-use-oban-worker-for-all-vulnerabilities-workers
+gain
+mix test lib/connect/vulnerabilities/workers/delete_old_vulnerabilities_worker_test.exs
+mix deps.get
+pdq
+psql
+nvim ~/.mise.toml
+mise insatll
+mise install
+fg
+nvim ~/.mise.toml
+mise install
+psql
+mix test lib/connect/vulnerabilities/workers/delete_old_vulnerabilities_worker_test.exs
+glod
+gst
+gap
+gst
+glod
+gamend
+gush
+mix format
+gst
+gush
+gull
+gst
+glod
+gush
+gst
+gain
+glod
+gain
+gus
+gush
+gco
+mix test lib/connect/deployments/deployments/actions/deploy_package_test.exs
+mix deps.get
+task setup
+mix test lib/connect/deployments/deployments/actions/deploy_package_test.exs
+mix test lib/connect/deployments/deployments/actions/deploy_package_test.exs:3263
+gst
+git co auth-1813-use-oban-worker-for-all-inventory-workers
+gst
+glod
+gain
+gull
+glod
+git log
+git co auth-1813-use-oban-worker-for-all-inventory-workers
+git commit --amend --update-author
+git commit --amend --no-edit -S
+gst
+git show
+gush
+mix deps.get
+gush
+git co auth-1821-use-oban-worker-for-all-software-workers
+git commit --amend --no-edit -S
+glod
+git log
+git log --show-signature
+git commit --amend --no-edit -S
+gst
+glod
+gush
+mix deps.get
+gain
+gull
+gain
+guhs
+gush
+mix test lib/connect/deployments/deployments/actions/deploy_package_test.exs:3263
+git gst
+gst
+gd
+mix test lib/connect/deployments/deployments/actions/deploy_package_test.exs
+gb
+gco
+gain
+gst
+git add .
+git stash
+gain
+gd
+grc
+gst
+git add .
+grc
+gain
+mix test lib/connect/deployments/deployments/actions/deploy_package_test.exs
+git co auth-1813-use-oban-worker-for-all-inventory-workers
+gst
+gd
+git add .
+git stash
+git co auth-1813-use-oban-worker-for-all-inventory-workers
+git commit --amend --no-edit -S
+gull
+git commit --amend --no-edit -S
+gain
+gush
+git co auth-1806-use-oban-worker-for-all-deployment-workers
+gull
+gain
+git commit --amend --no-edit -S
+gush
+nfig
+nvim .
+gst
+gb
+git merge auth-1806-use-oban-worker-for-all-deployment-workers
+git co auth-1820-use-oban-worker-for-all-vulnerabilities-workers
+gain
+gull
+gain
+glod
+gush
+gain
+glod
+gst
+gush
+gb
+work remove
+gdel
+gb
+gain
+glod
+gco
+gull
+gain
+gra
+gain
+gull
+gra
+glod
+git reset HEAD~~
+gst
+git add .
+git stash
+gull
+gd
+qgra
+gra
+git retch
+git fetch
+git reset --hard origin/main
+gst
+glod
+git reset --hard origin/main
+git stash pop
+gst
+gc -m 'chore(oban_worker): use ObanWorker actor_context for remaining misc. jobs'
+git ad .
+git add .
+gc -m 'chore(oban_worker): use ObanWorker actor_context for remaining misc. jobs'
+mix foeramt
+mix format
+gst
+fg
+gst
+git add .
+gc -m 'chore(oban_worker): use ObanWorker actor_context for remaining misc. jobs'
+gush
+gb
+mix test lib/connect/deployments/deployments/actions/deploy_package_test.exs:3263
+work on
+work on
+mix test lib/connect/deployments/deployments/actions/deploy_package_test.exs:3263
+task setup
+mix test lib/connect/deployments/deployments/actions/deploy_package_test.exs:3263
+mix test lib/connect/deployments/deployments/actions/deploy_package_test.exs
+mix test lib/connect/deployments/deployments/actions/deploy_package_test.exs:3264
+i
+mix test lib/connect/deployments/deployments/actions/deploy_package_test.exs:3264
+iex
+gst
+gap
+gst
+git add .
+gst
+mix format
+gst
+gc
+gush
+gst
+gap
+mix format
+gst
+lfg
+mix test lib/houston/oban_worker/actor_context_hook_test.exs:24
+ugst
+mix format
+tgap
+gap
+gst
+git add .
+gamend
+gush
+gain
+gst
+gain
+gush
+gst
+gap
+gamend
+gush
+gst
+git co -b oban-job-final-cleanup-and-enforcement
+gst
+gsdt
+gst
+gd
+gst
+gap
+Lgxzt
+gst
+gc -m 'chore(oban_worker): use ObanWorker actor_context for remaining jobs'
+gst
+gnap
+git add -n .
+gst
+git add -n --patch
+gst
+gap
+.gst
+git add .
+giwp
+gwip
+gco
+gst
+gt track
+gt submit --ai --draft
+gco
+glod
+git reset HEAD~
+gst
+gap
+gst
+gap
+gstgst
+gst
+gap
+gst
+gap
+gst
+git add .
+gst
+glod
+gst
+git stash
+gst
+git reset --hard origin/main
+git stash pop
+gst
+git add .
+gst
+gc -m 'feat(oban_worker): enforce ObanWorker for all jobs'
+gst
+gush
+gst
+git add .
+gamend
+gush
+glg
+glod
+glg
+gt track
+gt submit --ai --draft
+gst
+gap
+gst
+gap
+git add .
+glod
+gc doc(oban_worker): document how to use ObanWorker
+gc -m 'docs(oban_worker): document how to use ObanWorker'
+gush
+gst
+nvim .
+gst
+gb
+gst
+gb
+gdel
+gst
+gb
+gst
+glod
+git co main
+gull
+fg
+gst
+nfig
+dot add ~/.config/nvim/
+dst
+dot add ~/.config/nvim/*
+dst
+ls
+nvim private_dot_config/ghostty/
+cd -
+cd
+dot add ~/.config/nvim/
+dst
+cm add ~/.config/nvim/
+dst
+dot add .
+dot commit -m 'Update dotfiles'
+dush
+dst
+dot diff
+cm diff
+cm diff --help
+cm diff | less
+dm diff --script-contents false
+cxm diff --script-contents false
+cm diff --script-contents false
+cm diff | less
+dm 
+cm
+cm upgrade
+cm forget ~/.claude.json
+dst
+cm add ~/.config/ghostty/auto/
+cm add ~/.config/ghostty/

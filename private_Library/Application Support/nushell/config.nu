@@ -11,7 +11,7 @@ alias gc     = git commit -v
 alias gca    = git commit -a -v
 alias gcam   = git commit --amend -C HEAD
 alias gcl    = git clean -f -d
-alias gco    = git checkout
+# alias gco    = git checkout
 alias gd     = git diff
 alias gdc    = git diff --cached
 alias glg    = git log --graph --oneline --decorate --color --all
@@ -48,11 +48,12 @@ def gfig [] { cd ~/.config/ghostty; nvim . }
 
 def gb --wrapped [...args] { git branch --sort=-committerdate ...$args | lines }
 def gri [count] { git rebase --interactive $'HEAD~($count)' }
-def gain --wrapped [...args] { git fetch; git rebase origin/main ...$args }
+def gain --wrapped [...args] { git pull --rebase origin main ...$args }
 def glod --wrapped [...args] { git log --pretty=format:"%C(auto)%h%d %s %Cblue%an %Cgreen(%cr)" ...$args }
 def gamendush --wrapped [...args] { 
   mix format
-  git add .
+  git add . -u
+  git commit --amend -C HEAD
   git push origin (git rev-parse --abbrev-ref HEAD) --force-with-lease
 }
 
@@ -72,7 +73,7 @@ def glog [lines=500] {
 #checkout a branch from a dropdown
 def gco [] { git branch --sort=-committerdate
   | lines 
-  | input list "Choose a branch to checkout" 
+  | input list --fuzzy "Choose a branch to checkout" 
   | ^git checkout ($in | str trim)
 }
 
@@ -96,3 +97,5 @@ def truncate [string length: int] {
 # Increase max open file descriptors
 ulimit -n 4096
 alias pdq = cd ~/code/pdq
+
+use ($nu.default-config-dir | path join mise.nu)

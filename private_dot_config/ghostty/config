@@ -2,7 +2,6 @@
 #font-family  = "Google Sans Code" # :yes:
 #font-family  = "Ioskeley Mono Nerd Font" # :no:- Boring
 
-
 #==========Annotation Mono
 font-family  = "AnnotationM Nerd Font Mono"
 adjust-cell-height=3%
@@ -17,8 +16,8 @@ adjust-cell-width=-5%
 
 font-size = 17
 
-# theme = Catppuccin Mocha
-theme = Everforest Dark Hard
+theme = Catppuccin Mocha
+# theme = Everforest Dark Hard
 
 keybind = super+shift+h=goto_split:left
 keybind = super+shift+l=goto_split:right
@@ -27,3 +26,6 @@ keybind = super+shift+j=goto_split:bottom
 keybind = shift+enter=text:\n
 
 command = /opt/homebrew/bin/nu
+
+#try this out
+#window-decoration = none

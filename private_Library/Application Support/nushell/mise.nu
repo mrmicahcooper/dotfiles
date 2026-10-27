@@ -10,25 +10,16 @@ def --env "update-env" [] {
       } else {
         load-env {($var.name): $var.value}
       }
-    } else if $var.op == "hide" and $var.name in $env {
-      hide-env $var.name
+    } else if $var.op == "hide" {
+      try { hide-env $var.name }
     }
   }
 }
 export-env {
-  
-  'hide,CARGO_HOME,
-hide,DENO_INSTALL_ROOT,
-hide,MIX_ARCHIVES,
-hide,MIX_HOME,
-hide,MIX_OS_DEPS_COMPILE_PARTITION_COUNT,
-hide,NUM_CPUS,
-hide,RUSTUP_HOME,
-hide,RUSTUP_TOOLCHAIN,
-set,PATH,/Users/micahcooper/.local/bin/mise:/nix/var/nix/profiles/default/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Ghostty.app/Contents/MacOS
-hide,MISE_SHELL,
-hide,__MISE_DIFF,
-hide,__MISE_DIFF,' | parse vars | update-env
+  $env.__MISE_ORIG_PATH = r#'/Users/micah.cooper/.opencode/bin:/Users/micah.cooper/.local/share/mise:/Users/micah.cooper/.local/bin:/Users/micah.cooper/.local/bin/mise:/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Ghostty.app/Contents/MacOS'#
+$env.PATH = (r#'/Users/micah.cooper/.local/share/mise/shims:/Users/micah.cooper/.opencode/bin:/Users/micah.cooper/.local/share/mise:/Users/micah.cooper/.local/bin:/Users/micah.cooper/.local/bin/mise:/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Ghostty.app/Contents/MacOS'# | split row (char esep))
+
+  '' | parse vars | update-env
   $env.MISE_SHELL = "nu"
   let mise_hook = {
     condition: { "MISE_SHELL" in $env }
@@ -49,20 +40,20 @@ export def --env --wrapped main [command?: string, --help, ...rest: string] {
   let commands = ["deactivate", "shell", "sh"]
 
   if ($command == null) {
-    ^"/opt/homebrew/bin/mise"
+    ^"/Users/micah.cooper/.local/bin/mise"
   } else if ($command == "activate") {
     $env.MISE_SHELL = "nu"
   } else if ($command in $commands) {
-    ^"/opt/homebrew/bin/mise" $command ...$rest
+    ^"/Users/micah.cooper/.local/bin/mise" $command ...$rest
     | parse vars
     | update-env
   } else {
-    ^"/opt/homebrew/bin/mise" $command ...$rest
+    ^"/Users/micah.cooper/.local/bin/mise" $command ...$rest
   }
 }
 
 def --env mise_hook [] {
-  ^"/opt/homebrew/bin/mise" hook-env -s nu
+  ^"/Users/micah.cooper/.local/bin/mise" hook-env -s nu
     | parse vars
     | update-env
 }
